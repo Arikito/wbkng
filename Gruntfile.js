@@ -30,6 +30,9 @@ module.exports = function(grunt) {
 		},
 		sass: {
 			dist: {
+				options: {
+					style: 'compact'
+				},
 				files: {
 					'compiled/css/style.css': 'resources/sass/style.scss'
 				}
