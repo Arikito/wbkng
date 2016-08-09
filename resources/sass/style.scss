@@ -35,16 +35,45 @@ $lightfont:			#c0c0c0;
 		background-color: lighten($accent, 5);
 	}
 }
-.item {
-	background: #f3f3f3;
-	border: 1px solid #c1c1c1;
-}
 .image {
-	background: $white;	
+	background: $white;
+	position: relative;
+	overflow: hidden;
+	img {
+		// max-width: 100%;
+		display: block;
+		max-height: 500px;
+	}
+	p {
+		position: absolute;
+	    background: rgba(255,255,255,0.85);
+	    width: 100%;
+	    margin: 0;
+	    text-align: center;
+	    line-height: 30px;	    
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 5vh;
+		right: 0;
+		bottom: 5vh;
+		left: 0;
+		background: $accent;
+		transform: scale(0);
+		border-radius: 50%;
+		opacity: .4;
+		@include animate(.4s);
+	}
+	&:hover {
+		&:after {
+			transform: scale(2);
+		}
+	}
 }
-.image img {
-	max-width: 100%;
-	max-height: 220px;
+.project_block {
+	background: #fff;
+	overflow: auto;
 }
 input[type=text],
 input[type=email],
@@ -117,7 +146,24 @@ body{
 		margin: 0 auto;
 		overflow: auto;
 		position: relative;
-	}
+		h1 {
+			text-align: center;
+		}
+		.tags_block {
+			display: flex;
+			justify-content: center;
+			p {
+				padding: 15px;				
+				color: $accent;
+				font-size: 16px;			
+				&:hover,
+				&.active{
+					color: lighten($accent, 25);
+					cursor: pointer;					
+				}
+			}
+		}
+	}	
 	.content{
 		padding-top: $header_height;
 		min-height: 100vh;
