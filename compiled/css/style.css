@@ -130,6 +130,12 @@ textarea { overflow: auto; }
 .accent_button { background-color: #bf1111; color: #fff; border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; cursor: pointer; }
 .accent_button:hover { background-color: #d61313; }
 
+.item { background: #f3f3f3; border: 1px solid #c1c1c1; }
+
+.image { background: #fff; }
+
+.image img { max-width: 100%; max-height: 220px; }
+
 input[type=text], input[type=email], input[type=passwd] { border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; }
 
 body { font-size: 14px; font-family: sans-serif; background: #f2f2f2; }

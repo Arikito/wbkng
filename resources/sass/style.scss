@@ -35,6 +35,17 @@ $lightfont:			#c0c0c0;
 		background-color: lighten($accent, 5);
 	}
 }
+.item {
+	background: #f3f3f3;
+	border: 1px solid #c1c1c1;
+}
+.image {
+	background: $white;	
+}
+.image img {
+	max-width: 100%;
+	max-height: 220px;
+}
 input[type=text],
 input[type=email],
 input[type=passwd]{
