@@ -174,6 +174,12 @@ input[type=passwd]{
 	line-height: $gap * 2;
 	padding: 0 $gap;
 }
+.page_wrap{
+	max-width: $page_width;
+	margin: 0 auto;
+	overflow: auto;
+	position: relative;
+}
 body{
 	font-size: 14px;
 	font-family: $base-font-family;
@@ -269,33 +275,17 @@ body{
 			}
 		}
 	}
-	.page_wrap{
-		max-width: $page_width;
-		margin: 0 auto;
-		overflow: auto;
-		position: relative;
-		h1 {
-			text-align: center;
+	h1 {
+		text-align: center;
+	}
+	.tags_block, .types_of_services {
+		display: flex;
+		justify-content: center;
+		p, a {
+			margin-left: 5px;
+			margin-right: 5px;
 		}
-		.tags_block, .types_of_services {
-			display: flex;
-			justify-content: center;
-			p, a {
-				margin-left: 5px;
-				margin-right: 5px;
-			}
-			// p {
-			// 	padding: 15px;				
-			// 	color: $accent;
-			// 	font-size: 16px;			
-			// 	&:hover,
-			// 	&.active{
-			// 		color: lighten($accent, 25);
-			// 		cursor: pointer;					
-			// 	}
-			// }
-		}
-	}	
+	}
 	.content{
 		padding-top: $header_height;
 		min-height: 100vh;

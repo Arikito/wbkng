@@ -170,6 +170,8 @@ a { text-decoration: none; }
 
 input[type=text], input[type=email], input[type=passwd] { border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; }
 
+.page_wrap { max-width: 1300px; margin: 0 auto; overflow: auto; position: relative; }
+
 body { font-size: 14px; font-family: sans-serif; }
 body header { position: fixed; top: 0; left: 0; right: 0; background: #fff; z-index: 100; }
 body header .logoSite { display: inline-block; height: 120px; padding: 20px; box-sizing: border-box; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -187,10 +189,9 @@ body header nav a:hover, body header nav a.active { box-shadow: inset 0 5px 0 #b
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
 body.scrolled header nav a { line-height: 72px; }
-body .page_wrap { max-width: 1300px; margin: 0 auto; overflow: auto; position: relative; }
-body .page_wrap h1 { text-align: center; }
-body .page_wrap .tags_block, body .page_wrap .types_of_services { display: flex; justify-content: center; }
-body .page_wrap .tags_block p, body .page_wrap .tags_block a, body .page_wrap .types_of_services p, body .page_wrap .types_of_services a { margin-left: 5px; margin-right: 5px; }
+body h1 { text-align: center; }
+body .tags_block, body .types_of_services { display: flex; justify-content: center; }
+body .tags_block p, body .tags_block a, body .types_of_services p, body .types_of_services a { margin-left: 5px; margin-right: 5px; }
 body .content { padding-top: 120px; min-height: 100vh; }
 body footer { background-color: #2e3034; color: #c0c0c0; line-height: 2em; }
 body footer a { color: #c0c0c0; text-decoration: none; }
