@@ -151,10 +151,9 @@ a { text-decoration: none; }
 
 .image, .project { display: block; }
 .image img, .project img { display: block; }
-.image .project_title, .project .project_title { position: absolute; background: rgba(255, 255, 255, 0.85); width: 100%; margin: 0; text-align: center; line-height: 30px; }
-.image:after, .project:after { content: ''; position: absolute; top: 5vh; right: 0; bottom: 5vh; left: 0; top: calc(100% - 4em); bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-.image:after p, .project:after p { opacity: 1; font-size: 16px; }
-.image:after p:first-child, .project:after p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
+.image .project_title, .project .project_title { position: absolute; margin: 0; right: 0; left: 0; top: calc(100% - 4em); bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.image .project_title p, .project .project_title p { opacity: 1; font-size: 16px; }
+.image .project_title p:first-child, .project .project_title p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
 .image:hover .project_title, .project:hover .project_title { top: 0; }
 
 .project_block { background: #fff; overflow: auto; }
@@ -204,9 +203,10 @@ body header nav a:hover, body header nav a.active { box-shadow: inset 0 5px 0 #b
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
 body.scrolled header nav a { line-height: 72px; }
-body h1 { text-align: center; }
-body .tags_block, body .types_of_services { display: flex; justify-content: center; }
-body .tags_block p, body .tags_block a, body .types_of_services p, body .types_of_services a { margin-left: 5px; margin-right: 5px; }
+body .page_wrap { max-width: 1300px; margin: 0 auto; overflow: auto; position: relative; }
+body .page_wrap h1 { text-align: center; }
+body .page_wrap .tags_block, body .page_wrap .types_of_services { display: flex; justify-content: center; }
+body .page_wrap .tags_block p, body .page_wrap .tags_block a, body .page_wrap .types_of_services p, body .page_wrap .types_of_services a { margin-left: 5px; margin-right: 5px; }
 body .content { padding-top: 120px; min-height: 100vh; }
 body footer { background-color: #2e3034; color: #c0c0c0; line-height: 2em; }
 body footer a { color: #c0c0c0; text-decoration: none; }

@@ -107,18 +107,8 @@ a {
 	}
 	.project_title {
 		position: absolute;
-		background: rgba(255,255,255,0.85);
-		width: 100%;
 		margin: 0;
-		text-align: center;
-		line-height: 30px;
-	}
-	&:after {
-		content: '';
-		position: absolute;
-		top: 5vh;
 		right: 0;
-		bottom: 5vh;
 		left: 0;
 		top: calc(100% - 4em);
 		bottom: 0;
@@ -326,15 +316,21 @@ body{
 			}
 		}
 	}
-	h1 {
-		text-align: center;
-	}
-	.tags_block, .types_of_services {
-		display: flex;
-		justify-content: center;
-		p, a {
-			margin-left: 5px;
-			margin-right: 5px;
+	.page_wrap{
+		max-width: $page_width;
+		margin: 0 auto;
+		overflow: auto;
+		position: relative;
+		h1 {
+			text-align: center;
+		}
+		.tags_block, .types_of_services {
+			display: flex;
+			justify-content: center;
+			p, a {
+				margin-left: 5px;
+				margin-right: 5px;
+			}
 		}
 	}
 	.content{
