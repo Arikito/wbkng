@@ -170,12 +170,22 @@ body{
 		.logoSite{
 			display: inline-block;
 			height: $header_height;
-			@include animate(.3s);
 			padding: $gap;
 			box-sizing: border-box;
+			@include animate(.3s);
 			svg, img{
 				position: relative;
 				height: 100%;
+			}
+		}
+		.menu{
+			display: none;
+			line-height: $header_height;
+			float: right;
+			padding: 0 $gap;
+			@include animate(.3s);
+			img{
+				vertical-align: middle;
 			}
 		}
 		nav{
@@ -198,6 +208,30 @@ body{
 					box-shadow: inset 0 5px 0 $accent;  //asdasdas 
 				}
 			}
+			&.expanded{
+				// height: auto;
+			}
+		}
+		@media screen and (max-width: 992px) {
+			.logoSite{
+				height: $header_height * .6;
+				padding: $gap / 2;
+			}
+			.menu{
+				display: block;
+				line-height: $header_height * .6;
+			}
+			nav{
+				width: 100%;
+				overflow: hidden;
+				display: none;
+				a{
+					width: 100%;
+					text-align: center;
+					line-height: $header_height * .6;
+				}
+			}
+			
 		}
 	}
 	&.scrolled{
@@ -205,6 +239,9 @@ body{
 			.logoSite{
 				height: $header_height * .6;
 				padding: $gap / 2;
+			}
+			.menu {
+				line-height: $header_height * .6;
 			}
 			nav{
 				a{

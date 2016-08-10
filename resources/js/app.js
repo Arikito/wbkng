@@ -3,6 +3,9 @@ $(function(){
 	$(window).scroll(function(){
 		header_fix();
 	});
+	$('.menu_toggle_js').on('click', function(){
+		$('.header_navigation_js').stop(true, true).slideToggle();
+	});
 });
 
 function header_fix(){
