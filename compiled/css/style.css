@@ -132,14 +132,43 @@ a { text-decoration: none; }
 .accent_button { background-color: #bf1111; color: #fff; border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; cursor: pointer; }
 .accent_button:hover { background-color: #d61313; }
 
-.image { background: #fff; position: relative; overflow: hidden; display: block; }
-.image img { display: block; max-height: 500px; }
-.image .project_title { position: absolute; margin: 0; right: 0; left: 0; top: 80%; bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 16px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-.image p { opacity: 1; padding-top: 20px; }
-.image p:first-child { font-size: 20px; }
-.image:hover .project_title { top: 0; }
+.banner_wrap { position: relative; color: #fff; }
+.banner_wrap img { width: 100%; max-height: 600px; }
+.banner_wrap .banner_img_wrap:after { content: ''; display: block; position: absolute; top: 0; background-color: rgba(36, 38, 41, 0.8); width: 100%; height: 600px; }
+.banner_wrap .banner_text { position: absolute; z-index: 1; top: 20%; left: calc(50% - 300px); text-align: center; padding: 1em; }
+.banner_wrap .banner_text h1 { font-size: 4em; }
+.banner_wrap .bunner_btn { width: 200px; margin: 3em auto; border: 1px solid #fff; }
+
+.projects_wrap, .technologies_wrap, .something_wrap { background-color: #fff; padding: 1em 0; }
+
+.something_wrap { height: 300px; }
+
+.service_wrap, .about_studio_wrap { padding: 1em 0; }
+
+.image, .project, .service, .technology, .point_about { background: #fff; position: relative; overflow: hidden; }
+
+.image { background: #fff; position: relative; overflow: hidden; height: 500px; }
+
+.image, .project { display: block; }
+.image img, .project img { display: block; }
+.image .project_title, .project .project_title { position: absolute; margin: 0; right: 0; left: 0; top: calc(100% - 4em); bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.image .project_title p, .project .project_title p { opacity: 1; font-size: 16px; }
+.image .project_title p:first-child, .project .project_title p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
+.image:hover .project_title, .project:hover .project_title { top: 0; }
 
 .project_block { background: #fff; overflow: auto; }
+
+.project img, .service img, .technology img, .point_about img { display: block; max-height: 250px; }
+.project p, .service p, .technology p, .point_about p { text-align: center; }
+
+.service { min-height: 300px; background: transparent; }
+.service .service_icon { width: 100px; height: 100px; margin: 0 auto; border: 2px solid #bf1111; border-radius: 50%; }
+.service .service_icon .sub_service_icon { width: 60px; height: 60px; margin: 20% auto; background-color: #bf1111; border-radius: 50%; }
+.service .service_descr { text-align: justify; }
+
+.technology img { display: block; margin: 0 auto; }
+
+.point_about { margin: 0 auto; width: 200px; height: 200px; border-radius: 50%; background-color: #bf1111; }
 
 .show_more { margin-bottom: 15px; }
 .show_more button { margin: 0 auto; display: block; }
