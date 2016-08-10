@@ -37,7 +37,7 @@
   min-height: 1px;
 /*   padding-left: 15px;
 padding-right: 15px; */
-  padding: 15px;
+  padding: .5px;
 }
 [class*="col-"] [class*="col-"] {
   padding: 0 15px;

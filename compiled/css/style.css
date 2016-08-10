@@ -147,14 +147,29 @@ a { text-decoration: none; }
 
 .image, .project, .service, .technology, .point_about { background: #fff; position: relative; overflow: hidden; }
 
-.image img, .project img { display: block; max-height: 500px; }
-.image .project_title, .image p, .project .project_title, .project p { position: absolute; background: rgba(255, 255, 255, 0.85); width: 100%; margin: 0; text-align: center; line-height: 30px; }
-.image:after, .project:after { content: ''; position: absolute; top: 5vh; right: 0; bottom: 5vh; left: 0; top: 80%; bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 16px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-.image p, .project p { opacity: 1; padding-top: 20px; }
-.image p:first-child, .project p:first-child { font-size: 20px; }
+.image { background: #fff; position: relative; overflow: hidden; height: 500px; }
+
+.image, .project { display: block; }
+.image img, .project img { display: block; }
+.image .project_title, .project .project_title { position: absolute; background: rgba(255, 255, 255, 0.85); width: 100%; margin: 0; text-align: center; line-height: 30px; }
+.image:after, .project:after { content: ''; position: absolute; top: 5vh; right: 0; bottom: 5vh; left: 0; top: calc(100% - 4em); bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.image:after p, .project:after p { opacity: 1; font-size: 16px; }
+.image:after p:first-child, .project:after p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
 .image:hover .project_title, .project:hover .project_title { top: 0; }
 
 .project_block { background: #fff; overflow: auto; }
+
+.project img, .service img, .technology img, .point_about img { display: block; max-height: 250px; }
+.project p, .service p, .technology p, .point_about p { text-align: center; }
+
+.service { min-height: 300px; background: transparent; }
+.service .service_icon { width: 100px; height: 100px; margin: 0 auto; border: 2px solid #bf1111; border-radius: 50%; }
+.service .service_icon .sub_service_icon { width: 60px; height: 60px; margin: 20% auto; background-color: #bf1111; border-radius: 50%; }
+.service .service_descr { text-align: justify; }
+
+.technology img { display: block; margin: 0 auto; }
+
+.point_about { margin: 0 auto; width: 200px; height: 200px; border-radius: 50%; background-color: #bf1111; }
 
 .show_more { margin-bottom: 15px; }
 .show_more button { margin: 0 auto; display: block; }
