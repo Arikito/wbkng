@@ -145,10 +145,14 @@ textarea { overflow: auto; }
 
 .image, .project, .service, .technology, .point_about { background: #fff; position: relative; overflow: hidden; }
 
+.image, .project { /* &:before {
+	content: 'before';
+} */ }
 .image img, .project img { display: block; max-height: 500px; }
-.image p, .project p { position: absolute; background: rgba(255, 255, 255, 0.85); width: 100%; margin: 0; text-align: center; line-height: 30px; }
-.image:after, .project:after { content: ''; position: absolute; top: 5vh; right: 0; bottom: 5vh; left: 0; background: #bf1111; transform: scale(0); border-radius: 50%; opacity: .4; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-.image:hover:after, .project:hover:after { transform: scale(2); }
+.image .project_title, .project .project_title { position: absolute; margin: 0; right: 0; left: 0; top: 80%; bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 16px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.image p, .project p { opacity: 1; padding-top: 20px; }
+.image p:first-child, .project p:first-child { font-size: 20px; }
+.image:hover .project_title, .project:hover .project_title { top: 0; }
 
 .project_block { background: #fff; overflow: auto; }
 
@@ -163,6 +167,9 @@ textarea { overflow: auto; }
 .technology img { display: block; margin: 0 auto; }
 
 .point_about { margin: 0 auto; width: 200px; height: 200px; border-radius: 50%; background-color: #bf1111; }
+
+.show_more { margin-bottom: 15px; }
+.show_more button { margin: 0 auto; display: block; }
 
 input[type=text], input[type=email], input[type=passwd] { border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; }
 
