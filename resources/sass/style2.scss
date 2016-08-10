@@ -19,9 +19,6 @@ $lightfont:			#c0c0c0;
 *{
 	box-sizing: border-box;
 }
-a {
-	text-decoration: none;	
-}
 .hidden{
 	display: none !important;
 }
@@ -99,8 +96,7 @@ a {
 		display: block;
 		max-height: 500px;
 	}
-	
-	.project_title, p {
+	p {
 		position: absolute;
 		background: rgba(255,255,255,0.85);
 		width: 100%;
@@ -140,6 +136,52 @@ a {
 	background: #fff;
 	overflow: auto;
 }
+.project,
+.service,
+.technology,
+.point_about{
+	img {
+		display: block;
+		max-height: 250px;
+	}
+	p{
+		text-align: center;
+	}
+}
+.service{
+	min-height: 300px;
+	background: transparent;
+	.service_icon{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		border: 2px solid $accent;
+		border-radius: 50%;
+		.sub_service_icon{
+			width: 60px;
+			height: 60px;
+			margin: 20% auto;
+			background-color: $accent;
+			border-radius: 50%;
+		}
+	}
+	.service_descr{
+		text-align: justify;
+	}
+}
+.technology{
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+}
+.point_about{
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: $accent;
+}
 .show_more {
 	margin-bottom: 15px;
 	button {
@@ -177,14 +219,12 @@ input[type=passwd]{
 body{
 	font-size: 14px;
 	font-family: $base-font-family;
-	// background: #f2f2f2;
 	header{
 		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		background: #fff;
-		// background: #f2f2f2;
 		z-index: 100;
 		.logoSite{
 			display: inline-block;
@@ -284,77 +324,11 @@ body{
 				margin-left: 5px;
 				margin-right: 5px;
 			}
-			// p {
-			// 	padding: 15px;				
-			// 	color: $accent;
-			// 	font-size: 16px;			
-			// 	&:hover,
-			// 	&.active{
-			// 		color: lighten($accent, 25);
-			// 		cursor: pointer;					
-			// 	}
-			// }
 		}
 	}	
 	.content{
 		padding-top: $header_height;
 		min-height: 100vh;
-	}
-	footer{
-		background-color: lighten($spacegray, 4);
-		color: $lightfont;
-		line-height: 2em;
-		a{
-			color: $lightfont;
-			text-decoration: none;
-		}
-		.copyright{
-			line-height: $gap * 4;
-			background-color: $spacegray;
-			img{
-				max-width: 150px;
-				float: left;
-			}
-			.logo{
-				height: 80px;
-				display: inline-block;
-				float: left;
-				padding: 0 $gap;
-				#lion {
-					display: none;
-				}
-				#text_1_ * {
-					fill: darken($lightfont, 50) !important;
-				}
-			}
-			.page_wrap {
-				display: flex;
-				justify-content: space-between;
-				.rights {
-					color: darken($lightfont, 30);
-					padding-right: $gap;
-				}
-			}
-		}
-		.page_wrap{
-			nav{
-				a{
-					display: inline-block;
-					padding: 0 $gap;
-					&:hover{
-						color: $white;
-					}
-				}
-			}
-		}
-		.subscribe{
-			padding: $gap 0;
-			text-align: center;
-			font-size: 1.143em;
-			input{
-				margin-left: $gap;
-			}
-		}
 	}
 	footer{
 		background-color: lighten($spacegray, 4);
