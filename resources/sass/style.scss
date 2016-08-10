@@ -19,6 +19,9 @@ $lightfont:			#c0c0c0;
 *{
 	box-sizing: border-box;
 }
+a {
+	text-decoration: none;	
+}
 .hidden{
 	display: none !important;
 }
@@ -41,18 +44,9 @@ $lightfont:			#c0c0c0;
 	overflow: hidden;
 	display: block;
 	img {
-		// max-width: 100%;
 		display: block;
 		max-height: 500px;
 	}
-	// .project_title {
-	// 	position: absolute;
-	//     background: rgba(255,255,255,0.85);
-	//     width: 100%;
-	//     margin: 0;
-	//     text-align: center;
-	//     line-height: 30px;	    
-	// }
 	
 	.project_title {
 		position: absolute;
@@ -65,7 +59,6 @@ $lightfont:			#c0c0c0;
 		color: #fff;
 		text-align: center;		
 		font-size: 16px;
-		// opacity: .4;
 		@include animate(.4s);
 	}
 	p {
@@ -80,71 +73,6 @@ $lightfont:			#c0c0c0;
 			top: 0;
 		}
 	}
-
-
-
-
-	// &:after , &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	right: 0;
-	// 	left: 0;
-	// 	top: 80%;
-	// 	bottom: 0;
-	// 	background: #000000;
-	// 	// transform: scale(1);
-	// 	color: #fff;
-	// 	text-align: center;
-	// 	// border-radius: 50%;
-	// 	opacity: .4;
-	// 	@include animate(.4s);
-	// }
-	// &:after {
-	// 	content: 'after';
-	// }
-	/* &:before {
-		content: 'before';
-	} */
-	// &:hover {
-	// 		&:after {
-	// 		 	// transform: scale(1);
-	// 			top: 0;
-	// 		}
-	// 		// &:before {
-	// 		// 	bottom: 0;
-	// 		// }
-	// 	}
-
-	// &:nth-of-type(even) {
-	// 	&:after {
-	// 		top: 100%;
-	// 		bottom: 0;
-	// 	}
-	// 	&:before {
-	// 		top: 0;
-	// 		bottom: 100%;
-	// 	}
-	// 	&:hover {
-	// 		&:after {
-	// 		// 	// transform: scale(1);
-	// 			top: 0;
-	// 		}
-	// 		&:before {
-	// 			bottom: 0;
-	// 		}
-	// 	}
-	// }
-	// &:nth-of-type(odd) {
-	// 	&:after {
-	// 		top: 100%;
-	// 		bottom: 0;
-	// 	}
-	// 	&:hover {
-	// 		&:after {
-	// 			top: 0;
-	// 		}
-	// 	}
-	// }
 }
 .project_block {
 	background: #fff;
@@ -157,6 +85,24 @@ $lightfont:			#c0c0c0;
    		display: block;
 	}
 }
+.apple_images {
+	display: flex;
+	.project_image {
+		max-width: 33%;
+		max-height: 200px;
+
+	}
+}
+.project_image {
+	max-width: 100%;
+}
+.service_title {
+	text-align: center;
+}
+.types_of_services {
+	display: flex;
+}
+
 input[type=text],
 input[type=email],
 input[type=passwd]{
@@ -169,13 +115,14 @@ input[type=passwd]{
 body{
 	font-size: 14px;
 	font-family: $base-font-family;
-	background: #f2f2f2;
+	// background: #f2f2f2;
 	header{
 		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		background: #fff;
+		// background: #f2f2f2;
 		z-index: 100;
 		.logoSite{
 			display: inline-block;
@@ -268,19 +215,23 @@ body{
 		h1 {
 			text-align: center;
 		}
-		.tags_block {
+		.tags_block, .types_of_services {
 			display: flex;
 			justify-content: center;
-			p {
-				padding: 15px;				
-				color: $accent;
-				font-size: 16px;			
-				&:hover,
-				&.active{
-					color: lighten($accent, 25);
-					cursor: pointer;					
-				}
+			p, a {
+				margin-left: 5px;
+				margin-right: 5px;
 			}
+			// p {
+			// 	padding: 15px;				
+			// 	color: $accent;
+			// 	font-size: 16px;			
+			// 	&:hover,
+			// 	&.active{
+			// 		color: lighten($accent, 25);
+			// 		cursor: pointer;					
+			// 	}
+			// }
 		}
 	}	
 	.content{
