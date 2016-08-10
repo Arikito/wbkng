@@ -306,8 +306,13 @@ body{
 				height: 80px;
 				display: inline-block;
 				float: left;
-				padding: $gap;
-				fill: darken($lightfont, 50);
+				padding: 0 $gap;
+				#lion {
+					display: none;
+				}
+				#text_1_ * {
+					fill: darken($lightfont, 50) !important;
+				}
 			}
 			.page_wrap {
 				display: flex;
