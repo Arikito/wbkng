@@ -61,7 +61,7 @@ $lightfont:			#c0c0c0;
 		left: 0;
 		top: 80%;
 		bottom: 0;
-		background: rgba(0,0,0,0.4);
+		background: rgba(0,0,0,0.6);
 		color: #fff;
 		text-align: center;		
 		font-size: 16px;
@@ -70,7 +70,10 @@ $lightfont:			#c0c0c0;
 	}
 	p {
 		opacity: 1;
-		padding-top: 30px;
+		padding-top: 20px;
+	}
+	p:first-child {
+		font-size: 20px;
 	}
 	&:hover {
 		.project_title {
@@ -146,6 +149,13 @@ $lightfont:			#c0c0c0;
 .project_block {
 	background: #fff;
 	overflow: auto;
+}
+.show_more {
+	margin-bottom: 15px;
+	button {
+		margin: 0 auto;
+   		display: block;
+	}
 }
 input[type=text],
 input[type=email],
