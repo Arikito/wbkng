@@ -39,37 +39,109 @@ $lightfont:			#c0c0c0;
 	background: $white;
 	position: relative;
 	overflow: hidden;
+	display: block;
 	img {
 		// max-width: 100%;
 		display: block;
 		max-height: 500px;
 	}
-	p {
+	// .project_title {
+	// 	position: absolute;
+	//     background: rgba(255,255,255,0.85);
+	//     width: 100%;
+	//     margin: 0;
+	//     text-align: center;
+	//     line-height: 30px;	    
+	// }
+	
+	.project_title {
 		position: absolute;
-	    background: rgba(255,255,255,0.85);
-	    width: 100%;
-	    margin: 0;
-	    text-align: center;
-	    line-height: 30px;	    
-	}
-	&:after {
-		content: '';
-		position: absolute;
-		top: 5vh;
+		margin: 0;
 		right: 0;
-		bottom: 5vh;
 		left: 0;
-		background: $accent;
-		transform: scale(0);
-		border-radius: 50%;
-		opacity: .4;
+		top: 80%;
+		bottom: 0;
+		background: rgba(0,0,0,0.4);
+		color: #fff;
+		text-align: center;		
+		font-size: 16px;
+		// opacity: .4;
 		@include animate(.4s);
 	}
+	p {
+		opacity: 1;
+		padding-top: 30px;
+	}
 	&:hover {
-		&:after {
-			transform: scale(2);
+		.project_title {
+			top: 0;
 		}
 	}
+
+
+
+
+	// &:after , &:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	right: 0;
+	// 	left: 0;
+	// 	top: 80%;
+	// 	bottom: 0;
+	// 	background: #000000;
+	// 	// transform: scale(1);
+	// 	color: #fff;
+	// 	text-align: center;
+	// 	// border-radius: 50%;
+	// 	opacity: .4;
+	// 	@include animate(.4s);
+	// }
+	// &:after {
+	// 	content: 'after';
+	// }
+	/* &:before {
+		content: 'before';
+	} */
+	// &:hover {
+	// 		&:after {
+	// 		 	// transform: scale(1);
+	// 			top: 0;
+	// 		}
+	// 		// &:before {
+	// 		// 	bottom: 0;
+	// 		// }
+	// 	}
+
+	// &:nth-of-type(even) {
+	// 	&:after {
+	// 		top: 100%;
+	// 		bottom: 0;
+	// 	}
+	// 	&:before {
+	// 		top: 0;
+	// 		bottom: 100%;
+	// 	}
+	// 	&:hover {
+	// 		&:after {
+	// 		// 	// transform: scale(1);
+	// 			top: 0;
+	// 		}
+	// 		&:before {
+	// 			bottom: 0;
+	// 		}
+	// 	}
+	// }
+	// &:nth-of-type(odd) {
+	// 	&:after {
+	// 		top: 100%;
+	// 		bottom: 0;
+	// 	}
+	// 	&:hover {
+	// 		&:after {
+	// 			top: 0;
+	// 		}
+	// 	}
+	// }
 }
 .project_block {
 	background: #fff;

@@ -7,16 +7,19 @@
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    width: 100%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1280px) {
   .container {
-    width: 1300px;
+    width: 1280px;
+    width: 100%;
   }
 }
 .container-fluid {
