@@ -227,7 +227,7 @@ a {
 	    margin-bottom: 30px;
 	}
 	.service_description {
-		width: 80%;
+		// width: 80%;
 		margin: 30px auto;
 		.slide {
 			position: relative;
@@ -281,7 +281,7 @@ a {
 .packages_block {
 	display: flex;
 	justify-content: center;
-	width: 80%;
+	// width: 80%;
 	margin: 0 auto;
 	color: #000;
 	margin-top: 60px;
@@ -289,7 +289,8 @@ a {
 	.package {
 		width: 25%;
 		text-align: center;
-		height: 300px;		
+		height: 300px;
+		width: 200px;	
 		.package_descritpion {
 			ul {
 				list-style-type: none;
@@ -317,10 +318,13 @@ a {
 			background: lighten($accent, 25);
 		}
 	}
-	
 }
 
-
+.location_wrap {
+	iframe {
+		width: 100%;
+	}
+}
 
 
 input[type=text],
@@ -338,6 +342,7 @@ input[type=passwd]{
 	overflow: auto;
 	position: relative;
 }
+
 body{
 	font-size: 14px;
 	font-family: $base-font-family;
@@ -450,6 +455,10 @@ body{
 				margin-right: 5px;
 			}			
 		}
+	}
+	.wide_page {
+		max-width: 100%;
+		margin: 0px;
 	}
 	.content{
 		padding-top: $header_height;

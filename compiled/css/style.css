@@ -183,7 +183,7 @@ a { text-decoration: none; }
 .service .order_service { display: flex; justify-content: center; margin-top: 15px; }
 .service .order_service .order_service_title { margin-right: 15px; text-transform: uppercase; }
 .service .service_image { width: 250px; height: 250px; margin: 0 auto; display: block; margin-bottom: 30px; }
-.service .service_description { width: 80%; margin: 30px auto; }
+.service .service_description { margin: 30px auto; }
 .service .service_description .slide { position: relative; margin-bottom: 30px; }
 .service .service_description .slide img { width: 100%; max-height: 100%; }
 .service .service_description .slide p { position: absolute; color: #fff; top: 0; background: rgba(0, 0, 0, 0.6); }
@@ -195,14 +195,16 @@ a { text-decoration: none; }
 .magic_sidebar .nav .active { background: #bf1111; }
 .magic_sidebar .nav .active a { color: #fff; }
 
-.packages_block { display: flex; justify-content: center; width: 80%; margin: 0 auto; color: #000; margin-top: 60px; margin-bottom: 60px; }
-.packages_block .package { width: 25%; text-align: center; height: 300px; }
+.packages_block { display: flex; justify-content: center; margin: 0 auto; color: #000; margin-top: 60px; margin-bottom: 60px; }
+.packages_block .package { width: 25%; text-align: center; height: 300px; width: 200px; }
 .packages_block .package .package_descritpion ul { list-style-type: none; padding: 0px; }
 .packages_block .package_title, .packages_block .package_price { line-height: 50px; font-size: 22px; }
 .packages_block .middle_package { transform: scale(1.1); background: #fff; }
 .packages_block .middle_package .package_price { background: #bf1111; color: #fff; }
 .packages_block .basic_package, .packages_block .full_package { background: #eeeeee; }
 .packages_block .basic_package .package_price, .packages_block .full_package .package_price { background: #f15f5f; }
+
+.location_wrap iframe { width: 100%; }
 
 input[type=text], input[type=email], input[type=passwd] { border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; }
 
@@ -229,6 +231,7 @@ body .page_wrap { max-width: 1300px; margin: 0 auto; overflow: auto; position: r
 body .page_wrap h1 { text-align: center; }
 body .page_wrap .tags_block, body .page_wrap .types_of_services { display: flex; justify-content: center; }
 body .page_wrap .tags_block p, body .page_wrap .tags_block a, body .page_wrap .types_of_services p, body .page_wrap .types_of_services a { margin-left: 5px; margin-right: 5px; }
+body .wide_page { max-width: 100%; margin: 0px; }
 body .content { padding-top: 120px; min-height: 100vh; }
 body footer { background-color: #2e3034; color: #c0c0c0; line-height: 2em; }
 body footer a { color: #c0c0c0; text-decoration: none; }
