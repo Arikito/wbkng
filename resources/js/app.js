@@ -14,6 +14,10 @@ $(function(){
 		autoHeight: false,
 		transitionStyle: "fade"
 	});
+	$("#owl-techn").owlCarousel({
+		// items: 4,
+		autoPlay: 5000
+	});
 	
 	$('.menu_toggle_js').on('click', function(){
 		$('.header_navigation_js').stop(true, true).slideToggle();

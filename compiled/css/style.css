@@ -133,16 +133,15 @@ a { text-decoration: none; }
 .accent_button:hover { background-color: #d61313; }
 
 .banner_wrap { position: relative; background: #242629; color: #fff; }
-.banner_wrap img { -webkit-filter: brightness(0.3); filter: brightness(0.3); }
-.banner_wrap .owl-theme .owl-controls .owl-page span { background: #2e3034; }
 .banner_wrap .owl-carousel .owl-wrapper-outer { height: calc(100vh - 120px); }
 .banner_wrap .owl-carousel .owl-item { width: 100vw; }
-.banner_wrap .owl-theme .owl-controls { position: absolute; bottom: 1em; left: calc(50% - 45px); }
-.banner_wrap .owl-theme .owl-controls .owl-page span { background: #fff; opacity: 0.5; }
-.banner_wrap .owl-theme .owl-controls .owl-page.active span, .banner_wrap .owl-theme .owl-controls .owl-page span:hover { background: #fff; opacity: 0.9; }
-.banner_wrap .banner_text { position: absolute; z-index: 1; top: 20%; left: calc(50% - 300px); text-align: center; padding: 1em; }
-.banner_wrap .banner_text h1 { font-size: 4em; }
-.banner_wrap .bunner_btn { width: 200px; margin: 3em auto; border: 1px solid #fff; }
+.banner_wrap .owl-carousel .owl-item img { -webkit-filter: brightness(0.3); filter: brightness(0.3); }
+.banner_wrap .owl-carousel .owl-controls { position: absolute; bottom: 1em; left: calc(50% - 45px); }
+.banner_wrap .owl-carousel .owl-controls .owl-page span { background: #fff; opacity: 0.5; }
+.banner_wrap .owl-carousel .owl-controls .owl-page.active span, .banner_wrap .owl-carousel .owl-controls .owl-page span:hover { background: #fff; opacity: 0.9; }
+.banner_wrap .banner_info { position: absolute; z-index: 1; top: 20%; left: calc(50% - 300px); text-align: center; padding: 1em; }
+.banner_wrap .banner_info h1 { font-size: 4em; }
+.banner_wrap .banner_info .bunner_btn { width: 200px; margin: 3em auto; border: 1px solid #fff; }
 
 .projects_wrap, .technologies_wrap, .something_wrap { background-color: #fff; padding: 1em 0; }
 
@@ -166,14 +165,14 @@ a { text-decoration: none; }
 .project img, .service img, .technology img, .point_about img { display: block; max-height: 250px; }
 .project p, .service p, .technology p, .point_about p { text-align: center; }
 
-.service { min-height: 300px; background: transparent; padding: 1em; }
+.service { min-height: 300px; height: 350px; background: transparent; padding: 1em; }
 .service .service_icon { width: 100px; height: 100px; margin: 0 auto; border: 2px solid #bf1111; border-radius: 50%; }
 .service .service_icon .sub_service_icon { width: 60px; height: 60px; margin: 20% auto; background-color: #bf1111; border-radius: 50%; }
 .service .service_descr { text-align: justify; }
 
 .technology img { display: block; margin: 0 auto; }
 
-.point_about { margin: 0 auto; width: 200px; height: 200px; border-radius: 50%; background-color: #bf1111; }
+.point_about { margin: 1em auto; width: 200px; height: 200px; border-radius: 50%; background-color: #bf1111; }
 
 .overlay { background: transparent; position: relative; width: 100%; height: 450px; top: 450px; margin-top: -450px; }
 
@@ -199,9 +198,9 @@ a { text-decoration: none; }
 
 .magic_sidebar { position: fixed; right: 0; top: 0px; bottom: 0; width: 100px; }
 .magic_sidebar .nav { padding: 0px; list-style-type: none; margin-top: 200px; }
-.magic_sidebar .nav .sidebar_item { margin-top: 100px; padding: 0px; background: #fff; }
+.magic_sidebar .nav .sidebar_item { margin-top: 100px; padding: 0px; background: #fff; border: 1px solid #bf1111; border-top-left-radius: .2em; border-bottom-left-radius: .2em; }
 .magic_sidebar .nav .sidebar_item a { display: block; text-align: center; line-height: 40px; color: #000; }
-.magic_sidebar .nav .active { background: #bf1111; }
+.magic_sidebar .nav .active { background: #bf1111; border: 1px solid #fff; }
 .magic_sidebar .nav .active a { color: #fff; }
 
 .packages_block { display: flex; justify-content: center; margin: 0 auto; color: #000; margin-top: 60px; margin-bottom: 60px; }
