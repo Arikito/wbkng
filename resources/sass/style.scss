@@ -232,6 +232,15 @@ a {
 .project_image {
 	max-width: 100%;
 }
+//HEADER MOBILE
+.header_navigation_open {
+	height: 290px;
+	// display: block;
+	-webkit-transition: all .4s cubic-bezier(.4,0,.2,1);
+	-o-transition: all .4s cubic-bezier(.4,0,.2,1);
+	transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+
 //SERVISES BLOCK
 .service {
 	.service_title {
@@ -502,15 +511,20 @@ body{
 			}
 			nav{
 				width: 100%;
-				overflow: hidden;
-				display: none;
+				overflow: hidden;				
+				// height: 0px;				
 				a{
 					width: 100%;
 					text-align: center;
 					line-height: $header_height * .6;
 				}
 			}
-			
+			.header_navigation_closed {
+				height: 0px;
+				-webkit-transition: all .4s cubic-bezier(.4,0,.2,1);
+				-o-transition: all .4s cubic-bezier(.4,0,.2,1);
+				transition: all .4s cubic-bezier(.4,0,.2,1);
+			}
 		}
 	}
 	&.scrolled{
