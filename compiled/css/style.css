@@ -186,6 +186,8 @@ a { text-decoration: none; }
 
 .project_image { max-width: 100%; }
 
+.header_navigation_open { height: 290px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+
 .service .service_title { text-align: center; font-size: 1.8em; }
 .service .types_of_services { display: flex; }
 .service .order_service { display: flex; justify-content: center; margin-top: 15px; }
@@ -214,6 +216,15 @@ a { text-decoration: none; }
 
 .location_wrap iframe { width: 100%; }
 
+@media (max-width: 992px) { footer .copyright .logo { padding: 0px !important; height: 50px !important; width: 100%; margin-bottom: 15px; order: 3; }
+  footer .copyright .rights { text-align: center; width: 100%; line-height: 50px; padding: 0px !important; }
+  footer .page_wrap nav { width: 100%; display: flex; justify-content: center; }
+  footer .page_wrap nav a { line-height: 50px; } }
+@media (max-width: 450px) { footer .copyright .rights { display: flex; justify-content: center; flex-wrap: wrap; }
+  footer .page_wrap .subscribe { display: flex; justify-content: center; flex-wrap: wrap; }
+  footer .page_wrap .subscribe input { margin-top: 10px; margin-left: 0px; }
+  footer .page_wrap nav { flex-wrap: wrap; }
+  footer .page_wrap nav a { line-height: 50px; width: 100%; text-align: center; } }
 input[type=text], input[type=email], input[type=passwd] { border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; }
 
 .page_wrap { max-width: 1300px; margin: 0 auto; overflow: auto; position: relative; }
@@ -230,8 +241,9 @@ body header nav a:hover { color: #444; }
 body header nav a:hover, body header nav a.active { box-shadow: inset 0 5px 0 #bf1111; }
 @media screen and (max-width: 992px) { body header .logoSite { height: 72px; padding: 10px; }
   body header .menu { display: block; line-height: 72px; }
-  body header nav { width: 100%; overflow: hidden; display: none; }
-  body header nav a { width: 100%; text-align: center; line-height: 72px; } }
+  body header nav { width: 100%; overflow: hidden; }
+  body header nav a { width: 100%; text-align: center; line-height: 72px; }
+  body header .header_navigation_closed { height: 0px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); } }
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
 body.scrolled header nav a { line-height: 72px; }
@@ -259,7 +271,7 @@ body footer a { color: #c0c0c0; text-decoration: none; }
 body footer .copyright { line-height: 80px; background-color: #242629; }
 body footer .copyright img { max-width: 150px; float: left; }
 body footer .copyright .logo { height: 80px; display: inline-block; float: left; padding: 20px; fill: #414141; }
-body footer .copyright .page_wrap { display: flex; justify-content: space-between; }
+body footer .copyright .page_wrap { display: flex; justify-content: space-between; flex-wrap: wrap; }
 body footer .copyright .page_wrap .rights { color: #747474; padding-right: 20px; }
 body footer .page_wrap nav a { display: inline-block; padding: 0 20px; }
 body footer .page_wrap nav a:hover { color: #fff; }

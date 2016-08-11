@@ -41,7 +41,7 @@ a {
 .banner_wrap{
 	position: relative;
 	background: #242629;
-	color: #fff;	
+	color: #fff;
 	.owl-carousel{
 		.owl-wrapper-outer{
 			height: calc(100vh - 120px);
@@ -229,6 +229,15 @@ a {
 .project_image {
 	max-width: 100%;
 }
+//HEADER MOBILE
+.header_navigation_open {
+	height: 290px;
+	// display: block;
+	-webkit-transition: all .4s cubic-bezier(.4,0,.2,1);
+	-o-transition: all .4s cubic-bezier(.4,0,.2,1);
+	transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+
 //SERVISES BLOCK
 .service {
 	.service_title {
@@ -357,7 +366,66 @@ a {
 		width: 100%;
 	}
 }
+@media (max-width: 992px) {
+	footer {
+		.copyright {
+			.logo {
+				padding: 0px !important;
+				height: 50px !important;
+				width: 100%;
+				margin-bottom: 15px;
+    			order: 3;
+			}
+			.rights {
+				text-align: center;
+			    width: 100%;
+			    line-height: 50px;
+			    padding: 0px !important;
+			}
+		}
+		.page_wrap {
+			nav {
+				width: 100%;
+			    display: flex;
+			    justify-content: center;
+			    a {
+			    	line-height: 50px;
+			    }
+			}
 
+		}
+	}
+}
+@media (max-width: 450px) {
+	footer {
+		.copyright {			
+			.rights {
+				display: flex;
+			    justify-content: center;
+			    flex-wrap: wrap;
+			}			
+		} 
+		.page_wrap {
+			.subscribe {
+				display: flex;
+			    justify-content: center;
+			    flex-wrap: wrap;
+			    input {
+			    	margin-top: 10px;
+			    	margin-left: 0px;
+			    }
+			}
+			nav {
+				flex-wrap: wrap;
+			    a {
+			    	line-height: 50px;
+			    	width: 100%;
+			    	text-align: center;
+			    }
+			}
+		}
+	}
+}
 
 input[type=text],
 input[type=email],
@@ -444,15 +512,20 @@ body{
 			}
 			nav{
 				width: 100%;
-				overflow: hidden;
-				display: none;
+				overflow: hidden;				
+				// height: 0px;				
 				a{
 					width: 100%;
 					text-align: center;
 					line-height: $header_height * .6;
 				}
 			}
-			
+			.header_navigation_closed {
+				height: 0px;
+				-webkit-transition: all .4s cubic-bezier(.4,0,.2,1);
+				-o-transition: all .4s cubic-bezier(.4,0,.2,1);
+				transition: all .4s cubic-bezier(.4,0,.2,1);
+			}
 		}
 	}
 	&.scrolled{
@@ -577,6 +650,7 @@ body{
 			.page_wrap {
 				display: flex;
 				justify-content: space-between;
+				flex-wrap: wrap;
 				.rights {
 					color: darken($lightfont, 30);
 					padding-right: $gap;
