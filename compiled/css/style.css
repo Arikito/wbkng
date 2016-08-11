@@ -185,16 +185,17 @@ a { text-decoration: none; }
 .service .service_image { width: 250px; height: 250px; margin: 0 auto; display: block; margin-bottom: 30px; }
 .service .service_description { width: 80%; margin: 30px auto; }
 .service .service_description .slide { position: relative; margin-bottom: 30px; }
-.service .service_description .slide img { width: 100%; }
+.service .service_description .slide img { width: 100%; max-height: 100%; }
 .service .service_description .slide p { position: absolute; color: #fff; top: 0; background: rgba(0, 0, 0, 0.6); }
 
-.magic_sidebar { position: fixed; right: 0; top: 100px; bottom: 0; width: 100px; }
-.magic_sidebar .nav { padding: 0px; list-style-type: none; }
-.magic_sidebar .nav .sidebar_item { margin-top: 100px; padding: 0px; }
-.magic_sidebar .nav .sidebar_item a { color: #fff; display: block; text-align: center; }
-.magic_sidebar .nav .active { background: #f15f5f; }
+.magic_sidebar { position: fixed; right: 0; top: 0px; bottom: 0; width: 100px; }
+.magic_sidebar .nav { padding: 0px; list-style-type: none; margin-top: 200px; }
+.magic_sidebar .nav .sidebar_item { margin-top: 100px; padding: 0px; background: #fff; }
+.magic_sidebar .nav .sidebar_item a { display: block; text-align: center; line-height: 40px; color: #000; }
+.magic_sidebar .nav .active { background: #bf1111; }
+.magic_sidebar .nav .active a { color: #fff; }
 
-.packages_block { display: flex; justify-content: center; width: 80%; margin: 0 auto; color: #000; margin-top: 60px; }
+.packages_block { display: flex; justify-content: center; width: 80%; margin: 0 auto; color: #000; margin-top: 60px; margin-bottom: 60px; }
 .packages_block .package { width: 25%; text-align: center; height: 300px; }
 .packages_block .package .package_descritpion ul { list-style-type: none; padding: 0px; }
 .packages_block .package_title, .packages_block .package_price { line-height: 50px; font-size: 22px; }

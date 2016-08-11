@@ -234,6 +234,7 @@ a {
 			margin-bottom: 30px;
 			img {
 				width: 100%;
+				max-height: 100%;
 			}
 			p {
 				position: absolute;
@@ -248,24 +249,32 @@ a {
 .magic_sidebar {
 	position: fixed;
 	right: 0;
-	top: 100px;
+	top: 0px;
 	bottom: 0;
-	width: 100px;
+	width: 100px;	
 	.nav {
 		padding: 0px;
 		list-style-type: none;
+		margin-top: 200px;
+
 		.sidebar_item {
 			margin-top: 100px;
 			padding: 0px;
-			a {
-				color: $white;
+			background: $white;
+			a {			
 				display: block;
     			text-align: center;
+    			line-height: 40px;
+    			color: #000;
 			}
 		}
 		.active {
-			background: lighten($accent, 25);
-		}
+			// @extend .accent_button;
+			background: $accent;
+			a {
+				color: $white;				
+			}
+		}		
 	}
 }
 //PACKAGES BLOCK
@@ -275,7 +284,8 @@ a {
 	width: 80%;
 	margin: 0 auto;
 	color: #000;
-	margin-top: 60px;	
+	margin-top: 60px;
+	margin-bottom: 60px;	
 	.package {
 		width: 25%;
 		text-align: center;
