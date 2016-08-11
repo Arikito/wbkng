@@ -6,8 +6,15 @@
 	<title>WebKing Creative Studio</title>
 	<link rel="stylesheet" href="/compiled/css/style.css">
 	<link rel="stylesheet" href="/plugins/bootstrap.css">
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="/plugins/owl.carousel.css">
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="/plugins/owl.theme.css">
+	<link rel="stylesheet" href="/plugins/owl.transitions.css">
 	<script src="/compiled/js/jquery-3.1.0.min.js"></script>
 	<script src="/compiled/js/app.min.js"></script>
+	<!-- Include js plugin -->
+	<script src="/compiled/js/owl.carousel.min.js"></script>
 </head>
 <body>
 	<header>
@@ -19,7 +26,7 @@
 
 			<nav class="header_navigation_js">
 				<!-- <a href="/portfolio">Портфолио</a> -->
-				<a href="http://webking/portfolio.html">Портфолио</a>				
+				<a href="http://webking/portfolio.html">Портфолио</a>
 				<a href="http://webking/services.html">Услуги</a>
 				<a href="/techs">Технологии</a>
 				<a href="/about">О нас</a>
@@ -28,14 +35,16 @@
 	</header>
 	<section class="content">
 		<div class="banner_wrap">
-			<div class="banner_text">
-				<h1>Очень важный текст</h1>
-				<p>Обязательно большим шрифтом</p>
-				<div class="bunner_btn accent_button">А вот и кнопка</div>
-			</div>
-			<div class="banner_img_wrap">
-				<img src="/compiled/img/bg.jpg" alt="banner">
-			</div>
+				<div class="banner_text">
+					<h1>Очень важный текст</h1>
+					<p>Обязательно большим шрифтом</p>
+					<div class="bunner_btn accent_button">А вот и кнопка</div>
+				</div>
+				<div id="owl-banner" class="owl-carousel owl-theme owl_banner">
+					<img src="/compiled/img/bg.jpg" alt="slide">
+					<img src="/compiled/img/mass.jpg" alt="slide">
+					<img src="/compiled/img/test_image.jpg" alt="slide">
+				</div>
 		</div>
 		<div class="projects_wrap">
 			<div class="page_wrap">
@@ -159,24 +168,16 @@
 							<img src="/compiled/img/jquery.svg" class="svg">
 						</div>
 						<div class="col-xs-12 col-md-2 technology">
-							<svg viewBox="226 50 488 147" class="logo">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/compiled/img/logo-2.1.svg#text_1_"></use>
-							</svg>
+							<img src="/compiled/img/php.svg" class="svg">
 						</div>
 						<div class="col-xs-12 col-md-2 technology">
-							<svg viewBox="226 50 488 147" class="logo">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/compiled/img/logo-2.1.svg#text_1_"></use>
-							</svg>
+							<img src="/compiled/img/jquery.svg" class="svg">
 						</div>
 						<div class="col-xs-12 col-md-2 technology">
-							<svg viewBox="226 50 488 147" class="logo">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/compiled/img/logo-2.1.svg#text_1_"></use>
-							</svg>
+							<img src="/compiled/img/php.svg" class="svg">
 						</div>
 						<div class="col-xs-12 col-md-2 technology">
-							<svg viewBox="226 50 488 147" class="logo">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/compiled/img/logo-2.1.svg#text_1_"></use>
-							</svg>
+							<img src="/compiled/img/jquery.svg" class="svg">
 						</div>
 					</div>
 				</div>
@@ -189,26 +190,18 @@
 					<div class="row">
 						<div class="col-xs-12 col-md-3">
 							<div class="point_about">
-								<!-- <p>Пункт 1</p>
-								<img src="/compiled/img/mass.jpg"> -->
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-3">
 							<div class="point_about">
-								<!-- <p>Пункт 2</p>
-								<img src="/compiled/img/test_image.jpg"> -->
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-3">
 							<div class="point_about">
-								<!-- <p>Пункт 3</p>
-								<img src="/compiled/img/mass.jpg"> -->
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-3">
 							<div class="point_about">
-								<!-- <p>Пункт 4</p>
-								<img src="/compiled/img/mass.jpg"> -->
 							</div>
 						</div>
 					</div>
@@ -222,34 +215,26 @@
 					<div class="row">
 						<div class="col-xs-12 col-md-3">
 							<div class="some_item">
-								<!-- <p>Пункт 1</p>
-								<img src="/compiled/img/mass.jpg"> -->
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-3">
 							<div class="some_item">
-								<!-- <p>Пункт 2</p>
-								<img src="/compiled/img/test_image.jpg"> -->
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-3">
 							<div class="some_item">
-								<!-- <p>Пункт 3</p>
-								<img src="/compiled/img/mass.jpg"> -->
 							</div>
 						</div>
 						<div class="col-xs-12 col-md-3">
 							<div class="some_item">
-								<!-- <p>Пункт 4</p>
-								<img src="/compiled/img/mass.jpg"> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="location_wrap">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.868227405213!2d36.33375571592626!3d49.995079927951814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709f454712171%3A0x3b2d17930e9f0fe6!2z0L_RgNC-0YHQv9C10LrRgiDQrtCy0ZbQu9C10LnQvdC40LksIDU00JAsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1470824666205" width="1800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="location_wrap location_wrap_js">
+			<div class="overlay overlay_js"></div>
 		</div>
 	</section>
 	<footer>
