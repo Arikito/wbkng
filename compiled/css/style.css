@@ -149,13 +149,34 @@ a { text-decoration: none; }
 
 .project_image { max-width: 100%; }
 
-.service_title { text-align: center; }
+.service .service_title { text-align: center; font-size: 1.8em; }
+.service .types_of_services { display: flex; }
+.service .order_service { display: flex; justify-content: center; margin-top: 15px; }
+.service .order_service .order_service_title { margin-right: 15px; text-transform: uppercase; }
+.service .service_image { width: 250px; height: 250px; margin: 0 auto; display: block; margin-bottom: 30px; }
+.service .service_description { width: 80%; margin: 30px auto; }
+.service .service_description .slide { position: relative; margin-bottom: 30px; }
+.service .service_description .slide img { width: 100%; }
+.service .service_description .slide p { position: absolute; color: #fff; top: 0; background: rgba(0, 0, 0, 0.6); }
 
-.types_of_services { display: flex; }
+.magic_sidebar { position: fixed; right: 0; top: 100px; bottom: 0; width: 100px; }
+.magic_sidebar .nav { padding: 0px; list-style-type: none; }
+.magic_sidebar .nav .sidebar_item { margin-top: 100px; padding: 0px; }
+.magic_sidebar .nav .sidebar_item a { color: #fff; display: block; text-align: center; }
+.magic_sidebar .nav .active { background: #f15f5f; }
+
+.packages_block { display: flex; justify-content: center; width: 80%; margin: 0 auto; color: #000; margin-top: 60px; }
+.packages_block .package { width: 25%; text-align: center; height: 300px; }
+.packages_block .package .package_descritpion ul { list-style-type: none; padding: 0px; }
+.packages_block .package_title, .packages_block .package_price { line-height: 50px; font-size: 22px; }
+.packages_block .middle_package { transform: scale(1.1); background: #fff; }
+.packages_block .middle_package .package_price { background: #bf1111; color: #fff; }
+.packages_block .basic_package, .packages_block .full_package { background: #eeeeee; }
+.packages_block .basic_package .package_price, .packages_block .full_package .package_price { background: #f15f5f; }
 
 input[type=text], input[type=email], input[type=passwd] { border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; }
 
-body { font-size: 14px; font-family: sans-serif; }
+body { font-size: 14px; font-family: sans-serif; position: relative; background: #2e3034; color: #fff; }
 body header { position: fixed; top: 0; left: 0; right: 0; background: #fff; z-index: 100; }
 body header .logoSite { display: inline-block; height: 120px; padding: 20px; box-sizing: border-box; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .logoSite svg, body header .logoSite img { position: relative; height: 100%; }
