@@ -8,8 +8,9 @@
 	<link rel="stylesheet" href="/plugins/bootstrap.css">
 	<script src="/compiled/js/jquery-3.1.0.min.js"></script>
 	<script src="/compiled/js/app.min.js"></script>
+	<script src="/plugins/bootstrap.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#magic_scroll" data-offset="20">
 	<header>
 		<div class="page_wrap">
 			<a href="/" class="logoSite">
@@ -24,13 +25,14 @@
 		</div>
 	</header>
 	<section class="content">
-		<div class="page_wrap">
+		<div class="page_wrap wide_page">
 			<h1>Услуги</h1>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="service">
+						<div id="developing" class="service">
 							<p class="service_title">Разработка сайтов</p>
+							<img class="service_image" src="/compiled/img/n7.jpg">
 							<div class="types_of_services">
 								<a href="#" class="accent_button">Лендинг</a>
 								<a href="#" class="accent_button">Сайт-визитка</a>
@@ -39,56 +41,340 @@
 								<a href="#" class="accent_button">Корпоративный сайт</a>
 								<a href="#" class="accent_button">Индивидуальное решение</a>
 							</div>
-							<div class="order_service">
-								<a href="#" class="accent_button">Заказать разработку сайта</a>
+							<div class="service_description">
+								<div class="slide">
+									<img src="/compiled/img/earth.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/mass.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/test_image.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/bg.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+							</div>
+							<div class="packages_block">
+								<div class="package basic_package">
+									<div class="package_title">
+										Basic
+									</div>
+									<div class="package_price">
+										1000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>											
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package middle_package">
+									<div class="package_title">
+										Middle
+									</div>
+									<div class="package_price">
+										10000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>											
+										</ul>
+									</div>									
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package full_package">
+									<div class="package_title">
+										Full
+									</div>
+									<div class="package_price">
+										100000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>
+											<li>Support</li>
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-12">
-						<p class="service_title">Продвижение сайтов</p>
-						<div class="types_of_services">
-							<a href="#" class="accent_button">SEO-анализ</a>
-							<a href="#" class="accent_button">Оптимизация сайта</a>
-							<a href="#" class="accent_button">Поисковое продвижение</a>
-							<a href="#" class="accent_button">Контекстная реклама</a>
-						</div>
-						<div class="order_service">
-							<a href="#" class="accent_button">Заказать продвижение сайта</a>
+						<div id="seo" class="service">
+							<p class="service_title">Продвижение сайтов</p>
+							<img class="service_image" src="/compiled/img/n7.jpg">
+							<div class="types_of_services">
+								<a href="#" class="accent_button">SEO-анализ</a>
+								<a href="#" class="accent_button">Оптимизация сайта</a>
+								<a href="#" class="accent_button">Поисковое продвижение</a>
+								<a href="#" class="accent_button">Контекстная реклама</a>
+							</div>
+							<div class="service_description">
+								<div class="slide">
+									<img src="/compiled/img/earth.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/mass.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/test_image.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/bg.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+							</div>
+							<div class="packages_block">
+								<div class="package basic_package">
+									<div class="package_title">
+										Basic
+									</div>
+									<div class="package_price">
+										1000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>											
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package middle_package">
+									<div class="package_title">
+										Middle
+									</div>
+									<div class="package_price">
+										10000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>											
+										</ul>
+									</div>									
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package full_package">
+									<div class="package_title">
+										Full
+									</div>
+									<div class="package_price">
+										100000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>
+											<li>Support</li>
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
+							</div>							
 						</div>
 					</div>
 					<div class="col-xs-12">
-						<p class="service_title">Дизайн</p>
-						<div class="types_of_services">
-							<a href="#" class="accent_button">Разработка логотипа</a>
-							<a href="#" class="accent_button">Создание фирменого стиля</a>
-							<a href="#" class="accent_button">Дизайн полиграфии</a>	
-						</div>
-						<div class="order_service">
-							<a href="#" class="accent_button">Заказать дизайн</a>
+						<div id="design" class="service">
+							<p class="service_title">Дизайн</p>
+							<img class="service_image" src="/compiled/img/n7.jpg">
+							<div class="types_of_services">
+								<a href="#" class="accent_button">Разработка логотипа</a>
+								<a href="#" class="accent_button">Создание фирменого стиля</a>
+								<a href="#" class="accent_button">Дизайн полиграфии</a>	
+							</div>
+							<div class="service_description">
+								<div class="slide">
+									<img src="/compiled/img/earth.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/mass.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/test_image.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/bg.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+							</div>
+							<div class="packages_block">
+								<div class="package basic_package">
+									<div class="package_title">
+										Basic
+									</div>
+									<div class="package_price">
+										1000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>											
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package middle_package">
+									<div class="package_title">
+										Middle
+									</div>
+									<div class="package_price">
+										10000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>											
+										</ul>
+									</div>									
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package full_package">
+									<div class="package_title">
+										Full
+									</div>
+									<div class="package_price">
+										100000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>
+											<li>Support</li>
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
+							</div>							
 						</div>
 					</div>
 					<div class="col-xs-12">
-						<p class="service_title">Поддержка</p>
-						<div class="types_of_services">
-							<a href="#" class="accent_button">Обучение пользования сайтом</a>
-							<a href="#" class="accent_button">Послепроэктная разработка</a>
-							<a href="#" class="accent_button">Техническая поддержка</a>	
-						</div>
-						<div class="order_service">
-							<a href="#" class="accent_button">Сделать заказ</a>
+						<div id="support" class="service">
+							<p class="service_title">Поддержка</p>
+							<img class="service_image" src="/compiled/img/n7.jpg">
+							<div class="types_of_services">
+								<a href="#" class="accent_button">Обучение пользования сайтом</a>
+								<a href="#" class="accent_button">Послепроэктная разработка</a>
+								<a href="#" class="accent_button">Техническая поддержка</a>	
+							</div>
+							<div class="service_description">
+								<div class="slide">
+									<img src="/compiled/img/earth.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/mass.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/test_image.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+								<div class="slide">
+									<img src="/compiled/img/bg.jpg">
+									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+								</div>
+							</div>
+							<div class="packages_block">
+								<div class="package basic_package">
+									<div class="package_title">
+										Basic
+									</div>
+									<div class="package_price">
+										1000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>											
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package middle_package">
+									<div class="package_title">
+										Middle
+									</div>
+									<div class="package_price">
+										10000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>											
+										</ul>
+									</div>									
+									<button class="accent_button">Купить</button>
+								</div>
+								<div class="package full_package">
+									<div class="package_title">
+										Full
+									</div>
+									<div class="package_price">
+										100000$
+									</div>
+									<div class="package_descritpion">
+										<ul>
+											<li>Design</li>
+											<li>Coding</li>
+											<li>Hosting</li>
+											<li>SEO</li>
+											<li>Support</li>
+										</ul>
+									</div>
+									<button class="accent_button">Купить</button>
+								</div>
+							</div>							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div id="magic_scroll" class="magic_sidebar">
+			<ul class="nav">
+				<li class="sidebar_item active"><a href="#developing">Девелоп</a></li>
+				<li class="sidebar_item"><a href="#seo">СЕО</a></li>
+				<li class="sidebar_item"><a href="#design">Дезигн</a></li>
+				<li class="sidebar_item"><a href="#support">Сапорт</a></li>
+			</ul>			
+		</div>
 	</section>
 	<footer>
-		<div class="page_wrap">
-			<!-- <form method="POST" action="http://l5.dev" accept-charset="UTF-8"><input name="_token" type="hidden" value="rnktgnOIwG81GuG7qW5Hl6jP6JHOUrucNEty5BaR">
-				<label for="email">Хочу получать письма о специальных пердлодениях</label>
-				<input name="email" type="email" id="email">
-				<input type="submit" value="Подписаться">
-			</form> -->
+		<div class="page_wrap">			
 			<form action="/" class="subscribe" method="POST">
 				<label for="subscribe_email">Хочу получать письма о специальных предложениях</label>
 				<input type="email" id="subscribe_email" required="" placeholder="Введите свой email">

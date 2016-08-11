@@ -232,12 +232,131 @@ a {
 .project_image {
 	max-width: 100%;
 }
-.service_title {
-	text-align: center;
+//SERVISES BLOCK
+.service {
+	.service_title {
+		text-align: center;
+		font-size: 1.8em;
+	}
+	.types_of_services {
+		display: flex;
+	}
+	.order_service {
+		display: flex;
+		justify-content: center;
+		margin-top: 15px;
+		.order_service_title {
+			margin-right: 15px;
+			text-transform: uppercase;
+		}
+	}
+	.service_image {
+		width: 250px;
+		height: 250px;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 30px;
+	}
+	.service_description {
+		// width: 80%;
+		margin: 30px auto;
+		.slide {
+			position: relative;
+			margin-bottom: 30px;
+			img {
+				width: 100%;
+				max-height: 100%;
+			}
+			p {
+				position: absolute;
+				color: $white;
+				top: 0;
+				background: rgba(0,0,0,0.6);
+			}
+		}
+	}
 }
-.types_of_services {
+//MAGICK SIDEBAR WHITH FANTASTIC SCROLL
+.magic_sidebar {
+	position: fixed;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	width: 100px;
+	.nav {
+		padding: 0px;
+		list-style-type: none;
+		margin-top: 200px;
+
+		.sidebar_item {
+			margin-top: 100px;
+			padding: 0px;
+			background: $white;
+			a {
+				display: block;
+				text-align: center;
+				line-height: 40px;
+				color: #000;
+			}
+		}
+		.active {
+			// @extend .accent_button;
+			background: $accent;
+			a {
+				color: $white;
+			}
+		}		
+	}
+}
+//PACKAGES BLOCK
+.packages_block {
 	display: flex;
+	justify-content: center;
+	// width: 80%;
+	margin: 0 auto;
+	color: #000;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	.package {
+		width: 25%;
+		text-align: center;
+		height: 300px;
+		width: 200px;
+		.package_descritpion {
+			ul {
+				list-style-type: none;
+				padding: 0px;
+			}
+		}
+	}
+	.package_title, 
+	.package_price {
+		line-height: 50px;
+		font-size: 22px;
+	}
+	.middle_package {
+		transform: scale(1.1);
+		background: $white;
+		.package_price {
+			background: $accent;
+			color: $white;
+		}
+	}
+	.basic_package, 
+	.full_package {
+		background: #eeeeee;
+		.package_price {
+			background: lighten($accent, 25);
+		}
+	}
 }
+
+.location_wrap {
+	iframe {
+		width: 100%;
+	}
+}
+
 
 input[type=text],
 input[type=email],
@@ -254,9 +373,13 @@ input[type=passwd]{
 	overflow: auto;
 	position: relative;
 }
+
 body{
 	font-size: 14px;
 	font-family: $base-font-family;
+	position: relative;
+	background: lighten($spacegray, 4);
+	color: $white;	
 	header{
 		position: fixed;
 		top: 0;
@@ -363,6 +486,10 @@ body{
 				margin-right: 5px;
 			}
 		}
+	}
+	.wide_page {
+		max-width: 100%;
+		margin: 0px;
 	}
 	.content{
 		padding-top: $header_height;
