@@ -178,7 +178,7 @@ a { text-decoration: none; }
 
 .studio_location { width: 100%; display: block; margin: 0 auto; }
 
-.show_more { margin-bottom: 15px; }
+.show_more { margin-top: 30px; margin-bottom: 30px; }
 .show_more button { margin: 0 auto; display: block; }
 
 .apple_images { display: flex; }
@@ -216,7 +216,7 @@ a { text-decoration: none; }
 
 .location_wrap iframe { width: 100%; }
 
-@media (max-width: 992px) { footer .copyright .logo { padding: 0px !important; height: 50px !important; width: 100%; margin-bottom: 15px; order: 3; }
+@media (max-width: 1020px) { footer .copyright .logo { padding: 0px !important; height: 50px !important; width: 100%; margin-bottom: 15px; order: 3; }
   footer .copyright .rights { text-align: center; width: 100%; line-height: 50px; padding: 0px !important; }
   footer .page_wrap nav { width: 100%; display: flex; justify-content: center; }
   footer .page_wrap nav a { line-height: 50px; } }
@@ -260,17 +260,6 @@ body footer .copyright img { max-width: 150px; float: left; }
 body footer .copyright .logo { height: 80px; display: inline-block; float: left; padding: 0 20px; }
 body footer .copyright .logo #lion { display: none; }
 body footer .copyright .logo #text_1_ * { fill: #414141 !important; }
-body footer .copyright .page_wrap { display: flex; justify-content: space-between; }
-body footer .copyright .page_wrap .rights { color: #747474; padding-right: 20px; }
-body footer .page_wrap nav a { display: inline-block; padding: 0 20px; }
-body footer .page_wrap nav a:hover { color: #fff; }
-body footer .subscribe { padding: 20px 0; text-align: center; font-size: 1.143em; }
-body footer .subscribe input { margin-left: 20px; }
-body footer { background-color: #2e3034; color: #c0c0c0; line-height: 2em; }
-body footer a { color: #c0c0c0; text-decoration: none; }
-body footer .copyright { line-height: 80px; background-color: #242629; }
-body footer .copyright img { max-width: 150px; float: left; }
-body footer .copyright .logo { height: 80px; display: inline-block; float: left; padding: 20px; fill: #414141; }
 body footer .copyright .page_wrap { display: flex; justify-content: space-between; flex-wrap: wrap; }
 body footer .copyright .page_wrap .rights { color: #747474; padding-right: 20px; }
 body footer .page_wrap nav a { display: inline-block; padding: 0 20px; }

@@ -213,7 +213,8 @@ a {
 	margin: 0 auto;
 }
 .show_more {
-	margin-bottom: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	button {
 		margin: 0 auto;
 		display: block;
@@ -308,8 +309,7 @@ a {
 				color: #000;
 			}
 		}
-		.active {
-			// @extend .accent_button;
+		.active {			
 			background: $accent;
 			border: 1px solid $white;
 			a {
@@ -321,8 +321,7 @@ a {
 //PACKAGES BLOCK
 .packages_block {
 	display: flex;
-	justify-content: center;
-	// width: 80%;
+	justify-content: center;	
 	margin: 0 auto;
 	color: #000;
 	margin-top: 60px;
@@ -360,13 +359,12 @@ a {
 		}
 	}
 }
-
 .location_wrap {
 	iframe {
 		width: 100%;
 	}
 }
-@media (max-width: 992px) {
+@media (max-width: 1020px) {
 	footer {
 		.copyright {
 			.logo {
@@ -392,7 +390,6 @@ a {
 			    	line-height: 50px;
 			    }
 			}
-
 		}
 	}
 }
@@ -599,57 +596,6 @@ body{
 			.page_wrap {
 				display: flex;
 				justify-content: space-between;
-				.rights {
-					color: darken($lightfont, 30);
-					padding-right: $gap;
-				}
-			}
-		}
-		.page_wrap{
-			nav{
-				a{
-					display: inline-block;
-					padding: 0 $gap;
-					&:hover{
-						color: $white;
-					}
-				}
-			}
-		}
-		.subscribe{
-			padding: $gap 0;
-			text-align: center;
-			font-size: 1.143em;
-			input{
-				margin-left: $gap;
-			}
-		}
-	}
-	footer{
-		background-color: lighten($spacegray, 4);
-		color: $lightfont;
-		line-height: 2em;
-		a{
-			color: $lightfont;
-			text-decoration: none;
-		}
-		.copyright{
-			line-height: $gap * 4;
-			background-color: $spacegray;
-			img{
-				max-width: 150px;
-				float: left;
-			}
-			.logo{
-				height: 80px;
-				display: inline-block;
-				float: left;
-				padding: $gap;
-				fill: darken($lightfont, 50);
-			}
-			.page_wrap {
-				display: flex;
-				justify-content: space-between;
 				flex-wrap: wrap;
 				.rights {
 					color: darken($lightfont, 30);
@@ -676,5 +622,5 @@ body{
 				margin-left: $gap;
 			}
 		}
-	}
+	}	
 }
