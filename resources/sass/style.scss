@@ -1,15 +1,7 @@
+@import 'variables';
 @import 'reset';
 @import 'normalize';
-
-$gap:				20px;
-$page_width:		1300px;
-$header_height:		120px;
-
-// colors
-$accent:			#bf1111;
-$spacegray:			#242629;
-$white:				#fff;
-$lightfont:			#c0c0c0;
+@import 'grid';
 
 @mixin animate($duration){
 	-webkit-transition: all $duration cubic-bezier(.4,0,.2,1);
