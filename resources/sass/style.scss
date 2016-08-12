@@ -166,7 +166,6 @@ a {
 }
 .service{
 	min-height: 300px;
-	// height: 350px;
 	background: transparent;
 	padding: 1em;
 	.service_icon{
@@ -214,8 +213,8 @@ a {
 	margin: 0 auto;
 }
 .show_more {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: $gap;
+	margin-bottom: $gap;
 	button {
 		margin: 0 auto;
 		display: block;
@@ -248,29 +247,18 @@ a {
 	}
 	.types_of_services {
 		display: flex;
-	}
-	.order_service {
-		display: flex;
-		justify-content: center;
-		margin-top: 15px;
-		.order_service_title {
-			margin-right: 15px;
-			text-transform: uppercase;
-		}
-	}
+	}	
 	.service_image {
 		width: 250px;
 		height: 250px;
 		margin: 0 auto;
 		display: block;
-		margin-bottom: 30px;
+		margin-bottom: $gap;
 	}
-	.service_description {
-		// width: 80%;
-		margin: 30px auto;
+	.service_description {margin: $gap auto;
 		.slide {
 			position: relative;
-			margin-bottom: 30px;
+			margin-bottom: $gap;
 			img {
 				width: 100%;
 				max-height: 100%;
@@ -325,8 +313,8 @@ a {
 	justify-content: center;	
 	margin: 0 auto;
 	color: #000;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: $gap * 3;
+	margin-bottom: $gap * 3;
 	.package {
 		width: 25%;
 		text-align: center;
@@ -372,7 +360,7 @@ a {
 				padding: 0px !important;
 				height: 50px !important;
 				width: 100%;
-				margin-bottom: 15px;
+				margin-bottom: $gap / 2;
     			order: 3;
 			}
 			.rights {
@@ -409,7 +397,7 @@ a {
 			    justify-content: center;
 			    flex-wrap: wrap;
 			    input {
-			    	margin-top: 10px;
+			    	margin-top: $gap / 2;
 			    	margin-left: 0px;
 			    }
 			}
