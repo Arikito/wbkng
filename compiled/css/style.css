@@ -143,7 +143,7 @@ a { text-decoration: none; }
 .banner_wrap .banner_info h1 { font-size: 4em; }
 .banner_wrap .banner_info .bunner_btn { width: 200px; margin: 3em auto; border: 1px solid #fff; }
 
-.projects_wrap, .technologies_wrap, .something_wrap { background-color: #fff; padding: 1em 0; }
+.projects_wrap, .technologies_wrap, .something_wrap { background-color: #fff; padding: 1em 0; color: #000; }
 
 .something_wrap { height: 300px; }
 
