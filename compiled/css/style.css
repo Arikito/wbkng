@@ -136,12 +136,14 @@ a { text-decoration: none; }
 .banner_wrap .owl-carousel .owl-wrapper-outer { height: calc(100vh - 120px); }
 .banner_wrap .owl-carousel .owl-item { width: 100vw; }
 .banner_wrap .owl-carousel .owl-item img { -webkit-filter: brightness(0.3); filter: brightness(0.3); }
-.banner_wrap .owl-carousel .owl-controls { position: absolute; bottom: 1em; left: calc(50% - 45px); }
+.banner_wrap .owl-carousel .owl-controls { position: absolute; bottom: 1em; left: calc(50% - 39px); }
 .banner_wrap .owl-carousel .owl-controls .owl-page span { background: #fff; opacity: 0.5; }
 .banner_wrap .owl-carousel .owl-controls .owl-page.active span, .banner_wrap .owl-carousel .owl-controls .owl-page span:hover { background: #fff; opacity: 0.9; }
 .banner_wrap .banner_info { position: absolute; z-index: 1; top: 20%; left: calc(50% - 300px); text-align: center; padding: 1em; }
 .banner_wrap .banner_info h1 { font-size: 4em; }
 .banner_wrap .banner_info .bunner_btn { width: 200px; margin: 3em auto; border: 1px solid #fff; }
+@media all and (max-width: 480px) { .banner_wrap .banner_info { top: 10%; left: 0; }
+  .banner_wrap .banner_info h1 { font-size: 3em; } }
 
 .projects_wrap, .technologies_wrap, .something_wrap { background-color: #fff; padding: 1em 0; color: #000; }
 
@@ -251,6 +253,8 @@ body .page_wrap .tags_block, body .page_wrap .types_of_services { display: flex;
 body .page_wrap .tags_block p, body .page_wrap .tags_block a, body .page_wrap .types_of_services p, body .page_wrap .types_of_services a { margin-left: 5px; margin-right: 5px; }
 body .wide_page { max-width: 100%; margin: 0px; }
 body .content { padding-top: 120px; min-height: 100vh; }
+@media screen and (max-width: 992px) { body .content { padding-top: 72px; }
+  body .content .banner_wrap .owl-carousel .owl-wrapper-outer { height: calc(100vh - 72px); } }
 body footer { background-color: #2e3034; color: #c0c0c0; line-height: 2em; }
 body footer a { color: #c0c0c0; text-decoration: none; }
 body footer .copyright { line-height: 80px; background-color: #242629; }
