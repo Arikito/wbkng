@@ -449,12 +449,13 @@ a { text-decoration: none; }
 .project img, .service img, .technology img, .point_about img { display: block; max-height: 250px; }
 .project p, .service p, .technology p, .point_about p { text-align: center; }
 
-.service { min-height: 300px; background: transparent; padding: 1em; }
-.service .service_icon { width: 100px; height: 100px; margin: 0 auto; border: 2px solid #bf1111; border-radius: 50%; }
-.service .service_icon .sub_service_icon { width: 60px; height: 60px; margin: 20% auto; background-color: #bf1111; border-radius: 50%; }
-.service .service_descr { text-align: justify; }
+.services_wrap .service { min-height: 330px; background: transparent; padding: 1em; }
+.services_wrap .service .service_icon { width: 100px; height: 100px; margin: 0 auto; border: 2px solid #bf1111; border-radius: 50%; }
+.services_wrap .service .service_icon .sub_service_icon { width: 60px; height: 60px; margin: 20% auto; background-color: #bf1111; border-radius: 50%; }
+.services_wrap .service .service_descr { text-align: justify; }
 
-.technology img { display: block; margin: 0 auto; }
+.technologies_wrap .owl_techn .technology { padding: .5em; background: transparent; }
+.technologies_wrap .owl_techn .technology img { display: block; margin: 0 auto; }
 
 .point_about { margin: 1em auto; width: 200px; height: 200px; border-radius: 50%; background-color: #bf1111; }
 
@@ -517,10 +518,27 @@ body header .logoSite { display: inline-block; height: 120px; padding: 20px; box
 body header .logoSite svg, body header .logoSite img { position: relative; height: 100%; }
 body header .menu { display: none; line-height: 120px; float: right; padding: 0 20px; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .menu img { vertical-align: middle; }
-body header nav { display: inline-block; float: right; }
-body header nav a { font-size: 1.2em; color: #888; line-height: 120px; text-decoration: none; text-transform: uppercase; padding: 0 20px; display: inline-block; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-body header nav a:hover { color: #444; }
-body header nav a:hover, body header nav a.active { box-shadow: inset 0 5px 0 #bf1111; }
+body header nav { display: inline-block; float: right; padding: 30px; }
+body header nav ul, body header nav li { padding: 0; margin: 0; list-style: none; }
+body header nav li { display: inline-block; position: relative; margin: 0 .2em; text-align: center; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body header nav li .show a { text-decoration: none; text-transform: uppercase; cursor: pointer; line-height: 60px; padding: 0 20px; display: inline-block; width: 100%; font-size: 1.2em; color: #888; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body header nav li .show a:after, body header nav li .show a:before { position: absolute; background: #bf1111; height: 1px; width: 0; content: " "; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body header nav li .show a:first-child:before { top: 0; left: 0; }
+body header nav li .show a:first-child:after { bottom: 0; right: 0; }
+body header nav li .show a:last-child { padding: 0; display: inline; }
+body header nav li .show a:last-child:after, body header nav li .show a:last-child:before { background: #bf1111; }
+body header nav li .show a:last-child:before { bottom: 0; left: 0; }
+body header nav li .show a:last-child:after { top: 0; right: 0; }
+body header nav li .show a:hover { color: #444; }
+body header nav li .show:before { bottom: 0; right: 0; }
+body header nav li .show:after { top: 0; left: 0; }
+body header nav li:before { top: 0; right: 0; }
+body header nav li:after { bottom: 0; left: 0; }
+body header nav li .show:after, body header nav li .show:before, body header nav li:after, body header nav li:before { content: " "; position: absolute; background: #bf1111; height: 0; width: 1px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body header nav li:hover a:after, body header nav li:hover a:before { width: 1.5em; }
+body header nav li .show:hover:after, body header nav li .show:hover:before, body header nav li:hover:after, body header nav li:hover:before { height: 1.5em; }
+body header nav li.active a:after, body header nav li.active a:before { width: 1.5em; }
+body header nav li.active .show:before, body header nav li.active .show:after, body header nav li.active:after, body header nav li.active:before { height: 1.5em; }
 @media screen and (max-width: 992px) { body header .logoSite { height: 72px; padding: 10px; }
   body header .menu { display: block; line-height: 72px; }
   body header nav { width: 100%; overflow: hidden; }

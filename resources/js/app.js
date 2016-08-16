@@ -15,8 +15,15 @@ $(function(){
 		transitionStyle: "fade"
 	});
 	$("#owl-techn").owlCarousel({
-		// items: 4,
+		items: 6,
+		itemsDesktop: [1000,5], //5 items between 1000px and 901px
+		itemsDesktopSmall: [900,3], // betweem 900px and 601px
+		itemsTablet: [600,2], //2 items between 600 and 0
+		itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+		singleItem: false,
+		pagination: false,
 		autoPlay: 5000
+		// transitionStyle: "fade"
 	});	
 	$('.menu_toggle_js').on('click', function(){
 		// $('.header_navigation_js').stop(true, true).slideToggle();		
