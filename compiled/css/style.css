@@ -463,6 +463,7 @@ body .content .subsection { padding: 1em 0; }
 body .content .page_item { display: block; background: #fff; position: relative; overflow: hidden; }
 body .content .page_item img { display: block; max-height: 250px; }
 body .content .page_item p { text-align: center; }
+body .content .page_item .title { font-size: 1.4em; text-align: center; }
 body .content .page_item .project_title { position: absolute; margin: 0; right: 0; left: 0; top: calc(100% - 4em); bottom: 0; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; font-size: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body .content .page_item .project_title p { opacity: 1; font-size: 16px; }
 body .content .page_item .project_title p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
@@ -480,12 +481,19 @@ body .content .banner_wrap .banner_info .bunner_btn { width: 200px; margin: 3em 
 @media all and (max-width: 480px) { body .content .banner_wrap .banner_info { top: 10%; left: 0; }
   body .content .banner_wrap .banner_info h1 { font-size: 3em; } }
 body .content .services_wrap .page_item { min-height: 330px; background: transparent; padding: 1em; }
-body .content .services_wrap .page_item .service_icon { width: 100px; height: 100px; margin: 0 auto; border: 2px solid #bf1111; border-radius: 50%; }
+body .content .services_wrap .page_item .service_icon { width: 100px; height: 100px; margin: 0 auto; border-radius: 50%; }
 body .content .services_wrap .page_item .service_icon .sub_service_icon { width: 60px; height: 60px; margin: 20% auto; background-color: #bf1111; border-radius: 50%; }
+body .content .services_wrap .page_item .service_icon img { width: 95%; }
 body .content .services_wrap .page_item .service_descr { text-align: justify; }
+body .content .services_wrap .page_item ul { padding: 0 6em; }
+body .content .services_wrap .page_item ul a { color: #fff; }
+body .content .services_wrap .page_item ul a li { list-style: none; line-height: 1.6em; font-size: 1.2em; }
+body .content .services_wrap .page_item ul a:hover { color: #bf1111; }
 body .content .technologies_wrap .owl_techn .page_item { padding: .5em; background: transparent; }
 body .content .technologies_wrap .owl_techn .page_item img { display: block; margin: 0 auto; }
-body .content .about_studio_wrap .page_item { margin: 1em auto; width: 200px; height: 200px; border-radius: 50%; background-color: #bf1111; }
+body .content .about_studio_wrap .page_item { margin: 1em auto; text-align: center; background-color: #2e3034; }
+body .content .about_studio_wrap .page_item p { max-width: 250px; text-align: justify; margin: 1em auto; }
+body .content .about_studio_wrap .page_item .title { text-align: center; }
 body .content .something_wrap { height: 300px; }
 body .content .location_wrap .overlay { background: transparent; position: relative; width: 100%; height: 450px; top: 450px; margin-top: -450px; }
 body .content .location_wrap .studio_location { width: 100%; display: block; margin: 0 auto; }

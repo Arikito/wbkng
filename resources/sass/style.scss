@@ -301,6 +301,10 @@ body{
 			p{
 				text-align: center;
 			}
+			.title{
+				font-size: 1.4em;
+				text-align: center;
+			}
 			.project_title {
 				position: absolute;
 				margin: 0;
@@ -385,7 +389,6 @@ body{
 				}
 			}
 		}
-
 		.services_wrap{
 			.page_item{
 				min-height: 330px;
@@ -395,7 +398,7 @@ body{
 					width: 100px;
 					height: 100px;
 					margin: 0 auto;
-					border: 2px solid $accent;
+					// border: 2px solid $accent;
 					border-radius: 50%;
 					.sub_service_icon{
 						width: 60px;
@@ -404,9 +407,26 @@ body{
 						background-color: $accent;
 						border-radius: 50%;
 					}
+					img{
+						width: 95%;
+					}
 				}
 				.service_descr{
 					text-align: justify;
+				}
+				ul{
+					padding: 0 6em;
+					a{
+						color: $white;
+						li{
+							list-style: none;
+							line-height: 1.6em;
+							font-size: 1.2em;
+						}
+						&:hover{
+							color: $accent;
+						}
+					}
 				}
 			}
 		}
@@ -425,10 +445,16 @@ body{
 		.about_studio_wrap{
 			.page_item{
 				margin: 1em auto;
-				width: 200px;
-				height: 200px;
-				border-radius: 50%;
-				background-color: $accent;
+				text-align: center;
+				background-color: lighten($spacegray, 4);
+				p{
+					max-width: 250px;
+					text-align: justify;
+					margin: 1em auto;
+				}
+				.title{
+					text-align: center;
+				}
 			}
 		}
 		.something_wrap{
