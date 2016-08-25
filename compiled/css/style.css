@@ -424,7 +424,7 @@ body header .logoSite { display: inline-block; height: 120px; padding: 20px; box
 body header .logoSite svg, body header .logoSite img { position: relative; height: 100%; }
 body header .menu { display: none; line-height: 120px; float: right; padding: 0 20px; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .menu img { vertical-align: middle; }
-body header nav { display: inline-block; float: right; padding: 30px; }
+body header nav { display: inline-block; float: right; padding: 30px; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header nav ul, body header nav li { padding: 0; margin: 0; list-style: none; }
 body header nav li { display: inline-block; position: relative; margin: 0 .2em; text-align: center; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body header nav li .show a { text-decoration: none; text-transform: uppercase; cursor: pointer; line-height: 60px; padding: 0 20px; display: inline-block; width: 100%; font-size: 1.2em; color: #888; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -452,7 +452,7 @@ body header nav li.active .show:before, body header nav li.active .show:after, b
   body header .header_navigation_closed { height: 0px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); } }
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
-body.scrolled header nav a { line-height: 72px; }
+body.scrolled header nav { padding: 6px; }
 body .page_wrap { max-width: 1300px; margin: 0 auto; overflow: auto; position: relative; }
 body .page_wrap h1 { text-align: center; }
 body .page_wrap .tags_block, body .page_wrap .types_of_services { display: flex; justify-content: center; }
