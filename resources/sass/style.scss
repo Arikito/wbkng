@@ -474,9 +474,18 @@ body{
 				display: block;
 				margin: 0 auto;
 			}
-		}
-		
+		}		
 	}
+	.content.portfolio_page{
+		.image.page_item{
+			img{
+				height: 100%;
+				width: 100%;
+				max-height: none;
+			}
+		}
+	}
+
 	@media screen and (max-width: 992px) {
 		.content{
 			padding-top: 72px;
