@@ -6,15 +6,22 @@
 	<title>WebKing Creative Studio</title>
 	<link rel="stylesheet" href="/compiled/css/style.css">
 	<link rel="stylesheet" href="/plugins/bootstrap.css">
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="/plugins/owl.carousel.css">
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="/plugins/owl.theme.css">
+	<link rel="stylesheet" href="/plugins/owl.transitions.css">
 	<script src="/compiled/js/jquery-3.1.0.min.js"></script>
 	<script src="/compiled/js/app.min.js"></script>
+	<!-- Include js plugin -->
+	<script src="/compiled/js/owl.carousel.min.js"></script>
 	<script src="/plugins/bootstrap.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#magic_scroll" data-offset="20">
 	<header>
 		<div class="page_wrap">
 			<a href="/" class="logoSite">
-				<img src="/compiled/img/logo-2.1.svg">
+				<img src="/compiled/img/logo-2.1.svg" class="svg">
 			</a>
 			<nav class="header_navigation_closed header_navigation_js">
 				<ul>
@@ -31,10 +38,14 @@
 			<h1>Услуги</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
+					<!-- <div class="col-xs-12"> -->
 						<div id="developing" class="service">
 							<p class="service_title">Разработка сайтов</p>
-							<img class="service_image" src="/compiled/img/n7.jpg">
+							<!-- <img class="service_image" src="/compiled/img/n7.jpg"> -->
+							<div class="main_text">
+								Сегодня сайт представляет собой некую визитную карточку бизнеса в сети. Он рекламирует ваши услуги или товары миллионной аудитории, работая без перерыва и выходных.
+								Создание сайтов на заказ в WebKing– это профессиональная и быстрая работа по изготовлению сайтов любой сложности. Мы используем только новейшие технологии создания интернет-ресурсов, а также гарантируем качественную и своевременную техподдержку, стильный и эксклюзивный внешний вид, и его высокую производительность. Продуманная разработка сайта под ключ – это первая и самая важная инвестиция в ваш бизнес.
+							</div>
 							<div class="types_of_services">
 								<a href="#" class="accent_button">Лендинг</a>
 								<a href="#" class="accent_button">Сайт-визитка</a>
@@ -45,10 +56,32 @@
 							</div>
 							<div class="service_description">
 								<div class="slide">
-									<img src="/compiled/img/earth.jpg">
-									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
+									<!-- <img src="/compiled/img/earth.jpg"> -->
+									<div class="slide_text container">
+										<div class="row">
+											<div class="col-md-6 col-sm-12">
+												<p>LANDING PAGE решает следующие задачи</p>
+												<ul>
+													<li>Сайт превращает посетителей в клиентов</li>
+													<li>Стимуляция и рост продаж</li>
+													<li>Создание своего бренда</li>
+													<li>Получение обратной связи от клиентов</li>
+													<li>Создание доверительного отношения</li>
+													<li>Обеспечение конкурентоспособности</li>
+													<li>Легкость в поиске нужной информации</li>
+												</ul>
+											</div>
+											<div class="col-md-6 col-sm-12">
+												<p>НАШЕ ПРЕИМУЩЕСТВО</p>
+												<p>Если вы планируете достичь успеха в бизнесе, не достаточно иметь просто хороший интернет сайт, надо иметь лучший! Наша команда экспертов позаботиться о том, чтобы ваш бизнес в интернете был презентован в сети на наивысшем мировом уровне. Особое внимание при проектировании бизнес страничек, мы уделяем индивидуальному дизайну и удобству использования.</p>
+												<p>Каждый бизнес сайт, созданный нашей командой - это скрупулезно подготовленный и максимально отображающий лицо фирмы – интернет проект. Простые по форме, и в тоже время необычно сконструированные бизнес сайты, это современный маркетинговый механизм, который помогает в достижении поставленных целей: продажи, развитие и узнаваемость бренда.</p>
+												<div class="btn_wrap"><a class="no_accent_button" href="#">от $100</a>
+												<a class="accent_button" href="#">Заказать</a></div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="slide">
+								<!-- <div class="slide">
 									<img src="/compiled/img/mass.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
 								</div>
@@ -59,7 +92,7 @@
 								<div class="slide">
 									<img src="/compiled/img/bg.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
-								</div>
+								</div> -->
 							</div>
 							<div class="packages_block">
 								<div class="package basic_package">
@@ -115,7 +148,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					<!-- </div> -->
 					<div class="col-xs-12">
 						<div id="seo" class="service">
 							<p class="service_title">Продвижение сайтов</p>
@@ -131,7 +164,7 @@
 									<img src="/compiled/img/earth.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
 								</div>
-								<div class="slide">
+							<!-- 	<div class="slide">
 									<img src="/compiled/img/mass.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
 								</div>
@@ -142,7 +175,7 @@
 								<div class="slide">
 									<img src="/compiled/img/bg.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
-								</div>
+								</div> -->
 							</div>
 							<div class="packages_block">
 								<div class="package basic_package">
@@ -213,7 +246,7 @@
 									<img src="/compiled/img/earth.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
 								</div>
-								<div class="slide">
+								<!-- <div class="slide">
 									<img src="/compiled/img/mass.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
 								</div>
@@ -224,7 +257,7 @@
 								<div class="slide">
 									<img src="/compiled/img/bg.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
-								</div>
+								</div> -->
 							</div>
 							<div class="packages_block">
 								<div class="package basic_package">
@@ -295,7 +328,7 @@
 									<img src="/compiled/img/earth.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
 								</div>
-								<div class="slide">
+								<!-- <div class="slide">
 									<img src="/compiled/img/mass.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
 								</div>
@@ -306,7 +339,7 @@
 								<div class="slide">
 									<img src="/compiled/img/bg.jpg">
 									<p>Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде. Текст про то шо проиходит на слайде.</p>
-								</div>
+								</div> -->
 							</div>
 							<div class="packages_block">
 								<div class="package basic_package">
@@ -368,10 +401,18 @@
 		</div>
 		<div id="magic_scroll" class="magic_sidebar">
 			<ul class="nav">
-				<li class="sidebar_item active"><a href="#developing">Девелоп</a></li>
-				<li class="sidebar_item"><a href="#seo">СЕО</a></li>
-				<li class="sidebar_item"><a href="#design">Дезигн</a></li>
-				<li class="sidebar_item"><a href="#support">Сапорт</a></li>
+				<li class="sidebar_item active"><a href="#developing">
+					<img class="svg_img svg" src="compiled/img/developing.svg" alt="developing">
+				</a></li>
+				<li class="sidebar_item"><a href="#seo">
+					<img class="svg_img svg" src="compiled/img/seo.png" alt="seo">
+				</a></li>
+				<li class="sidebar_item"><a href="#design">
+					<img class="svg_img svg" src="compiled/img/web_design_icon.svg" alt="web design">
+				</a></li>
+				<li class="sidebar_item"><a href="#support">
+					<img class="svg_img svg" src="compiled/img/support.svg" class="svg" alt="support">
+				</a></li>
 			</ul>			
 		</div>
 	</section>
