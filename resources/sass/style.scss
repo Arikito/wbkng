@@ -237,7 +237,12 @@ body{
 			}
 		}
 
-		@media screen and (max-width: 992px) {
+		//HEADER MOBILE
+		.header_navigation.open {
+			@include animate(.4s);
+			height: 100px;
+		}
+		@media screen and (max-width: 992px){
 			.logoSite{
 				height: $header_height * .6;
 				padding: $gap / 2;
@@ -245,20 +250,40 @@ body{
 			.menu{
 				display: block;
 				line-height: $header_height * .6;
+				cursor: pointer;
 			}
 			nav{
 				width: 100%;
 				overflow: hidden;
+				padding: 0;
 				// height: 0px;
-				a{
+				ul{
 					width: 100%;
 					text-align: center;
 					line-height: $header_height * .6;
 				}
 			}
-			.header_navigation_closed {
+			.header_navigation.closed {
 				height: 0px;
 				@include animate(.4s);
+			}
+		}
+		@media screen and (max-width: 570px){
+			nav{
+				ul{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					li{
+						width: 160px;
+						margin-bottom: 10px;
+						text-align: center;
+						line-height: $header_height * .6;
+					}
+				}
+			}
+			.header_navigation.open {
+				height: 340px;
 			}
 		}
 	}
@@ -657,12 +682,6 @@ body{
 .project_image {
 	max-width: 100%;
 }
-//HEADER MOBILE
-.header_navigation_open {
-	height: 290px;
-	// display: block;
-	@include animate(.4s);
-}
 //PORTFOLIO BLOCK
 .project_block{
 	background: $white;
@@ -684,7 +703,8 @@ body{
 		display: block;
 		margin-bottom: $gap;
 	}
-	.service_description {margin: $gap auto;
+	.service_description {
+		margin: $gap auto;
 		.slide {
 			position: relative;
 			margin-bottom: $gap;
@@ -731,18 +751,18 @@ body{
 	}
 }
 //MAGICK SIDEBAR WHITH FANTASTIC SCROLL
-.magic_sidebar {
+.magic_sidebar{
 	position: fixed;
 	right: 2em;
 	top: 0px;
 	bottom: 0;
 	width: 100px;
-	.nav {
+	.nav{
 		padding: 0px;
 		list-style-type: none;
 		margin-top: 200px;
-		.sidebar_item {
-			margin-top: 100px;
+		.sidebar_item{
+			margin-top: 5vh;
 			padding: 0px;
 			background: $white;
 			// border: 1px solid $accent;
@@ -754,20 +774,18 @@ body{
 			// border-top-left-radius: .2em;
 			// border-bottom-left-radius: .2em;
 			@include animate(.4s);
-			a {
+			a{
 				display: block;
 				position: absolute;
+				width: 50px;
+				height: 50px;
 				top: calc(100% - 75px);
 				left: calc(100% - 75px);
-				color: #242629;
-				img{
-					width: 50px;
-				}
+				color: #242629;				
 				.svg_img{
 					@include animate(.4s);
 				}
 			}
-
 			&.active {
 				// background: $accent;
 				// border: 1px solid $white;
@@ -776,8 +794,8 @@ body{
 				// }
 				transform: scale(1.2);
 				.svg_img{					
-					transform: scale(1.3);
-					& path {
+					transform: scale(1.2);
+					& path.accent {
 						fill: $accent;
 					}
 				}

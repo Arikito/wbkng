@@ -27,12 +27,10 @@ $(function(){
 	});	
 	$('.menu_toggle_js').on('click', function(){
 		// $('.header_navigation_js').stop(true, true).slideToggle();		
-		if ($('.header_navigation_js').hasClass('header_navigation_closed')){
-			$('.header_navigation_js').removeClass('header_navigation_closed');
-			$('.header_navigation_js').addClass('header_navigation_open');
+		if ($('.header_navigation_js').hasClass('closed')){
+			$('.header_navigation_js').removeClass('closed').addClass('open');
 		}else{
-			$('.header_navigation_js').addClass('header_navigation_closed');
-			$('.header_navigation_js').removeClass('header_navigation_open');
+			$('.header_navigation_js').addClass('closed').removeClass('open');
 		}
 	});
 	jQuery('img.svg').each(function(){
