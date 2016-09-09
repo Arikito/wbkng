@@ -24,7 +24,7 @@ $(function(){
 		pagination: false,
 		autoPlay: 5000
 		// transitionStyle: "fade"
-	});	
+	});
 	$('.menu_toggle_js').on('click', function(){
 		// $('.header_navigation_js').stop(true, true).slideToggle();		
 		if ($('.header_navigation_js').hasClass('closed')){
@@ -118,4 +118,3 @@ function header_fix(){
 		$('body').removeClass('scrolled');
 	}
 }
-

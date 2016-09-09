@@ -465,10 +465,10 @@ body header .header_navigation.open { -webkit-transition: all 0.4s cubic-bezier(
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
 body.scrolled header nav { padding: 6px; }
-body .page_wrap { max-width: 1300px; margin: 0 auto; overflow: auto; position: relative; }
+body .page_wrap { max-width: 1300px; width: 80vw; margin: 0 auto; overflow: auto; position: relative; }
 body .page_wrap h1 { text-align: center; }
-body .page_wrap .tags_block, body .page_wrap .types_of_services { display: flex; justify-content: center; }
-body .page_wrap .tags_block p, body .page_wrap .tags_block a, body .page_wrap .types_of_services p, body .page_wrap .types_of_services a { margin-left: 5px; margin-right: 5px; }
+body .page_wrap .tags_block { display: flex; justify-content: center; }
+body .page_wrap .tags_block p, body .page_wrap .tags_block a { margin-left: 5px; margin-right: 5px; }
 body section.content { padding-top: 120px; min-height: 100vh; }
 body section.content .subsection { padding: 1em 0; }
 body section.content .page_item { display: block; background: #fff; position: relative; overflow: hidden; }
@@ -499,7 +499,28 @@ body section.content .projects_wrap .items_wrap .page_item:hover .text_block, bo
 body section.content .projects_wrap .items_wrap .page_item:hover img, body section.content.portfolio_page .items_wrap .page_item:hover img { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); }
 body section.content.portfolio_page .items_wrap .page_item img { max-height: none; height: 400px; width: 100%; }
 body section.content.services_page { max-width: 100%; margin: 0px; }
-body section.content.services_page .magic_sidebar { position: fixed; right: 2em; top: 0px; bottom: 0; width: 100px; }
+body section.content.services_page .container { width: 70vw; margin: 0 auto; }
+body section.content.services_page .container .service .service_title { text-align: center; font-size: 1.8em; }
+body section.content.services_page .container .service .main_text { max-width: 1200px; margin: 1em auto; text-align: justify; font-size: 1.2em; line-height: 1.4em; }
+body section.content.services_page .container .service .wkTabs > div { overflow: hidden; background: #3c3f44; height: 50vh; }
+body section.content.services_page .container .service .wkTabs > div .slide { position: relative; }
+body section.content.services_page .container .service .wkTabs > div .slide .slide_text { color: #fff; margin: 0 auto; max-width: 1200px; }
+body section.content.services_page .container .service .wkTabs > div .slide .slide_text li, body section.content.services_page .container .service .wkTabs > div .slide .slide_text p { font-size: 1.2em; line-height: 1.4em; text-align: justify; }
+body section.content.services_page .container .service .wkTabs > div .slide .btn_wrap a { padding: 10px 20px; margin: 0 1em; }
+body section.content.services_page .container .service .wkTabs > div .slide .btn_wrap .accent_button { border: 1px solid #bf1111; }
+body section.content.services_page .container .service .wkTabs > ul { margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+body section.content.services_page .container .service .wkTabs > ul li { margin: 5px; display: block; }
+body section.content.services_page .container .service .wkTabs > ul li.active, body section.content.services_page .container .service .wkTabs > ul li.active:hover { background: #bf1111; }
+body section.content.services_page .container .service .wkTabs > ul li:hover { background-color: #d61313; }
+body section.content.services_page .container .service .packages_block { display: flex; justify-content: center; margin: 0 auto; color: #242629; margin-top: 60px; margin-bottom: 60px; }
+body section.content.services_page .container .service .packages_block .package { width: 25%; text-align: center; height: 300px; width: 200px; }
+body section.content.services_page .container .service .packages_block .package .package_descritpion ul { list-style-type: none; padding: 0px; }
+body section.content.services_page .container .service .packages_block .package_title, body section.content.services_page .container .service .packages_block .package_price { line-height: 50px; font-size: 22px; }
+body section.content.services_page .container .service .packages_block .middle_package { transform: scale(1.1); background: #fff; }
+body section.content.services_page .container .service .packages_block .middle_package .package_price { background: #bf1111; color: #fff; }
+body section.content.services_page .container .service .packages_block .basic_package, body section.content.services_page .container .service .packages_block .full_package { background: #eeeeee; }
+body section.content.services_page .container .service .packages_block .basic_package .package_price, body section.content.services_page .container .service .packages_block .full_package .package_price { background: #f15f5f; }
+body section.content.services_page .magic_sidebar { position: fixed; right: 2vw; top: 0px; bottom: 0; width: 100px; }
 body section.content.services_page .magic_sidebar .nav { padding: 0px; list-style-type: none; margin-top: 200px; }
 body section.content.services_page .magic_sidebar .nav .sidebar_item { margin-top: 5vh; padding: 0px; background: #fff; border-radius: 50%; padding: 1em; width: 100px; height: 100px; position: relative; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item a { display: block; position: absolute; width: 50px; height: 50px; top: calc(100% - 75px); left: calc(100% - 75px); color: #242629; }
@@ -507,25 +528,6 @@ body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img 
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img path.accent { fill: #bf1111; }
-body section.content.services_page .service .service_title { text-align: center; font-size: 1.8em; }
-body section.content.services_page .service .main_text { max-width: 1200px; margin: 1em auto; text-align: justify; font-size: 1.2em; line-height: 1.4em; }
-body section.content.services_page .service .types_of_services { display: flex; }
-body section.content.services_page .service .service_image { width: 250px; height: 250px; margin: 0 auto; display: block; margin-bottom: 20px; }
-body section.content.services_page .service .service_description { margin: 20px auto; }
-body section.content.services_page .service .service_description .slide { position: relative; margin-bottom: 20px; min-height: 50vh; width: 80vw; background-color: #3c3f44; margin: 0 auto; padding: 4em 6em; }
-body section.content.services_page .service .service_description .slide img { width: 100%; max-height: 60vh; }
-body section.content.services_page .service .service_description .slide .slide_text { color: #fff; margin: 0 auto; max-width: 1200px; }
-body section.content.services_page .service .service_description .slide .slide_text li, body section.content.services_page .service .service_description .slide .slide_text p { font-size: 1.2em; line-height: 1.4em; text-align: justify; }
-body section.content.services_page .service .service_description .slide .btn_wrap a { padding: 10px 20px; margin: 0 1em; }
-body section.content.services_page .service .service_description .slide .btn_wrap .accent_button { border: 1px solid #bf1111; }
-body section.content.services_page .service .packages_block { display: flex; justify-content: center; margin: 0 auto; color: #242629; margin-top: 60px; margin-bottom: 60px; }
-body section.content.services_page .service .packages_block .package { width: 25%; text-align: center; height: 300px; width: 200px; }
-body section.content.services_page .service .packages_block .package .package_descritpion ul { list-style-type: none; padding: 0px; }
-body section.content.services_page .service .packages_block .package_title, body section.content.services_page .service .packages_block .package_price { line-height: 50px; font-size: 22px; }
-body section.content.services_page .service .packages_block .middle_package { transform: scale(1.1); background: #fff; }
-body section.content.services_page .service .packages_block .middle_package .package_price { background: #bf1111; color: #fff; }
-body section.content.services_page .service .packages_block .basic_package, body section.content.services_page .service .packages_block .full_package { background: #eeeeee; }
-body section.content.services_page .service .packages_block .basic_package .package_price, body section.content.services_page .service .packages_block .full_package .package_price { background: #f15f5f; }
 body section.content.project_page { font-size: 1.2em; }
 body section.content.project_page .project_img img { width: 100%; }
 body section.content.project_page .project_descr { padding: 0 40px; }
@@ -533,12 +535,11 @@ body section.content.project_page .projects_task .title { font-size: 1.2em; }
 body section.content.project_page .btn_wrap > div { margin: 2em; }
 body section.content.project_page .btn_wrap a { padding: 10px 20px; }
 body section.content.project_page .btn_wrap a.accent_button { font-size: 1.2em; }
-body section.content .services_wrap .page_item { min-height: 330px; background: transparent; padding: 1em; }
+body section.content .services_wrap .page_item { height: 350px; background: transparent; padding: 1em; }
 body section.content .services_wrap .page_item .service_icon { width: 100px; height: 100px; margin: 0 auto; border-radius: 50%; }
 body section.content .services_wrap .page_item .service_icon .sub_service_icon { width: 60px; height: 60px; margin: 20% auto; background-color: #bf1111; border-radius: 50%; }
 body section.content .services_wrap .page_item .service_icon .svg_img { width: 100px; height: 100px; }
 body section.content .services_wrap .page_item .service_descr { text-align: justify; }
-body section.content .services_wrap .page_item ul { padding: 0 6em; }
 body section.content .services_wrap .page_item ul a { color: #fff; }
 body section.content .services_wrap .page_item ul a li { list-style: none; line-height: 1.6em; font-size: 1.2em; }
 body section.content .services_wrap .page_item ul a:hover { color: #d61313; }

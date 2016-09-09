@@ -318,14 +318,14 @@ body{
 	}
 	.page_wrap{
 		max-width: $page_width;
+		width: 80vw;
 		margin: 0 auto;
 		overflow: auto;
 		position: relative;
 		h1 {
 			text-align: center;
 		}
-		.tags_block,
-		.types_of_services {
+		.tags_block{
 			display: flex;
 			justify-content: center;
 			p, a {
@@ -501,10 +501,115 @@ body{
 		&.services_page{
 			max-width: 100%;
 			margin: 0px;
+			.container{
+				width: 70vw;
+				margin: 0 auto;
+				.service{
+					.service_title {
+						text-align: center;
+						font-size: 1.8em;
+					}
+					.main_text{
+						max-width: 1200px;
+						margin: 1em auto;
+						text-align: justify;
+						font-size: 1.2em;
+						line-height: 1.4em;
+					}
+					.wkTabs{
+						> div{
+							overflow: hidden;
+							background: lighten($spacegray, 10);
+							height: 50vh;
+							.slide {
+								position: relative;								
+								.slide_text{
+									color: $white;
+									margin: 0 auto;
+									max-width: 1200px;
+									li, p{
+										font-size: 1.2em;
+										line-height: 1.4em;
+										text-align: justify;
+									}
+								}
+								.btn_wrap{
+									a{
+										padding: 10px 20px;
+										margin: 0 1em;
+									}
+									.accent_button{
+										border: 1px solid $accent; 
+									}
+								}
+							}
+						}
+						> ul{
+							margin:0;
+							padding:0;
+							display: flex;
+							justify-content: center;
+							flex-wrap: wrap;
+							li{
+								margin: 5px;
+								display:block;
+								&.active,
+								&.active:hover{
+									background: $accent;
+								}
+								&:hover{
+									background-color: lighten($accent, 5);
+								}
+							}
+						}
+					}
+					//PACKAGES BLOCK
+					.packages_block {
+						display: flex;
+						justify-content: center;
+						margin: 0 auto;
+						color: $spacegray;
+						margin-top: $gap * 3;
+						margin-bottom: $gap * 3;
+						.package {
+							width: 25%;
+							text-align: center;
+							height: 300px;
+							width: 200px;
+							.package_descritpion {
+								ul {
+									list-style-type: none;
+									padding: 0px;
+								}
+							}
+						}
+						.package_title, 
+						.package_price {
+							line-height: 50px;
+							font-size: 22px;
+						}
+						.middle_package {
+							transform: scale(1.1);
+							background: $white;
+							.package_price {
+								background: $accent;
+								color: $white;
+							}
+						}
+						.basic_package, 
+						.full_package {
+							background: #eeeeee;
+							.package_price {
+								background: lighten($accent, 25);
+							}
+						}
+					}
+				}
+			}
 			//MAGICK SIDEBAR WHITH FANTASTIC SCROLL
 			.magic_sidebar{
 				position: fixed;
-				right: 2em;
+				right: 2vw;
 				top: 0px;
 				bottom: 0;
 				width: 100px;
@@ -554,116 +659,6 @@ body{
 					}
 				}
 			}
-			.service{
-				.service_title {
-					text-align: center;
-					font-size: 1.8em;
-				}
-				.main_text{
-					max-width: 1200px;
-					margin: 1em auto;
-					text-align: justify;
-					font-size: 1.2em;
-					line-height: 1.4em;
-				}
-				.types_of_services {
-					display: flex;
-				}	
-				.service_image {
-					width: 250px;
-					height: 250px;
-					margin: 0 auto;
-					display: block;
-					margin-bottom: $gap;
-				}
-				.service_description {
-					margin: $gap auto;
-					.slide {
-						position: relative;
-						margin-bottom: $gap;
-						min-height: 50vh;
-						width: 80vw;
-						background-color: lighten($spacegray, 10);
-						margin: 0 auto;
-						padding: 4em 6em;
-						img {
-							width: 100%;
-							// max-height: 100%;
-							max-height: 60vh;
-						}
-						// p {
-						// 	position: absolute;
-						// 	color: $white;
-						// 	top: 0;
-						// 	background: rgba(0,0,0,0.6);
-						// }
-						// вместо тега p
-						.slide_text{
-							color: $white;
-							margin: 0 auto;
-							max-width: 1200px;
-							li, p{
-								font-size: 1.2em;
-								line-height: 1.4em;
-								text-align: justify;
-							}
-						}
-						.btn_wrap{
-							// position: absolute;
-							// bottom: 6em;
-							// right: 6em;
-							a{
-								padding: 10px 20px;
-								margin: 0 1em;
-							}
-							.accent_button{
-								border: 1px solid $accent; 
-							}
-						}
-					}
-				}
-				//PACKAGES BLOCK
-				.packages_block {
-					display: flex;
-					justify-content: center;
-					margin: 0 auto;
-					color: $spacegray;
-					margin-top: $gap * 3;
-					margin-bottom: $gap * 3;
-					.package {
-						width: 25%;
-						text-align: center;
-						height: 300px;
-						width: 200px;
-						.package_descritpion {
-							ul {
-								list-style-type: none;
-								padding: 0px;
-							}
-						}
-					}
-					.package_title, 
-					.package_price {
-						line-height: 50px;
-						font-size: 22px;
-					}
-					.middle_package {
-						transform: scale(1.1);
-						background: $white;
-						.package_price {
-							background: $accent;
-							color: $white;
-						}
-					}
-					.basic_package, 
-					.full_package {
-						background: #eeeeee;
-						.package_price {
-							background: lighten($accent, 25);
-						}
-					}
-				}
-			}
 		}
 		&.project_page{
 			font-size: 1.2em;
@@ -695,7 +690,7 @@ body{
 		//SERVISES BLOCK on the main page
 		.services_wrap{
 			.page_item{
-				min-height: 330px;
+				height: 350px;
 				background: transparent;
 				padding: 1em;
 				.service_icon{
@@ -720,7 +715,7 @@ body{
 					text-align: justify;
 				}
 				ul{
-					padding: 0 6em;
+					// padding: 0 6em;
 					a{
 						color: $white;
 						li{
