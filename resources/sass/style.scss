@@ -155,6 +155,9 @@ body{
 		.sandwich.animate {
 			.piece {
 				@include animate(.3s);
+				&.bottom{
+					@include animate(.2s);
+				}
 			}
 		}
 		// nav{
@@ -329,8 +332,9 @@ body{
 		margin: 0 auto;
 		overflow: auto;
 		position: relative;
-		h1 {
+		h1, h2 {
 			text-align: center;
+			font-size: 2.5em;
 		}
 		.tags_block{
 			display: flex;
@@ -345,7 +349,7 @@ body{
 		padding-top: $header_height;
 		min-height: 100vh;
 		.subsection{
-			padding: 1em 0;
+			padding: 3em 0;
 		}
 		.page_item{
 			display: block;
@@ -354,7 +358,8 @@ body{
 			overflow: hidden;
 			img{
 				display: block;
-				max-height: 250px;
+				height: 250px;
+				width: 100%;
 			}
 			p{
 				text-align: center;
@@ -411,7 +416,7 @@ body{
 						left: 15vw;
 						text-align: center;
 						width: 70vw;
-						height: 50vh;
+						height: 60vh;
 						h2{
 							font-size: 3em;
 						}
@@ -526,13 +531,14 @@ body{
 						> div{
 							overflow: hidden;
 							background: lighten($spacegray, 10);
-							height: 50vh;
+							min-height: 50vh;
 							.slide {
 								position: relative;								
 								.slide_text{
 									color: $white;
 									margin: 0 auto;
 									max-width: 1200px;
+									padding: 20px;
 									li, p{
 										font-size: 1.2em;
 										line-height: 1.4em;
@@ -622,7 +628,7 @@ body{
 				.nav{
 					padding: 0px;
 					list-style-type: none;
-					margin-top: 200px;
+					margin-top: 20vh;
 					.sidebar_item{
 						margin-top: 5vh;
 						padding: 0px;
@@ -779,6 +785,9 @@ body{
 		.contacts_wrap{
 			.page_wrap{
 				padding: $gap 0;
+				h2{
+					margin-top: 0;
+				}
 				.page_item{
 					height: 100%;
 					p{
@@ -952,6 +961,12 @@ body{
 					}
 				}
 			}
+			.projects_wrap{
+				.page_wrap{
+					width: 100vw;
+					margin: 0;
+				}
+			}
 		}
 		footer{
 			.copyright{
@@ -1027,12 +1042,9 @@ body{
 			.banner_wrap .owl-carousel .banner_item{
 				.banner_text{
 					height: 60vh;
-					// h2{
-					// 	font-size: 2em;
-					// }
-					// p{
-					// 	font-size: 1.2em;
-					// }
+				}
+				.bunner_btn{
+					font-size: 1.3em;
 				}
 			}
 			.contacts_wrap .page_wrap{
@@ -1043,6 +1055,9 @@ body{
 				.page_item fieldset legend {
 					padding: 10px 20px;
 				}
+			}
+			.projects_wrap .page_item img {
+				height: 200px;
 			}
 		}
 		footer {
@@ -1081,7 +1096,6 @@ body{
 				.banner_text{
 					height: 60vh;
 					.bunner_btn{
-						// font-size: 1.8em;
 						bottom: 0em;
 					}
 				}
