@@ -30,7 +30,7 @@ textarea{
 }
 .dark_style{
 	background: #2e3034;
-    color: #fff;
+	color: #fff;
 }
 .light_style{
 	background-color: $white;
@@ -518,10 +518,10 @@ body{
 			max-width: 100%;
 			margin: 0px;
 			.container{
-				width: 70vw;
+				width: 100%;
 				margin: 0 auto;
 				.service{
-					.service_title {
+					.service_title{
 						text-align: center;
 						font-size: 1.8em;
 					}
@@ -538,7 +538,7 @@ body{
 							background: lighten($spacegray, 10);
 							min-height: 50vh;
 							.slide {
-								position: relative;								
+								position: relative;
 								.slide_text{
 									color: $white;
 									margin: 0 auto;
@@ -635,17 +635,13 @@ body{
 					list-style-type: none;
 					margin-top: 20vh;
 					.sidebar_item{
-						margin-top: 5vh;
+						margin-top: 1vh;
 						padding: 0px;
-						// background: $white;
-						// border: 1px solid $accent;
 						border-radius: 50%;
 						padding: 1em;
 						width: 100px;
 						height: 100px;
 						position: relative;
-						// border-top-left-radius: .2em;
-						// border-bottom-left-radius: .2em;
 						@include animate(.4s);
 						a{
 							display: block;
@@ -659,12 +655,7 @@ body{
 								@include animate(.4s);
 							}
 						}
-						&.active {
-							// background: $accent;
-							// border: 1px solid $white;
-							// a {
-							// 	color: $white;
-							// }
+						&.active{
 							transform: scale(1.2);
 							.svg_img{
 								transform: scale(1.2);
@@ -960,7 +951,7 @@ body{
 			padding: 0;
 		}
 		section.content{
-			padding-top: 72px;
+			padding-top: 200px;
 			.banner_wrap{
 				.owl-carousel{
 					.owl-wrapper-outer,
@@ -977,6 +968,65 @@ body{
 			}
 			.contacts_wrap .page_wrap .page_item{
 				padding: 0 $gap;
+			}
+			&.services_page{
+				.container{
+					width: 100vw;
+					.service{
+						.main_text{
+							padding: 20px;
+						}
+					}
+				}
+				.magic_sidebar{
+					position: fixed;
+					right: 0;
+					top: 0px;
+					bottom: 0;
+					width: 100vw;
+					height: 100px;
+					.nav{
+						padding: 0px;
+						list-style-type: none;
+						margin-top: 7vh;
+						display: flex;
+						justify-content: center;
+						background: $spacegray;
+						// border-bottom: 2px solid $white;
+						// border-bottom: 2px solid #2e3034;
+						.sidebar_item{
+							margin-top: 1vh;
+							padding: 0px;
+							border-radius: 50%;
+							padding: 1em;
+							width: 100px;
+							height: 100px;
+							position: relative;
+							@include animate(.4s);
+							a{
+								display: block;
+								position: absolute;
+								width: 50px;
+								height: 50px;
+								top: calc(100% - 75px);
+								left: calc(100% - 75px);
+								color: #242629;
+								.svg_img{
+									@include animate(.4s);
+								}
+							}
+							&.active{
+								transform: scale(1.2);
+								.svg_img{
+									transform: scale(1.2);
+									& path.accent {
+										fill: $accent;
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		footer{
