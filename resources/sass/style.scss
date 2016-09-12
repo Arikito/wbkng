@@ -28,7 +28,11 @@ textarea{
 .hidden{
 	display: none !important;
 }
-.light_line{
+.dark_style{
+	background: #2e3034;
+    color: #fff;
+}
+.light_style{
 	background-color: $white;
 	color: $spacegray;
 }
@@ -108,15 +112,16 @@ body{
 				vertical-align: middle;
 			}
 		}
-		.sandwich {
+		.sandwich{
 			display: none;
 			position: relative;
 			cursor: pointer;
 			float: right;
 			top: 26px;
+			right: 3vw;
 			width: 20px;
 			height: 18px;
-			.piece {
+			.piece{
 				position: relative;
 				width: 100%;
 				height: 2px;
@@ -407,8 +412,8 @@ body{
 					img{
 						-webkit-filter: brightness(0.30);
 						filter: brightness(0.30);
-						width: 100%;
-						height: 100%;
+						min-width: 100%;
+						min-height: 100%;
 					}
 					.banner_text{
 						position: absolute;
@@ -917,6 +922,9 @@ body{
 		}
 	}
 	@media screen and (max-width: 1280px){
+		.page_wrap{
+			width: 100vw;
+		}
 		header{
 			.logoSite{
 				height: $header_height * .6;
@@ -966,6 +974,9 @@ body{
 					width: 100vw;
 					margin: 0;
 				}
+			}
+			.contacts_wrap .page_wrap .page_item{
+				padding: 0 $gap;
 			}
 		}
 		footer{

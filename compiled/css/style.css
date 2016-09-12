@@ -413,7 +413,9 @@ input[type=text], input[type=email], input[type=tel], input[type=passwd], textar
 
 .hidden { display: none !important; }
 
-.light_line { background-color: #fff; color: #242629; }
+.dark_style { background: #2e3034; color: #fff; }
+
+.light_style { background-color: #fff; color: #242629; }
 
 .accent_button { background-color: #bf1111; color: #fff; border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; cursor: pointer; }
 .accent_button:hover { background-color: #d61313; }
@@ -433,7 +435,7 @@ body header .logoSite { display: inline-block; height: 120px; padding: 20px; box
 body header .logoSite svg, body header .logoSite img { position: relative; height: 100%; }
 body header .menu { display: none; line-height: 120px; float: right; padding: 0 20px; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .menu img { vertical-align: middle; }
-body header .sandwich { display: none; position: relative; cursor: pointer; float: right; top: 26px; width: 20px; height: 18px; }
+body header .sandwich { display: none; position: relative; cursor: pointer; float: right; top: 26px; right: 3vw; width: 20px; height: 18px; }
 body header .sandwich .piece { position: relative; width: 100%; height: 2px; background-color: #000; border-radius: 5px; }
 body header .sandwich .piece.top { top: 30%; }
 body header .sandwich .piece.middle { top: 50%; }
@@ -483,7 +485,7 @@ body section.content .page_item .project_title p:first-child { font-size: 20px; 
 body section.content .page_item:hover .project_title { top: 0; }
 body section.content .banner_wrap { position: relative; background: #242629; color: #fff; }
 body section.content .banner_wrap .owl-carousel .banner_item { height: calc(100vh - 120px); }
-body section.content .banner_wrap .owl-carousel .banner_item img { -webkit-filter: brightness(0.3); filter: brightness(0.3); width: 100%; height: 100%; }
+body section.content .banner_wrap .owl-carousel .banner_item img { -webkit-filter: brightness(0.3); filter: brightness(0.3); min-width: 100%; min-height: 100%; }
 body section.content .banner_wrap .owl-carousel .banner_item .banner_text { position: absolute; top: 5vh; left: 15vw; text-align: center; width: 70vw; height: 60vh; }
 body section.content .banner_wrap .owl-carousel .banner_item .banner_text h2 { font-size: 3em; }
 body section.content .banner_wrap .owl-carousel .banner_item .banner_text p { max-width: 50vw; margin: 0 auto; text-align: justify; font-size: 1.6em; }
@@ -578,7 +580,8 @@ body footer .page_wrap nav a { display: inline-block; padding: 0 20px; }
 body footer .page_wrap nav a:hover { color: #fff; }
 body footer .subscribe { padding: 20px 0; text-align: center; font-size: 1.143em; }
 body footer .subscribe input { margin-left: 20px; }
-@media screen and (max-width: 1280px) { body header .logoSite { height: 72px; padding: 10px; }
+@media screen and (max-width: 1280px) { body .page_wrap { width: 100vw; }
+  body header .logoSite { height: 72px; padding: 10px; }
   body header .menu { display: block; line-height: 72px; cursor: pointer; }
   body header .sandwich { display: block; }
   body header nav { width: 100%; overflow: hidden; padding: 0; }
@@ -589,6 +592,7 @@ body footer .subscribe input { margin-left: 20px; }
   body section.content { padding-top: 72px; }
   body section.content .banner_wrap .owl-carousel .owl-wrapper-outer, body section.content .banner_wrap .owl-carousel .banner_item img { height: calc(100vh - 72px); }
   body section.content .projects_wrap .page_wrap { width: 100vw; margin: 0; }
+  body section.content .contacts_wrap .page_wrap .page_item { padding: 0 20px; }
   body footer .copyright .logo { padding: 0px !important; height: 50px !important; width: 100%; margin-bottom: 10px; order: 3; }
   body footer .copyright .rights { text-align: center; width: 100%; line-height: 50px; padding: 0px !important; }
   body footer .page_wrap nav { width: 100%; display: flex; justify-content: center; }
