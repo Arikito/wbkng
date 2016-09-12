@@ -13,21 +13,64 @@
 	<header>
 		<div class="page_wrap">
 			<a href="/" class="logoSite">
-				<img src="/compiled/img/logo-2.1.svg">
+				<img src="/compiled/img/logo-2.1.svg" class="svg">
 			</a>
-			<nav class="header_navigation_closed header_navigation_js">
+			<!-- <div class="menu">
+				<img src="/compiled/img/menu.svg" alt="Меню" class="menu_toggle_js">
+			</div> -->
+			<div class="sandwich animate">
+				<div class="piece top"></div>
+				<div class="piece middle"></div>
+				<div class="piece bottom"></div>
+			</div>
+			<nav class="header_navigation header_navigation_js">
 				<ul>
 					<li><span class="show"><a href="http://webking/portfolio.html">Портфолио</a><a href="#"></a></span></li>
 					<li><span class="show"><a href="http://webking/services.html">Услуги</a><a href="#"></a></span></li>
-					<li><span class="show"><a href="/#techs">Технологии</a><a href="#"></a></span></li>
-					<li><span class="show"><a href="/#about">О нас</a><a href="#"></a></span></li>
+					<li><span class="show"><a href="http://webking/#techs">Технологии</a><a href="#"></a></span></li>
+					<li><span class="show"><a href="http://webking/#about">О нас</a><a href="#"></a></span></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<section class="content">
+	<section class="content project_page">
 		<div class="page_wrap">
 			<h1>Название проекта</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6 project_img"><img src="compiled/img/responsive-web-design-adaptive-images.png" alt="responsive"></div>
+					<div class="col-xs-12 col-md-6 project_descr">
+						<p>Дата запуска: 2016-01-01</p>
+						<div>
+							<p>УСЛУГИ</p>
+							<ul>
+								<li>Верстка</li>
+								<li>Дизайн логотипа</li>
+								<li>Дизайн сайта</li>
+								<li>Программирование</li>
+							</ul>
+						</div>
+						<div>
+							<p>ТЕХНОЛОГИИ</p>
+							<ul>
+								<li>Wordpress</li>
+								<li>HTML5</li>
+								<li>CSS3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-6 projects_task">
+						<p class="title">Задача</p>
+						<p>Описание задачи</p>
+					</div>
+					<div class="col-xs-12 col-md-6 btn_wrap">
+						<div><a class="no_accent_button" href="#">Перейти на сайт</a></div>
+						<div><a class="accent_button" href="#">Хочу такой!</a></div>
+					</div>
+				</div>
+			</div>
 			
 		</div>
 	</section>
@@ -60,10 +103,11 @@
 					<a href="http://l5.dev/techs">Технологии</a>
 					<a href="http://l5.dev/about">О нас</a>
 				</nav>
-				<svg viewBox="226 50 488 147" class="logo">
+				<img class="logo svg" src="/compiled/img/logo-2.1-no-lion.svg">
+				<!-- <svg viewBox="226 50 488 147" class="logo">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/compiled/img/logo-2.1.svg#text_1_"></use>
-				</svg>
-				<div class="rights">Copyright © WebKing Creative Studio 2016. All rights reserved</div>
+				</svg> -->
+				<div class="rights"><span>Copyright © WebKing Creative Studio 2016. </span><span>All rights reserved</span></div>
 			</div>
 		</div>
 	</footer>
