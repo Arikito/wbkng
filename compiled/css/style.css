@@ -586,6 +586,7 @@ body footer .subscribe input { margin-left: 20px; }
   body header .sandwich { display: block; }
   body header nav { width: 100%; overflow: hidden; padding: 0; }
   body header nav ul { width: 100%; text-align: center; line-height: 72px; }
+  body header nav ul li .show a { line-height: 72px; }
   body header .header_navigation.active { height: 90px; }
   body header .header_navigation { height: 0px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
   body.scrolled header nav { padding: 0; }

@@ -937,8 +937,16 @@ body{
 					width: 100%;
 					text-align: center;
 					line-height: $header_height * .6;
+					li{
+						.show{
+							a{
+								line-height: 72px;
+							}
+						}
+					}
 				}
 			}
+
 			.header_navigation.active{
 				height: 90px;
 			}
