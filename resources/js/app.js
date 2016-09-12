@@ -27,8 +27,7 @@ $(function(){
 	});
 	$('.sandwich').on('click', function(){
 		// $('.header_navigation_js').stop(true, true).slideToggle();
-		$(this).toggleClass('active');
-		$('.header_navigation_js').toggleClass('active');
+		$(this).toggleClass('active').next().toggleClass('active');
 	});
 	$('.header_navigation_js li').on('click', function(){
 		$(this).closest('nav').toggleClass('active');
