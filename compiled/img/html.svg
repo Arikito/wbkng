@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "display:none;fill:#29ABE2;">
+	<!ENTITY st1 "fill:#FFFFFF;">
+	<!ENTITY st2 "fill:#333333;">
+	<!ENTITY st3 "fill:#4D4D4D;">
+	<!ENTITY st4 "fill:#E6E6E6;">
+]>
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 800 480" enable-background="new 0 0 800 480" xml:space="preserve">
-<rect display="none" fill="#29ABE2" width="800" height="480"/>
-<polygon fill="#FFFFFF" points="337.4,330.2 400,347.8 462.8,330.3 476.4,175 323.5,175 "/>
-<path fill="#333333" d="M323.5,175l13.9,155.2l62.6,17.6l62.8-17.6L476.4,175H323.5z M446,226h-72.9l1.8,19h69.4l-5.1,59.2
-	L400,315.1l-39.3-10.7l-2.6-30.4h19.2l1.1,15l21.5,5.6l21.4-5.9l2.1-24.8h-66.1l-5-58h95.3L446,226z"/>
+	 viewBox="0 0 800 480" style="enable-background:new 0 0 800 480;" xml:space="preserve">
+<rect style="&st0;" width="800" height="480"/>
+<polygon style="&st1;" points="285.1,405.7 400,438 515.3,405.9 540.3,120.7 259.6,120.7 "/>
+<path style="&st2;" d="M259.6,120.7l25.5,284.9L400,438l115.3-32.3l25-284.9H259.6z M484.5,214.4H350.7l3.3,34.9h127.4L472,358
+	l-72,20l-72.2-19.6l-4.8-55.8h35.3l2,27.5l39.5,10.3l39.3-10.8L443,284H321.6l-9.2-106.5h175L484.5,214.4z"/>
 <g>
 	<g>
-		<polygon fill="#4D4D4D" points="423.5,264 400,264 400,294.6 421.4,288.8 		"/>
-		<polygon fill="#4D4D4D" points="400,188 400,206 447.7,206 446,226 400,226 400,245 444.4,245 439.3,304.2 400,315.1 400,334.2 
-			451.2,319.8 462.8,188 		"/>
+		<polygon style="&st3;" points="443.2,284.1 400,284.1 400,340.3 439.3,329.7 		"/>
+		<polygon style="&st3;" points="400,144.6 400,177.7 487.6,177.7 484.5,214.4 400,214.4 400,249.3 481.6,249.3 472.2,358 400,378 
+			400,413 494,386.6 515.3,144.6 		"/>
 	</g>
 </g>
-<polygon fill="#333333" points="449,151 449,132 439,132 439,151 439,161 448.9,161 462,161 462,151 "/>
-<polygon fill="#333333" points="425,132 418,142 411,132 402,132 402,161 411,161 411,146 418,157.4 425,146 425,161 434,161 
-	434,132 "/>
-<polygon fill="#333333" points="397,132 370,132 370,142 379,142 379,161 389,161 389,142 397,142 "/>
-<polygon fill="#333333" points="357,132 357,142 347,142 347,132 338,132 338,161 347,161 347,152 357,152 357,161 366,161 366,132 
-	"/>
+<polygon style="&st2;" points="490,76.7 490,41.8 471.6,41.8 471.6,76.7 471.6,95 489.8,95 513.9,95 513.9,76.7 "/>
+<polygon style="&st2;" points="445.9,41.8 433.1,60.2 420.2,41.8 403.7,41.8 403.7,95 420.2,95 420.2,67.5 433.1,88.4 445.9,67.5 
+	445.9,95 462.5,95 462.5,41.8 "/>
+<polygon style="&st2;" points="394.5,41.8 345,41.8 345,60.2 361.5,60.2 361.5,95 379.8,95 379.8,60.2 394.5,60.2 "/>
+<polygon style="&st2;" points="321.1,41.8 321.1,60.2 302.7,60.2 302.7,41.8 286.2,41.8 286.2,95 302.7,95 302.7,78.5 321.1,78.5 
+	321.1,95 337.6,95 337.6,41.8 "/>
 <g>
 	<g>
-		<polygon fill="#E6E6E6" points="400,245 374.9,245 373.1,226 400,226 400,206 352.3,206 357.3,264 400,264 		"/>
-		<polygon fill="#E6E6E6" points="400,294.6 378.5,289 377.4,274 358.1,274 360.8,304.4 400,315.1 		"/>
+		<polygon style="&st4;" points="400,249.3 354,249.3 350.7,214.4 400,214.4 400,177.7 312.5,177.7 321.6,284.1 400,284.1 		"/>
+		<polygon style="&st4;" points="400,340.3 360.6,330 358.5,302.5 323.1,302.5 328.1,358.3 400,378 		"/>
 	</g>
 </g>
-<image display="none" overflow="visible" width="512" height="600" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAJYCAYAAAAUpV5gAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+<image style="display:none;overflow:visible;enable-background:new    ;" width="512" height="600" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAJYCAYAAAAUpV5gAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAWdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjA7
 6PVpAAArKklEQVR4Xu3dS4td55no8f4I/gYSuPZJeiYyyFQ9CBhUdbA6B1+aBMcKOqMEoklDAiE0
 PUma0yAI7VmD0CRkYmR6aEz3pONAgxFkYnpUSNuSdbGPdJx20kmc6NQrr8quVB5Je+9a672t3w/+

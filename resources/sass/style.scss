@@ -16,7 +16,9 @@ a {
 }
 input[type=text],
 input[type=email],
-input[type=passwd]{
+input[type=tel],
+input[type=passwd],
+textarea{
 	border-radius: .2em;
 	border: 0;
 	outline: 0;
@@ -104,6 +106,55 @@ body{
 			@include animate(.3s);
 			img{
 				vertical-align: middle;
+			}
+		}
+		.sandwich {
+			display: none;
+			position: relative;
+			cursor: pointer;
+			float: right;
+			top: 26px;
+			width: 20px;
+			height: 18px;
+			.piece {
+				position: relative;
+				width: 100%;
+				height: 2px;
+				background-color: #000;
+				border-radius: 5px;
+				&.top {
+					top: 30%;
+				}
+				&.middle {
+					top: 50%;
+				}
+				&.bottom {
+					opacity: 1;
+					top: 70%;
+				}
+			}
+		}
+		.sandwich.active{
+			.piece {
+				&.top {
+				top: 47%;
+				transform: rotate(135deg);
+				}
+				&.middle {
+				top: 35%;
+				transform: rotate(-135deg);
+				}
+				&.bottom {
+				top: 0;
+				opacity: 0;
+				transform: rotate(90deg);
+				}
+			}
+		}
+
+		.sandwich.animate {
+			.piece {
+				@include animate(.3s);
 			}
 		}
 		// nav{
@@ -254,52 +305,8 @@ body{
 		}
 
 		//HEADER MOBILE
-		.header_navigation.open {
+		.header_navigation.active{
 			@include animate(.4s);
-			height: 100px;
-		}
-		@media screen and (max-width: 992px){
-			.logoSite{
-				height: $header_height * .6;
-				padding: $gap / 2;
-			}
-			.menu{
-				display: block;
-				line-height: $header_height * .6;
-				cursor: pointer;
-			}
-			nav{
-				width: 100%;
-				overflow: hidden;
-				padding: 0;
-				ul{
-					width: 100%;
-					text-align: center;
-					line-height: $header_height * .6;
-				}
-			}
-			.header_navigation.closed {
-				height: 0px;
-				@include animate(.4s);
-			}
-		}
-		@media screen and (max-width: 570px){
-			nav{
-				ul{
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					li{
-						width: 160px;
-						margin-bottom: 10px;
-						text-align: center;
-						line-height: $header_height * .6;
-					}
-				}
-			}
-			.header_navigation.open {
-				height: 340px;
-			}
 		}
 	}
 	&.scrolled{
@@ -619,7 +626,7 @@ body{
 					.sidebar_item{
 						margin-top: 5vh;
 						padding: 0px;
-						background: $white;
+						// background: $white;
 						// border: 1px solid $accent;
 						border-radius: 50%;
 						padding: 1em;
@@ -696,7 +703,6 @@ body{
 					width: 100px;
 					height: 100px;
 					margin: 0 auto;
-					// border: 2px solid $accent;
 					border-radius: 50%;
 					.sub_service_icon{
 						width: 60px;
@@ -708,22 +714,34 @@ body{
 					.svg_img{
 						width: 100px;
 						height: 100px;
+						@include animate(.4s);
 					}
 				}
 				.service_descr{
 					text-align: justify;
 				}
 				ul{
-					// padding: 0 6em;
-					a{
-						color: $white;
-						li{
-							list-style: none;
-							line-height: 1.6em;
-							font-size: 1.2em;
+					padding: 0;
+					li{
+						list-style: none;
+						line-height: 1.6em;
+						font-size: 1.2em;
+						text-align: left;
+						width: 130px;
+						margin: 0 auto;
+						a{
+							color: $white;
+							&:hover{
+								color: lighten($accent, 5);
+								font-weight: 600;
+							}
 						}
-						&:hover{
-							color: lighten($accent, 5);
+					}
+				}
+				&:hover{
+					.svg_img{
+						& path.accent {
+							fill: $accent;
 						}
 					}
 				}
@@ -737,6 +755,8 @@ body{
 					img{
 						display: block;
 						margin: 0 auto;
+						width: 400px;
+						height: 600px;
 					}
 				}
 			}
@@ -756,8 +776,63 @@ body{
 				}
 			}
 		}
-		.something_wrap{
-			height: 300px;
+		.contacts_wrap{
+			.page_wrap{
+				padding: $gap 0;
+				.page_item{
+					height: 100%;
+					p{
+						margin: 10px 0;
+						text-align: left;
+						font-size: 1.4em;
+					}
+					.contacts{
+						p{
+							display: flex;
+							span{
+								line-height: 30px;
+								margin: 0 10px;
+							}
+						}
+						.svg_img{
+							width: 30px;
+							height: 30px;
+						}
+					}
+					fieldset{
+						background: #2e3034;
+						border-width: 0px;
+						border-radius: 3px;
+						padding: $gap;
+						legend{
+							padding: $gap/2 $gap*2;
+							background: #fff;
+							border-radius: 3px;
+							border: 1px solid #2b1111;
+							font-size: 1.4em;
+							margin: 0 $gap;
+						}
+						form{
+							display: block;
+							margin: 0 auto;
+							> *{
+								border: 1px solid #2e3034;
+								width: 100%;
+								margin: 5px 0;
+							}
+							input[type="submit"]{
+								font-size: 1.4em;
+							}
+						}
+					}
+					&.contacts_item{
+						height: 450px;
+						display: flex;
+						justify-content: space-between;
+						flex-direction: column;
+					}
+				}
+			}
 		}
 		.location_wrap{
 			.overlay {
@@ -794,7 +869,7 @@ body{
 				height: 80px;
 				display: inline-block;
 				float: left;
-				padding: 0 $gap;
+				// padding: 0 $gap;
 				#lion {
 					display: none;
 				}
@@ -832,9 +907,54 @@ body{
 			}
 		}
 	}
-	@media (max-width: 1020px) {
-		footer {
-			.copyright {
+	@media screen and (max-width: 1280px){
+		header{
+			.logoSite{
+				height: $header_height * .6;
+				padding: $gap / 2;
+			}
+			.menu{
+				display: block;
+				line-height: $header_height * .6;
+				cursor: pointer;
+			}
+			.sandwich{
+				display: block;
+			}
+			nav{
+				width: 100%;
+				overflow: hidden;
+				padding: 0;
+				ul{
+					width: 100%;
+					text-align: center;
+					line-height: $header_height * .6;
+				}
+			}
+			.header_navigation.active{
+				height: 90px;
+			}
+			.header_navigation{
+				height: 0px;
+				@include animate(.4s);
+			}
+		}
+		&.scrolled header nav{
+			padding: 0;
+		}
+		section.content{
+			padding-top: 72px;
+			.banner_wrap{
+				.owl-carousel{
+					.owl-wrapper-outer,
+					.banner_item img{
+						height: calc(100vh - 72px);
+					}
+				}
+			}
+		}
+		footer{
+			.copyright{
 				.logo {
 					padding: 0px !important;
 					height: 50px !important;
@@ -842,14 +962,14 @@ body{
 					margin-bottom: $gap / 2;
 					order: 3;
 				}
-				.rights {
+				.rights{
 					text-align: center;
 					width: 100%;
 					line-height: 50px;
 					padding: 0px !important;
 				}
 			}
-			.page_wrap {
+			.page_wrap{
 				nav {
 					width: 100%;
 					display: flex;
@@ -861,15 +981,70 @@ body{
 			}
 		}
 	}
-	@media screen and (max-width: 992px) {
-		.content{
-			padding-top: 72px;
-			.banner_wrap .owl-carousel .owl-wrapper-outer{
-				height: calc(100vh - 72px);
+	@media screen and (max-width: 992px){
+		section.content{
+			.contacts_wrap .page_wrap{
+				.page_item.contacts_item{
+					height: 210px;
+					flex-direction: row;
+				}
+			}
+			.banner_wrap .owl-carousel .banner_item{
+				.banner_text{
+					width: 80vw;
+					left: 10vw;
+					p{
+						max-width: 70vw;
+					}
+				}
+			}
+		}
+	}
+	
+	@media screen and (max-width: 700px){
+		header{
+			nav{
+				ul{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					li{
+						width: 160px;
+						margin-bottom: 10px;
+						text-align: center;
+						line-height: $header_height * .6;
+					}
+				}
+			}
+			.header_navigation.active {
+				height: 340px;
 			}
 		}
 	}
 	@media (max-width: 450px) {
+		section.content{
+			font-size: 1.2em;
+			.banner_wrap .owl-carousel .banner_item{
+				.banner_text{
+					height: 60vh;
+					// h2{
+					// 	font-size: 2em;
+					// }
+					// p{
+					// 	font-size: 1.2em;
+					// }
+				}
+			}
+			.contacts_wrap .page_wrap{
+				.page_item.contacts_item {
+					height: 300px;
+					flex-direction: column;
+				}
+				.page_item fieldset legend {
+					padding: 10px 20px;
+				}
+			}
+		}
 		footer {
 			.copyright {
 				.rights {
@@ -895,6 +1070,40 @@ body{
 						width: 100%;
 						text-align: center;
 					}
+				}
+			}
+		}
+	}
+	@media (max-width: 450px){
+		section.content{
+			font-size: .8em;
+			.banner_wrap .owl-carousel .banner_item{
+				.banner_text{
+					height: 60vh;
+					.bunner_btn{
+						// font-size: 1.8em;
+						bottom: 0em;
+					}
+				}
+			}
+			.contacts_wrap .page_wrap{
+				.page_item.contacts_item {
+					height: 350px;
+				}
+				.page_item fieldset legend {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	@media (max-width: 320px){
+		section.content{
+			font-size: .6em;
+			.banner_wrap .owl-carousel .banner_item .banner_text{
+				height: 70vh;
+				.bunner_btn{
+					font-size: 1.8em;
+					bottom: 0em;
 				}
 			}
 		}

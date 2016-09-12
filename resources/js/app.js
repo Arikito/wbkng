@@ -25,14 +25,15 @@ $(function(){
 		autoPlay: 5000
 		// transitionStyle: "fade"
 	});
-	$('.menu_toggle_js').on('click', function(){
-		// $('.header_navigation_js').stop(true, true).slideToggle();		
-		if ($('.header_navigation_js').hasClass('closed')){
-			$('.header_navigation_js').removeClass('closed').addClass('open');
-		}else{
-			$('.header_navigation_js').addClass('closed').removeClass('open');
-		}
+	$('.sandwich').on('click', function(){
+		// $('.header_navigation_js').stop(true, true).slideToggle();
+		$(this).toggleClass('active');
+		$('.header_navigation_js').toggleClass('active');
 	});
+	$('.header_navigation_js li').on('click', function(){
+		$(this).closest('nav').toggleClass('active');
+	});
+
 	jQuery('img.svg').each(function(){
 		var $img = jQuery(this);
 		var imgID = $img.attr('id');
