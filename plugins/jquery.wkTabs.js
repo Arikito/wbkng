@@ -22,5 +22,8 @@
 	};
 })(jQuery);
 $(document).ready(function(){
-	$('.wkTabs').wkTabs();
+	$('.wkTabsDev_js').wkTabs();
+	$('.wkTabsSeo_js').wkTabs();
+	$('.wkTabsDes_js').wkTabs();
+	$('.wkTabsSer_js').wkTabs();
 });
