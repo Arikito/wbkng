@@ -22,7 +22,7 @@ textarea{
 	border-radius: .2em;
 	border: 0;
 	outline: 0;
-	line-height: $gap * 2;
+	line-height: 40px;
 	padding: 0 $gap;
 }
 .hidden{
@@ -43,7 +43,7 @@ textarea{
 	border-radius: .2em;
 	border: 0;
 	outline: 0;
-	line-height: $gap * 2;
+	line-height: 40px;
 	padding: 0 $gap;
 	cursor: pointer;
 	&:hover{
@@ -483,9 +483,9 @@ body{
 						a{
 							display: block;
 							margin: 0 auto;
-							width: 120px;							
+							width: 120px;
 							margin-top: 6em;
-							line-height: 30px;							
+							line-height: 30px;
 						}
 					}
 					&:hover{
@@ -689,31 +689,30 @@ body{
 			//MAGICK SIDEBAR WHITH FANTASTIC SCROLL
 			.magic_sidebar{
 				position: fixed;
-				right: 1vw;
-				top: 0px;
+				height: calc(100vh - 72px);
+				right: 20px;
+				top: 72px;
 				bottom: 0;
 				width: 100px;
+				z-index: 99;
 				.nav{
 					padding: 0px;
+					margin: 0;
 					list-style-type: none;
-					margin-top: 20vh;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
 					.sidebar_item{
-						margin-top: 1vh;
 						padding: 0px;
-						border-radius: 50%;
-						padding: 1em;
-						width: 100px;
-						height: 100px;
+						height: calc((100vh / 4) - 60px);
 						position: relative;
 						@include animate(.4s);
 						a{
 							display: block;
-							position: absolute;
 							width: 50px;
-							height: 50px;
-							top: calc(100% - 75px);
-							left: calc(100% - 75px);
-							color: #242629;
+							margin: 0 auto;
 							.svg_img{
 								@include animate(.4s);
 							}
@@ -1043,7 +1042,6 @@ body{
 			&.services_page{
 				padding-top: 182px;
 				.container{
-					width: 100vw;
 					.service{
 						.main_text{
 							padding: $gap;
@@ -1051,49 +1049,16 @@ body{
 					}
 				}
 				.magic_sidebar{
-					position: fixed;
 					right: 0;
-					top: 0px;
-					bottom: 0;
+					top: 72px;
 					width: 100vw;
 					height: 100px;
-					z-index: 99;
 					.nav{
-						padding: 0px;
-						list-style-type: none;
-						margin-top: 7vh;
-						display: flex;
-						justify-content: center;
 						background: $spacegray;
+						flex-direction: row;
 						.sidebar_item{
-							margin-top: 1vh;
-							padding: 0px;
-							border-radius: 50%;
-							padding: 1em;
-							width: 100px;
-							height: 100px;
-							position: relative;
-							@include animate(.4s);
-							a{
-								display: block;
-								position: absolute;
-								width: 50px;
-								top: calc(100% - 75px);
-								left: calc(100% - 75px);
-								color: #242629;
-								.svg_img{
-									@include animate(.4s);
-								}
-							}
-							&.active{
-								transform: scale(1.2);
-								.svg_img{
-									transform: scale(1.2);
-									& path.accent{
-										fill: $accent;
-									}
-								}
-							}
+							width: calc((100vw / 4) - 60px);
+							height: 50px;
 						}
 					}
 				}
@@ -1164,7 +1129,6 @@ body{
 			}
 		}
 	}
-	
 	@media screen and (max-width: 700px){
 		header{
 			nav{
@@ -1186,6 +1150,64 @@ body{
 		}
 		section.content{
 			font-size: .9em;
+		}
+	}
+	@media (max-width: 750px) and (orientation:landscape){
+		section.content{
+			font-size: .8em;
+			&.services_page{
+				padding-top: 72px;
+				.page_wrap{
+					width: calc(100vw - 72px);
+					margin: 0;
+					.service .tabs_block .box .btn_wrap{
+						left: $gap;
+						width: 82vw;
+						span{
+							margin-right: 0;
+						}
+						a{
+						    font-size: 1.3em;
+						}
+					}
+					.magic_sidebar{
+						width: 72px;
+						height: calc(100vh - 72px);
+						.nav{
+							flex-direction: column;
+							.sidebar_item{
+								height: calc(100% / 4);
+								width: auto;
+								padding-top: $gap;
+								a{
+									width: 40px;
+								}
+								&.active .svg_img{
+									transform: scale(1);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	// iPhone5
+	@media (max-width: 570px) and (orientation:landscape){
+		section.content{
+			&.services_page{
+				.page_wrap{
+					width: calc(100vw - 60px);
+					.magic_sidebar{
+						width: 60px;
+						.nav .sidebar_item{
+							a{
+								width: 30px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	@media (max-width: 480px){
@@ -1220,8 +1242,19 @@ body{
 						}
 					}
 				}
-				.magic_sidebar .nav{
-					margin-top: 9vh;
+				.magic_sidebar{
+					.nav{
+						justify-content: space-around;
+						height: auto;
+						padding: $gap;
+						.sidebar_item{
+							height: calc(100% / 4);
+							width: auto;
+							a{
+								width: 40px;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1265,11 +1298,8 @@ body{
 				}
 			}
 			&.services_page .magic_sidebar .nav{
-				margin-top: 10vh;
 				.sidebar_item a{
-					width: 45px;
-					top: calc(100% - 68px);
-					left: calc(100% - 62px);
+					width: 30px;
 				}
 			}
 		}
