@@ -810,6 +810,57 @@ body{
 					}
 				}
 			}
+			ul.akkordeon{
+				display: none;
+				width: 100vw;
+				list-style-type: none;
+				padding: 0;
+				li{
+					line-height: 1.6em;
+					font-size: 1.2em;
+					text-align: left;
+					width: 130px;
+					margin: 0 auto;
+					> p{
+						cursor: pointer;
+						padding: 10px 10px;
+						margin: 0;
+						color: $white;
+						text-align: center;
+						font-size: 12px;
+						display: flex;
+						flex-direction: column;
+						&.active {
+							.svg_img{
+								& path.accent{
+									fill: $accent;
+								}
+							}
+						}
+						.svg_img{
+							width: 100px;
+							margin: 0 auto;
+						}
+						span{
+							font-size: 1.4em;
+							margin: 20px 0;
+						}
+					}
+					> div{
+						display: none;
+						padding: 10px;
+						font-size: 11px;
+						line-height: 15px;
+						ul{
+							padding: 0;
+							list-style-type: none;
+							li a{
+								color: $white;								
+							}
+						}
+					}
+				}
+			}
 		}
 		.technologies_wrap{
 			.owl_techn{
@@ -897,6 +948,9 @@ body{
 						display: flex;
 						justify-content: space-between;
 						flex-direction: column;
+					}
+					&.form_item{
+						padding: 0;
 					}
 				}
 			}
@@ -1238,6 +1292,7 @@ body{
 	}
 	@media (max-width: 480px){
 		section.content{
+			font-size: .8em;
 			.banner_wrap .owl-carousel .banner_item{
 				.banner_text{
 					height: 60vh;
@@ -1248,13 +1303,18 @@ body{
 				}
 			}
 			.contacts_wrap .page_wrap{
-				.page_item.contacts_item{
-					height: 350px;
-					flex-direction: column;
-				}
-				.page_item fieldset legend{
-					padding: $gap/2 $gap;
-					margin: 0 auto;
+				.page_item{
+					fieldset legend{
+						padding: $gap/2 $gap;
+						margin: 0 auto;
+					}
+					&.contacts_item{
+						height: 350px;
+						flex-direction: column;
+					}
+					&.form_item{
+						padding: 0;
+					}
 				}
 			}
 			.projects_wrap .page_item img{
@@ -1267,13 +1327,14 @@ body{
 				}
 			}
 			.services_wrap{
-				.page_item{
-					height: auto;
-					ul{
+				.page_wrap{
+					.container{
 						display: none;
 					}
+					ul.akkordeon{
+						display: block;
+					}
 				}
-
 			}
 			&.services_page{
 				.service{
