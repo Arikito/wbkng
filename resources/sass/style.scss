@@ -1167,7 +1167,7 @@ body{
 							margin-right: 0;
 						}
 						a{
-						    font-size: 1.3em;
+							font-size: 1.3em;
 						}
 					}
 					.magic_sidebar{
@@ -1260,6 +1260,21 @@ body{
 			.projects_wrap .page_item img{
 				height: 200px;
 			}
+			.services_wrap,
+			.about_studio_wrap{
+				.container .row > div{
+					width: 100%;
+				}
+			}
+			.services_wrap{
+				.page_item{
+					height: auto;
+					ul{
+						display: none;
+					}
+				}
+
+			}
 			&.services_page{
 				.service{
 					.tabs_block{
@@ -1322,11 +1337,14 @@ body{
 	@media (max-width: 320px){
 		section.content{
 			font-size: .8em;
-			.banner_wrap .owl-carousel .banner_item .banner_text{
-				height: 70vh;
-				.bunner_btn{
-					font-size: 1.8em;
-					bottom: 0em;
+			.banner_wrap{
+				font-size: .8em;
+				.owl-carousel .banner_item .banner_text{
+					height: 70vh;
+					.bunner_btn{
+						font-size: 1.6em;
+						bottom: 0em;
+					}
 				}
 			}
 			&.services_page .magic_sidebar .nav{
