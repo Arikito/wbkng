@@ -1191,6 +1191,26 @@ body{
 				}
 			}
 		}
+		footer{
+			width: calc(100vw - 72px);
+			.page_wrap{
+				width: calc(100vw - 72px);
+				margin: 0;
+				padding: 0 10px;
+				form.subscribe{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+					label{
+						text-align: center;
+						padding: 10px;
+						line-height: 1.2em;
+						font-size: 1em;
+					}
+				}
+			}
+		}
 	}
 	// iPhone5
 	@media (max-width: 570px) and (orientation:landscape){
@@ -1207,6 +1227,12 @@ body{
 						}
 					}
 				}
+			}
+		}
+		footer{
+			width: calc(100vw - 60px);
+			.page_wrap{
+				width: calc(100vw - 60px);
 			}
 		}
 	}
@@ -1237,8 +1263,14 @@ body{
 			&.services_page{
 				.service{
 					.tabs_block{
-						.box .btn_wrap span{
-							margin-right: 0;
+						.box .btn_wrap{
+							left: 0;
+							a{
+								font-size: 1.3em;
+							}
+							span{
+								margin-right: 0;
+							}
 						}
 					}
 				}
