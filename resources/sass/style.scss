@@ -11,7 +11,7 @@
 *{
 	box-sizing: border-box;
 }
-a {
+a{
 	text-decoration: none;
 }
 input[type=text],
@@ -22,7 +22,7 @@ textarea{
 	border-radius: .2em;
 	border: 0;
 	outline: 0;
-	line-height: $gap * 2;
+	line-height: 40px;
 	padding: 0 $gap;
 }
 .hidden{
@@ -43,7 +43,7 @@ textarea{
 	border-radius: .2em;
 	border: 0;
 	outline: 0;
-	line-height: $gap * 2;
+	line-height: 40px;
 	padding: 0 $gap;
 	cursor: pointer;
 	&:hover{
@@ -72,7 +72,7 @@ textarea{
 
 .apple_images{
 	display: flex;
-	.project_image {
+	.project_image{
 		max-width: 33%;
 		max-height: 200px;
 	}
@@ -127,29 +127,29 @@ body{
 				height: 2px;
 				background-color: #000;
 				border-radius: 5px;
-				&.top {
+				&.top{
 					top: 30%;
 				}
-				&.middle {
+				&.middle{
 					top: 50%;
 				}
-				&.bottom {
+				&.bottom{
 					opacity: 1;
 					top: 70%;
 				}
 			}
 		}
 		.sandwich.active{
-			.piece {
-				&.top {
+			.piece{
+				&.top{
 				top: 47%;
 				transform: rotate(135deg);
 				}
-				&.middle {
+				&.middle{
 				top: 35%;
 				transform: rotate(-135deg);
 				}
-				&.bottom {
+				&.bottom{
 				top: 0;
 				opacity: 0;
 				transform: rotate(90deg);
@@ -157,8 +157,8 @@ body{
 			}
 		}
 
-		.sandwich.animate {
-			.piece {
+		.sandwich.animate{
+			.piece{
 				@include animate(.3s);
 				&.bottom{
 					@include animate(.2s);
@@ -194,7 +194,7 @@ body{
 			float: right;
 			padding: $header_height / 4;
 			@include animate(.3s);
-			ul, li {
+			ul, li{
 				padding: 0;
 				margin: 0;
 				list-style: none;
@@ -277,7 +277,7 @@ body{
 				.show:after,
 				.show:before,
 				&:after,
-				&:before {
+				&:before{
 					content: " ";
 					position: absolute;
 					background: $accent;
@@ -292,7 +292,7 @@ body{
 				.show:hover:after,
 				.show:hover:before,
 				&:hover:after,
-				&:hover:before {
+				&:hover:before{
 					height: 1.5em;
 				}
 			}
@@ -323,7 +323,7 @@ body{
 				height: $header_height * .6;
 				padding: $gap / 2;
 			}
-			.menu {
+			.menu{
 				line-height: $header_height * .6;
 			}
 			nav{
@@ -337,14 +337,14 @@ body{
 		margin: 0 auto;
 		overflow: auto;
 		position: relative;
-		h1, h2 {
+		h1, h2{
 			text-align: center;
 			font-size: 2.5em;
 		}
 		.tags_block{
 			display: flex;
 			justify-content: center;
-			p, a {
+			p, a{
 				margin-left: 5px;
 				margin-right: 5px;
 			}
@@ -373,7 +373,7 @@ body{
 				font-size: 1.4em;
 				text-align: center;
 			}
-			.project_title {
+			.project_title{
 				position: absolute;
 				margin: 0;
 				right: 0;
@@ -385,18 +385,18 @@ body{
 				text-align: center;
 				font-size: 20px;
 				@include animate(.4s);
-				p {
+				p{
 					opacity: 1;
 					font-size: 16px;
 				}
-				p:first-child {
+				p:first-child{
 					font-size: 20px;
 					line-height: calc(4em);
 					margin: 0;
 				}
 			}
-			&:hover {
-				.project_title {
+			&:hover{
+				.project_title{
 					top: 0;
 				}
 			}
@@ -483,9 +483,9 @@ body{
 						a{
 							display: block;
 							margin: 0 auto;
-							width: 120px;							
+							width: 120px;
 							margin-top: 6em;
-							line-height: 30px;							
+							line-height: 30px;
 						}
 					}
 					&:hover{
@@ -517,9 +517,6 @@ body{
 		&.services_page{
 			max-width: 100%;
 			margin: 0px;
-			.container{
-				width: 100%;
-				margin: 0 auto;
 				.service{
 					.service_title{
 						text-align: center;
@@ -532,34 +529,14 @@ body{
 						font-size: 1.2em;
 						line-height: 1.4em;
 					}
-					.wkTabs{
-						> div{
-							overflow: hidden;
-							background: lighten($spacegray, 10);
-							min-height: 50vh;
-							.slide {
-								position: relative;
-								.slide_text{
-									color: $white;
-									margin: 0 auto;
-									max-width: 1200px;
-									padding: 20px;
-									li, p{
-										font-size: 1.2em;
-										line-height: 1.4em;
-										text-align: justify;
-									}
-								}
-								.btn_wrap{
-									a{
-										padding: 10px 20px;
-										margin: 0 1em;
-									}
-									.accent_button{
-										border: 1px solid $accent; 
-									}
-								}
-							}
+					/* базовый контейнер вкладок */
+					.tabs_block{
+						width: 100%;
+						margin-top: 40px;
+						&:after{
+							content:"";
+							display:block;
+							clear:both;
 						}
 						> ul{
 							margin:0;
@@ -579,78 +556,163 @@ body{
 								}
 							}
 						}
+						/* панель навигации вкладок */
+						.tabs{
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							display: flex;
+							justify-content: center;
+							margin-bottom: $gap;
+							/* список вкладок */
+							li{
+								text-align: center;
+								// text-transform: uppercase;
+								padding: $gap/2 $gap;
+								margin-right: 5px;
+								cursor: pointer;
+								background: lighten($spacegray, 10);
+								color: $white;
+								border: 1px solid $white;
+								border-radius: .2em;
+								line-height: 20px;
+								font-size: 1.2em;
+								@include animate(.4s);
+								/* активная вкладка */
+								&.active{
+									background: $accent;
+									color: $white;
+									border-color: $accent;
+								}
+							}
+						}
+						/* блоки вкладок с содержанием */
+						.box{
+							position: relative;
+							margin: $gap 0;
+							width: 100%;
+							height: 480px;
+							display: none;
+							text-align: left;
+							background: lighten($spacegray, 10);
+							color: $white;
+							border-radius: .2em;
+							@include animate(.4s);
+							p{
+								margin-bottom: 15px;
+								text-align: justify;
+							}
+							.btn_wrap{
+								position: absolute;
+								bottom: 50px;
+								width: 98%;
+								display: flex;
+								justify-content: flex-end;
+								align-items: center;
+								> *{
+									line-height: 20px;
+								}
+								span{
+									font-size: 1.6em;
+									margin-right: 250px;
+									padding: $gap/2 $gap;
+								}
+								a{
+									padding: $gap/2 $gap*2;
+									margin: 0 1em;
+									font-size: 1.2em;
+								}
+							}
+							.slide_text{
+								color: $white;
+								margin: 0 auto;
+								padding: 0 $gap;
+								display: flex;
+								justify-content: space-between;
+								li, p{
+									font-size: 1.2em;
+									line-height: 1.4em;
+									text-align: justify;
+								}
+							}
+							/* активный блок при загрузке */
+							&.visible,
+							&.open_tab{
+								display: block;
+							}
+						}
 					}
+					
 					//PACKAGES BLOCK
-					.packages_block {
+					.packages_block{
 						display: flex;
 						justify-content: center;
 						margin: 0 auto;
 						color: $spacegray;
 						margin-top: $gap * 3;
 						margin-bottom: $gap * 3;
-						.package {
+						.package{
 							width: 25%;
 							text-align: center;
 							height: 300px;
 							width: 200px;
-							.package_descritpion {
-								ul {
+							.package_descritpion{
+								ul{
 									list-style-type: none;
 									padding: 0px;
 								}
 							}
 						}
 						.package_title, 
-						.package_price {
+						.package_price{
 							line-height: 50px;
 							font-size: 22px;
 						}
-						.middle_package {
+						.middle_package{
 							transform: scale(1.1);
 							background: $white;
-							.package_price {
+							.package_price{
 								background: $accent;
 								color: $white;
 							}
 						}
 						.basic_package, 
-						.full_package {
+						.full_package{
 							background: #eeeeee;
-							.package_price {
+							.package_price{
 								background: lighten($accent, 25);
 							}
 						}
 					}
 				}
-			}
+			
 			//MAGICK SIDEBAR WHITH FANTASTIC SCROLL
 			.magic_sidebar{
 				position: fixed;
-				right: 2vw;
-				top: 0px;
+				height: calc(100vh - 72px);
+				right: 20px;
+				top: 72px;
 				bottom: 0;
 				width: 100px;
+				z-index: 99;
 				.nav{
 					padding: 0px;
+					margin: 0;
 					list-style-type: none;
-					margin-top: 20vh;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
 					.sidebar_item{
-						margin-top: 1vh;
 						padding: 0px;
-						border-radius: 50%;
-						padding: 1em;
-						width: 100px;
-						height: 100px;
+						height: calc((100vh / 4) - 60px);
 						position: relative;
 						@include animate(.4s);
 						a{
 							display: block;
-							position: absolute;
 							width: 50px;
-							height: 50px;
-							top: calc(100% - 75px);
-							left: calc(100% - 75px);
-							color: #242629;
+							margin: 0 auto;
 							.svg_img{
 								@include animate(.4s);
 							}
@@ -659,7 +721,7 @@ body{
 							transform: scale(1.2);
 							.svg_img{
 								transform: scale(1.2);
-								& path.accent {
+								& path.accent{
 									fill: $accent;
 								}
 							}
@@ -742,7 +804,7 @@ body{
 				}
 				&:hover{
 					.svg_img{
-						& path.accent {
+						& path.accent{
 							fill: $accent;
 						}
 					}
@@ -787,7 +849,7 @@ body{
 				.page_item{
 					height: 100%;
 					p{
-						margin: 10px 0;
+						margin: $gap/2 0;
 						text-align: left;
 						font-size: 1.4em;
 					}
@@ -796,7 +858,7 @@ body{
 							display: flex;
 							span{
 								line-height: 30px;
-								margin: 0 10px;
+								margin: 0 $gap/2;
 							}
 						}
 						.svg_img{
@@ -840,16 +902,16 @@ body{
 			}
 		}
 		.location_wrap{
-			.overlay {
-				background:transparent;
-				position:relative; 
-				width:100%;
-				height:450px;
-				top:450px;
-				margin-top:-450px;
+			.overlay{
+				background: transparent;
+				position: relative; 
+				width: 100%;
+				height: 450px;
+				top: 450px;
+				margin-top: -450px;
 			}
 			.studio_location{
-				width:100%;
+				width: 100%;
 				display: block;
 				margin: 0 auto;
 			}
@@ -875,18 +937,18 @@ body{
 				display: inline-block;
 				float: left;
 				// padding: 0 $gap;
-				#lion {
+				#lion{
 					display: none;
 				}
-				#text_1_ * {
+				#text_1_ *{
 					fill: darken($lightfont, 50) !important;
 				}
 			}
-			.page_wrap {
+			.page_wrap{
 				display: flex;
 				justify-content: space-between;
 				flex-wrap: wrap;
-				.rights {
+				.rights{
 					color: darken($lightfont, 30);
 					padding-right: $gap;
 				}
@@ -959,7 +1021,7 @@ body{
 			padding: 0;
 		}
 		section.content{
-			padding-top: 200px;
+			padding-top: 72px;
 			.banner_wrap{
 				.owl-carousel{
 					.owl-wrapper-outer,
@@ -978,60 +1040,25 @@ body{
 				padding: 0 $gap;
 			}
 			&.services_page{
+				padding-top: 182px;
 				.container{
-					width: 100vw;
 					.service{
 						.main_text{
-							padding: 20px;
+							padding: $gap;
 						}
 					}
 				}
 				.magic_sidebar{
-					position: fixed;
 					right: 0;
-					top: 0px;
-					bottom: 0;
+					top: 72px;
 					width: 100vw;
 					height: 100px;
 					.nav{
-						padding: 0px;
-						list-style-type: none;
-						margin-top: 7vh;
-						display: flex;
-						justify-content: center;
 						background: $spacegray;
-						// border-bottom: 2px solid $white;
-						// border-bottom: 2px solid #2e3034;
+						flex-direction: row;
 						.sidebar_item{
-							margin-top: 1vh;
-							padding: 0px;
-							border-radius: 50%;
-							padding: 1em;
-							width: 100px;
-							height: 100px;
-							position: relative;
-							@include animate(.4s);
-							a{
-								display: block;
-								position: absolute;
-								width: 50px;
-								height: 50px;
-								top: calc(100% - 75px);
-								left: calc(100% - 75px);
-								color: #242629;
-								.svg_img{
-									@include animate(.4s);
-								}
-							}
-							&.active{
-								transform: scale(1.2);
-								.svg_img{
-									transform: scale(1.2);
-									& path.accent {
-										fill: $accent;
-									}
-								}
-							}
+							width: calc((100vw / 4) - 60px);
+							height: 50px;
 						}
 					}
 				}
@@ -1039,11 +1066,11 @@ body{
 		}
 		footer{
 			.copyright{
-				.logo {
+				.logo{
 					padding: 0px !important;
 					height: 50px !important;
 					width: 100%;
-					margin-bottom: $gap / 2;
+					margin-bottom: $gap/2;
 					order: 3;
 				}
 				.rights{
@@ -1054,11 +1081,11 @@ body{
 				}
 			}
 			.page_wrap{
-				nav {
+				nav{
 					width: 100%;
 					display: flex;
 					justify-content: center;
-					a {
+					a{
 						line-height: 50px;
 					}
 				}
@@ -1082,9 +1109,26 @@ body{
 					}
 				}
 			}
+			&.services_page{
+				.service{
+					.tabs_block{
+						.box{
+							height: auto;
+							.btn_wrap{
+								justify-content: space-between;
+								left: $gap;
+								width: 95vw;
+								position: relative;
+								padding-bottom: $gap*2;
+								bottom: 0;
+							}
+						}
+					}
+					
+				}
+			}
 		}
 	}
-	
 	@media screen and (max-width: 700px){
 		header{
 			nav{
@@ -1094,62 +1138,179 @@ body{
 					align-items: center;
 					li{
 						width: 160px;
-						margin-bottom: 10px;
+						margin-bottom: $gap/2;
 						text-align: center;
 						line-height: $header_height * .6;
 					}
 				}
 			}
-			.header_navigation.active {
+			.header_navigation.active{
 				height: 340px;
 			}
 		}
-	}
-	@media (max-width: 450px) {
 		section.content{
-			font-size: 1.2em;
+			font-size: .9em;
+		}
+	}
+	@media (max-width: 750px) and (orientation:landscape){
+		section.content{
+			font-size: .8em;
+			&.services_page{
+				padding-top: 72px;
+				.page_wrap{
+					width: calc(100vw - 72px);
+					margin: 0;
+					.service .tabs_block .box .btn_wrap{
+						left: $gap;
+						width: 82vw;
+						span{
+							margin-right: 0;
+						}
+						a{
+						    font-size: 1.3em;
+						}
+					}
+					.magic_sidebar{
+						width: 72px;
+						height: calc(100vh - 72px);
+						.nav{
+							flex-direction: column;
+							.sidebar_item{
+								height: calc(100% / 4);
+								width: auto;
+								padding-top: $gap;
+								a{
+									width: 40px;
+								}
+								&.active .svg_img{
+									transform: scale(1);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		footer{
+			width: calc(100vw - 72px);
+			.page_wrap{
+				width: calc(100vw - 72px);
+				margin: 0;
+				padding: 0 10px;
+				form.subscribe{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+					label{
+						text-align: center;
+						padding: 10px;
+						line-height: 1.2em;
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+	// iPhone5
+	@media (max-width: 570px) and (orientation:landscape){
+		section.content{
+			&.services_page{
+				.page_wrap{
+					width: calc(100vw - 60px);
+					.magic_sidebar{
+						width: 60px;
+						.nav .sidebar_item{
+							a{
+								width: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+		footer{
+			width: calc(100vw - 60px);
+			.page_wrap{
+				width: calc(100vw - 60px);
+			}
+		}
+	}
+	@media (max-width: 480px){
+		section.content{
 			.banner_wrap .owl-carousel .banner_item{
 				.banner_text{
 					height: 60vh;
 				}
 				.bunner_btn{
 					font-size: 1.3em;
+					bottom: 0em;
 				}
 			}
 			.contacts_wrap .page_wrap{
-				.page_item.contacts_item {
-					height: 300px;
+				.page_item.contacts_item{
+					height: 350px;
 					flex-direction: column;
 				}
-				.page_item fieldset legend {
-					padding: 10px 20px;
+				.page_item fieldset legend{
+					padding: $gap/2 $gap;
+					margin: 0 auto;
 				}
 			}
-			.projects_wrap .page_item img {
+			.projects_wrap .page_item img{
 				height: 200px;
 			}
+			&.services_page{
+				.service{
+					.tabs_block{
+						.box .btn_wrap{
+							left: 0;
+							a{
+								font-size: 1.3em;
+							}
+							span{
+								margin-right: 0;
+							}
+						}
+					}
+				}
+				.magic_sidebar{
+					.nav{
+						justify-content: space-around;
+						height: auto;
+						padding: $gap;
+						.sidebar_item{
+							height: calc(100% / 4);
+							width: auto;
+							a{
+								width: 40px;
+							}
+						}
+					}
+				}
+			}
 		}
-		footer {
-			.copyright {
-				.rights {
+		footer{
+			.copyright{
+				.rights{
 					display: flex;
 					justify-content: center;
 					flex-wrap: wrap;
 				}
 			} 
-			.page_wrap {
-				.subscribe {
+			.page_wrap{
+				.subscribe{
 					display: flex;
 					justify-content: center;
 					flex-wrap: wrap;
-					input {
+					input{
 						margin-top: $gap / 2;
 						margin-left: 0px;
 					}
 				}
-				nav {
+				nav{
 					flex-wrap: wrap;
-					a {
+					a{
 						line-height: 50px;
 						width: 100%;
 						text-align: center;
@@ -1158,35 +1319,19 @@ body{
 			}
 		}
 	}
-	@media (max-width: 450px){
-		section.content{
-			font-size: .8em;
-			.banner_wrap .owl-carousel .banner_item{
-				.banner_text{
-					height: 60vh;
-					.bunner_btn{
-						bottom: 0em;
-					}
-				}
-			}
-			.contacts_wrap .page_wrap{
-				.page_item.contacts_item {
-					height: 350px;
-				}
-				.page_item fieldset legend {
-					margin: 0 auto;
-				}
-			}
-		}
-	}
 	@media (max-width: 320px){
 		section.content{
-			font-size: .6em;
+			font-size: .8em;
 			.banner_wrap .owl-carousel .banner_item .banner_text{
 				height: 70vh;
 				.bunner_btn{
 					font-size: 1.8em;
 					bottom: 0em;
+				}
+			}
+			&.services_page .magic_sidebar .nav{
+				.sidebar_item a{
+					width: 30px;
 				}
 			}
 		}
