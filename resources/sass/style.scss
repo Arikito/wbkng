@@ -519,7 +519,7 @@ body{
 			margin: 0px;
 				.service{
 					padding-top: 120px;
-    				margin-top: -120px;
+					margin-top: -120px;
 					.service_title{
 						text-align: center;
 						font-size: 2.5em;
@@ -570,7 +570,7 @@ body{
 							li{
 								text-align: center;
 								// text-transform: uppercase;
-								padding: $gap/2 $gap;
+								padding: $gap/2 $gap/2;
 								margin-right: 5px;
 								cursor: pointer;
 								background: lighten($spacegray, 10);
@@ -1100,7 +1100,7 @@ body{
 				.service{
 					padding-top: 190px;
 					margin-top: -190px;
-		    	}
+				}
 				.container{
 					.service{
 						.main_text{
@@ -1389,6 +1389,14 @@ body{
 							}
 							span{
 								margin-right: 0;
+							}
+						}
+						.tabs{
+							li{
+								width: 44%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
 							}
 						}
 					}
