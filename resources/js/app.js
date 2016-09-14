@@ -121,13 +121,13 @@ $(function(s){
 		})
 	}
 
-	$('ul.akkordeon li > p').click(function(){
+	$('ul.akkordeon li > div').click(function(){
 		if(!$(this).hasClass('active')){
-			$('ul.akkordeon li > p').removeClass('active').next('div').slideUp();
+			$('ul.akkordeon li > div').removeClass('active').next('ul').stop(true, true).slideUp();
 			$(this).addClass('active');
-			$(this).next('div').slideDown(200);
+			$(this).next('ul').stop(true, true).slideDown(400);
 		}else{
-			$(this).removeClass('active').next('div').slideUp();
+			$(this).removeClass('active').next('ul').stop(true, true).slideUp();
 		}
 	});
 
