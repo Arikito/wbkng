@@ -9,7 +9,7 @@ $(function(s){
 		slideSpeed: 300,
 		paginationSpeed: 400,
 		singleItem:true,
-		// autoPlay: 5000,
+		autoPlay: 5000,
 		stopOnHover: false,
 		autoHeight: false,
 		transitionStyle: "fade"
@@ -110,7 +110,6 @@ $(function(s){
 		$('.overlay_js').addClass('overlay');
 	});
 
-
 	var n;
 	s(".tabs").on("click", "li:not(.active)", function() {
 		n = s(this).parents(".tabs_block"), s(this).dmtabs(n)
@@ -122,15 +121,21 @@ $(function(s){
 		})
 	}
 
-	$('ul.akkordeon li > p').click(function() {
-	    if (!$(this).hasClass('active')) { //если "кликнутый" пункт неактивный:
-	      $('ul.akkordeon li > p').removeClass('active').next('div').slideUp(); //делаем неактивными все пункты и скрываем все блоки
-	      $(this).addClass('active'); //активируем "кликнутый" пункт
-	      $(this).next('div').slideDown(200); //раскрываем следующий за ним блок с описанием
-	    } else { //иначе:
-	      $(this).removeClass('active').next('div').slideUp(); //скрываем данный пункт
-	    }
-	  });
+	$('ul.akkordeon li > p').click(function(){
+		if(!$(this).hasClass('active')){
+			$('ul.akkordeon li > p').removeClass('active').next('div').slideUp();
+			$(this).addClass('active');
+			$(this).next('div').slideDown(200);
+		}else{
+			$(this).removeClass('active').next('div').slideUp();
+		}
+	});
+
+	$('.tag_js').click(function(event){
+		var classList = $(this).attr('class').split(/\s+/),
+			parent = $(this).closest('.content');		
+		projects_filter(classList[0], parent);
+	});
 });
 
 function header_fix(){
@@ -138,5 +143,15 @@ function header_fix(){
 		$('body').addClass('scrolled');
 	}else if($('body').hasClass('scrolled') && $(this).scrollTop() < 150){
 		$('body').removeClass('scrolled');
+	}
+}
+
+// Функция для фильтрации проектов на странице "Портфолио"
+function projects_filter(project_type, parent){
+	if(project_type == 'all'){
+		parent.find('.items_wrap > div').removeClass('hidden');
+	}else{
+		parent.find('.items_wrap > div:not(.' + project_type + ')').addClass('hidden');
+		parent.find('.items_wrap > div.' + project_type).removeClass('hidden');
 	}
 }
