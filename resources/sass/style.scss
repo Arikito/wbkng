@@ -1207,8 +1207,25 @@ body{
 		}
 	}
 	@media (max-width: 750px) and (orientation:landscape){
+		header{
+			nav ul li{
+				margin-bottom: 0;
+			}
+		}
 		section.content{
 			font-size: .8em;
+			.banner_wrap{
+				.owl-carousel .banner_item .banner_text {
+					width: 90vw;
+					left: 5vw;
+					font-size: .8em;
+					.bunner_btn{
+						font-size: 1.6em;
+						bottom: .5em;
+						line-height: 30px;
+					}
+				}
+			}
 			&.services_page{
 				padding-top: 72px;
 				.page_wrap{
@@ -1245,7 +1262,7 @@ body{
 				}
 			}
 		}
-		footer{
+		section.content.services_page + footer{
 			width: calc(100vw - 72px);
 			.page_wrap{
 				width: calc(100vw - 72px);
@@ -1268,7 +1285,27 @@ body{
 	}
 	// iPhone5
 	@media (max-width: 570px) and (orientation:landscape){
+		header{
+			nav ul li{
+				line-height: 55px;
+				.show a{
+					line-height: 55px;
+				}
+			}
+		}
 		section.content{
+			.banner_wrap{
+				.owl-carousel .banner_item .banner_text {
+					width: 100vw;
+					left: 0;
+					font-size: .7em;
+					.bunner_btn{
+						width: 180px;
+						left: calc(50% - 90px);
+						font-size: 1.6em;
+					}
+				}
+			}
 			&.services_page{
 				.page_wrap{
 					width: calc(100vw - 60px);
@@ -1283,7 +1320,7 @@ body{
 				}
 			}
 		}
-		footer{
+		section.content.services_page + footer{
 			width: calc(100vw - 60px);
 			.page_wrap{
 				width: calc(100vw - 60px);
