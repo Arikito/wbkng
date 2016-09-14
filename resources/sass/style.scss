@@ -1097,6 +1097,10 @@ body{
 			}
 			&.services_page{
 				padding-top: 182px;
+				.service{
+					padding-top: 190px;
+					margin-top: -190px;
+		    	}
 				.container{
 					.service{
 						.main_text{
