@@ -863,7 +863,7 @@ body{
 			.magic_sidebar{
 				position: fixed;
 				height: calc(100vh - 72px);
-				right: 20px;
+				right: $gap;
 				top: 72px;
 				bottom: 0;
 				width: 100px;
@@ -881,6 +881,7 @@ body{
 						padding: 0px;
 						height: calc((100vh / 4) - 60px);
 						position: relative;
+						top: $gap;
 						@include animate(.4s);
 						a{
 							display: block;
@@ -1013,6 +1014,7 @@ body{
 					width: 100%;
 					text-align: center;
 					line-height: $header_height * .6;
+					justify-content: center;
 					li{
 						.show{
 							a{
@@ -1079,6 +1081,7 @@ body{
 						.sidebar_item{
 							width: calc((100vw / 4) - 60px);
 							height: 50px;
+							top: 0;
 						}
 					}
 				}

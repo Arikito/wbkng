@@ -566,7 +566,7 @@ body section.content.services_page .service .packages_block .basic_package, body
 body section.content.services_page .service .packages_block .basic_package .package_price, body section.content.services_page .service .packages_block .full_package .package_price { background: #f15f5f; }
 body section.content.services_page .magic_sidebar { position: fixed; height: calc(100vh - 72px); right: 20px; top: 72px; bottom: 0; width: 100px; z-index: 99; }
 body section.content.services_page .magic_sidebar .nav { padding: 0px; margin: 0; list-style-type: none; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; }
-body section.content.services_page .magic_sidebar .nav .sidebar_item { padding: 0px; height: calc((100vh / 4) - 60px); position: relative; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body section.content.services_page .magic_sidebar .nav .sidebar_item { padding: 0px; height: calc((100vh / 4) - 60px); position: relative; top: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item a { display: block; width: 50px; margin: 0 auto; }
 body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active { transform: scale(1.2); }
@@ -597,7 +597,7 @@ body footer .subscribe input { margin-left: 20px; }
   body header .menu { display: block; line-height: 72px; cursor: pointer; }
   body header .sandwich { display: block; }
   body header nav { width: 100%; overflow: hidden; padding: 0; }
-  body header nav ul { width: 100%; text-align: center; line-height: 72px; }
+  body header nav ul { width: 100%; text-align: center; line-height: 72px; justify-content: center; }
   body header nav ul li .show a { line-height: 72px; }
   body header .header_navigation.active { height: 90px; }
   body header .header_navigation { height: 0px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -611,7 +611,7 @@ body footer .subscribe input { margin-left: 20px; }
   body section.content.services_page .container .service .main_text { padding: 20px; }
   body section.content.services_page .magic_sidebar { right: 0; top: 72px; width: 100vw; height: 100px; }
   body section.content.services_page .magic_sidebar .nav { background: #242629; flex-direction: row; }
-  body section.content.services_page .magic_sidebar .nav .sidebar_item { width: calc((100vw / 4) - 60px); height: 50px; }
+  body section.content.services_page .magic_sidebar .nav .sidebar_item { width: calc((100vw / 4) - 60px); height: 50px; top: 0; }
   body footer .copyright .logo { padding: 0px !important; height: 50px !important; width: 100%; margin-bottom: 10px; order: 3; }
   body footer .copyright .rights { text-align: center; width: 100%; line-height: 50px; padding: 0px !important; }
   body footer .page_wrap nav { width: 100%; display: flex; justify-content: center; }
