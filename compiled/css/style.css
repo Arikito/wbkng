@@ -449,7 +449,7 @@ body header .sandwich.animate .piece.bottom { -webkit-transition: all 0.2s cubic
 body header nav { display: inline-block; float: right; padding: 30px; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header nav ul, body header nav li { padding: 0; margin: 0; list-style: none; }
 body header nav li { display: inline-block; position: relative; margin: 0 .2em; text-align: center; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-body header nav li .show a { text-decoration: none; text-transform: uppercase; cursor: pointer; line-height: 60px; padding: 0 20px; display: inline-block; width: 100%; font-size: 1.2em; color: #888; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body header nav li .show a { text-decoration: none; text-transform: uppercase; cursor: pointer; line-height: 60px; padding: 0 18px; display: inline-block; width: 100%; font-size: 1.2em; color: #888; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body header nav li .show a:after, body header nav li .show a:before { position: absolute; background: #bf1111; height: 1px; width: 0; content: " "; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body header nav li .show a:first-child:before { top: 0; left: 0; }
 body header nav li .show a:first-child:after { bottom: 0; right: 0; }
@@ -469,7 +469,7 @@ body header nav li.active a { color: #bf1111; font-weight: 600; }
 body header .header_navigation.active { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
-body.scrolled header nav { padding: 6px; }
+body.scrolled header nav { padding: 8px; }
 body .page_wrap { max-width: 1300px; width: 80vw; margin: 0 auto; overflow: auto; position: relative; }
 body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; }
 body .page_wrap .tags_block { display: flex; justify-content: center; }
