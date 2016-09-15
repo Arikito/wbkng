@@ -194,6 +194,9 @@ body{
 			float: right;
 			padding: $header_height / 4;
 			@include animate(.3s);
+			ul{
+				display: flex;
+			}
 			ul, li{
 				padding: 0;
 				margin: 0;
