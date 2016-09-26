@@ -357,7 +357,7 @@ body{
 		padding-top: $header_height;
 		min-height: 100vh;
 		.subsection{
-			padding: 3em 0;
+			padding: 5em 0;
 		}
 		.page_item{
 			display: block;
@@ -506,8 +506,10 @@ body{
 								a{
 									color: $white;
 								}
-								&:hover{
-									text-shadow: 3px 2px 1px lighten($accent, 5);
+								&:hover a {
+									// text-shadow: 3px 2px 1px lighten($accent, 5);
+									color: lighten($accent, 5);
+									@include animate(.3s);
 								}
 							}
 						}
@@ -587,7 +589,7 @@ body{
 								border-radius: 3px;
 								border: 1px solid #2b1111;
 								font-size: 1.4em;
-								margin: 0 $gap;
+								margin: 0px auto;
 							}
 							form{
 								display: block;

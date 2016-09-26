@@ -476,7 +476,7 @@ body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; }
 body .page_wrap .tags_block { display: flex; justify-content: center; flex-wrap: wrap; }
 body .page_wrap .tags_block p, body .page_wrap .tags_block a { margin-left: 5px; margin-right: 5px; }
 body section.content { padding-top: 120px; min-height: 100vh; }
-body section.content .subsection { padding: 3em 0; }
+body section.content .subsection { padding: 5em 0; }
 body section.content .page_item { display: block; background: #fff; position: relative; overflow: hidden; }
 body section.content .page_item img { display: block; height: 250px; width: 100%; }
 body section.content .page_item p { text-align: center; }
@@ -504,7 +504,7 @@ body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .s
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .title { font-size: 1.6em; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li { list-style: none; line-height: 1.6em; font-size: 1.3em; width: 130px; margin: 0 auto; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li a { color: #fff; }
-body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li:hover { text-shadow: 3px 2px 1px #d61313; }
+body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li:hover a { color: #d61313; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .svg_img path.accent { fill: #bf1111; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item { padding: .5em; background: transparent; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item img { display: block; margin: 0 auto; width: 400px; height: 600px; }
@@ -519,7 +519,7 @@ body section.content.home_page .contacts_wrap .page_wrap .page_item .contacts p 
 body section.content.home_page .contacts_wrap .page_wrap .page_item .contacts p span { line-height: 30px; margin: 0 10px; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item .contacts .svg_img { width: 30px; height: 30px; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item fieldset { background: #2e3034; border-width: 0px; border-radius: 3px; padding: 20px; }
-body section.content.home_page .contacts_wrap .page_wrap .page_item fieldset legend { padding: 10px 40px; background: #fff; border-radius: 3px; border: 1px solid #2b1111; font-size: 1.4em; margin: 0 20px; }
+body section.content.home_page .contacts_wrap .page_wrap .page_item fieldset legend { padding: 10px 40px; background: #fff; border-radius: 3px; border: 1px solid #2b1111; font-size: 1.4em; margin: 0px auto; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item fieldset form { display: block; margin: 0 auto; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item fieldset form > * { border: 1px solid #2e3034; width: 100%; margin: 5px 0; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item fieldset form input[type="submit"] { font-size: 1.4em; }
