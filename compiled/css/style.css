@@ -472,7 +472,7 @@ body.scrolled header .menu { line-height: 72px; }
 body.scrolled header nav { padding: 6px; }
 body .page_wrap { max-width: 1300px; width: 80vw; margin: 0 auto; overflow: auto; position: relative; }
 body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; }
-body .page_wrap .tags_block { display: flex; justify-content: center; }
+body .page_wrap .tags_block { display: flex; justify-content: center; flex-wrap: wrap; }
 body .page_wrap .tags_block p, body .page_wrap .tags_block a { margin-left: 5px; margin-right: 5px; }
 body section.content { padding-top: 120px; min-height: 100vh; }
 body section.content .subsection { padding: 3em 0; }
