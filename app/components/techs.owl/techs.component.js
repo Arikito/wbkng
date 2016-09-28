@@ -28,8 +28,8 @@ var TechsComponent = (function () {
     };
     TechsComponent = __decorate([
         core_1.Component({
-            selector: 'my-tech-owl',
-            template: "<div id=\"owl-techn\" class=\"owl-carousel owl-theme owl_techn\">\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/php.svg\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/jquery.svg\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/html.svg\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/jquery.svg\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/php.svg\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/wp.svg\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/php.svg\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"page_item\">\n\t\t\t\t\t<img class=\"svg_img svg\" src=\"/compiled/img/jquery.svg\">\n\t\t\t\t</div>\n\t\t\t</div>"
+            selector: 'owl-techs',
+            templateUrl: 'app/components/techs.owl/techs.component.html'
         }), 
         __metadata('design:paramtypes', [core_2.ElementRef])
     ], TechsComponent);

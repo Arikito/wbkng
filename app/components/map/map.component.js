@@ -23,7 +23,7 @@ var MapComponent = (function () {
     MapComponent = __decorate([
         core_1.Component({
             selector: 'my-map',
-            template: "<div class=\"location_wrap location_wrap_js\">\n  \t\t\t\t<div class=\"overlay overlay_js\"></div>\n  \t\t\t</div>"
+            template: "<div class=\"location_wrap location_wrap_js\">\n\t\t\t\t\t<div class=\"overlay overlay_js\"></div>\n\t\t\t\t</div>"
         }), 
         __metadata('design:paramtypes', [core_2.ElementRef])
     ], MapComponent);

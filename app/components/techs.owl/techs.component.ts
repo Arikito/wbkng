@@ -4,33 +4,8 @@ import { OnInit } from '@angular/core';
 declare var jQuery: any;
 
 @Component({
-  selector: 'my-tech-owl',
-  template: `<div id="owl-techn" class="owl-carousel owl-theme owl_techn">
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/php.svg">
-				</div>
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/jquery.svg">
-				</div>
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/html.svg">
-				</div>
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/jquery.svg">
-				</div>
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/php.svg">
-				</div>
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/wp.svg">
-				</div>
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/php.svg">
-				</div>
-				<div class="page_item">
-					<img class="svg_img svg" src="/compiled/img/jquery.svg">
-				</div>
-			</div>`
+  selector: 'owl-techs',
+  templateUrl: 'app/components/techs.owl/techs.component.html'
 })
 
 export class TechsComponent implements OnInit {

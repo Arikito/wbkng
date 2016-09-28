@@ -4,10 +4,10 @@ import { OnInit } from '@angular/core';
 declare var jQuery: any;
 
 @Component({
-  selector: 'my-map',
-  template: `<div class="location_wrap location_wrap_js">
-  				<div class="overlay overlay_js"></div>
-  			</div>`
+	selector: 'my-map',
+	template: `<div class="location_wrap location_wrap_js">
+					<div class="overlay overlay_js"></div>
+				</div>`
 })
 
 export class MapComponent implements OnInit {
