@@ -513,7 +513,6 @@ body section.content.home_page .about_studio_wrap .page_item p { max-width: 250p
 body section.content.home_page .about_studio_wrap .page_item .title { text-align: center; }
 body section.content.home_page .contacts_wrap .page_wrap { padding: 20px 0; }
 body section.content.home_page .contacts_wrap .page_wrap h2 { margin-top: 0; }
-body section.content.home_page .contacts_wrap .page_wrap .page_item { height: 100%; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item p { margin: 10px 0; text-align: left; font-size: 1.4em; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item .contacts p { display: flex; }
 body section.content.home_page .contacts_wrap .page_wrap .page_item .contacts p span { line-height: 30px; margin: 0 10px; }
