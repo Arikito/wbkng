@@ -26,48 +26,7 @@ import { Component } from '@angular/core';
 			</header>
 			<section class="content home_page">
 				<div class="banner_wrap">
-					<div id="owl-banner" class="owl-carousel owl-theme owl_banner">
-						<div class="banner_item">
-							<img src="/compiled/img/bg1.jpg" alt="slide">
-							<div class="banner_text">
-								<h2>БРИФИНГ И ОПРЕДЕЛЕНИЕ ЦЕЛЕЙ</h2>
-								<p>Анализируем цели и потребности Вашего бизнеса, целевой аудитории и конкурентов. После подготовления технических, дизайнерских, функциональных требованих, разработаем стратегию электронной коммерции – продвижение сайта для развития вашего бизнеса.</p>
-								<a href="http://webking/services.html" class="bunner_btn accent_button">Хочу работать с Вами</a>
-							</div>
-						</div>
-						<div class="banner_item">
-							<img src="/compiled/img/bg2.jpg" alt="slide">
-							<div class="banner_text">
-								<h2>ПРОЕКТИРОВАНИЕ ИНТЕРФЕЙСА И ДИЗАЙН</h2>
-								<p>Создаем визуально приятный, понятный, удобный и легкий в использовании интерфейс. Тщательно продуманный и грамотно сконструированный вебсайт значительно увеличит Ваши продажи, вовлеченность клиентов и лояльность к бренду.</p>
-								<a href="http://webking/services.html" class="bunner_btn accent_button">Хочу работать с Вами</a>
-							</div>
-						</div>
-						<div class="banner_item">
-							<img src="/compiled/img/bg3.jpg" alt="slide">
-							<div class="banner_text">
-								<h2>РАЗРАБОТКА ФУНКЦИОНАЛА</h2>
-								<p>По утвержденному техническому заданию создаем ​​сайты с использованием передовых методов программирования и новейших платформ электронной коммерции.</p>
-								<a href="http://webking/services.html" class="bunner_btn accent_button">Хочу работать с Вами</a>
-							</div>
-						</div>
-						<div class="banner_item">
-							<img src="/compiled/img/bg4.jpg" alt="slide">
-							<div class="banner_text">
-								<h2>ТЕСТИРОВАНИЕ И ЗАПУСК</h2>
-								<p>Тестируем каждую деталь Вашего сайта для устранения недостатков. После окончательной проверки отправляем Ваш сайт на просторы интернета для установления отношений с google analytics</p>
-								<a href="http://webking/services.html" class="bunner_btn accent_button">Хочу работать с Вами</a>
-							</div>
-						</div>
-						<div class="banner_item">
-							<img src="/compiled/img/bg5.jpg" alt="slide">
-							<div class="banner_text">
-								<h2>ОПТИМИЗАЦИЯ И ОБСЛУЖИВАНИЕ</h2>
-								<p>Обслуживаем вебсайт, отслеживаем и анализируем эффективность работы сайта и поведение пользователей на сайте. Мы работаем над увеличением посещаемости и вовлеченности посетителей сайта.</p>
-								<a href="http://webking/services.html" class="bunner_btn accent_button">Хочу работать с Вами</a>
-							</div>
-						</div>
-					</div>
+					<my-owl></my-owl>
 				</div>
 				<div class="subsection projects_wrap light_style">
 					<div class="page_wrap">
@@ -222,32 +181,7 @@ import { Component } from '@angular/core';
 				<div class="subsection technologies_wrap light_style" id="techs">
 					<div class="page_wrap">
 						<h2>Технологии</h2>
-						<div id="owl-techn" class="owl-carousel owl-theme owl_techn">
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/php.svg">
-							</div>
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/jquery.svg">
-							</div>
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/html.svg">
-							</div>
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/jquery.svg">
-							</div>
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/php.svg">
-							</div>
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/wp.svg">
-							</div>
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/php.svg">
-							</div>
-							<div class="page_item">
-								<img class="svg_img svg" src="/compiled/img/jquery.svg">
-							</div>
-						</div>
+						<my-tech-owl></my-tech-owl>
 					</div>
 				</div>
 				<div class="subsection about_studio_wrap" id="about">
@@ -326,7 +260,7 @@ import { Component } from '@angular/core';
 						</div>
 					</div>
 				</div>
-				<div class="location_wrap location_wrap_js"><div class="overlay overlay_js"></div></div>
+				<my-map></my-map>
 			</section>
 			<footer>
 				<div class="page_wrap">
@@ -365,6 +299,8 @@ import { Component } from '@angular/core';
 					</div>
 				</div>
 			</footer>
-			<script src="//localhost:35729/livereload.js"></script>`
+			<script src="//localhost:35729/livereload.js"></script>`,
 })
+
 export class AppComponent { }
+

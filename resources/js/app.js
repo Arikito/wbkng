@@ -4,40 +4,42 @@ $(function(s){
 		header_fix();
 	});
 	// Инициализация owlCarousel
-	$("#owl-banner").owlCarousel({
-		//navigation: true, // Show next and prev buttons
-		slideSpeed: 300,
-		paginationSpeed: 400,
-		singleItem:true,
-		autoPlay: 5000,
-		stopOnHover: false,
-		autoHeight: false,
-		transitionStyle: "fade"
-	});
-	$("#owl-techn").owlCarousel({
-		items: 6,
-		itemsDesktop: [1000,5], //5 items between 1000px and 901px
-		itemsDesktopSmall: [900,3], // betweem 900px and 601px
-		itemsTablet: [600,2], //2 items between 600 and 0
-		itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
-		singleItem: false,
-		pagination: false,
-		autoPlay: 5000
-		// transitionStyle: "fade"
+	// $("#owl-banner").owlCarousel({
+	// 	slideSpeed: 300,
+	// 	paginationSpeed: 400,
+	// 	singleItem:true,
+	// 	autoPlay: 5000,
+	// 	stopOnHover: false,
+	// 	autoHeight: false,
+	// 	transitionStyle: "fade"
+	// });
+	// $("#owl-techn").owlCarousel({
+	// 	items: 6,
+	// 	itemsDesktop: [1000,5], //5 items between 1000px and 901px
+	// 	itemsDesktopSmall: [900,3], // betweem 900px and 601px
+	// 	itemsTablet: [600,2], //2 items between 600 and 0
+	// 	itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+	// 	singleItem: false,
+	// 	pagination: false,
+	// 	autoPlay: 5000
+	// });
+	// $('.sandwich').on('click', function(){
+	// 	// $('.header_navigation_js').stop(true, true).slideToggle();
+	// 	$(this).toggleClass('active').next().toggleClass('active');
+	// });
+	// $('.header_navigation_js li').on('click', function(){
+	// 	$(this).closest('nav').toggleClass('active');
+	// });
+
+	$('.sandwich, .header_navigation_js li').on('click', function(){
+		$('.header_navigation_js, .sandwich').toggleClass('active');
 	});
 
-	$('body').on('click', '.content, .sandwich, .header_navigation_js li', function(){
-		if($(this).hasClass('content')){
-			if($('.sandwich').hasClass('active')){
-				$('.header_navigation_js, .sandwich').removeClass('active');
-			}
-		}else{
+	$('.content').on('click', function(){
+		if($('.sandwich').hasClass('active')){
 			$('.header_navigation_js, .sandwich').toggleClass('active');
 		}
-	}).on('click', 'header', function(){
-		console.log('header was clicked');
 	});
-
 	$(document).ready(function(){
 	    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
@@ -86,6 +88,7 @@ $(function(s){
 		var imgID = $img.attr('id');
 		var imgClass = $img.attr('class');
 		var imgURL = $img.attr('xlink:href');
+
 		jQuery.get(imgURL, function(data) {
 			// Get the SVG tag, ignore the rest
 			var $svg = jQuery(data).find('svg');
@@ -114,11 +117,11 @@ $(function(s){
 
 	});
 	// Добавление карты google в iframe на главную страницу
-	$('.location_wrap_js').append('<iframe class="studio_location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.868227405213!2d36.33375571592626!3d49.995079927951814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709f454712171%3A0x3b2d17930e9f0fe6!2z0L_RgNC-0YHQv9C10LrRgiDQrtCy0ZbQu9C10LnQvdC40LksIDU00JAsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1470824666205" width=" ' + ($(window).outerWidth() - 20) + ' " height="450" frameborder="0" style="border:0" allowfullscreen scrolling="no"></iframe>');
+	// $('.location_wrap_js').append('<iframe class="studio_location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.868227405213!2d36.33375571592626!3d49.995079927951814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709f454712171%3A0x3b2d17930e9f0fe6!2z0L_RgNC-0YHQv9C10LrRgiDQrtCy0ZbQu9C10LnQvdC40LksIDU00JAsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1470824666205" width=" ' + ($(window).outerWidth() - 20) + ' " height="450" frameborder="0" style="border:0" allowfullscreen scrolling="no"></iframe>');
 	// Активация zoom на карте google на главной странице
-	$('.location_wrap_js .overlay_js').click(function(event){
-		$(this).removeClass('overlay');
-	});
+	// $('.location_wrap_js .overlay_js').click(function(event){
+	// 	$(this).removeClass('overlay');
+	// });
 	// Деактивация zoom на карте google на главной странице
 	$('body').on('mouseout', 'iframe', function(event){
 		$('.overlay_js').addClass('overlay');
