@@ -1,30 +1,7 @@
 import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
-  template: `<header>
-				<div class="page_wrap">
-					<a href="/" class="logoSite">
-						<img src="/compiled/img/logo-2.1.svg" class="svg">
-					</a>
-					<!-- <div class="menu">
-						<img src="/compiled/img/menu.svg" alt="Меню" class="menu_toggle_js">
-					</div> -->
-					<div class="sandwich animate">
-						<div class="piece top"></div>
-						<div class="piece middle"></div>
-						<div class="piece bottom"></div>
-					</div>
-					<nav class="header_navigation header_navigation_js">
-						<ul>
-							<li><span class="show"><a href="http://webking/portfolio.html">Портфолио</a><a href="#"></a></span></li>
-							<li><span class="show"><a href="http://webking/services.html">Услуги</a><a href="#"></a></span></li>
-							<li><span class="show"><a class="go_to" href="#techs">Технологии</a><a href="#"></a></span></li>
-							<li><span class="show"><a class="go_to" href="#about">О нас</a><a href="#"></a></span></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<section class="content home_page">
+  template: `<section class="content home_page">
 				<div class="banner_wrap">
 					<my-owl></my-owl>
 				</div>
@@ -261,45 +238,7 @@ import { Component } from '@angular/core';
 					</div>
 				</div>
 				<my-map></my-map>
-			</section>
-			<footer>
-				<div class="page_wrap">
-					<!-- <form method="POST" action="http://l5.dev" accept-charset="UTF-8"><input name="_token" type="hidden" value="rnktgnOIwG81GuG7qW5Hl6jP6JHOUrucNEty5BaR">
-						<label for="email">Хочу получать письма о специальных пердлодениях</label>
-						<input name="email" type="email" id="email">
-						<input type="submit" value="Подписаться">
-					</form> -->
-					<form action="/" class="subscribe" method="POST">
-						<label for="subscribe_email">Хочу получать письма о специальных предложениях</label>
-						<input type="email" id="subscribe_email" required="" placeholder="Введите свой email">
-						<input type="submit" value="Подписаться" class="accent_button">
-					</form>
-				</div>
-				<div class="page_wrap hidden">
-					<nav>
-						<a href="http://l5.dev/portfolio">Портфолио</a>
-						<a href="http://l5.dev/services">Услуги</a>
-						<a href="http://l5.dev/techs">Технологии</a>
-						<a href="http://l5.dev/about">О нас</a>
-					</nav>
-				</div>
-				<div class="copyright">
-					<div class="page_wrap">
-						<nav>
-							<a href="http://l5.dev/portfolio">Портфолио</a>
-							<a href="http://l5.dev/services">Услуги</a>
-							<a href="http://l5.dev/techs">Технологии</a>
-							<a href="http://l5.dev/about">О нас</a>
-						</nav>
-						<img class="logo svg" src="/compiled/img/logo-2.1-no-lion.svg">
-						<!-- <svg viewBox="226 50 488 147" class="logo">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/compiled/img/logo-2.1.svg#text_1_"></use>
-						</svg> -->
-						<div class="rights"><span>Copyright © WebKing Creative Studio 2016. </span><span>All rights reserved</span></div>
-					</div>
-				</div>
-			</footer>
-			<script src="//localhost:35729/livereload.js"></script>`,
+			</section>`,
 })
 
 export class AppComponent { }

@@ -1,4 +1,8 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app.module';
+import { HeaderModule } from './modules/header/header.module';
+import { ContentModule } from './modules/content/content.module';
+import { FooterModule } from './modules/footer/footer.module';
 const platform = platformBrowserDynamic();
-platform.bootstrapModule(AppModule);
+platform.bootstrapModule(HeaderModule);
+platform.bootstrapModule(ContentModule);
+platform.bootstrapModule(FooterModule);

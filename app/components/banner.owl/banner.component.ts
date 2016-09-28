@@ -49,7 +49,7 @@ declare var jQuery: any;
 					</div>`
 })
 
-export class CarouselComponent implements OnInit {
+export class BannerComponent implements OnInit {
 	constructor(private elRef: ElementRef){}
 
 	ngOnInit(): any {
