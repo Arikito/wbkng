@@ -25,23 +25,19 @@ $(function(s){
 		autoPlay: 5000
 		// transitionStyle: "fade"
 	});
-	// $('.sandwich').on('click', function(){
-	// 	// $('.header_navigation_js').stop(true, true).slideToggle();
-	// 	$(this).toggleClass('active').next().toggleClass('active');
-	// });
-	// $('.header_navigation_js li').on('click', function(){
-	// 	$(this).closest('nav').toggleClass('active');
-	// });
 
-	$('.sandwich, .header_navigation_js li').on('click', function(){
-		$('.header_navigation_js, .sandwich').toggleClass('active');
-	});
-
-	$('.content').on('click', function(){
-		if($('.sandwich').hasClass('active')){
+	$('body').on('click', '.content, .sandwich, .header_navigation_js li', function(){
+		if($(this).hasClass('content')){
+			if($('.sandwich').hasClass('active')){
+				$('.header_navigation_js, .sandwich').removeClass('active');
+			}
+		}else{
 			$('.header_navigation_js, .sandwich').toggleClass('active');
 		}
+	}).on('click', 'header', function(){
+		console.log('header was clicked');
 	});
+
 	$(document).ready(function(){
 	    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
@@ -90,7 +86,6 @@ $(function(s){
 		var imgID = $img.attr('id');
 		var imgClass = $img.attr('class');
 		var imgURL = $img.attr('xlink:href');
-
 		jQuery.get(imgURL, function(data) {
 			// Get the SVG tag, ignore the rest
 			var $svg = jQuery(data).find('svg');
