@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var page_component_1 = require('./../../components/page/page.component');
+var header_component_1 = require('./../../components/header/header.component');
+var footer_component_1 = require('./../../components/footer/footer.component');
 var main_component_1 = require('./../../components/main_page/main.component');
 var portfolio_component_1 = require('./../../components/portfolio_page/portfolio.component');
 var banner_component_1 = require('./../../components/banner.owl/banner.component');
@@ -30,6 +32,8 @@ var PageModule = (function () {
             ],
             declarations: [
                 page_component_1.PageComponent,
+                header_component_1.HeaderComponent,
+                footer_component_1.FooterComponent,
                 main_component_1.MainComponent,
                 portfolio_component_1.PortfolioComponent,
                 banner_component_1.BannerComponent,

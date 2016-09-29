@@ -7,11 +7,6 @@ import { PortfolioComponent }  from './components/portfolio_page/portfolio.compo
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/main',
-    pathMatch: 'full'
-  },
-  {
-    path: 'main',
     component: MainComponent
   },
   {

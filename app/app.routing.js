@@ -5,11 +5,6 @@ var portfolio_component_1 = require('./components/portfolio_page/portfolio.compo
 var appRoutes = [
     {
         path: '',
-        redirectTo: '/main',
-        pathMatch: 'full'
-    },
-    {
-        path: 'main',
         component: main_component_1.MainComponent
     },
     {

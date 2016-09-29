@@ -4,6 +4,9 @@ import { HttpModule }    from '@angular/http';
 
 import { PageComponent }  from './../../components/page/page.component';
 
+import { HeaderComponent }  from './../../components/header/header.component';
+import { FooterComponent }  from './../../components/footer/footer.component';
+
 import { MainComponent }  from './../../components/main_page/main.component';
 import { PortfolioComponent }  from './../../components/portfolio_page/portfolio.component';
 import { BannerComponent }  from './../../components/banner.owl/banner.component';
@@ -21,6 +24,8 @@ import { routing }       from './../../app.routing';
 	],
 	declarations: [
 		PageComponent,
+		HeaderComponent,
+		FooterComponent,
 		MainComponent,
 		PortfolioComponent,
 		BannerComponent,

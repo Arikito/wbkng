@@ -4,7 +4,7 @@ import { Router }            from '@angular/router';
 @Component({
 	moduleId: module.id,
 	selector: 'my-portfolio',
-	template: '<h1>Hi, I\'m portfolio page</h1><br><a routerLink="/main" routerLinkActive="active">Домой</a>'
+	templateUrl: './portfolio.component.html'
 })
 
 export class PortfolioComponent implements OnInit{
