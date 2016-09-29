@@ -10,22 +10,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./../../components/content/app.component');
+var http_1 = require('@angular/http');
+var page_component_1 = require('./../../components/page/page.component');
+var main_component_1 = require('./../../components/main_page/main.component');
+var portfolio_component_1 = require('./../../components/portfolio_page/portfolio.component');
 var banner_component_1 = require('./../../components/banner.owl/banner.component');
 var techs_component_1 = require('./../../components/techs.owl/techs.component');
 var map_component_1 = require('./../../components/map/map.component');
-var ContentModule = (function () {
-    function ContentModule() {
+var app_routing_1 = require('./../../app.routing');
+var PageModule = (function () {
+    function PageModule() {
     }
-    ContentModule = __decorate([
+    PageModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, banner_component_1.BannerComponent, techs_component_1.TechsComponent, map_component_1.MapComponent],
-            bootstrap: [app_component_1.AppComponent]
+            imports: [
+                platform_browser_1.BrowserModule,
+                http_1.HttpModule,
+                app_routing_1.routing
+            ],
+            declarations: [
+                page_component_1.PageComponent,
+                main_component_1.MainComponent,
+                portfolio_component_1.PortfolioComponent,
+                banner_component_1.BannerComponent,
+                techs_component_1.TechsComponent,
+                map_component_1.MapComponent
+            ],
+            bootstrap: [
+                page_component_1.PageComponent
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], ContentModule);
-    return ContentModule;
+    ], PageModule);
+    return PageModule;
 }());
-exports.ContentModule = ContentModule;
-//# sourceMappingURL=content.module.js.map
+exports.PageModule = PageModule;
+//# sourceMappingURL=page.module.js.map

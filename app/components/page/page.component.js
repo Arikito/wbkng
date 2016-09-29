@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HeaderComponent = (function () {
-    function HeaderComponent() {
+var PageComponent = (function () {
+    function PageComponent() {
     }
-    HeaderComponent.prototype.GoToPage = function (event, page) {
-        event.preventDefault();
-    };
-    HeaderComponent = __decorate([
+    PageComponent = __decorate([
         core_1.Component({
-            selector: 'my-header',
-            templateUrl: 'app/components/header/header.component.html'
+            selector: 'my-page',
+            templateUrl: 'app/components/page/page.component.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], HeaderComponent);
-    return HeaderComponent;
+    ], PageComponent);
+    return PageComponent;
 }());
-exports.HeaderComponent = HeaderComponent;
-//# sourceMappingURL=header.component.js.map
+exports.PageComponent = PageComponent;
+//# sourceMappingURL=page.component.js.map

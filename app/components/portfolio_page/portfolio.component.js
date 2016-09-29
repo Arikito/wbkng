@@ -9,20 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HeaderComponent = (function () {
-    function HeaderComponent() {
+var router_1 = require('@angular/router');
+var PortfolioComponent = (function () {
+    function PortfolioComponent(router) {
+        this.router = router;
     }
-    HeaderComponent.prototype.GoToPage = function (event, page) {
-        event.preventDefault();
+    PortfolioComponent.prototype.ngOnInit = function () {
     };
-    HeaderComponent = __decorate([
+    PortfolioComponent = __decorate([
         core_1.Component({
-            selector: 'my-header',
-            templateUrl: 'app/components/header/header.component.html'
+            moduleId: module.id,
+            selector: 'my-portfolio',
+            template: '<h1>Hi, I\'m portfolio page</h1><br><a routerLink="/main" routerLinkActive="active">Домой</a>'
         }), 
-        __metadata('design:paramtypes', [])
-    ], HeaderComponent);
-    return HeaderComponent;
+        __metadata('design:paramtypes', [router_1.Router])
+    ], PortfolioComponent);
+    return PortfolioComponent;
 }());
-exports.HeaderComponent = HeaderComponent;
-//# sourceMappingURL=header.component.js.map
+exports.PortfolioComponent = PortfolioComponent;
+//# sourceMappingURL=portfolio.component.js.map
