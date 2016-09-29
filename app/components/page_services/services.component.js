@@ -9,30 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
-var BannerComponent = (function () {
-    function BannerComponent(elRef) {
-        this.elRef = elRef;
+var router_1 = require('@angular/router');
+var ServicesComponent = (function () {
+    function ServicesComponent(router) {
+        this.router = router;
     }
-    BannerComponent.prototype.ngOnInit = function () {
-        jQuery(this.elRef.nativeElement).find("#owl-banner").owlCarousel({
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true,
-            autoPlay: 5000,
-            stopOnHover: false,
-            autoHeight: false,
-            transitionStyle: "fade"
-        });
+    ServicesComponent.prototype.ngOnInit = function () {
     };
-    BannerComponent = __decorate([
+    ServicesComponent = __decorate([
         core_1.Component({
-            selector: 'owl-banner',
-            templateUrl: 'app/components/banner.owl/banner.component.html'
+            moduleId: module.id,
+            selector: 'my-services',
+            templateUrl: './services.component.html'
         }), 
-        __metadata('design:paramtypes', [core_2.ElementRef])
-    ], BannerComponent);
-    return BannerComponent;
+        __metadata('design:paramtypes', [router_1.Router])
+    ], ServicesComponent);
+    return ServicesComponent;
 }());
-exports.BannerComponent = BannerComponent;
-//# sourceMappingURL=banner.component.js.map
+exports.ServicesComponent = ServicesComponent;
+//# sourceMappingURL=services.component.js.map

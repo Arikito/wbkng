@@ -1,7 +1,8 @@
 "use strict";
 var router_1 = require('@angular/router');
-var main_component_1 = require('./components/main_page/main.component');
-var portfolio_component_1 = require('./components/portfolio_page/portfolio.component');
+var main_component_1 = require('./components/page_main/main.component');
+var portfolio_component_1 = require('./components/page_portfolio/portfolio.component');
+var services_component_1 = require('./components/page_services/services.component');
 var appRoutes = [
     {
         path: '',
@@ -10,6 +11,10 @@ var appRoutes = [
     {
         path: 'portfolio',
         component: portfolio_component_1.PortfolioComponent
+    },
+    {
+        path: 'services',
+        component: services_component_1.ServicesComponent
     }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);

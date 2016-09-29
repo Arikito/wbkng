@@ -5,7 +5,7 @@ declare var jQuery: any;
 
 @Component({
   selector: 'owl-techs',
-  templateUrl: 'app/components/techs.owl/techs.component.html'
+  templateUrl: 'app/components/owl_techs/techs.component.html'
 })
 
 export class TechsComponent implements OnInit {

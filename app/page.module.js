@@ -11,15 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
-var page_component_1 = require('./../../components/page/page.component');
-var header_component_1 = require('./../../components/header/header.component');
-var footer_component_1 = require('./../../components/footer/footer.component');
-var main_component_1 = require('./../../components/main_page/main.component');
-var portfolio_component_1 = require('./../../components/portfolio_page/portfolio.component');
-var banner_component_1 = require('./../../components/banner.owl/banner.component');
-var techs_component_1 = require('./../../components/techs.owl/techs.component');
-var map_component_1 = require('./../../components/map/map.component');
-var app_routing_1 = require('./../../app.routing');
+var page_component_1 = require('./components/page/page.component');
+var header_component_1 = require('./components/header/header.component');
+var footer_component_1 = require('./components/footer/footer.component');
+var main_component_1 = require('./components/page_main/main.component');
+var portfolio_component_1 = require('./components/page_portfolio/portfolio.component');
+var services_component_1 = require('./components/page_services/services.component');
+var banner_component_1 = require('./components/owl_banner/banner.component');
+var techs_component_1 = require('./components/owl_techs/techs.component');
+var map_component_1 = require('./components/map/map.component');
+var app_routing_1 = require('./app.routing');
 var PageModule = (function () {
     function PageModule() {
     }
@@ -36,6 +37,7 @@ var PageModule = (function () {
                 footer_component_1.FooterComponent,
                 main_component_1.MainComponent,
                 portfolio_component_1.PortfolioComponent,
+                services_component_1.ServicesComponent,
                 banner_component_1.BannerComponent,
                 techs_component_1.TechsComponent,
                 map_component_1.MapComponent

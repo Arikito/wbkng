@@ -10,30 +10,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var core_2 = require('@angular/core');
-var TechsComponent = (function () {
-    function TechsComponent(elRef) {
+var BannerComponent = (function () {
+    function BannerComponent(elRef) {
         this.elRef = elRef;
     }
-    TechsComponent.prototype.ngOnInit = function () {
-        jQuery(this.elRef.nativeElement).find("#owl-techn").owlCarousel({
-            items: 6,
-            itemsDesktop: [1000, 5],
-            itemsDesktopSmall: [900, 3],
-            itemsTablet: [600, 2],
-            itemsMobile: false,
-            singleItem: false,
-            pagination: false,
-            autoPlay: 5000
+    BannerComponent.prototype.ngOnInit = function () {
+        jQuery(this.elRef.nativeElement).find("#owl-banner").owlCarousel({
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+            autoPlay: 5000,
+            stopOnHover: false,
+            autoHeight: false,
+            transitionStyle: "fade"
         });
     };
-    TechsComponent = __decorate([
+    BannerComponent = __decorate([
         core_1.Component({
-            selector: 'owl-techs',
-            templateUrl: 'app/components/techs.owl/techs.component.html'
+            selector: 'owl-banner',
+            templateUrl: 'app/components/owl_banner/banner.component.html'
         }), 
         __metadata('design:paramtypes', [core_2.ElementRef])
-    ], TechsComponent);
-    return TechsComponent;
+    ], BannerComponent);
+    return BannerComponent;
 }());
-exports.TechsComponent = TechsComponent;
-//# sourceMappingURL=techs.component.js.map
+exports.BannerComponent = BannerComponent;
+//# sourceMappingURL=banner.component.js.map

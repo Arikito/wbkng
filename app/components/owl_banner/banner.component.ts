@@ -5,7 +5,7 @@ declare var jQuery: any;
 
 @Component({
   selector: 'owl-banner',
-  templateUrl: 'app/components/banner.owl/banner.component.html'
+  templateUrl: 'app/components/owl_banner/banner.component.html'
 })
 
 export class BannerComponent implements OnInit {
