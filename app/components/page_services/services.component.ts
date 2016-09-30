@@ -7,7 +7,8 @@ declare var jQuery: any;
 @Component({
 	moduleId: module.id,
 	selector: 'my-services',
-	templateUrl: './services.component.html'
+	templateUrl: './services.component.html',
+	styleUrls: [ './services.component.css' ]
 })
 
 export class ServicesComponent implements OnInit{
@@ -82,4 +83,5 @@ export class ServicesComponent implements OnInit{
 
 		});
 	}
+
 }
