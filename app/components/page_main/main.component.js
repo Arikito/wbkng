@@ -20,7 +20,8 @@ var MainComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-main',
-            templateUrl: './main.component.html'
+            templateUrl: './main.component.html',
+            styleUrls: ['./main.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
     ], MainComponent);

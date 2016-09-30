@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,aAAa,GACZ,gBAAgB,EAAE,IAAI",
+"sources": ["main.component.scss"],
+"names": [],
+"file": "main.component.css"
+}

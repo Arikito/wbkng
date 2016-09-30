@@ -4,11 +4,11 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
-			// livereload: {
-			// 	files: ['**/*.php', '**/*.html', '**/*.css'],
-			// },
+			livereload: {
+				files: ['**/*.php', '**/*.html', '**/*.css'],
+			},
 			scss: {
-				files: ['resources/sass/*.scss'],
+				files: ['app/components/**/*.scss', 'resources/sass/*.scss'],
 				tasks: ['sass'],
 			},
 			uglify: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 			// },
 			options: {
 				spawn: true,
-				// livereload: true,
+				livereload: true,
 			}
 		},
 		sass: {
@@ -33,9 +33,19 @@ module.exports = function(grunt) {
 				options: {
 					style: 'compact'
 				},
-				files: {
-					'compiled/css/style.css': 'resources/sass/style.scss'
-				}
+				// files: {
+				// 	'compiled/css/style.css': 'resources/sass/style.scss',
+				// 	'app/components/page_portfolio/portfolio.component.css': 'app/components/page_portfolio/portfolio.component.scss',
+				// 	'app/components/page_main/main.component.css': 'app/components/page_main/main.component.scss',
+				// 	'app/components/page_services/services.component.css': 'app/components/page_services/services.component.scss'
+				// }
+				files: [{
+					expand: true,
+					cwd: 'app/components',
+					src: ['**/*.scss'],
+					dest: 'app/components/',
+					ext: '.component.css'
+				}]
 			}
 		},
 		uglify: {
