@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
 	templateUrl: 'app/components/header/header.component.html'
 })
 
-export class HeaderComponent {
-	GoToPage(event, page){
-		event.preventDefault();
-	}
-}
+export class HeaderComponent { }

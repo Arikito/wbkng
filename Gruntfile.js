@@ -4,9 +4,9 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
-			livereload: {
-				files: ['**/*.php', '**/*.html', '**/*.css'],
-			},
+			// livereload: {
+			// 	files: ['**/*.php', '**/*.html', '**/*.css'],
+			// },
 			scss: {
 				files: ['resources/sass/*.scss'],
 				tasks: ['sass'],
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 			// },
 			options: {
 				spawn: true,
-				livereload: true,
+				// livereload: true,
 			}
 		},
 		sass: {

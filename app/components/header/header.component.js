@@ -12,9 +12,6 @@ var core_1 = require('@angular/core');
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
-    HeaderComponent.prototype.GoToPage = function (event, page) {
-        event.preventDefault();
-    };
     HeaderComponent = __decorate([
         core_1.Component({
             selector: 'my-header',
