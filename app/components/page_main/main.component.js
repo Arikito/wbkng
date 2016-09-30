@@ -17,6 +17,7 @@ var MainComponent = (function () {
         this.elRef = elRef;
     }
     MainComponent.prototype.ngOnInit = function () {
+        jQuery('body').scrollTop(0);
         jQuery(this.elRef.nativeElement).find('img.svg').each(function () {
             var $img = jQuery(this);
             var imgID = $img.attr('id');
