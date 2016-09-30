@@ -46,6 +46,10 @@ module.exports = function(grunt) {
 					dest: 'app/components/',
 					ext: '.component.css'
 				}]
+				
+				// files: {
+				// 	'compiled/css/style.css': 'resources/sass/style.scss'
+				// }
 			}
 		},
 		uglify: {

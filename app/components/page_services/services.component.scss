@@ -1,5 +1,484 @@
 // Testing
 .services_page .page_wrap h1{
-	background: yellow;
+	background: red;
 }
 //
+//
+//из файла _variables.scss
+	$gap:				20px;
+	$page_width:		1300px;
+	$header_height:		120px;
+
+	// colors
+	$accent:			#bf1111;
+	$spacegray:			#242629;
+	$white:				#fff;
+	$lightfont:			#c0c0c0;
+//
+//
+// общие стили из файла style.scss
+@mixin animate($duration){
+	-webkit-transition: all $duration cubic-bezier(.4,0,.2,1);
+	-o-transition: all $duration cubic-bezier(.4,0,.2,1);
+	transition: all $duration cubic-bezier(.4,0,.2,1);
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=passwd],
+textarea{
+	border-radius: .2em;
+	border: 0;
+	outline: 0;
+	line-height: 40px;
+	padding: 0 $gap;
+}
+.hidden{
+	display: none !important;
+}
+.dark_style{
+	background: #2e3034;
+	color: #fff;
+}
+.light_style{
+	background-color: $white;
+	color: $spacegray;
+}
+//BUTTONS
+.accent_button{
+	background-color: $accent;
+	color: $white;
+	border-radius: .2em;
+	border: 0;
+	outline: 0;
+	line-height: 40px;
+	padding: 0 $gap;
+	cursor: pointer;
+	&:hover{
+		background-color: lighten($accent, 5);
+	}
+}
+.no_accent_button{
+	color: $white;
+	border: 1px solid $white;
+	border-radius: .2em;
+	outline: 0;
+	padding: 0 $gap;
+	cursor: pointer;
+	@include animate(.4s);
+	&:hover{
+		background-color: $accent;
+	}
+}
+.show_more{
+	margin: $gap 0;
+	button{
+		margin: 0 auto;
+		display: block;
+	}
+}
+.apple_images{
+	display: flex;
+	.project_image{
+		max-width: 33%;
+		max-height: 200px;
+	}
+}
+
+section.content{
+	&.services_page{
+		max-width: 100%;
+		margin: 0px;
+			.service{
+				padding-top: 120px;
+				margin-top: -120px;
+				.service_title{
+					text-align: center;
+					font-size: 2.5em;
+				}
+				.main_text{
+					max-width: 1200px;
+					margin: 1em auto;
+					text-align: justify;
+					font-size: 1.2em;
+					line-height: 1.4em;
+				}
+				/* базовый контейнер вкладок */
+				.tabs_block{
+					width: 100%;
+					margin-top: 40px;
+					&:after{
+						content:"";
+						display:block;
+						clear:both;
+					}
+					> ul{
+						margin:0;
+						padding:0;
+						display: flex;
+						justify-content: center;
+						flex-wrap: wrap;
+						li{
+							margin: 5px;
+							display:block;
+							&.active,
+							&.active:hover{
+								background: $accent;
+							}
+							&:hover{
+								background-color: lighten($accent, 5);
+							}
+						}
+					}
+					/* панель навигации вкладок */
+					.tabs{
+						margin: 0;
+						padding: 0;
+						list-style: none;
+						display: flex;
+						justify-content: center;
+						margin-bottom: $gap;
+						/* список вкладок */
+						li{
+							text-align: center;
+							// text-transform: uppercase;
+							padding: $gap/2 $gap/2;
+							margin-right: 5px;
+							cursor: pointer;
+							background: lighten($spacegray, 10);
+							color: $white;
+							border: 1px solid $white;
+							border-radius: .2em;
+							line-height: 20px;
+							font-size: 1.2em;
+							@include animate(.4s);
+							/* активная вкладка */
+							&.active{
+								background: $accent;
+								color: $white;
+								border-color: $accent;
+							}
+						}
+					}
+					/* блоки вкладок с содержанием */
+					.box{
+						position: relative;
+						margin: $gap 0;
+						width: 100%;
+						height: 480px;
+						display: none;
+						text-align: left;
+						background: lighten($spacegray, 10);
+						color: $white;
+						border-radius: .2em;
+						@include animate(.4s);
+						p{
+							margin-bottom: 15px;
+							text-align: justify;
+						}
+						.btn_wrap{
+							position: absolute;
+							bottom: 50px;
+							width: 98%;
+							display: flex;
+							justify-content: flex-end;
+							align-items: center;
+							> *{
+								line-height: 20px;
+							}
+							span{
+								font-size: 1.6em;
+								margin-right: 250px;
+								padding: $gap/2 $gap;
+							}
+							a{
+								padding: $gap/2 $gap*2;
+								margin: 0 1em;
+								font-size: 1.2em;
+							}
+						}
+						.slide_text{
+							color: $white;
+							margin: 0 auto;
+							padding: 0 $gap;
+							display: flex;
+							justify-content: space-between;
+							li, p{
+								font-size: 1.2em;
+								line-height: 1.4em;
+								text-align: justify;
+							}
+						}
+						/* активный блок при загрузке */
+						&.visible,
+						&.open_tab{
+							display: block;
+						}
+					}
+				}
+
+				//PACKAGES BLOCK
+				.packages_block{
+					display: flex;
+					justify-content: center;
+					margin: 0 auto;
+					color: $spacegray;
+					margin-top: $gap * 3;
+					margin-bottom: $gap * 3;
+					.package{
+						width: 25%;
+						text-align: center;
+						height: 300px;
+						width: 200px;
+						.package_descritpion{
+							ul{
+								list-style-type: none;
+								padding: 0px;
+							}
+						}
+					}
+					.package_title,
+					.package_price{
+						line-height: 50px;
+						font-size: 22px;
+					}
+					.middle_package{
+						transform: scale(1.1);
+						background: $white;
+						.package_price{
+							background: $accent;
+							color: $white;
+						}
+					}
+					.basic_package,
+					.full_package{
+						background: #eeeeee;
+						.package_price{
+							background: lighten($accent, 25);
+						}
+					}
+				}
+			}
+
+		//MAGICK SIDEBAR WHITH FANTASTIC SCROLL
+		.magic_sidebar{
+			position: fixed;
+			height: calc(100vh - 72px);
+			right: $gap;
+			top: 72px;
+			bottom: 0;
+			width: 100px;
+			z-index: 99;
+			.nav{
+				padding: 0px;
+				margin: 0;
+				list-style-type: none;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				.sidebar_item{
+					padding: 0px;
+					height: calc((100vh / 4) - 60px);
+					position: relative;
+					top: $gap;
+					@include animate(.4s);
+					a{
+						display: block;
+						width: 50px;
+						margin: 0 auto;
+						.svg_img{
+							@include animate(.4s);
+						}
+					}
+					&.active{
+						transform: scale(1.2);
+						.svg_img{
+							transform: scale(1.2);
+							& path.accent{
+								fill: $accent;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// Medias
+			@media screen and (max-width: 1280px){
+				padding-top: 182px;
+				.service{
+					padding-top: 190px;
+					margin-top: -190px;
+				}
+				.container{
+					.service{
+						.main_text{
+							padding: $gap;
+						}
+					}
+				}
+				.magic_sidebar{
+					right: 0;
+					top: 72px;
+					width: 100vw;
+					height: 100px;
+					.nav{
+						background: $spacegray;
+						flex-direction: row;
+						.sidebar_item{
+							width: calc((100vw / 4) - 60px);
+							height: 50px;
+							top: 0;
+						}
+					}
+				}
+			}
+			@media screen and (max-width: 992px){
+				.service{
+					.tabs_block{
+						.box{
+							height: auto;
+							.btn_wrap{
+								justify-content: space-between;
+								left: $gap;
+								width: 95vw;
+								position: relative;
+								padding-bottom: $gap*2;
+								bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			@media screen and (max-width: 700px){}
+			@media (max-width: 750px) and (orientation:landscape){
+				padding-top: 72px;
+				.page_wrap{
+					width: calc(100vw - 72px);
+					margin: 0;
+					.service .tabs_block .box .btn_wrap{
+						left: $gap;
+						width: 82vw;
+						span{
+							margin-right: 0;
+						}
+						a{
+							font-size: 1.3em;
+						}
+					}
+					.magic_sidebar{
+						width: 72px;
+						height: calc(100vh - 72px);
+						.nav{
+							flex-direction: column;
+							.sidebar_item{
+								height: calc(100% / 4);
+								width: auto;
+								padding-top: $gap;
+								a{
+									width: 40px;
+								}
+								&.active .svg_img{
+									transform: scale(1);
+								}
+							}
+						}
+					}
+				}
+				
+				& + footer{
+					width: calc(100vw - 72px);
+					.page_wrap{
+						width: calc(100vw - 72px);
+						margin: 0;
+						padding: 0 10px;
+						form.subscribe{
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-wrap: wrap;
+							label{
+								text-align: center;
+								padding: 10px;
+								line-height: 1.2em;
+								font-size: 1em;
+							}
+						}
+					}
+				}
+			}
+			// iPhone5
+			@media (max-width: 570px) and (orientation:landscape){
+				.page_wrap{
+					width: calc(100vw - 60px);
+					.magic_sidebar{
+						width: 60px;
+						.nav .sidebar_item{
+							a{
+								width: 30px;
+							}
+						}
+					}
+				}
+				
+				& + footer{
+					width: calc(100vw - 60px);
+					.page_wrap{
+						width: calc(100vw - 60px);
+					}
+				}
+			}
+			@media (max-width: 480px){
+				.service{
+					.tabs_block{
+						.box .btn_wrap{
+							left: 0;
+							a{
+								font-size: 1.3em;
+							}
+							span{
+								margin-right: 0;
+							}
+						}
+						.tabs{
+							li{
+								width: 44%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+							}
+						}
+					}
+				}
+				.magic_sidebar{
+					.nav{
+						justify-content: space-around;
+						height: auto;
+						padding: $gap;
+						.sidebar_item{
+							height: calc(100% / 4);
+							width: auto;
+							a{
+								width: 40px;
+							}
+						}
+					}
+				}
+			}
+			@media (max-width: 320px){
+				.magic_sidebar .nav{
+					.sidebar_item a{
+						width: 30px;
+					}
+				}
+			}
+	}
+}
