@@ -13,14 +13,14 @@ export class TechsComponent implements OnInit {
 
 	ngOnInit(): any {
 		jQuery(this.elRef.nativeElement).find("#owl-techn").owlCarousel({
-		items: 6,
-		itemsDesktop: [1000,5],
-		itemsDesktopSmall: [900,3],
-		itemsTablet: [600,2],
-		itemsMobile: false,
-		singleItem: false,
-		pagination: false,
-		autoPlay: 5000
-	});
+			items: 6,
+			itemsDesktop: [1000,5],
+			itemsDesktopSmall: [900,3],
+			itemsTablet: [600,2],
+			itemsMobile: false,
+			singleItem: false,
+			pagination: false,
+			autoPlay: 5000
+		});
 	}
 }

@@ -31,11 +31,12 @@ $(function(s){
 	// 	$(this).closest('nav').toggleClass('active');
 	// });
 
-	$('.sandwich, .header_navigation_js li').on('click', function(){
+
+	$('body').on('click', '.sandwich, .header_navigation_js li', function(){
 		$('.header_navigation_js, .sandwich').toggleClass('active');
 	});
 
-	$('.content').on('click', function(){
+	$('body').on('click', '.content', function(){
 		if($('.sandwich').hasClass('active')){
 			$('.header_navigation_js, .sandwich').toggleClass('active');
 		}
@@ -128,7 +129,7 @@ $(function(s){
 	});
 
 	var n;
-	s(".tabs").on("click", "li:not(.active)", function() {
+	s("body").on("click", ".tabs li:not(.active)", function() {
 		n = s(this).parents(".tabs_block"), s(this).dmtabs(n)
 	}), s.fn.dmtabs = function(n) {
 		s(this).addClass("active").siblings().removeClass("active"), n.find(".box").eq(s(this).index()).show(1, function() {
@@ -138,7 +139,17 @@ $(function(s){
 		})
 	}
 
-	$('ul.akkordeon li > div').click(function(){
+	// $('ul.akkordeon li > div').click(function(){
+	// 	if(!$(this).hasClass('active')){
+	// 		$('ul.akkordeon li > div').removeClass('active').next('ul').stop(true, true).slideUp();
+	// 		$(this).addClass('active');
+	// 		$(this).next('ul').stop(true, true).slideDown(400);
+	// 	}else{
+	// 		$(this).removeClass('active').next('ul').stop(true, true).slideUp();
+	// 	}
+	// });
+
+	$('body').on('click', "ul.akkordeon li > div", function(){
 		if(!$(this).hasClass('active')){
 			$('ul.akkordeon li > div').removeClass('active').next('ul').stop(true, true).slideUp();
 			$(this).addClass('active');
@@ -148,7 +159,13 @@ $(function(s){
 		}
 	});
 
-	$('.tag_js').click(function(event){
+	// $('.tag_js').click(function(event){
+	// 	var classList = $(this).attr('class').split(/\s+/),
+	// 		parent = $(this).closest('.content');
+	// 	projects_filter(classList[0], parent);
+	// });
+
+	$('body').on('click', ".tag_js", function(){
 		var classList = $(this).attr('class').split(/\s+/),
 			parent = $(this).closest('.content');
 		projects_filter(classList[0], parent);
@@ -172,3 +189,5 @@ function projects_filter(project_type, parent){
 		parent.find('.items_wrap > div.' + project_type).removeClass('hidden');
 	}
 }
+
+
