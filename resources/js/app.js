@@ -44,14 +44,14 @@ $(function(s){
 	$(document).ready(function(){
 	    $('body').on('click', '.go_to', function(){ // ловим клик по ссылке с классом go_to
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-	        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	        if ($(scroll_el).length !== 0) { // проверим существоваие элемента чтобы избежать ошибки
 		    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
 	        }
 		    return false; // выключаем стандартное действие
 	    });
 	});
 
-	jQuery('img.svg').each(function(){
+	/*jQuery('body').find('img.svg').each(function(){
 		var $img = jQuery(this);
 		var imgID = $img.attr('id');
 		var imgClass = $img.attr('class');
@@ -84,7 +84,7 @@ $(function(s){
 		}, 'xml');
 
 	});
-	jQuery('svg use').each(function(){
+	jQuery('body').find('svg use').each(function(){
 		var $img = jQuery(this);
 		var imgID = $img.attr('id');
 		var imgClass = $img.attr('class');
@@ -116,7 +116,7 @@ $(function(s){
 
 		}, 'xml');
 
-	});
+	});*/
 	// Добавление карты google в iframe на главную страницу
 	// $('.location_wrap_js').append('<iframe class="studio_location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.868227405213!2d36.33375571592626!3d49.995079927951814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709f454712171%3A0x3b2d17930e9f0fe6!2z0L_RgNC-0YHQv9C10LrRgiDQrtCy0ZbQu9C10LnQvdC40LksIDU00JAsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1470824666205" width=" ' + ($(window).outerWidth() - 20) + ' " height="450" frameborder="0" style="border:0" allowfullscreen scrolling="no"></iframe>');
 	// Активация zoom на карте google на главной странице
