@@ -15,6 +15,7 @@ export class MainComponent implements OnInit{
 	constructor(private router: Router, private elRef: ElementRef) {
 	}
 	ngOnInit(): any{
+		jQuery('body').scrollTop(0);
 		jQuery(this.elRef.nativeElement).find('img.svg').each(function(){
 			var $img = jQuery(this);
 			var imgID = $img.attr('id');
@@ -82,5 +83,5 @@ export class MainComponent implements OnInit{
 
 		});
 	}
-	
+
 }
