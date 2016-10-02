@@ -5,4 +5,26 @@ import { Component } from '@angular/core';
 	templateUrl: 'app/components/header/header.component.html'
 })
 
-export class HeaderComponent { }
+export class HeaderComponent {
+	mainMenu: any[]
+	constructor() {
+		this.mainMenu = [
+			{
+				title: 'Портфолио',
+				link: '/portfolio'
+			},
+			{
+				title: 'Услуги',
+				link: '/services'
+			},
+			{
+				title: 'Технологии',
+				link: '/techs'
+			},
+			{
+				title: 'О нас',
+				link: '/about'
+			}
+		]
+	}
+ }

@@ -13,7 +13,12 @@
 		</div>
 		<nav class="header_navigation header_navigation_js">
 			<ul>
-				<li>
+				<li *ngFor="let item of mainMenu">
+					<span class="show">
+						<a routerLink="{{item.link}}" routerLinkActive="active">{{item.title}}</a><a href="#"></a>
+					</span>
+				</li>
+				<!--<li>
 					<span class="show">
 						<a routerLink="/portfolio" routerLinkActive="active">Портфолио</a><a href="#"></a>
 					</span>
@@ -32,7 +37,7 @@
 					<span class="show">
 						<a class="go_to" href="#about">О нас</a><a href="#"></a>
 					</span>
-				</li>
+				</li>-->
 			</ul>
 		</nav>
 	</div>
