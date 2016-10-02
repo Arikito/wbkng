@@ -20,6 +20,7 @@ var services_component_1 = require('./components/page_services/services.componen
 var banner_component_1 = require('./components/owl_banner/banner.component');
 var techs_component_1 = require('./components/owl_techs/techs.component');
 var map_component_1 = require('./components/map/map.component');
+var subscribe_component_1 = require('./components/form_subscribe/subscribe.component');
 var app_routing_1 = require('./app.routing');
 var PageModule = (function () {
     function PageModule() {
@@ -40,7 +41,8 @@ var PageModule = (function () {
                 services_component_1.ServicesComponent,
                 banner_component_1.BannerComponent,
                 techs_component_1.TechsComponent,
-                map_component_1.MapComponent
+                map_component_1.MapComponent,
+                subscribe_component_1.SubscribeFormComponent
             ],
             bootstrap: [
                 page_component_1.PageComponent
