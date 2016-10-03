@@ -8,7 +8,7 @@ declare var jQuery: any;
   templateUrl: 'app/components/owl_techs/techs.component.html'
 })
 
-export class TechsComponent implements OnInit {
+export class OwlTechsComponent implements OnInit {
 	constructor(private elRef: ElementRef){}
 
 	ngOnInit(): any {

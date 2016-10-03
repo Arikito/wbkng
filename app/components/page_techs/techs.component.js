@@ -9,31 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var core_2 = require('@angular/core');
-var OwlTechsComponent = (function () {
-    function OwlTechsComponent(elRef) {
+var TechsComponent = (function () {
+    function TechsComponent(router, elRef) {
+        this.router = router;
         this.elRef = elRef;
     }
-    OwlTechsComponent.prototype.ngOnInit = function () {
-        jQuery(this.elRef.nativeElement).find("#owl-techn").owlCarousel({
-            items: 6,
-            itemsDesktop: [1000, 5],
-            itemsDesktopSmall: [900, 3],
-            itemsTablet: [600, 2],
-            itemsMobile: false,
-            singleItem: false,
-            pagination: false,
-            autoPlay: 5000
-        });
+    TechsComponent.prototype.ngOnInit = function () {
+        jQuery('body').scrollTop(0);
     };
-    OwlTechsComponent = __decorate([
+    TechsComponent = __decorate([
         core_1.Component({
-            selector: 'owl-techs',
-            templateUrl: 'app/components/owl_techs/techs.component.html'
+            moduleId: module.id,
+            selector: 'my-techs',
+            templateUrl: './techs.component.html',
+            styleUrls: ['./techs.component.css']
         }), 
-        __metadata('design:paramtypes', [core_2.ElementRef])
-    ], OwlTechsComponent);
-    return OwlTechsComponent;
+        __metadata('design:paramtypes', [router_1.Router, core_2.ElementRef])
+    ], TechsComponent);
+    return TechsComponent;
 }());
-exports.OwlTechsComponent = OwlTechsComponent;
+exports.TechsComponent = TechsComponent;
 //# sourceMappingURL=techs.component.js.map

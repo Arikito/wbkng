@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainComponent }  from './components/page_main/main.component';
 import { PortfolioComponent }  from './components/page_portfolio/portfolio.component';
 import { ServicesComponent }  from './components/page_services/services.component';
+import { TechsComponent } from './components/page_techs/techs.component';
+import { AboutComponent } from './components/page_about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +19,14 @@ const appRoutes: Routes = [
   {
     path: 'services',
     component: ServicesComponent
+  },
+  {
+    path: 'techs',
+    component: TechsComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 

@@ -6,12 +6,12 @@ declare var jQuery: any;
 
 @Component({
 	moduleId: module.id,
-	selector: 'my-portfolio',
-	templateUrl: './portfolio.component.html',
-	styleUrls: [ './portfolio.component.css' ]
+	selector: 'my-techs',
+	templateUrl: './techs.component.html',
+	styleUrls: [ './techs.component.css' ]
 })
 
-export class PortfolioComponent implements OnInit{
+export class TechsComponent implements OnInit{
 	constructor(private router: Router, private elRef: ElementRef) {
 	}
 	ngOnInit(): any{

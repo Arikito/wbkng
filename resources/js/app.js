@@ -33,25 +33,16 @@ $(function(s){
 
 
 	$('body').on('click', '.sandwich, .header_navigation_js li', function(){
-		$('.header_navigation_js, .sandwich').toggleClass('active');
+		$('.header_navigation_js, .sandwich').toggleClass('active'); // скрыть/расскрыть моб меню
 	});
 
 	$('body').on('click', '.content', function(){
-		if($('.sandwich').hasClass('active')){
+		if($('.sandwich').hasClass('active')){ // закрытие моб меню по клику на контент
 			$('.header_navigation_js, .sandwich').toggleClass('active');
 		}
 	});
-
-	$('body').on('click', '.header_navigation_js a', function(){
-		$('.header_navigation_js').find('li').removeClass('active');
-		$(this).closest('li').addClass('active');
-	});
-
-	$('body').on('click', '.logoSite, .portfolio_link_js, .services_link_js', function(){
-		$('html, body').animate({ scrollTop: '0' }, 500);
-		if ($(this).hasClass('logoSite')){
-			$('.header_navigation_js').find('li').removeClass('active');
-		}
+	$('body').on('click', '.logoSite, .header_navigation_js a.active', function(){
+		$('html, body').animate({ scrollTop: '0' }, 500); // прокрутка вверх по клику на текущий пункт меню
 	});
 
 	$(document).ready(function(){

@@ -3,6 +3,8 @@ var router_1 = require('@angular/router');
 var main_component_1 = require('./components/page_main/main.component');
 var portfolio_component_1 = require('./components/page_portfolio/portfolio.component');
 var services_component_1 = require('./components/page_services/services.component');
+var techs_component_1 = require('./components/page_techs/techs.component');
+var about_component_1 = require('./components/page_about/about.component');
 var appRoutes = [
     {
         path: '',
@@ -15,6 +17,14 @@ var appRoutes = [
     {
         path: 'services',
         component: services_component_1.ServicesComponent
+    },
+    {
+        path: 'techs',
+        component: techs_component_1.TechsComponent
+    },
+    {
+        path: 'about',
+        component: about_component_1.AboutComponent
     }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);
