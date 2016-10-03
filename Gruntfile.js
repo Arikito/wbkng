@@ -39,13 +39,17 @@ module.exports = function(grunt) {
 				// 	'app/components/page_main/main.component.css': 'app/components/page_main/main.component.scss',
 				// 	'app/components/page_services/services.component.css': 'app/components/page_services/services.component.scss'
 				// }
-				files: [{
-					expand: true,
-					cwd: 'app/components',
-					src: ['**/*.scss'],
-					dest: 'app/components/',
-					ext: '.component.css'
-				}]
+				// files: [{
+				// 	expand: true,
+				// 	cwd: 'app/components',
+				// 	src: ['**/*.scss'],
+				// 	dest: 'app/components/',
+				// 	ext: '.component.css'
+				// }]
+
+				files: {
+					'compiled/css/style.css': 'resources/sass/style.scss'
+				}
 			}
 		},
 		uglify: {

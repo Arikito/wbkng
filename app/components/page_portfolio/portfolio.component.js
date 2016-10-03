@@ -18,6 +18,7 @@ var PortfolioComponent = (function () {
     }
     PortfolioComponent.prototype.ngOnInit = function () {
         jQuery('body').scrollTop(0);
+        jQuery('.portfolio_link_js').closest('li').addClass('active');
     };
     PortfolioComponent = __decorate([
         core_1.Component({

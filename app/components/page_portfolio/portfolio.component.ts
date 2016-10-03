@@ -16,5 +16,6 @@ export class PortfolioComponent implements OnInit{
 	}
 	ngOnInit(): any{
 		jQuery('body').scrollTop(0);
+		jQuery('.portfolio_link_js').closest('li').addClass('active');
 	}
 }

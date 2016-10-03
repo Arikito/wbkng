@@ -41,6 +41,19 @@ $(function(s){
 			$('.header_navigation_js, .sandwich').toggleClass('active');
 		}
 	});
+
+	$('body').on('click', '.header_navigation_js a', function(){
+		$('.header_navigation_js').find('li').removeClass('active');
+		$(this).closest('li').addClass('active');
+	});
+
+	$('body').on('click', '.logoSite, .portfolio_link_js, .services_link_js', function(){
+		$('html, body').animate({ scrollTop: '0' }, 500);
+		if ($(this).hasClass('logoSite')){
+			$('.header_navigation_js').find('li').removeClass('active');
+		}
+	});
+
 	$(document).ready(function(){
 	    $('body').on('click', '.go_to', function(){ // ловим клик по ссылке с классом go_to
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .

@@ -17,6 +17,7 @@ export class ServicesComponent implements OnInit{
 	ngOnInit(): any{
 		// jQuery('html, body').animate({ scrollTop: '0' }, 500);
 		jQuery('body').scrollTop(0);
+		jQuery('.services_link_js').closest('li').addClass('active');
 		jQuery(this.elRef.nativeElement).find('img.svg').each(function(){
 			var $img = jQuery(this);
 			var imgID = $img.attr('id');
