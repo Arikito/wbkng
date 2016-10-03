@@ -8,7 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class SubscribeFormComponent {
     constructor(
-       
+
     ) { }
 
     addSubscription(email: string) {

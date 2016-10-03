@@ -465,7 +465,7 @@ body header nav li:after { bottom: 0; left: 0; }
 body header nav li .show:after, body header nav li .show:before, body header nav li:after, body header nav li:before { content: " "; position: absolute; background: #bf1111; height: 0; width: 1px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body header nav li:hover a:after, body header nav li:hover a:before { width: 1.5em; }
 body header nav li .show:hover:after, body header nav li .show:hover:before, body header nav li:hover:after, body header nav li:hover:before { height: 1.5em; }
-body header nav li.active a { color: #bf1111; }
+body header nav li a.active { color: #bf1111; }
 body header .header_navigation.active { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
