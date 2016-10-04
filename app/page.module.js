@@ -20,7 +20,7 @@ var techs_component_1 = require('./components/page_techs/techs.component');
 var about_component_1 = require('./components/page_about/about.component');
 var services_component_1 = require('./components/page_services/services.component');
 var banner_component_1 = require('./components/owl_banner/banner.component');
-var techs_component_2 = require('./components/owl_techs/techs.component');
+var owl_techs_component_1 = require('./components/owl_techs/owl_techs.component');
 var map_component_1 = require('./components/map/map.component');
 var subscribe_component_1 = require('./components/form_subscribe/subscribe.component');
 var app_routing_1 = require('./app.routing');
@@ -44,7 +44,7 @@ var PageModule = (function () {
                 banner_component_1.BannerComponent,
                 techs_component_1.TechsComponent,
                 about_component_1.AboutComponent,
-                techs_component_2.OwlTechsComponent,
+                owl_techs_component_1.OwlTechsComponent,
                 map_component_1.MapComponent,
                 subscribe_component_1.SubscribeFormComponent
             ],

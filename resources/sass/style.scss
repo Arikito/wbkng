@@ -342,7 +342,10 @@ body{
 		position: relative;
 		h1, h2{
 			text-align: center;
-			font-size: 2.5em;
+			// font-size: 2.5em;
+			font-size: 5em;
+    		font-weight: 100;
+    		font-family: "pt sans narrow";
 		}
 		.tags_block{
 			display: flex;
@@ -351,6 +354,89 @@ body{
 			p, a{
 				margin-left: 5px;
 				margin-right: 5px;
+			}
+		}
+		//Страница технологий
+		.tech {
+			overflow: auto;
+			margin-bottom: $gap;
+			.tech_image {
+				background: #fff;
+				.svg_img{
+					& path {
+						fill: $accent !important;
+					}
+					& polygon {
+						fill: $accent !important;
+					}
+				}
+			}
+			.html_logo {
+				.svg_img{
+					& g > polygon {
+						fill: $white !important;
+					}
+				}
+			}
+			&:hover{
+				.html_logo {
+					.svg_img{
+						& path {
+						fill: #e44d26 !important;
+						}
+						& polygon {
+							fill: #e44d26 !important;
+						}
+						& g > polygon {
+						fill: $white !important;
+						}
+					}
+				}
+				.html_title {
+					color: #e44d26;
+				}
+				.wp_logo {
+					.svg_img{
+						& g > * {
+							fill: #00a7da !important;
+						}
+					}
+				}
+				.wp_title {
+					color: #00a7da;
+				}
+				.php_logo {
+					.svg_img{
+						& g > * {
+							fill: #4f5b92 !important;
+						}
+					}
+				}
+				.php_title {
+					color: #4f5b92;
+				}
+				.jquery_logo {
+					.svg_img{
+						& g > * {
+							fill: #0769ad !important;
+						}
+					}
+				}
+				.jquery_title {
+					color: #0769ad;
+				}
+			}
+			.tech_description {
+				font-size: 1.3em;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				text-align: justify;
+				padding-left: $gap;
+				.tech_title {
+					margin: 0px 0px 5px 0px;
+					text-align: center;
+					font-size: 2em;
+				}
 			}
 		}
 	}
@@ -534,6 +620,13 @@ body{
 							margin: 0 auto;
 							// width: 400px;
 							// height: 600px;
+						}
+						&:hover{
+							.svg_img {
+								& g>* {
+									fill: $accent;
+								}
+							}
 						}
 					}
 				}

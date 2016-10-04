@@ -13,7 +13,7 @@ import { TechsComponent } from './components/page_techs/techs.component';
 import { AboutComponent } from './components/page_about/about.component';
 import { ServicesComponent } from './components/page_services/services.component';
 import { BannerComponent } from './components/owl_banner/banner.component';
-import { OwlTechsComponent } from './components/owl_techs/techs.component';
+import { OwlTechsComponent } from './components/owl_techs/owl_techs.component';
 import { MapComponent } from './components/map/map.component';
 import { SubscribeFormComponent } from './components/form_subscribe/subscribe.component';
 

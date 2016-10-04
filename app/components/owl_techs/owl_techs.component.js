@@ -29,11 +29,11 @@ var OwlTechsComponent = (function () {
     OwlTechsComponent = __decorate([
         core_1.Component({
             selector: 'owl-techs',
-            templateUrl: 'app/components/owl_techs/techs.component.html'
+            templateUrl: 'app/components/owl_techs/owl_techs.component.html'
         }), 
         __metadata('design:paramtypes', [core_2.ElementRef])
     ], OwlTechsComponent);
     return OwlTechsComponent;
 }());
 exports.OwlTechsComponent = OwlTechsComponent;
-//# sourceMappingURL=techs.component.js.map
+//# sourceMappingURL=owl_techs.component.js.map

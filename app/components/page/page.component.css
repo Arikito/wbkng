@@ -429,7 +429,7 @@ input[type=text], input[type=email], input[type=tel], input[type=passwd], textar
 .apple_images { display: flex; }
 .apple_images .project_image { max-width: 33%; max-height: 200px; }
 
-body { font-size: 14px; font-family: sans-serif; position: relative; background: #2e3034; color: #fff; }
+body { font-size: 14px; font-family: "PT Sans", sans-serif; position: relative; background: #2e3034; color: #fff; }
 body header { position: fixed; top: 0; left: 0; right: 0; background: #fff; z-index: 100; }
 body header .logoSite { display: inline-block; height: 120px; padding: 20px; box-sizing: border-box; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .logoSite svg, body header .logoSite img { position: relative; height: 100%; }
