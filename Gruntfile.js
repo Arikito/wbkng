@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
 			livereload: {
-				files: ['**/*.php', '**/*.html', '**/*.css'],
+				files: ['**/*.js', '**/*.html', '**/*.css'],
 			},
 			scss: {
 				files: ['app/components/**/*.scss', 'resources/sass/*.scss'],
@@ -39,17 +39,16 @@ module.exports = function(grunt) {
 				// 	'app/components/page_main/main.component.css': 'app/components/page_main/main.component.scss',
 				// 	'app/components/page_services/services.component.css': 'app/components/page_services/services.component.scss'
 				// }
-				// files: [{
-				// 	expand: true,
-				// 	cwd: 'app/components',
-				// 	src: ['**/*.scss'],
-				// 	dest: 'app/components/',
-				// 	ext: '.component.css'
-				// }]
-
-				files: {
+				files: [{
+					expand: true,
+					cwd: 'app/components',
+					src: ['**/*.scss'],
+					dest: 'app/components/',
+					ext: '.component.css'
+				},
+				{
 					'compiled/css/style.css': 'resources/sass/style.scss'
-				}
+				}]
 			}
 		},
 		uglify: {
