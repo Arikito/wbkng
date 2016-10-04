@@ -940,63 +940,63 @@ body{
 			}
 		}
 	}
-	footer{
-		background-color: lighten($spacegray, 4);
-		color: $lightfont;
-		line-height: 2em;
-		a{
-			color: $lightfont;
-			text-decoration: none;
-		}
-		.copyright{
-			line-height: $gap * 4;
-			background-color: $spacegray;
-			img{
-				max-width: 150px;
-				float: left;
-			}
-			.logo{
-				height: 80px;
-				display: inline-block;
-				float: left;
-				// padding: 0 $gap;
-				#lion{
-					display: none;
-				}
-				#text_1_ *{
-					fill: darken($lightfont, 50) !important;
-				}
-			}
-			.page_wrap{
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				.rights{
-					color: darken($lightfont, 30);
-					padding-right: $gap;
-				}
-			}
-		}
-		.page_wrap{
-			nav{
-				a{
-					display: inline-block;
-					padding: 0 $gap;
-					&:hover{
-						color: $white;
-					}
-				}
-			}
-		}
-		.subscribe{
-			padding: $gap 0;
-			text-align: center;
-			font-size: 1.143em;
-			input{
-				margin-left: $gap;
-			}
-		}
-	}
+	// footer{
+	// 	background-color: lighten($spacegray, 4);
+	// 	color: $lightfont;
+	// 	line-height: 2em;
+	// 	a{
+	// 		color: $lightfont;
+	// 		text-decoration: none;
+	// 	}
+	// 	.copyright{
+	// 		line-height: $gap * 4;
+	// 		background-color: $spacegray;
+	// 		img{
+	// 			max-width: 150px;
+	// 			float: left;
+	// 		}
+	// 		.logo{
+	// 			height: 80px;
+	// 			display: inline-block;
+	// 			float: left;
+	// 			// padding: 0 $gap;
+	// 			#lion{
+	// 				display: none;
+	// 			}
+	// 			#text_1_ *{
+	// 				fill: darken($lightfont, 50) !important;
+	// 			}
+	// 		}
+	// 		.page_wrap{
+	// 			display: flex;
+	// 			justify-content: space-between;
+	// 			flex-wrap: wrap;
+	// 			.rights{
+	// 				color: darken($lightfont, 30);
+	// 				padding-right: $gap;
+	// 			}
+	// 		}
+	// 	}
+	// 	.page_wrap{
+	// 		nav{
+	// 			a{
+	// 				display: inline-block;
+	// 				padding: 0 $gap;
+	// 				&:hover{
+	// 					color: $white;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	.subscribe{
+	// 		padding: $gap 0;
+	// 		text-align: center;
+	// 		font-size: 1.143em;
+	// 		input{
+	// 			margin-left: $gap;
+	// 		}
+	// 	}
+	// }
 
 	@media screen and (max-width: 1280px){
 		.page_wrap{
@@ -1096,33 +1096,33 @@ body{
 			// 	}
 			// }
 		}
-		footer{
-			.copyright{
-				.logo{
-					padding: 0px !important;
-					height: 50px !important;
-					width: 100%;
-					margin-bottom: $gap/2;
-					order: 3;
-				}
-				.rights{
-					text-align: center;
-					width: 100%;
-					line-height: 50px;
-					padding: 0px !important;
-				}
-			}
-			.page_wrap{
-				nav{
-					width: 100%;
-					display: flex;
-					justify-content: center;
-					a{
-						line-height: 50px;
-					}
-				}
-			}
-		}
+		// footer{
+		// 	.copyright{
+		// 		.logo{
+		// 			padding: 0px !important;
+		// 			height: 50px !important;
+		// 			width: 100%;
+		// 			margin-bottom: $gap/2;
+		// 			order: 3;
+		// 		}
+		// 		.rights{
+		// 			text-align: center;
+		// 			width: 100%;
+		// 			line-height: 50px;
+		// 			padding: 0px !important;
+		// 		}
+		// 	}
+		// 	.page_wrap{
+		// 		nav{
+		// 			width: 100%;
+		// 			display: flex;
+		// 			justify-content: center;
+		// 			a{
+		// 				line-height: 50px;
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 	@media screen and (max-width: 992px){
 		section.content{
@@ -1473,34 +1473,34 @@ body{
 			// 	}
 			// }
 		}
-		footer{
-			.copyright{
-				.rights{
-					display: flex;
-					justify-content: center;
-					flex-wrap: wrap;
-				}
-			}
-			.page_wrap{
-				.subscribe{
-					display: flex;
-					justify-content: center;
-					flex-wrap: wrap;
-					input{
-						margin-top: $gap / 2;
-						margin-left: 0px;
-					}
-				}
-				nav{
-					flex-wrap: wrap;
-					a{
-						line-height: 50px;
-						width: 100%;
-						text-align: center;
-					}
-				}
-			}
-		}
+		// footer{
+		// 	.copyright{
+		// 		.rights{
+		// 			display: flex;
+		// 			justify-content: center;
+		// 			flex-wrap: wrap;
+		// 		}
+		// 	}
+		// 	.page_wrap{
+		// 		.subscribe{
+		// 			display: flex;
+		// 			justify-content: center;
+		// 			flex-wrap: wrap;
+		// 			input{
+		// 				margin-top: $gap / 2;
+		// 				margin-left: 0px;
+		// 			}
+		// 		}
+		// 		nav{
+		// 			flex-wrap: wrap;
+		// 			a{
+		// 				line-height: 50px;
+		// 				width: 100%;
+		// 				text-align: center;
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 	@media (max-width: 320px){
 		section.content{
