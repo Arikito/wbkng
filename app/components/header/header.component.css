@@ -467,6 +467,10 @@ header nav li .show:hover:after, header nav li .show:hover:before, header nav li
 header nav li.active a { color: #bf1111; font-weight: 600; }
 header .header_navigation.active { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 
+body.scrolled header .logoSite { height: 72px; padding: 10px; }
+body.scrolled header .menu { line-height: 72px; }
+body.scrolled header nav { padding: 8px; }
+
 @media screen and (max-width: 1280px) { header .logoSite { height: 72px; padding: 10px; }
   header .menu { display: block; line-height: 72px; cursor: pointer; }
   header .sandwich { display: block; }

@@ -430,9 +430,6 @@ input[type=text], input[type=email], input[type=tel], input[type=passwd], textar
 .apple_images .project_image { max-width: 33%; max-height: 200px; }
 
 body { font-size: 14px; font-family: sans-serif; position: relative; background: #2e3034; color: #fff; }
-body.scrolled header .logoSite { height: 72px; padding: 10px; }
-body.scrolled header .menu { line-height: 72px; }
-body.scrolled header nav { padding: 8px; }
 body .page_wrap { max-width: 1300px; width: 80vw; margin: 0 auto; overflow: auto; position: relative; }
 body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; }
 body .page_wrap .tags_block { display: flex; justify-content: center; flex-wrap: wrap; }

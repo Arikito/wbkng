@@ -320,20 +320,20 @@ body{
 	// 		@include animate(.4s);
 	// 	}
 	// }
-	&.scrolled{
-		header{
-			.logoSite{
-				height: $header_height * .6;
-				padding: $gap / 2;
-			}
-			.menu{
-				line-height: $header_height * .6;
-			}
-			nav{
-				padding: 8px;
-			}
-		}
-	}
+	// &.scrolled{
+	// 	header{
+	// 		.logoSite{
+	// 			height: $header_height * .6;
+	// 			padding: $gap / 2;
+	// 		}
+	// 		.menu{
+	// 			line-height: $header_height * .6;
+	// 		}
+	// 		nav{
+	// 			padding: 8px;
+	// 		}
+	// 	}
+	// }
 	.page_wrap{
 		max-width: $page_width;
 		width: 80vw;

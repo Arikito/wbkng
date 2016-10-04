@@ -69,7 +69,6 @@ textarea{
 		display: block;
 	}
 }
-
 .apple_images{
 	display: flex;
 	.project_image{
@@ -313,6 +312,20 @@ header{
 	//HEADER MOBILE
 	.header_navigation.active{
 		@include animate(.4s);
+	}
+}
+body.scrolled{
+	header{
+		.logoSite{
+			height: $header_height * .6;
+			padding: $gap / 2;
+		}
+		.menu{
+			line-height: $header_height * .6;
+		}
+		nav{
+			padding: 8px;
+		}
 	}
 }
 @media screen and (max-width: 1280px){
