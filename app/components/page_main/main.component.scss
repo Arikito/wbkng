@@ -3,7 +3,10 @@
 	// background-color: blue;
 }
 //
-
+// @import '../../../resources/sass/_variables.scss';
+// @import '../../../resources/sass/_reset.scss';
+// @import '../../../resources/sass/_normalize.scss';
+// @import '../../../resources/sass/_grid.scss';
 @import '../../../resources/sass/base_style.scss';
 
 section.content{
