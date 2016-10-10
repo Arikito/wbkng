@@ -475,6 +475,23 @@ body .page_wrap { max-width: 1300px; width: 80vw; margin: 0 auto; overflow: auto
 body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; }
 body .page_wrap .tags_block { display: flex; justify-content: center; flex-wrap: wrap; }
 body .page_wrap .tags_block p, body .page_wrap .tags_block a { margin-left: 5px; margin-right: 5px; }
+body .page_wrap .tech { overflow: auto; margin-bottom: 20px; }
+body .page_wrap .tech .tech_image { background: #fff; float: none; width: 100%; }
+body .page_wrap .tech .tech_image .svg_img path { fill: #bf1111 !important; }
+body .page_wrap .tech .tech_image .svg_img polygon { fill: #bf1111 !important; }
+body .page_wrap .tech .html_logo .svg_img g > polygon { fill: #fff !important; }
+body .page_wrap .tech:hover .html_logo .svg_img path { fill: #e44d26 !important; }
+body .page_wrap .tech:hover .html_logo .svg_img polygon { fill: #e44d26 !important; }
+body .page_wrap .tech:hover .html_logo .svg_img g > polygon { fill: #fff !important; }
+body .page_wrap .tech:hover .html_title { color: #e44d26; }
+body .page_wrap .tech:hover .wp_logo .svg_img g > * { fill: #00a7da !important; }
+body .page_wrap .tech:hover .wp_title { color: #00a7da; }
+body .page_wrap .tech:hover .php_logo .svg_img g > * { fill: #4f5b92 !important; }
+body .page_wrap .tech:hover .php_title { color: #4f5b92; }
+body .page_wrap .tech:hover .jquery_logo .svg_img g > * { fill: #0769ad !important; }
+body .page_wrap .tech:hover .jquery_title { color: #0769ad; }
+body .page_wrap .tech .tech_description { font-size: 1.3em; padding-top: 0px; padding-bottom: 0px; text-align: justify; padding-left: 20px; width: 100%; }
+body .page_wrap .tech .tech_description .tech_title { margin: 0px 0px 5px 0px; text-align: center; font-size: 2em; }
 body section.content { padding-top: 120px; min-height: 100vh; }
 body section.content .subsection { padding: 5em 0; }
 body section.content .page_item { display: block; background: #fff; position: relative; overflow: hidden; }
