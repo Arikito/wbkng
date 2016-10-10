@@ -352,92 +352,6 @@ body{
 				margin-right: 5px;
 			}
 		}
-		//Страница технологий
-		.tech {
-			overflow: auto;
-			margin-bottom: $gap;
-			.tech_image {
-				background: #fff;
-				float: none;
-				width: 100%;
-				.svg_img{
-					& path {
-						fill: $accent !important;
-					}
-					& polygon {
-						fill: $accent !important;
-					}
-				}
-			}
-			.html_logo {
-				.svg_img{
-					& g > polygon {
-						fill: $white !important;
-					}
-				}
-			}
-			&:hover{
-				.html_logo {
-					.svg_img{
-						& path {
-						fill: #e44d26 !important;
-						}
-						& polygon {
-							fill: #e44d26 !important;
-						}
-						& g > polygon {
-						fill: $white !important;
-						}
-					}
-				}
-				.html_title {
-					color: #e44d26;
-				}
-				.wp_logo {
-					.svg_img{
-						& g > * {
-							fill: #00a7da !important;
-						}
-					}
-				}
-				.wp_title {
-					color: #00a7da;
-				}
-				.php_logo {
-					.svg_img{
-						& g > * {
-							fill: #4f5b92 !important;
-						}
-					}
-				}
-				.php_title {
-					color: #4f5b92;
-				}
-				.jquery_logo {
-					.svg_img{
-						& g > * {
-							fill: #0769ad !important;
-						}
-					}
-				}
-				.jquery_title {
-					color: #0769ad;
-				}
-			}
-			.tech_description {
-				font-size: 1.3em;
-				padding-top: 0px;
-				padding-bottom: 0px;
-				text-align: justify;
-				padding-left: $gap;
-				width: 100%;
-				.tech_title {
-					margin: 0px 0px 5px 0px;
-					text-align: center;
-					font-size: 2em;
-				}
-			}
-		}
 	}
 	section.content{
 		padding-top: $header_height;
@@ -718,9 +632,8 @@ body{
 				}
 			}
 		}
-		.projects_wrap{
-			// этот блок кода вынесен в файле стилей в папке page_portfolio
-			// &.portfolio_page{
+		.projects_wrap,
+		&.portfolio_page{
 			.items_wrap{
 				> div{
 					padding: 1px;
@@ -764,7 +677,6 @@ body{
 				}
 			}
 		}
-		// этот блок кода вынесен в файле стилей в папке page_portfolio
 		&.portfolio_page{
 			.items_wrap{
 				.page_item{
@@ -776,8 +688,6 @@ body{
 				}
 			}
 		}
-		
-		// этот блок кода вынесен в файле стилей в папке page_services
 		&.services_page{
 			max-width: 100%;
 			margin: 0px;
@@ -1020,6 +930,95 @@ body{
 					padding: $gap / 2 $gap;
 					&.accent_button{
 						font-size: 1.2em;
+					}
+				}
+			}
+		}
+		&.techs_page{
+			.page_wrap{
+				.tech {
+					overflow: auto;
+					margin-bottom: $gap;
+					.tech_image {
+						background: #fff;
+						float: none;
+						width: 100%;
+						.svg_img{
+							& path {
+								fill: $accent !important;
+							}
+							& polygon {
+								fill: $accent !important;
+							}
+						}
+					}
+					.html_logo {
+						.svg_img{
+							& g > polygon {
+								fill: $white !important;
+							}
+						}
+					}
+					&:hover{
+						.html_logo {
+							.svg_img{
+								& path {
+								fill: #e44d26 !important;
+								}
+								& polygon {
+									fill: #e44d26 !important;
+								}
+								& g > polygon {
+								fill: $white !important;
+								}
+							}
+						}
+						.html_title {
+							color: #e44d26;
+						}
+						.wp_logo {
+							.svg_img{
+								& g > * {
+									fill: #00a7da !important;
+								}
+							}
+						}
+						.wp_title {
+							color: #00a7da;
+						}
+						.php_logo {
+							.svg_img{
+								& g > * {
+									fill: #4f5b92 !important;
+								}
+							}
+						}
+						.php_title {
+							color: #4f5b92;
+						}
+						.jquery_logo {
+							.svg_img{
+								& g > * {
+									fill: #0769ad !important;
+								}
+							}
+						}
+						.jquery_title {
+							color: #0769ad;
+						}
+					}
+					.tech_description {
+						font-size: 1.3em;
+						padding-top: 0px;
+						padding-bottom: 0px;
+						text-align: justify;
+						padding-left: $gap;
+						width: 100%;
+						.tech_title {
+							margin: 0px 0px 5px 0px;
+							text-align: center;
+							font-size: 2em;
+						}
 					}
 				}
 			}
@@ -1621,286 +1620,3 @@ body{
 		}
 	}
 }
-
-// body{
-// 	font-size: 14px;
-// 	font-family: $base-font-family;
-// 	position: relative;
-// 	background: lighten($spacegray, 4);
-// 	color: $white;
-// 	.page_wrap{
-// 		max-width: $page_width;
-// 		width: 80vw;
-// 		margin: 0 auto;
-// 		overflow: auto;
-// 		position: relative;
-// 		h1, h2{
-// 			text-align: center;
-// 			// font-size: 2.5em;
-// 			font-size: 5em;
-//     		font-weight: 100;
-//     		font-family: "pt sans narrow";
-// 		}
-// 		.tags_block{
-// 			display: flex;
-// 			justify-content: center;
-// 			flex-wrap: wrap;
-// 			p, a{
-// 				margin-left: 5px;
-// 				margin-right: 5px;
-// 			}
-// 		}
-// 		//Страница технологий
-// 		.tech {
-// 			overflow: auto;
-// 			margin-bottom: $gap;
-// 			.tech_image {
-// 				background: #fff;
-// 				.svg_img{
-// 					& path {
-// 						fill: $accent !important;
-// 					}
-// 					& polygon {
-// 						fill: $accent !important;
-// 					}
-// 				}
-// 			}
-// 			.html_logo {
-// 				.svg_img{
-// 					& g > polygon {
-// 						fill: $white !important;
-// 					}
-// 				}
-// 			}
-// 			&:hover{
-// 				.html_logo {
-// 					.svg_img{
-// 						& path {
-// 						fill: #e44d26 !important;
-// 						}
-// 						& polygon {
-// 							fill: #e44d26 !important;
-// 						}
-// 						& g > polygon {
-// 						fill: $white !important;
-// 						}
-// 					}
-// 				}
-// 				.html_title {
-// 					color: #e44d26;
-// 				}
-// 				.wp_logo {
-// 					.svg_img{
-// 						& g > * {
-// 							fill: #00a7da !important;
-// 						}
-// 					}
-// 				}
-// 				.wp_title {
-// 					color: #00a7da;
-// 				}
-// 				.php_logo {
-// 					.svg_img{
-// 						& g > * {
-// 							fill: #4f5b92 !important;
-// 						}
-// 					}
-// 				}
-// 				.php_title {
-// 					color: #4f5b92;
-// 				}
-// 				.jquery_logo {
-// 					.svg_img{
-// 						& g > * {
-// 							fill: #0769ad !important;
-// 						}
-// 					}
-// 				}
-// 				.jquery_title {
-// 					color: #0769ad;
-// 				}
-// 			}
-// 			.tech_description {
-// 				font-size: 1.3em;
-// 				padding-top: 0px;
-// 				padding-bottom: 0px;
-// 				text-align: justify;
-// 				padding-left: $gap;
-// 				.tech_title {
-// 					margin: 0px 0px 5px 0px;
-// 					text-align: center;
-// 					font-size: 2em;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	section.content{
-// 		padding-top: $header_height;
-// 		min-height: 100vh;
-// 		.subsection{
-// 			padding: 5em 0;
-// 		}
-// 		.page_item{
-// 			display: block;
-// 			background: $white;
-// 			position: relative;
-// 			overflow: hidden;
-// 			img{
-// 				display: block;
-// 				height: 250px;
-// 				width: 100%;
-// 			}
-// 			p{
-// 				text-align: center;
-// 			}
-// 			.title{
-// 				font-size: 1.4em;
-// 				text-align: center;
-// 			}
-// 			.project_title{
-// 				position: absolute;
-// 				margin: 0;
-// 				right: 0;
-// 				left: 0;
-// 				top: calc(100% - 4em);
-// 				bottom: 0;
-// 				background: rgba(0, 0, 0, .6);
-// 				color: $white;
-// 				text-align: center;
-// 				font-size: 20px;
-// 				@include animate(.4s);
-// 				p{
-// 					opacity: 1;
-// 					font-size: 16px;
-// 				}
-// 				p:first-child{
-// 					font-size: 20px;
-// 					line-height: calc(4em);
-// 					margin: 0;
-// 				}
-// 			}
-// 			&:hover{
-// 				.project_title{
-// 					top: 0;
-// 				}
-// 			}
-// 		}
-// 		//BANNER ON THE MAIN PAGE
-// 		&.home_page{
-// 			//этого блока нет в файле main.component.scss
-// 			.banner_wrap{
-// 				position: relative;
-// 				background: $spacegray;
-// 				color: $white;
-// 				.owl-carousel{
-// 					.banner_item{
-// 						height: calc(100vh - 120px);
-// 						img{
-// 							-webkit-filter: brightness(0.30);
-// 							filter: brightness(0.30);
-// 							min-width: 100%;
-// 							min-height: 100%;
-// 						}
-// 						.banner_text{
-// 							position: absolute;
-// 							top: 5vh;
-// 							left: 15vw;
-// 							text-align: center;
-// 							width: 70vw;
-// 							height: 60vh;
-// 							h2{
-// 								font-size: 3em;
-// 							}
-// 							p{
-// 								max-width: 50vw;
-// 								margin: 0 auto;
-// 								text-align: justify;
-// 								font-size: 1.6em;
-// 							}
-// 							.bunner_btn{
-// 								width: 200px;
-// 								margin: 0 auto;
-// 								border: 1px solid $white;
-// 								position: absolute;
-// 								bottom: 2em;
-// 								left: calc(50% - 100px);
-// 							}
-// 						}
-// 					}
-// 					.owl-controls{
-// 						position: absolute;
-// 						bottom: 1em;
-// 						left: calc(50% - 60px);
-// 						.owl-page span{
-// 							background: $white;
-// 							opacity: 0.5;
-// 						}
-// 						.owl-page.active span,
-// 						.owl-page span:hover{
-// 							background: $white;
-// 							opacity: 0.9;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 		&.project_page{
-// 			font-size: 1.2em;
-// 			.project_img{
-// 				img{
-// 					width: 100%;
-// 				}
-// 			}
-// 			.project_descr{
-// 				padding: 0 $gap * 2;
-// 			}
-// 			.projects_task{
-// 				.title{
-// 					font-size: 1.2em;
-// 				}
-// 			}
-// 			.btn_wrap{
-// 				> div{
-// 					margin: 2em;
-// 				}
-// 				a{
-// 					padding: $gap / 2 $gap;
-// 					&.accent_button{
-// 						font-size: 1.2em;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// 	@media screen and (max-width: 1280px){
-// 		.page_wrap{
-// 			width: 100vw;
-// 		}
-// 		section.content{
-// 			padding-top: 72px;
-// 		}
-// 	}
-// 	@media screen and (max-width: 992px){}
-// 	@media screen and (max-width: 700px){
-// 		section.content{
-// 			font-size: .9em;
-// 		}
-// 	}
-// 	@media (max-width: 750px) and (orientation:landscape){
-// 		section.content{
-// 			font-size: .8em;
-// 		}
-// 	}
-// 	// iPhone5
-// 	@media (max-width: 570px) and (orientation:landscape){}
-// 	@media (max-width: 480px){
-// 		section.content{
-// 			font-size: .8em;
-// 		}
-// 	}
-// 	@media (max-width: 320px){
-// 		section.content{
-// 			font-size: .8em;
-// 		}
-// 	}
-// }

@@ -475,23 +475,6 @@ body .page_wrap { max-width: 1300px; width: 80vw; margin: 0 auto; overflow: auto
 body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; }
 body .page_wrap .tags_block { display: flex; justify-content: center; flex-wrap: wrap; }
 body .page_wrap .tags_block p, body .page_wrap .tags_block a { margin-left: 5px; margin-right: 5px; }
-body .page_wrap .tech { overflow: auto; margin-bottom: 20px; }
-body .page_wrap .tech .tech_image { background: #fff; float: none; width: 100%; }
-body .page_wrap .tech .tech_image .svg_img path { fill: #bf1111 !important; }
-body .page_wrap .tech .tech_image .svg_img polygon { fill: #bf1111 !important; }
-body .page_wrap .tech .html_logo .svg_img g > polygon { fill: #fff !important; }
-body .page_wrap .tech:hover .html_logo .svg_img path { fill: #e44d26 !important; }
-body .page_wrap .tech:hover .html_logo .svg_img polygon { fill: #e44d26 !important; }
-body .page_wrap .tech:hover .html_logo .svg_img g > polygon { fill: #fff !important; }
-body .page_wrap .tech:hover .html_title { color: #e44d26; }
-body .page_wrap .tech:hover .wp_logo .svg_img g > * { fill: #00a7da !important; }
-body .page_wrap .tech:hover .wp_title { color: #00a7da; }
-body .page_wrap .tech:hover .php_logo .svg_img g > * { fill: #4f5b92 !important; }
-body .page_wrap .tech:hover .php_title { color: #4f5b92; }
-body .page_wrap .tech:hover .jquery_logo .svg_img g > * { fill: #0769ad !important; }
-body .page_wrap .tech:hover .jquery_title { color: #0769ad; }
-body .page_wrap .tech .tech_description { font-size: 1.3em; padding-top: 0px; padding-bottom: 0px; text-align: justify; padding-left: 20px; width: 100%; }
-body .page_wrap .tech .tech_description .tech_title { margin: 0px 0px 5px 0px; text-align: center; font-size: 2em; }
 body section.content { padding-top: 120px; min-height: 100vh; }
 body section.content .subsection { padding: 5em 0; }
 body section.content .page_item { display: block; background: #fff; position: relative; overflow: hidden; }
@@ -543,12 +526,12 @@ body section.content.home_page .contacts_wrap .page_wrap .page_item.contacts_ite
 body section.content.home_page .contacts_wrap .page_wrap .page_item.form_item { padding: 0; }
 body section.content.home_page .location_wrap .overlay { background: transparent; position: absolute; width: 100%; height: 450px; }
 body section.content.home_page .location_wrap .studio_location { width: 100%; display: block; margin: 0 auto; }
-body section.content .projects_wrap .items_wrap > div { padding: 1px; }
-body section.content .projects_wrap .items_wrap .page_item img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-body section.content .projects_wrap .items_wrap .page_item .text_block { position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 20px; background: rgba(0, 0, 0, 0.6); color: #fff; opacity: 0; z-index: 1; visibility: hidden; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-body section.content .projects_wrap .items_wrap .page_item .text_block a { display: block; margin: 0 auto; width: 120px; margin-top: 6em; line-height: 30px; }
-body section.content .projects_wrap .items_wrap .page_item:hover .text_block { opacity: 1; visibility: visible; }
-body section.content .projects_wrap .items_wrap .page_item:hover img { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); }
+body section.content .projects_wrap .items_wrap > div, body section.content.portfolio_page .items_wrap > div { padding: 1px; }
+body section.content .projects_wrap .items_wrap .page_item img, body section.content.portfolio_page .items_wrap .page_item img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body section.content .projects_wrap .items_wrap .page_item .text_block, body section.content.portfolio_page .items_wrap .page_item .text_block { position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 20px; background: rgba(0, 0, 0, 0.6); color: #fff; opacity: 0; z-index: 1; visibility: hidden; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body section.content .projects_wrap .items_wrap .page_item .text_block a, body section.content.portfolio_page .items_wrap .page_item .text_block a { display: block; margin: 0 auto; width: 120px; margin-top: 6em; line-height: 30px; }
+body section.content .projects_wrap .items_wrap .page_item:hover .text_block, body section.content.portfolio_page .items_wrap .page_item:hover .text_block { opacity: 1; visibility: visible; }
+body section.content .projects_wrap .items_wrap .page_item:hover img, body section.content.portfolio_page .items_wrap .page_item:hover img { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); }
 body section.content.portfolio_page .items_wrap .page_item img { max-height: none; height: 400px; width: 100%; }
 body section.content.services_page { max-width: 100%; margin: 0px; }
 body section.content.services_page .service { padding-top: 120px; margin-top: -120px; /* ╨▒╨░╨╖╨╛╨▓╤Л╨╣ ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╨▓╨║╨╗╨░╨┤╨╛╨║ */ }
@@ -595,6 +578,23 @@ body section.content.project_page .projects_task .title { font-size: 1.2em; }
 body section.content.project_page .btn_wrap > div { margin: 2em; }
 body section.content.project_page .btn_wrap a { padding: 10px 20px; }
 body section.content.project_page .btn_wrap a.accent_button { font-size: 1.2em; }
+body section.content.techs_page .page_wrap .tech { overflow: auto; margin-bottom: 20px; }
+body section.content.techs_page .page_wrap .tech .tech_image { background: #fff; float: none; width: 100%; }
+body section.content.techs_page .page_wrap .tech .tech_image .svg_img path { fill: #bf1111 !important; }
+body section.content.techs_page .page_wrap .tech .tech_image .svg_img polygon { fill: #bf1111 !important; }
+body section.content.techs_page .page_wrap .tech .html_logo .svg_img g > polygon { fill: #fff !important; }
+body section.content.techs_page .page_wrap .tech:hover .html_logo .svg_img path { fill: #e44d26 !important; }
+body section.content.techs_page .page_wrap .tech:hover .html_logo .svg_img polygon { fill: #e44d26 !important; }
+body section.content.techs_page .page_wrap .tech:hover .html_logo .svg_img g > polygon { fill: #fff !important; }
+body section.content.techs_page .page_wrap .tech:hover .html_title { color: #e44d26; }
+body section.content.techs_page .page_wrap .tech:hover .wp_logo .svg_img g > * { fill: #00a7da !important; }
+body section.content.techs_page .page_wrap .tech:hover .wp_title { color: #00a7da; }
+body section.content.techs_page .page_wrap .tech:hover .php_logo .svg_img g > * { fill: #4f5b92 !important; }
+body section.content.techs_page .page_wrap .tech:hover .php_title { color: #4f5b92; }
+body section.content.techs_page .page_wrap .tech:hover .jquery_logo .svg_img g > * { fill: #0769ad !important; }
+body section.content.techs_page .page_wrap .tech:hover .jquery_title { color: #0769ad; }
+body section.content.techs_page .page_wrap .tech .tech_description { font-size: 1.3em; padding-top: 0px; padding-bottom: 0px; text-align: justify; padding-left: 20px; width: 100%; }
+body section.content.techs_page .page_wrap .tech .tech_description .tech_title { margin: 0px 0px 5px 0px; text-align: center; font-size: 2em; }
 body footer { background-color: #2e3034; color: #c0c0c0; line-height: 2em; }
 body footer a { color: #c0c0c0; text-decoration: none; }
 body footer .copyright { line-height: 80px; background-color: #242629; }
