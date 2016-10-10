@@ -8,8 +8,6 @@ declare var jQuery: any;
 	moduleId: module.id,
 	selector: 'my-services',
 	templateUrl: './services.component.html'
-	// ,
-	// styleUrls: [ './services.component.css' ]
 })
 
 export class ServicesComponent implements OnInit{

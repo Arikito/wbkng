@@ -8,8 +8,6 @@ declare var jQuery: any;
 	moduleId: module.id,
 	selector: 'my-portfolio',
 	templateUrl: './portfolio.component.html'
-	// ,
-	// styleUrls: [ './portfolio.component.css' ]
 })
 
 export class PortfolioComponent implements OnInit{
