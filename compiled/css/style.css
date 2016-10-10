@@ -472,7 +472,8 @@ body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
 body.scrolled header nav { padding: 8px; }
 body .page_wrap { max-width: 1300px; width: 80vw; margin: 0 auto; overflow: auto; position: relative; }
-body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; }
+body .page_wrap.wide { max-width: 100%; width: 100%; }
+body .page_wrap h1, body .page_wrap h2 { text-align: center; font-size: 2.5em; font-weight: 400; }
 body .page_wrap .tags_block { display: flex; justify-content: center; flex-wrap: wrap; }
 body .page_wrap .tags_block p, body .page_wrap .tags_block a { margin-left: 5px; margin-right: 5px; }
 body section.content { padding-top: 120px; min-height: 100vh; }

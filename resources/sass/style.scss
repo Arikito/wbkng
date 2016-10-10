@@ -339,9 +339,14 @@ body{
 		margin: 0 auto;
 		overflow: auto;
 		position: relative;
+		&.wide {
+			max-width: 100%;
+			width: 100%;
+		}
 		h1, h2{
 			text-align: center;
 			font-size: 2.5em;
+			font-weight: 400;
 		}
 		.tags_block{
 			display: flex;
