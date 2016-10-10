@@ -49,8 +49,7 @@ var TechsComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-techs',
-            templateUrl: './techs.component.html',
-            styleUrls: ['./techs.component.css']
+            templateUrl: './techs.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router, core_2.ElementRef])
     ], TechsComponent);

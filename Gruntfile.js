@@ -47,9 +47,13 @@ module.exports = function(grunt) {
 					ext: '.component.css'
 				},
 				{
-					'compiled/css/style.css': 'resources/sass/style.scss',
-					'app/main_style.css': 'app/main_style.scss'
-				}]
+					'compiled/css/style.css': 'resources/sass/style.scss'
+				}
+				// {
+				// 	'compiled/css/style.css': 'resources/sass/style.scss',
+				// 	'app/main_style.css': 'app/main_style.scss'
+				// }
+				]
 			}
 		},
 		uglify: {

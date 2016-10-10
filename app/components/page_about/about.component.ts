@@ -7,8 +7,9 @@ declare var jQuery: any;
 @Component({
 	moduleId: module.id,
 	selector: 'my-about',
-	templateUrl: './about.component.html',
-	styleUrls: [ './about.component.css' ]
+	templateUrl: './about.component.html'
+	// ,
+	// styleUrls: [ './about.component.css' ]
 })
 
 export class AboutComponent implements OnInit{

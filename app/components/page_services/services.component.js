@@ -76,8 +76,7 @@ var ServicesComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-services',
-            templateUrl: './services.component.html',
-            styleUrls: ['./services.component.css']
+            templateUrl: './services.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router, core_2.ElementRef])
     ], ServicesComponent);

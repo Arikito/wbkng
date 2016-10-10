@@ -15,8 +15,7 @@ var PageComponent = (function () {
     PageComponent = __decorate([
         core_1.Component({
             selector: 'my-page',
-            templateUrl: 'app/components/page/page.component.html',
-            styleUrls: ['app/components/page/page.component.css']
+            templateUrl: 'app/components/page/page.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], PageComponent);

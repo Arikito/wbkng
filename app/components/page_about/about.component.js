@@ -23,8 +23,7 @@ var AboutComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-about',
-            templateUrl: './about.component.html',
-            styleUrls: ['./about.component.css']
+            templateUrl: './about.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router, core_2.ElementRef])
     ], AboutComponent);

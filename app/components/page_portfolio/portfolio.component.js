@@ -23,8 +23,7 @@ var PortfolioComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-portfolio',
-            templateUrl: './portfolio.component.html',
-            styleUrls: ['./portfolio.component.css']
+            templateUrl: './portfolio.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router, core_2.ElementRef])
     ], PortfolioComponent);

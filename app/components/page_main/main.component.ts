@@ -7,8 +7,9 @@ declare var jQuery: any;
 @Component({
 	moduleId: module.id,
 	selector: 'my-main',
-	templateUrl: './main.component.html',
-	styleUrls: [ './main.component.css' ]
+	templateUrl: './main.component.html'
+	// ,
+	// styleUrls: [ './main.component.css' ]
 })
 
 export class MainComponent implements OnInit{
