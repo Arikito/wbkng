@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router }            from '@angular/router';
 
 import { ElementRef } from '@angular/core';
-declare var jQuery: any;
+declare var $: any;
 
 @Component({
 	moduleId: module.id,
@@ -14,17 +14,17 @@ export class ServicesComponent implements OnInit{
 	constructor(private router: Router, private elRef: ElementRef) {
 	}
 	ngOnInit(): any{
-		// jQuery('html, body').animate({ scrollTop: '0' }, 500);
-		jQuery('body').scrollTop(0);
-		jQuery(this.elRef.nativeElement).find('img.svg').each(function(){
-			var $img = jQuery(this);
+		// $('html, body').animate({ scrollTop: '0' }, 500);
+		$('body').scrollTop(0);
+		$(this.elRef.nativeElement).find('img.svg').each(function(){
+			var $img = $(this);
 			var imgID = $img.attr('id');
 			var imgClass = $img.attr('class');
 			var imgURL = $img.attr('src');
 
-			jQuery.get(imgURL, function(data) {
+			$.get(imgURL, function(data) {
 				// Get the SVG tag, ignore the rest
-				var $svg = jQuery(data).find('svg');
+				var $svg = $(data).find('svg');
 
 				// Add replaced image's ID to the new SVG
 				if(typeof imgID !== 'undefined') {
@@ -49,15 +49,15 @@ export class ServicesComponent implements OnInit{
 			}, 'xml');
 
 		});
-		jQuery(this.elRef.nativeElement).find('svg use').each(function(){
-			var $img = jQuery(this);
+		$(this.elRef.nativeElement).find('svg use').each(function(){
+			var $img = $(this);
 			var imgID = $img.attr('id');
 			var imgClass = $img.attr('class');
 			var imgURL = $img.attr('xlink:href');
 
-			jQuery.get(imgURL, function(data) {
+			$.get(imgURL, function(data) {
 				// Get the SVG tag, ignore the rest
-				var $svg = jQuery(data).find('svg');
+				var $svg = $(data).find('svg');
 
 				// Add replaced image's ID to the new SVG
 				if(typeof imgID !== 'undefined') {
@@ -81,6 +81,44 @@ export class ServicesComponent implements OnInit{
 
 			}, 'xml');
 
+		});
+		// if(!$(window).hasClass('spy')){
+		// 	$(window).scroll(function(){
+		// 		console.log('services spy');
+		// 		var a = $('body').find('#seo').scrollTop();
+		// 		console.log(a);
+		// 	});
+		// }
+		function ScrollSpy(obj){
+		  this.handlers = obj.find('.spy_handler');
+		  this.scrollTop = $(window).scrollTop();
+		  this.spy = function(){
+		    var parent = this;
+		    parent.scrollTop = $(window).scrollTop() + 120;
+		    parent.handlers.each(function(){
+		      if($(this.hash).offset().top <= parent.scrollTop && $(this.hash).offset().top + $(this.hash).outerHeight() > parent.scrollTop){
+		        console.log($(this.hash).offset().top);
+		        parent.activate(this);
+		      }else{
+		        // parent.deactivate();
+		      }
+		    });
+		  }
+		  this.activate = function(obj){
+		    this.deactivate();
+		    $(obj).closest('li').addClass('active');
+		  }
+		  this.deactivate = function(){
+		    this.handlers.each(function(){
+		      $(this).closest('li').removeClass('active');
+		    });
+		  }
+		}
+
+		var spy = new ScrollSpy($('#magic_scroll'));
+
+		$(window).scroll(function(){
+		  spy.spy();
 		});
 	}
 
