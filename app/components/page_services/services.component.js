@@ -105,6 +105,9 @@ var ServicesComponent = (function () {
             spy.spy();
         });
     };
+    ServicesComponent.prototype.ngOnDestroy = function () {
+        $(window).unbind();
+    };
     ServicesComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

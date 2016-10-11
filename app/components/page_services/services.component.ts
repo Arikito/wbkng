@@ -82,6 +82,7 @@ export class ServicesComponent implements OnInit{
 			}, 'xml');
 
 		});
+
 		// if(!$(window).hasClass('spy')){
 		// 	$(window).scroll(function(){
 		// 		console.log('services spy');
@@ -111,11 +112,12 @@ export class ServicesComponent implements OnInit{
 		    });
 		  }
 		}
-
 		var spy = new ScrollSpy($('#magic_scroll'));
-
 		$(window).scroll(function(){
 		  spy.spy();
 		});
 	}
+	ngOnDestroy() {
+  	  $(window).unbind();
+  	}
 }
