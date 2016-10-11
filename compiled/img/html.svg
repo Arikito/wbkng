@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY st0 "display:none;fill:#29ABE2;">
-	<!ENTITY st1 "fill:#FFFFFF;">
-	<!ENTITY st2 "fill:#333333;">
-	<!ENTITY st3 "fill:#4D4D4D;">
-	<!ENTITY st4 "fill:#E6E6E6;">
-]>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 480" style="enable-background:new 0 0 800 480;" xml:space="preserve">
-<rect style="&st0;" width="800" height="480"/>
-<polygon style="&st1;" points="285.1,405.7 400,438 515.3,405.9 540.3,120.7 259.6,120.7 "/>
-<path style="&st2;" d="M259.6,120.7l25.5,284.9L400,438l115.3-32.3l25-284.9H259.6z M484.5,214.4H350.7l3.3,34.9h127.4L472,358
-	l-72,20l-72.2-19.6l-4.8-55.8h35.3l2,27.5l39.5,10.3l39.3-10.8L443,284H321.6l-9.2-106.5h175L484.5,214.4z"/>
+<rect y="0" style="display:none;fill:#29ABE2;" width="800" height="480"/>
+<polygon style="fill:#FFFFFF;" points="283.4,408.1 400,440.9 517,408.3 542.4,119 257.5,119 "/>
+<path style="fill:#E44F26;" d="M257.5,119l25.9,289.1L400,440.9l117-32.8L542.4,119H257.5z M485.7,214H349.9l3.4,35.4h129.3
+	l-9.5,110.3L400,380l-73.2-19.9l-4.8-56.6h35.8l2,27.9l40.1,10.4l39.9-11l3.9-46.2H320.5l-9.3-108h177.5L485.7,214z"/>
 <g>
 	<g>
-		<polygon style="&st3;" points="443.2,284.1 400,284.1 400,340.3 439.3,329.7 		"/>
-		<polygon style="&st3;" points="400,144.6 400,177.7 487.6,177.7 484.5,214.4 400,214.4 400,249.3 481.6,249.3 472.2,358 400,378 
-			400,413 494,386.6 515.3,144.6 		"/>
+		<polygon style="fill:#F1662A;" points="443.8,284.8 400,284.8 400,341.8 439.9,331 		"/>
+		<polygon style="fill:#F1662A;" points="400,143.2 400,176.7 488.9,176.7 485.7,214 400,214 400,249.4 482.8,249.4 473.3,359.7 
+			400,380 400,415.6 495.4,388.7 517,143.2 		"/>
 	</g>
 </g>
-<polygon style="&st2;" points="490,76.7 490,41.8 471.6,41.8 471.6,76.7 471.6,95 489.8,95 513.9,95 513.9,76.7 "/>
-<polygon style="&st2;" points="445.9,41.8 433.1,60.2 420.2,41.8 403.7,41.8 403.7,95 420.2,95 420.2,67.5 433.1,88.4 445.9,67.5 
-	445.9,95 462.5,95 462.5,41.8 "/>
-<polygon style="&st2;" points="394.5,41.8 345,41.8 345,60.2 361.5,60.2 361.5,95 379.8,95 379.8,60.2 394.5,60.2 "/>
-<polygon style="&st2;" points="321.1,41.8 321.1,60.2 302.7,60.2 302.7,41.8 286.2,41.8 286.2,95 302.7,95 302.7,78.5 321.1,78.5 
-	321.1,95 337.6,95 337.6,41.8 "/>
+<polygon style="fill:#333333;" points="491.3,74.3 491.3,38.9 472.7,38.9 472.7,74.3 472.7,92.9 491.1,92.9 515.5,92.9 515.5,74.3 
+	"/>
+<polygon style="fill:#333333;" points="446.6,38.9 433.6,57.5 420.5,38.9 403.8,38.9 403.8,92.9 420.5,92.9 420.5,65 433.6,86.2 
+	446.6,65 446.6,92.9 463.4,92.9 463.4,38.9 "/>
+<polygon style="fill:#333333;" points="394.5,38.9 344.2,38.9 344.2,57.5 360.9,57.5 360.9,92.9 379.6,92.9 379.6,57.5 394.5,57.5 
+	"/>
+<polygon style="fill:#333333;" points="319.9,38.9 319.9,57.5 301.3,57.5 301.3,38.9 284.5,38.9 284.5,92.9 301.3,92.9 301.3,76.1 
+	319.9,76.1 319.9,92.9 336.7,92.9 336.7,38.9 "/>
 <g>
 	<g>
-		<polygon style="&st4;" points="400,249.3 354,249.3 350.7,214.4 400,214.4 400,177.7 312.5,177.7 321.6,284.1 400,284.1 		"/>
-		<polygon style="&st4;" points="400,340.3 360.6,330 358.5,302.5 323.1,302.5 328.1,358.3 400,378 		"/>
+		<polygon style="fill:#E6E6E6;" points="400,249.4 353.3,249.4 349.9,214 400,214 400,176.7 311.2,176.7 320.5,284.8 400,284.8 		
+			"/>
+		<polygon style="fill:#E6E6E6;" points="400,341.8 360,331.4 357.9,303.4 322,303.4 327,360.1 400,380 		"/>
 	</g>
 </g>
 <image style="display:none;overflow:visible;enable-background:new    ;" width="512" height="600" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAJYCAYAAAAUpV5gAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

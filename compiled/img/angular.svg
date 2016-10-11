@@ -4,10 +4,14 @@
 	 viewBox="0 0 800 480" style="enable-background:new 0 0 800 480;" xml:space="preserve">
 <rect style="display:none;fill:#29ABE2;" width="800" height="480"/>
 <g>
-	<polygon style="fill:#333333;" points="398,40 398,441.2 400.1,441.8 562.2,353.6 592.5,106.4 	"/>
+	<g>
+		<polygon style="fill:#333333;" points="398,40 398,441.2 400.1,441.8 562.2,353.6 592.5,106.4 		"/>
+		<polygon style="fill:#C30E2D;" points="398,40 398,441.2 400.1,441.8 562.2,353.6 592.5,106.4 		"/>
+	</g>
 	<g>
 		<polygon style="fill:#333333;" points="211.3,106.4 240.2,354.6 398,441.2 398,40 		"/>
 		<polygon style="opacity:0.1;fill:#FFFFFF;" points="211.3,106.4 240.2,354.6 398,441.2 398,40 		"/>
+		<polygon style="fill:#DC0330;" points="211.3,106.4 240.2,354.6 398,441.2 398,40 		"/>
 	</g>
 </g>
 <g>
