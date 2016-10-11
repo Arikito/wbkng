@@ -86,10 +86,7 @@ var ServicesComponent = (function () {
                 parent.scrollTop = $(window).scrollTop() + 120;
                 parent.handlers.each(function () {
                     if ($(this.hash).offset().top <= parent.scrollTop && $(this.hash).offset().top + $(this.hash).outerHeight() > parent.scrollTop) {
-                        console.log($(this.hash).offset().top);
                         parent.activate(this);
-                    }
-                    else {
                     }
                 });
             };

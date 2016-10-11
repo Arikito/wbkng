@@ -169,10 +169,12 @@ $(function(s){
 	// 	projects_filter(classList[0], parent);
 	// });
 
-	$('body').on('click', ".tag_js", function(){
+	$('body').on('click', ".tag_js:not(.active)", function(){
 		var classList = $(this).attr('class').split(/\s+/),
 			parent = $(this).closest('.content');
 		projects_filter(classList[0], parent);
+		$(this).closest('.tags_block').find('.active').removeClass('active');
+		$(this).addClass('active');
 	});
 });
 

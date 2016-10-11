@@ -357,8 +357,17 @@ body{
 			justify-content: center;
 			flex-wrap: wrap;
 			p, a{
-				margin-left: 5px;
-				margin-right: 5px;
+				// margin-left: 5px;
+				// margin-right: 5px;
+				padding: 10px;
+				&:hover{
+					@include animate(.4s);
+					cursor: pointer;
+					background: lighten($spacegray, 10);
+				}
+			}
+			p.active {
+				background: $accent;
 			}
 		}
 	}
@@ -738,7 +747,7 @@ body{
 					img{
 						max-height: none;
 						height: 400px;
-						width: 100%;
+						min-width: 100%;
 					}
 				}
 			}
