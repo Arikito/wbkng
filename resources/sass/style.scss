@@ -506,7 +506,7 @@ body{
 				}
 				&:hover {
 					&:before, &:after {
-						width: 70%;
+						width: 80%;
 					}
 				}
 				ul.akkordeon{
@@ -1009,17 +1009,24 @@ body{
 						float: none;
 						width: 100%;
 						.svg_img{
-							& path {
-								fill: $accent !important;
-							}
-							& polygon {
+							& path,
+							& polygon,
+							& circle {
 								fill: $accent !important;
 							}
 						}
 					}
-					.html_logo {
+					.html_logo,
+					.css_logo {
 						.svg_img{
 							& g > polygon {
+								fill: $white !important;
+							}
+						}
+					}
+					.angular_logo {
+						.svg_img{
+							& path {
 								fill: $white !important;
 							}
 						}

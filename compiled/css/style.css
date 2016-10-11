@@ -503,7 +503,7 @@ body section.content.home_page .services_wrap { position: relative; overflow: hi
 body section.content.home_page .services_wrap:before, body section.content.home_page .services_wrap:after { content: ''; display: block; position: absolute; width: 40%; height: 20px; border: 0; background-color: #fff; transform: skewX(-45deg); -ms-transform: skewX(-45deg); -webkit-transform: skewX(-45deg); -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .services_wrap:before { top: 0; left: -20px; }
 body section.content.home_page .services_wrap:after { bottom: 0; right: -20px; }
-body section.content.home_page .services_wrap:hover:before, body section.content.home_page .services_wrap:hover:after { width: 70%; }
+body section.content.home_page .services_wrap:hover:before, body section.content.home_page .services_wrap:hover:after { width: 80%; }
 body section.content.home_page .services_wrap ul.akkordeon { padding: 0; margin: 0; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item { background: transparent; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > div { cursor: pointer; padding: 10px 10px; margin: 0; color: #fff; text-align: center; }
@@ -593,9 +593,9 @@ body section.content.project_page .btn_wrap a { padding: 10px 20px; }
 body section.content.project_page .btn_wrap a.accent_button { font-size: 1.2em; }
 body section.content.techs_page .page_wrap .tech { overflow: auto; margin-bottom: 20px; }
 body section.content.techs_page .page_wrap .tech .tech_image { background: #fff; float: none; width: 100%; }
-body section.content.techs_page .page_wrap .tech .tech_image .svg_img path { fill: #bf1111 !important; }
-body section.content.techs_page .page_wrap .tech .tech_image .svg_img polygon { fill: #bf1111 !important; }
-body section.content.techs_page .page_wrap .tech .html_logo .svg_img g > polygon { fill: #fff !important; }
+body section.content.techs_page .page_wrap .tech .tech_image .svg_img path, body section.content.techs_page .page_wrap .tech .tech_image .svg_img polygon, body section.content.techs_page .page_wrap .tech .tech_image .svg_img circle { fill: #bf1111 !important; }
+body section.content.techs_page .page_wrap .tech .html_logo .svg_img g > polygon, body section.content.techs_page .page_wrap .tech .css_logo .svg_img g > polygon { fill: #fff !important; }
+body section.content.techs_page .page_wrap .tech .angular_logo .svg_img path { fill: #fff !important; }
 body section.content.techs_page .page_wrap .tech:hover .html_logo .svg_img path { fill: #e44d26 !important; }
 body section.content.techs_page .page_wrap .tech:hover .html_logo .svg_img polygon { fill: #e44d26 !important; }
 body section.content.techs_page .page_wrap .tech:hover .html_logo .svg_img g > polygon { fill: #fff !important; }
