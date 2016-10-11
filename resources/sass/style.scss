@@ -46,8 +46,12 @@ textarea{
 	line-height: 40px;
 	padding: 0 $gap;
 	cursor: pointer;
+	@include animate(.4s);
 	&:hover{
 		background-color: lighten($accent, 5);
+	}
+	&:active{
+		background-color: darken($accent, 5);
 	}
 }
 .no_accent_button{
@@ -187,7 +191,7 @@ body{
 			// 		// height: auto;
 			// 	}
 			// }
-			// 
+			//
 		nav{
 			display: inline-block;
 			float: right;
@@ -372,7 +376,7 @@ body{
 			img{
 				display: block;
 				height: 250px;
-				width: 100%;
+				min-width: 100%;
 			}
 			p{
 				text-align: center;
@@ -388,7 +392,7 @@ body{
 				left: 0;
 				top: calc(100% - 4em);
 				bottom: 0;
-				background: rgba(0, 0, 0, .6);
+				background: rgba($spacegray, .6);
 				color: $white;
 				text-align: center;
 				font-size: 20px;
@@ -468,11 +472,39 @@ body{
 			}
 			//SERVISES BLOCK on the main page
 			.services_wrap{
+				position: relative;
+				overflow: hidden;
+				&:before, &:after {
+					content: '';
+					display: block;
+					position: absolute;
+					width: 40%;
+					height: $gap;
+					border: 0;
+					background-color: $white;
+					transform: skewX(-45deg);
+					-ms-transform: skewX(-45deg);
+					-webkit-transform: skewX(-45deg);
+					@include animate(.4s);
+				}
+				&:before {
+					top: 0;
+					left: -$gap;
+				}
+				&:after {
+					bottom: 0;
+					right: -$gap;
+				}
+				&:hover {
+					&:before, &:after {
+						width: 70%;
+					}
+				}
 				ul.akkordeon{
 					padding: 0;
 					margin: 0;
 					li.page_item{
-						height: 380px;
+						// height: 380px;
 						background: transparent;
 						> div{
 							cursor: pointer;
@@ -488,20 +520,33 @@ body{
 								}
 							}
 							.service_icon{
-								width: 100px;
-								height: 100px;
+								width: 200px;
+								height: 200px;
 								margin: 0 auto;
+								padding: 50px;
+								border-radius: 50%;
+								border: 2px solid $accent;
+								margin-bottom: 50px;
+								@include animate(.4s);
 								.svg_img{
 									width: 100px;
 									height: 100px;
-									@include animate(.4s);
+									& path.accent{
+										@include animate(.4s);
+									}
 								}
 							}
 							.title{
 								font-size: 1.6em;
+								font-weight: 100;
+							}
+							.description {
+								line-height: 2em;
+								padding: 0 20%;
 							}
 						}
 						> ul{
+							display: none;
 							li{
 								list-style: none;
 								line-height: 1.6em;
@@ -514,11 +559,14 @@ body{
 								&:hover a {
 									// text-shadow: 3px 2px 1px lighten($accent, 5);
 									color: lighten($accent, 5);
-									@include animate(.3s);
+									@include animate(.4s);
 								}
 							}
 						}
 						&:hover{
+							.service_icon{
+								border-color: $white;
+							}
 							.svg_img{
 								& path.accent{
 									fill: $accent;
@@ -543,10 +591,11 @@ body{
 				}
 			}
 			.about_studio_wrap{
+				background-color: $spacegray;
 				.page_item{
 					margin: 1em auto;
 					text-align: center;
-					background-color: lighten($spacegray, 4);
+					background-color: transparent;
 					p{
 						max-width: 250px;
 						text-align: justify;
@@ -640,9 +689,9 @@ body{
 		.projects_wrap,
 		&.portfolio_page{
 			.items_wrap{
-				> div{
-					padding: 1px;
-				}
+				// > div{
+				// 	padding: 1px;
+				// }
 				.page_item{
 					img{
 						@include animate(.4s);
@@ -654,7 +703,7 @@ body{
 						top: 0;
 						left: 0;
 						padding: $gap;
-						background: rgba(0, 0, 0, .6);
+						background: rgba($spacegray, .6);
 						color: $white;
 						opacity: 0;
 						z-index: 1;
@@ -666,6 +715,7 @@ body{
 							width: 120px;
 							margin-top: 6em;
 							line-height: 30px;
+							text-align: center;
 						}
 					}
 					&:hover{
@@ -1086,7 +1136,7 @@ body{
 			}
 		}
 	}
-	
+
 	@media screen and (max-width: 1280px){
 		.page_wrap{
 			width: 100vw;
@@ -1301,8 +1351,6 @@ body{
 						li.page_item{
 							> div{
 								.service_icon{
-									width: 100px;
-									height: 100px;
 									margin: 0 auto;
 									.svg_img{
 										width: 70px;
@@ -1484,16 +1532,13 @@ body{
 										}
 									}
 									.service_icon{
-										width: 100px;
-										height: 100px;
-										margin: 0 auto;
 										.svg_img{
 											width: 100px;
 											@include animate(.4s);
 										}
 									}
 									.title{
-										font-size: 1.6em;
+										font-size: 2em;
 									}
 								}
 								> ul{
