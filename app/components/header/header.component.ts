@@ -22,7 +22,7 @@ export class HeaderComponent {
 				link: '/techs'
 			},
 			{
-				title: 'О нас',
+				title: 'Наша команда',
 				link: '/about'
 			}
 		]
