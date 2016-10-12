@@ -607,6 +607,10 @@ body section.content.techs_page .page_wrap .tech:hover .jquery_logo .svg_img g >
 body section.content.techs_page .page_wrap .tech:hover .jquery_title { color: #0769ad; }
 body section.content.techs_page .page_wrap .tech .tech_description { font-size: 1.3em; padding-top: 0px; padding-bottom: 0px; text-align: justify; padding-left: 20px; width: 100%; }
 body section.content.techs_page .page_wrap .tech .tech_description .tech_title { margin: 0px 0px 5px 0px; text-align: center; font-size: 2em; }
+body section.content.about_page .main_description { font-size: 16px; line-height: 25px; }
+body section.content.about_page .developer_block img { width: 80%; border-radius: 50%; display: block; margin: 0px auto; margin-bottom: 20px; }
+body section.content.about_page .title { width: 230px; text-align: center; margin: 0px auto; background-color: #bf1111; color: #fff; border-radius: .2em; line-height: 40px; padding: 0 20px; }
+body section.content.about_page .description { font-size: 16px; line-height: 20px; text-align: justify; width: 80%; margin: 0px auto; margin-top: 20px; }
 body footer { background-color: #22252b; color: #c0c0c0; line-height: 2em; }
 body footer a { color: #c0c0c0; text-decoration: none; }
 body footer .copyright { line-height: 80px; background-color: #191b20; }

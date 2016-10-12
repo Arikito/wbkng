@@ -1135,6 +1135,40 @@ body{
 				}
 			}
 		}
+		&.about_page{
+			.main_description {
+				font-size: 16px;
+				line-height: $gap + 5;
+				// background: lighten($spacegray, 10);
+			}
+			.developer_block {
+				img {
+					width: 80%;
+					border-radius: 50%;
+					display: block;
+    				margin: 0px auto;
+					margin-bottom: $gap;
+				}
+			}
+			.title {
+				width: 230px;
+				text-align: center;
+				margin: 0px auto;
+				background-color: $accent;
+			    color: $white;
+			    border-radius: .2em;
+			    line-height: $gap * 2;
+			    padding: 0 $gap;
+			}
+			.description {
+				font-size: 16px;
+				line-height: $gap;
+				text-align: justify;
+				width: 80%;
+			    margin: 0px auto;
+			    margin-top: $gap;
+			}
+		}
 	}
 	footer{
 		background-color: lighten($spacegray, 4);
