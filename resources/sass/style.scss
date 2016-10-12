@@ -615,6 +615,35 @@ body{
 					}
 				}
 			}
+			.contact_us_wrap{
+				form {
+					.form_inputs_block {
+						width: 50%;
+						float: left;
+						input, textarea {
+							border: 1px solid #eee;
+							width: calc(100% - 10px);
+							&:focus {
+								border-color: lighten($spacegray, 4);
+							}
+						}
+						input {
+							margin-left: 10px;
+							margin-bottom: 10px;
+						}
+						textarea {
+							margin-right: 10px;
+						}
+						.userphone {
+							width: calc(70% - 25px);
+						}
+						.submit_btn {
+							width: 30%;
+							border: none;
+						}
+					}
+				}
+			}
 			.contacts_wrap{
 				.page_wrap{
 					padding: $gap 0;
@@ -628,54 +657,62 @@ body{
 							text-align: left;
 							font-size: 1.4em;
 						}
-						.contacts{
-							p{
-								display: flex;
-								span{
-									line-height: 30px;
-									margin: 0 $gap/2;
+						.form_item {
+							form {
+								input {
+									border: 1px solid #e5e5e5;
 								}
 							}
-							.svg_img{
-								width: 30px;
-								height: 30px;
-							}
+
 						}
-						fieldset{
-							background: #2e3034;
-							border-width: 0px;
-							border-radius: 3px;
-							padding: $gap;
-							legend{
-								padding: $gap/2 $gap*2;
-								background: #fff;
-								border-radius: 3px;
-								border: 1px solid #2b1111;
-								font-size: 1.4em;
-								margin: 0px auto;
-							}
-							form{
-								display: block;
-								margin: 0 auto;
-								> *{
-									border: 1px solid #2e3034;
-									width: 100%;
-									margin: 5px 0;
-								}
-								input[type="submit"]{
-									font-size: 1.4em;
-								}
-							}
-						}
-						&.contacts_item{
-							height: 450px;
-							display: flex;
-							justify-content: space-between;
-							flex-direction: column;
-						}
-						&.form_item{
-							padding: 0;
-						}
+						// .contacts{
+						// 	p{
+						// 		display: flex;
+						// 		span{
+						// 			line-height: 30px;
+						// 			margin: 0 $gap/2;
+						// 		}
+						// 	}
+						// 	.svg_img{
+						// 		width: 30px;
+						// 		height: 30px;
+						// 	}
+						// }
+						// fieldset{
+						// 	background: #2e3034;
+						// 	border-width: 0px;
+						// 	border-radius: 3px;
+						// 	padding: $gap;
+						// 	legend{
+						// 		padding: $gap/2 $gap*2;
+						// 		background: #fff;
+						// 		border-radius: 3px;
+						// 		border: 1px solid #2b1111;
+						// 		font-size: 1.4em;
+						// 		margin: 0px auto;
+						// 	}
+						// 	form{
+						// 		display: block;
+						// 		margin: 0 auto;
+						// 		> *{
+						// 			border: 1px solid #2e3034;
+						// 			width: 100%;
+						// 			margin: 5px 0;
+						// 		}
+						// 		input[type="submit"]{
+						// 			font-size: 1.4em;
+						// 		}
+						// 	}
+						// }
+						// &.contacts_item{
+						// 	height: 450px;
+						// 	display: flex;
+						// 	justify-content: space-between;
+						// 	flex-direction: column;
+						// }
+						// &.form_item{
+						// 	padding: 0;
+						// }
 					}
 				}
 			}
