@@ -25,7 +25,7 @@ var HeaderComponent = (function () {
                 link: '/techs'
             },
             {
-                title: 'О нас',
+                title: 'Наша команда',
                 link: '/about'
             }
         ];
