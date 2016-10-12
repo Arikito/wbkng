@@ -467,7 +467,7 @@ body header nav li:after { bottom: 0; left: 0; }
 body header nav li .show:after, body header nav li .show:before, body header nav li:after, body header nav li:before { content: " "; position: absolute; background: #bf1111; height: 0; width: 1px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body header nav li:hover a:after, body header nav li:hover a:before { width: 1.5em; }
 body header nav li .show:hover:after, body header nav li .show:hover:before, body header nav li:hover:after, body header nav li:hover:before { height: 1.5em; }
-body header nav li.active a { color: #bf1111; font-weight: 600; }
+body header nav li a.active { color: #bf1111; font-weight: 600; }
 body header .header_navigation.active { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body.scrolled header .logoSite { height: 72px; padding: 10px; }
 body.scrolled header .menu { line-height: 72px; }
@@ -567,6 +567,7 @@ body section.content.services_page .service .tabs_block .box .btn_wrap span { fo
 body section.content.services_page .service .tabs_block .box .btn_wrap a { padding: 10px 40px; margin: 0 1em; font-size: 1.2em; }
 body section.content.services_page .service .tabs_block .box .slide_text { color: #fff; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; }
 body section.content.services_page .service .tabs_block .box .slide_text li, body section.content.services_page .service .tabs_block .box .slide_text p { font-size: 1.2em; line-height: 1.4em; text-align: justify; }
+body section.content.services_page .service .tabs_block .box .slide_text img { max-width: 100%; }
 body section.content.services_page .service .tabs_block .box.visible, body section.content.services_page .service .tabs_block .box.open_tab { display: block; }
 body section.content.services_page .service .packages_block { display: flex; justify-content: center; margin: 0 auto; color: #191b20; margin-top: 60px; margin-bottom: 60px; }
 body section.content.services_page .service .packages_block .package { width: 25%; text-align: center; height: 300px; width: 200px; }

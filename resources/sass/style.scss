@@ -312,7 +312,7 @@ body{
 			// li.active:before{
 			// 	height: 1.5em;
 			// }
-			li.active a{
+			li a.active{
 				color: $accent;
 				font-weight: 600;
 			}
@@ -874,6 +874,9 @@ body{
 									font-size: 1.2em;
 									line-height: 1.4em;
 									text-align: justify;
+								}
+								img {
+									max-width: 100%;
 								}
 							}
 							/* активный блок при загрузке */
