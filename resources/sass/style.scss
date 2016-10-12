@@ -645,99 +645,66 @@ body{
 				}
 			}
 			.contacts_wrap{
+				padding: 0;
+				background-color: #f5f5f5;
 				.page_wrap{
-					padding: $gap 0;
-					h2{
-						margin-top: 0;
-					}
-					.page_item{
-						// height: 100%;
-						p{
-							margin: $gap/2 0;
-							text-align: left;
-							font-size: 1.4em;
+					width: 100%;
+					max-width: none;
+					.grid_mod{
+						padding: 0;
+						h2{
+							color: $spacegray;
 						}
-						.form_item {
-							form {
-								input {
-									border: 1px solid #e5e5e5;
+						.page_item{
+							width: 300px;
+							margin: 0 auto;
+							background-color: #f5f5f5;
+							p{
+								margin: $gap/2 0;
+								text-align: left;
+								font-size: 1.4em;
+								color: $spacegray;
+							}
+							.contacts{
+								p{
+									display: flex;
+									span{
+										line-height: 30px;
+										margin: 0 $gap/2;
+									}
+								}
+								.svg_img{
+									width: 30px;
+									height: 30px;
 								}
 							}
-
+							.time{
+								p:first-of-type{
+									margin: $gap * 1.5 0 0;
+								}
+							}
 						}
-						// .contacts{
-						// 	p{
-						// 		display: flex;
-						// 		span{
-						// 			line-height: 30px;
-						// 			margin: 0 $gap/2;
-						// 		}
-						// 	}
-						// 	.svg_img{
-						// 		width: 30px;
-						// 		height: 30px;
-						// 	}
-						// }
-						// fieldset{
-						// 	background: #2e3034;
-						// 	border-width: 0px;
-						// 	border-radius: 3px;
-						// 	padding: $gap;
-						// 	legend{
-						// 		padding: $gap/2 $gap*2;
-						// 		background: #fff;
-						// 		border-radius: 3px;
-						// 		border: 1px solid #2b1111;
-						// 		font-size: 1.4em;
-						// 		margin: 0px auto;
-						// 	}
-						// 	form{
-						// 		display: block;
-						// 		margin: 0 auto;
-						// 		> *{
-						// 			border: 1px solid #2e3034;
-						// 			width: 100%;
-						// 			margin: 5px 0;
-						// 		}
-						// 		input[type="submit"]{
-						// 			font-size: 1.4em;
-						// 		}
-						// 	}
-						// }
-						// &.contacts_item{
-						// 	height: 450px;
-						// 	display: flex;
-						// 	justify-content: space-between;
-						// 	flex-direction: column;
-						// }
-						// &.form_item{
-						// 	padding: 0;
-						// }
 					}
 				}
-			}
-			.location_wrap{
-				.overlay{
-					background: transparent;
-					position: absolute;
-					width: 100%;
-					height: 450px;
-					// top: 450px;
-					// margin-top: -450px;
-				}
-				.studio_location{
-					width: 100%;
-					display: block;
-					margin: 0 auto;
+				.location_wrap{
+					.overlay{
+						background: transparent;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						right: 0;
+					}
+					.studio_location{
+						width: 100%;
+						display: block;
+						margin: 0 auto;
+					}
 				}
 			}
 		}
 		.projects_wrap,
 		&.portfolio_page{
 			.items_wrap{
-				// > div{
-				// 	padding: 1px;
-				// }
 				.page_item{
 					img{
 						@include animate(.4s);
@@ -1231,7 +1198,6 @@ body{
 	@media screen and (max-width: 1280px){
 		.page_wrap{
 			width: 100%;
-
 		}
 		header{
 			.logoSite{
@@ -1289,8 +1255,7 @@ body{
 				}
 				.projects_wrap{
 					.page_wrap{
-						width: 100%;
-						margin: 0;
+						width: 100%;						margin: 0;
 					}
 				}
 				.contacts_wrap .page_wrap .page_item{
@@ -1313,8 +1278,7 @@ body{
 				.magic_sidebar{
 					right: 0;
 					top: 72px;
-					width: 100%;
-					height: 100px;
+					width: 100%;					height: 100px;
 					.nav{
 						background: $spacegray;
 						flex-direction: row;
@@ -1525,8 +1489,7 @@ body{
 			&.home_page{
 				.banner_wrap{
 					.owl-carousel .banner_item .banner_text {
-						width: 100%;
-						left: 0;
+						width: 100%;						left: 0;
 						font-size: .7em;
 						.bunner_btn{
 							width: 180px;
@@ -1608,8 +1571,7 @@ body{
 					.page_wrap{
 						ul.akkordeon{
 							li.page_item{
-								width: 100%;
-								height: auto;
+								width: 100%;								height: auto;
 								> div{
 									cursor: pointer;
 									padding: 10px 10px;
@@ -1745,8 +1707,7 @@ body{
 				.projects_wrap{
 					.items_wrap{
 						> div{
-							width: 100%;
-							.page_item img{
+							width: 100%;							.page_item img{
 								height: 200px;
 							}
 						}
