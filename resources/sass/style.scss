@@ -1009,96 +1009,143 @@ body{
 		&.techs_page{
 			.page_wrap{
 				.tech {
-					overflow: auto;
+					// overflow: auto;
 					margin-bottom: $gap;
 					.tech_image {
 						background: #fff;
 						float: none;
 						width: 100%;
-						.svg_img{
-							& path,
-							& polygon,
-							& circle {
-								fill: $accent !important;
-							}
-						}
+						padding: 0px;
+						border: 1px solid #eee;
+					    padding-top: 20%;
+					    padding-bottom: 20%;
+						// .svg_img{
+						// 	& path,
+						// 	& polygon,
+						// 	& circle {
+						// 		fill: $accent !important;
+						// 	}
+						// }
 					}
 					.html_logo,
 					.css_logo {
-						.svg_img{
-							& g > polygon {
-								fill: $white !important;
-							}
-						}
+						// .svg_img{
+						// 	& g > polygon {
+						// 		fill: $white !important;
+						// 	}
+						// }
 					}
 					.angular_logo {
-						.svg_img{
-							& path {
-								fill: $white !important;
-							}
-						}
+						// .svg_img{
+						// 	& path {
+						// 		fill: $white !important;
+						// 	}
+						// }
 					}
-					&:hover{
-						.html_logo {
-							.svg_img{
-								& path {
-								fill: #e44d26 !important;
-								}
-								& polygon {
-									fill: #e44d26 !important;
-								}
-								& g > polygon {
-								fill: $white !important;
-								}
-							}
-						}
-						.html_title {
-							color: #e44d26;
-						}
-						.wp_logo {
-							.svg_img{
-								& g > * {
-									fill: #00a7da !important;
-								}
-							}
-						}
-						.wp_title {
-							color: #00a7da;
-						}
-						.php_logo {
-							.svg_img{
-								& g > * {
-									fill: #4f5b92 !important;
-								}
-							}
-						}
-						.php_title {
-							color: #4f5b92;
-						}
-						.jquery_logo {
-							.svg_img{
-								& g > * {
-									fill: #0769ad !important;
-								}
-							}
-						}
-						.jquery_title {
-							color: #0769ad;
-						}
+					// &:hover{
+					// 	.html_logo {
+					// 		.svg_img{
+					// 			& path {
+					// 			fill: #e44d26 !important;
+					// 			}
+					// 			& polygon {
+					// 				fill: #e44d26 !important;
+					// 			}
+					// 			& g > polygon {
+					// 			fill: $white !important;
+					// 			}
+					// 		}
+					// 	}
+					// 	.html_title {
+					// 		color: #e44d26;
+					// 	}
+					// 	.wp_logo {
+					// 		.svg_img{
+					// 			& g > * {
+					// 				fill: #00a7da !important;
+					// 			}
+					// 		}
+					// 	}
+					// 	.wp_title {
+					// 		color: #00a7da;
+					// 	}
+					// 	.php_logo {
+					// 		.svg_img{
+					// 			& g > * {
+					// 				fill: #4f5b92 !important;
+					// 			}
+					// 		}
+					// 	}
+					// 	.php_title {
+					// 		color: #4f5b92;
+					// 	}
+					// 	.jquery_logo {
+					// 		.svg_img{
+					// 			& g > * {
+					// 				fill: #0769ad !important;
+					// 			}
+					// 		}
+					// 	}
+					// 	.jquery_title {
+					// 		color: #0769ad;
+					// 	}
+					// }
+					.tech_title {
+						margin: 0px 0px 5px 0px;
+						text-align: center;
+						font-size: 2em;
 					}
 					.tech_description {
-						font-size: 1.3em;
-						padding-top: 0px;
-						padding-bottom: 0px;
+						font-size: 16px;
+						// padding-top: 0px;
+						// padding-bottom: 0px;
 						text-align: justify;
-						padding-left: $gap;
+						// background: lighten($spacegray, 10);
+						padding: $gap / 2;
 						width: 100%;
-						.tech_title {
-							margin: 0px 0px 5px 0px;
-							text-align: center;
-							font-size: 2em;
-						}
 					}
+				}
+				/* entire container, keeps perspective */
+				.flip-container {
+					perspective: 500px;
+				}
+					/* flip the pane when hovered */
+					.flip-container:hover .flipper, .flip-container.hover .flipper {
+						transform: rotateY(180deg);
+					}
+
+				.flip-container {
+					// width: 320px;
+					height: 38%;
+				}
+
+				/* flip speed goes here */
+				.flipper {
+					transition: 0.6s;
+					transform-style: preserve-3d;
+
+					position: relative;
+				}
+
+				/* hide back of pane during swap */
+				.front, .back {
+					backface-visibility: hidden;
+
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+				/* front pane, placed above back */
+				.front {
+					z-index: 2;
+					/* for firefox 31 */
+					transform: rotateY(0deg);
+				}
+
+				/* back, initially hidden pane */
+				.back {
+					transform: rotateY(180deg);
 				}
 			}
 		}
