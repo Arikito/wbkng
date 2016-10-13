@@ -551,7 +551,7 @@ body section.content .projects_wrap .items_wrap .page_item:hover .text_block, bo
 body section.content .projects_wrap .items_wrap .page_item:hover img, body section.content.portfolio_page .items_wrap .page_item:hover img { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); }
 body section.content.portfolio_page .items_wrap .page_item img { max-height: none; height: 400px; min-width: 100%; }
 body section.content.services_page { max-width: 100%; margin: 0px; }
-body section.content.services_page .service { padding-top: 120px; /* ╨▒╨░╨╖╨╛╨▓╤Л╨╣ ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╨▓╨║╨╗╨░╨┤╨╛╨║ */ }
+body section.content.services_page .service { padding-top: 0px; /* ╨▒╨░╨╖╨╛╨▓╤Л╨╣ ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╨▓╨║╨╗╨░╨┤╨╛╨║ */ }
 body section.content.services_page .service .service_title { text-align: center; font-size: 2.5em; }
 body section.content.services_page .service .main_text { max-width: 1200px; margin: 1em auto; text-align: justify; font-size: 1.2em; line-height: 1.4em; }
 body section.content.services_page .service .tabs_block { width: 100%; margin-top: 40px; /* ╨┐╨░╨╜╨╡╨╗╤М ╨╜╨░╨▓╨╕╨│╨░╤Ж╨╕╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║ */ /* ╨▒╨╗╨╛╨║╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╤Б ╤Б╨╛╨┤╨╡╤А╨╢╨░╨╜╨╕╨╡╨╝ */ }
@@ -581,6 +581,13 @@ body section.content.services_page .service .packages_block .middle_package { tr
 body section.content.services_page .service .packages_block .middle_package .package_price { background: #bf1111; color: #fff; }
 body section.content.services_page .service .packages_block .basic_package, body section.content.services_page .service .packages_block .full_package { background: #eeeeee; }
 body section.content.services_page .service .packages_block .basic_package .package_price, body section.content.services_page .service .packages_block .full_package .package_price { background: #f15f5f; }
+body section.content.services_page .light_style .service { padding-top: 0px; }
+body section.content.services_page .light_style .service .tabs_block > ul li.active, body section.content.services_page .light_style .service .tabs_block > ul li.active:hover { background: #bf1111; }
+body section.content.services_page .light_style .service .tabs_block > ul li:hover { background: #eee; }
+body section.content.services_page .light_style .service .tabs_block .tabs li { color: #191b20; }
+body section.content.services_page .light_style .service .tabs_block .tabs li.active { color: #fff; }
+body section.content.services_page .light_style .service .tabs_block .box { background: #fff; color: #191b20; border: 1px solid #eee; border-radius: 0px; }
+body section.content.services_page .light_style .service .tabs_block .box .slide_text { color: #191b20; }
 body section.content.services_page .magic_sidebar { position: fixed; height: calc(100vh - 72px); right: 20px; top: 72px; bottom: 0; width: 100px; z-index: 99; }
 body section.content.services_page .magic_sidebar .nav { padding: 0px; margin: 0; list-style-type: none; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; }
 body section.content.services_page .magic_sidebar .nav .sidebar_item { padding: 0px; height: calc((100vh / 4) - 60px); position: relative; top: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -602,7 +609,7 @@ body section.content.techs_page .page_wrap .tech .tech_image { background: #fff;
 body section.content.techs_page .page_wrap .tech .tech_title { margin: 0px 0px 5px 0px; text-align: center; font-size: 2em; }
 body section.content.techs_page .page_wrap .tech .tech_description { font-size: 16px; text-align: justify; padding: 10px; width: 100%; }
 body section.content.techs_page .page_wrap .flip-container { perspective: 500px; }
-body section.content.techs_page .page_wrap .flip-container:hover .flipper, body section.content.techs_page .page_wrap .flip-container.hover .flipper { transform: rotateY(180deg); }
+body section.content.techs_page .page_wrap .flip-container:hover .flipper, body section.content.techs_page .page_wrap .flip-container .flip-container.hover .flipper { transform: rotateY(180deg); }
 body section.content.techs_page .page_wrap .flip-container { height: 38%; }
 body section.content.techs_page .page_wrap .flipper { transition: 0.6s; transform-style: preserve-3d; position: relative; }
 body section.content.techs_page .page_wrap .front, body section.content.techs_page .page_wrap .back { backface-visibility: hidden; position: absolute; top: 0; left: 0; }

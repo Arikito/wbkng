@@ -760,7 +760,7 @@ body{
 			max-width: 100%;
 			margin: 0px;
 				.service{
-					padding-top: 120px;
+					padding-top: 0px;
 					// margin-top: -120px;
 					.service_title{
 						text-align: center;
@@ -929,6 +929,41 @@ body{
 							background: #eeeeee;
 							.package_price{
 								background: lighten($accent, 25);
+							}
+						}
+					}
+				}
+				.light_style {
+					.service{
+						padding-top: 0px;
+						.tabs_block{
+							> ul{
+								li{
+									&.active,
+									&.active:hover{
+										background: $accent;
+									}
+									&:hover{
+										background: #eee;
+									}
+								}
+							}
+							.tabs{
+								li{
+									color: $spacegray;
+									&.active{
+										color: $white;
+									}
+								}
+							}
+							.box{
+								background: $white;
+								color: $spacegray;
+								border: 1px solid #eee;
+	    						border-radius: 0px;
+								.slide_text{
+									color: $spacegray;
+								}
 							}
 						}
 					}
@@ -1110,15 +1145,16 @@ body{
 					perspective: 500px;
 				}
 					/* flip the pane when hovered */
-					.flip-container:hover .flipper, .flip-container.hover .flipper {
-						transform: rotateY(180deg);
+					.flip-container {
+						&:hover .flipper, .flip-container.hover .flipper {
+							transform: rotateY(180deg);
+						}
 					}
 
 				.flip-container {
 					// width: 320px;
 					height: 38%;
 				}
-
 				/* flip speed goes here */
 				.flipper {
 					transition: 0.6s;
@@ -1126,7 +1162,6 @@ body{
 
 					position: relative;
 				}
-
 				/* hide back of pane during swap */
 				.front, .back {
 					backface-visibility: hidden;
@@ -1135,14 +1170,12 @@ body{
 					top: 0;
 					left: 0;
 				}
-
 				/* front pane, placed above back */
 				.front {
 					z-index: 2;
 					/* for firefox 31 */
 					transform: rotateY(0deg);
 				}
-
 				/* back, initially hidden pane */
 				.back {
 					transform: rotateY(180deg);
