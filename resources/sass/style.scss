@@ -999,6 +999,9 @@ body{
 							margin: 0 auto;
 							.svg_img{
 								@include animate(.4s);
+								& path.accent{
+									fill: #d6d6d6;
+								}
 							}
 						}
 						&.active{

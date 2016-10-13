@@ -593,6 +593,7 @@ body section.content.services_page .magic_sidebar .nav { padding: 0px; margin: 0
 body section.content.services_page .magic_sidebar .nav .sidebar_item { padding: 0px; height: calc((100vh / 4) - 60px); position: relative; top: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item a { display: block; width: 50px; margin: 0 auto; }
 body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img path.accent { fill: #d6d6d6; }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img path.accent { fill: #bf1111; }
