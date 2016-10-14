@@ -3,6 +3,87 @@
 @import 'normalize';
 @import 'grid';
 
+
+
+@mixin cycle($secs){
+	animation:spin $secs infinite;
+	-webkit-animation:spin $secs infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+@keyframes spin{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spin{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+
+body{
+	margin:0;
+	padding:0;
+	background: #22252b;
+}
+
+#loadIcon{
+	margin: 60px auto;
+	height:120px;
+	width:120px;
+	position: absolute;
+	top: calc(50vh - 120px);
+	left: calc(50vw - 60px);
+	div{
+		position:absolute;
+	
+		&:first-child{
+			height:120px;
+			width:120px;
+			border-radius:60px;
+			border-top:solid 10px #237699;
+			border-top:solid 10px #bf1111;
+			border-top:solid 10px #fff;
+			@include cycle(2s);
+		}
+		&:nth-child(2){
+			height:90px;
+			width:90px;
+			border-radius:45px;
+			border-top:solid 10px #6CC5EC;
+			border-top:solid 10px #bf1111;
+			border-top:solid 10px #fff;
+			top: 15px;
+			left:15px;
+			@include cycle(1.5s);
+		}
+		&:nth-child(3){
+			height:60px;
+			width:60px;
+			border-radius:30px;
+			border-top:solid 10px #ACDFF6;
+			border-top:solid 10px #bf1111;
+			border-top:solid 10px #fff;
+			top: 30px;
+			left:30px;
+			@include cycle(1s);
+		}
+		&:nth-child(4){
+			height:30px;
+			width:30px;
+			border-radius:15px;
+			border-top:solid 10px #D1EEFB;
+			border-top:solid 10px #bf1111;
+			border-top:solid 10px #fff;
+			top: 45px;
+			left:45px;
+			@include cycle(.5s);
+		}
+	}
+}
+
+
 @mixin animate($duration){
 	-webkit-transition: all $duration cubic-bezier(.4,0,.2,1);
 	-o-transition: all $duration cubic-bezier(.4,0,.2,1);
@@ -960,7 +1041,7 @@ body{
 								background: $white;
 								color: $spacegray;
 								border: 1px solid #eee;
-	    						border-radius: 0px;
+								border-radius: 0px;
 								.slide_text{
 									color: $spacegray;
 								}
@@ -1055,8 +1136,8 @@ body{
 						width: 100%;
 						padding: 0px;
 						border: 1px solid #eee;
-					    padding-top: 20%;
-					    padding-bottom: 20%;
+						padding-top: 20%;
+						padding-bottom: 20%;
 						// .svg_img{
 						// 	& path,
 						// 	& polygon,
@@ -1196,7 +1277,7 @@ body{
 					width: 80%;
 					border-radius: 50%;
 					display: block;
-    				margin: 0px auto;
+					margin: 0px auto;
 					margin-bottom: $gap;
 				}
 			}
@@ -1205,18 +1286,18 @@ body{
 				text-align: center;
 				margin: 0px auto;
 				background-color: $accent;
-			    color: $white;
-			    border-radius: .2em;
-			    line-height: $gap * 2;
-			    padding: 0 $gap;
+				color: $white;
+				border-radius: .2em;
+				line-height: $gap * 2;
+				padding: 0 $gap;
 			}
 			.description {
 				font-size: 16px;
 				line-height: $gap;
 				text-align: justify;
 				width: 80%;
-			    margin: 0px auto;
-			    margin-top: $gap;
+				margin: 0px auto;
+				margin-top: $gap;
 			}
 		}
 	}
