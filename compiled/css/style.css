@@ -410,8 +410,6 @@ margin-left: auto; */ padding-left: 10px; padding-right: 10px; }
   to { -webkit-transform: rotate(360deg); } }
 @-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); }
   to { -webkit-transform: rotate(360deg); } }
-body { margin: 0; padding: 0; background: #22252b; }
-
 #loadIcon { margin: 60px auto; height: 120px; width: 120px; position: absolute; top: calc(50vh - 120px); left: calc(50vw - 60px); }
 #loadIcon div { position: absolute; }
 #loadIcon div:first-child { height: 120px; width: 120px; border-radius: 60px; border-top: solid 10px #237699; border-top: solid 10px #bf1111; border-top: solid 10px #fff; animation: spin 2s infinite; -webkit-animation: spin 2s infinite; animation-timing-function: linear; -webkit-animation-timing-function: linear; }
@@ -606,7 +604,7 @@ body section.content.services_page .magic_sidebar .nav { padding: 0px; margin: 0
 body section.content.services_page .magic_sidebar .nav .sidebar_item { padding: 0px; height: calc((100vh / 4) - 60px); position: relative; top: 20px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item a { display: block; width: 50px; margin: 0 auto; }
 body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img path.accent { fill: #d6d6d6; }
+body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img path.accent { fill: #444; }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img path.accent { fill: #bf1111; }

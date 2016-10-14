@@ -11,23 +11,14 @@
 	animation-timing-function: linear;
 	-webkit-animation-timing-function: linear;
 }
-
 @keyframes spin{
 	from{-webkit-transform: rotate(0deg);}
 	to{-webkit-transform: rotate(360deg);}
 }
-
 @-webkit-keyframes spin{
 	from{-webkit-transform: rotate(0deg);}
 	to{-webkit-transform: rotate(360deg);}
 }
-
-body{
-	margin:0;
-	padding:0;
-	background: #22252b;
-}
-
 #loadIcon{
 	margin: 60px auto;
 	height:120px;
@@ -82,7 +73,6 @@ body{
 		}
 	}
 }
-
 
 @mixin animate($duration){
 	-webkit-transition: all $duration cubic-bezier(.4,0,.2,1);
@@ -1081,7 +1071,8 @@ body{
 							.svg_img{
 								@include animate(.4s);
 								& path.accent{
-									fill: #d6d6d6;
+									// fill: #d6d6d6;
+									fill: #444;
 								}
 							}
 						}
