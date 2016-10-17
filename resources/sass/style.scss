@@ -498,7 +498,7 @@ body{
 					content: '';
 					display: block;
 					position: absolute;
-					width: 40%;
+					width: 120%;
 					height: $gap;
 					border: 0;
 					background-color: $white;
@@ -517,7 +517,7 @@ body{
 				}
 				&:hover {
 					&:before, &:after {
-						width: 80%;
+						width: 60%;
 					}
 				}
 				ul.akkordeon{
