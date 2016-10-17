@@ -5,6 +5,7 @@ var portfolio_component_1 = require('./components/page_portfolio/portfolio.compo
 var services_component_1 = require('./components/page_services/services.component');
 var techs_component_1 = require('./components/page_techs/techs.component');
 var about_component_1 = require('./components/page_about/about.component');
+var xt_component_1 = require('./components/projects/xt/xt.component');
 var appRoutes = [
     {
         path: '',
@@ -25,6 +26,10 @@ var appRoutes = [
     {
         path: 'about',
         component: about_component_1.AboutComponent
+    },
+    {
+        path: 'portfolio/xt',
+        component: xt_component_1.XtComponent
     }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);

@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
+var app_routing_1 = require('./app.routing');
 var page_component_1 = require('./components/page/page.component');
 var header_component_1 = require('./components/header/header.component');
 var footer_component_1 = require('./components/footer/footer.component');
@@ -23,7 +24,7 @@ var banner_component_1 = require('./components/owl_banner/banner.component');
 var owl_techs_component_1 = require('./components/owl_techs/owl_techs.component');
 var map_component_1 = require('./components/map/map.component');
 var subscribe_component_1 = require('./components/form_subscribe/subscribe.component');
-var app_routing_1 = require('./app.routing');
+var xt_component_1 = require('./components/projects/xt/xt.component');
 var PageModule = (function () {
     function PageModule() {
     }
@@ -46,7 +47,8 @@ var PageModule = (function () {
                 about_component_1.AboutComponent,
                 owl_techs_component_1.OwlTechsComponent,
                 map_component_1.MapComponent,
-                subscribe_component_1.SubscribeFormComponent
+                subscribe_component_1.SubscribeFormComponent,
+                xt_component_1.XtComponent
             ],
             bootstrap: [
                 page_component_1.PageComponent
