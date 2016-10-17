@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-import { routing } from './app.routing';
 
 import { PageComponent } from './components/page/page.component';
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -16,7 +16,9 @@ import { BannerComponent } from './components/owl_banner/banner.component';
 import { OwlTechsComponent } from './components/owl_techs/owl_techs.component';
 import { MapComponent } from './components/map/map.component';
 import { SubscribeFormComponent } from './components/form_subscribe/subscribe.component';
-import { XtComponent } from './components/projects/xt/xt.component';
+
+import { routing } from './app.routing';
+
 
 @NgModule({
 	imports: [
@@ -36,8 +38,7 @@ import { XtComponent } from './components/projects/xt/xt.component';
 		AboutComponent,
 		OwlTechsComponent,
 		MapComponent,
-		SubscribeFormComponent,
-		XtComponent
+		SubscribeFormComponent
 	],
 	bootstrap: [
 		PageComponent

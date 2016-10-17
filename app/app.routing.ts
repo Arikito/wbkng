@@ -6,7 +6,6 @@ import { PortfolioComponent }  from './components/page_portfolio/portfolio.compo
 import { ServicesComponent }  from './components/page_services/services.component';
 import { TechsComponent } from './components/page_techs/techs.component';
 import { AboutComponent } from './components/page_about/about.component';
-import { XtComponent } from './components/projects/xt/xt.component';
 
 const appRoutes: Routes = [
   {
@@ -28,10 +27,6 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
-  },
-  {
-    path: 'portfolio/xt',
-    component: XtComponent
   }
 ];
 

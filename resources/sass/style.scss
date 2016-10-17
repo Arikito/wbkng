@@ -37,7 +37,7 @@ textarea{
 	display: none !important;
 }
 .to_animate{
-	opacity: 0;
+  opacity: 0;
 }
 .dark_style{
 	background-color: $spacegray;
@@ -504,7 +504,7 @@ body{
 					content: '';
 					display: block;
 					position: absolute;
-					width: 120%;
+					width: 40%;
 					height: $gap;
 					border: 0;
 					background-color: $white;
@@ -523,7 +523,7 @@ body{
 				}
 				&:hover {
 					&:before, &:after {
-						width: 60%;
+						width: 80%;
 					}
 				}
 				ul.akkordeon{
@@ -616,53 +616,20 @@ body{
 					}
 				}
 			}
-			.about_studio_wrap {
-				padding: 0px;
+			.about_studio_wrap{
 				background-color: $spacegray;
-				position: relative;
-				background-color: rgba(25,27,32,0.9);
-				.page_wrap {
-					// position: absolute;
-					// top: 0;
-				 //    right: 0;
-				 //    left: 0;
-					.page_item{
+				.page_item{
+					margin: 1em auto;
+					text-align: center;
+					background-color: transparent;
+					p{
+						max-width: 250px;
+						text-align: justify;
 						margin: 1em auto;
-						text-align: center;
-						background-color: transparent;
-						width: 60%;
-						p{
-							max-width: 250px;
-							text-align: justify;
-							margin: 1em auto;
-						}
-						.title{
-							text-align: center;
-						}
-						img {
-							width: 100%;
-							height: auto;
-							border-radius: 50%;
-						}
 					}
-				}
-				.parallax {
-					/* The image used */
-					background-image: url('/compiled/img/bg3.jpg');
-					/* Full height */
-						top: 0;
-						bottom: 0;
-						width: 100%;
-						position: absolute;
-						z-index: -1;
-					/* Create the parallax scrolling effect */
-					background-attachment: fixed;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-size: cover;
-					// -webkit-filter: blur(5px);
-					// -moz-filter: blur(5px);
-					// filter: blur(5px);
+					.title{
+						text-align: center;
+					}
 				}
 			}
 			.contact_us_wrap{
@@ -705,13 +672,6 @@ body{
 				p {
 					text-align: center;
 					font-size: 1.2em;
-				}
-				a {
-					color: $white;
-					&:hover {
-						color: lighten($spacegray, 60);
-						@include animate(.4s);
-					}
 				}
 				&:after {
 					content: '';
@@ -1098,37 +1058,28 @@ body{
 			}
 		}
 		&.project_page{
-			.page_wrap {
-				width: 100%;
-				max-width: 100%;
-				padding: $gap / 2;
-				font-size: 1.2em;
-				.project_img{
-					img{
-						width: 100%;
-					}
+			font-size: 1.2em;
+			.project_img{
+				img{
+					width: 100%;
 				}
-				.project_descr{
-					padding: 0 $gap * 2;
-					line-height: 30px;
+			}
+			.project_descr{
+				padding: 0 $gap * 2;
+			}
+			.projects_task{
+				.title{
+					font-size: 1.2em;
 				}
-				.projects_task{
-					.title{
+			}
+			.btn_wrap{
+				> div{
+					margin: 2em;
+				}
+				a{
+					padding: $gap / 2 $gap;
+					&.accent_button{
 						font-size: 1.2em;
-					}
-				}
-				.btn_wrap {
-					// > div{
-					// 	margin: 2em;
-					// }
-					display: flex;
-					justify-content: space-between;
-					a{
-						// padding: $gap / 2 $gap;
-						line-height: $gap * 2;
-						// &.accent_button{
-						// 	font-size: 1.2em;
-						// }
 					}
 				}
 			}
@@ -1290,17 +1241,14 @@ body{
 				}
 			}
 			.title {
-				width: 300px;
+				width: 230px;
 				text-align: center;
 				margin: 0px auto;
-				background-color: $white;
-				color: $accent;
+				background-color: $accent;
+				color: $white;
 				border-radius: .2em;
 				line-height: $gap * 2;
 				padding: 0 $gap;
-				font-size: 18px;
-				font-weight: bold;
-
 			}
 			.description {
 				font-size: 16px;
