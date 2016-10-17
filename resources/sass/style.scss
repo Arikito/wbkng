@@ -638,11 +638,14 @@ body{
 							border-color: lighten($spacegray, 60);
 						}
 					}
-					input, textarea {
-						margin-bottom: 10px;
+					input, textarea{
+						margin-bottom: 20px;
+					}
+					textarea{
+						height: 227px;
 					}
 					.submit_btn {
-						width: auto;
+						width: 100%;
 						border: none;
 					}
 				}

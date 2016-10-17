@@ -530,8 +530,9 @@ body section.content.home_page .about_studio_wrap .page_item .title { text-align
 body section.content.home_page .contact_us_wrap form { width: 80%; margin: 0 auto; }
 body section.content.home_page .contact_us_wrap form input, body section.content.home_page .contact_us_wrap form textarea { border: 1px solid #d9d9d9; width: 100%; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .contact_us_wrap form input:focus, body section.content.home_page .contact_us_wrap form textarea:focus { border-color: #acb2bf; }
-body section.content.home_page .contact_us_wrap form input, body section.content.home_page .contact_us_wrap form textarea { margin-bottom: 10px; }
-body section.content.home_page .contact_us_wrap form .submit_btn { width: auto; border: none; }
+body section.content.home_page .contact_us_wrap form input, body section.content.home_page .contact_us_wrap form textarea { margin-bottom: 20px; }
+body section.content.home_page .contact_us_wrap form textarea { height: 227px; }
+body section.content.home_page .contact_us_wrap form .submit_btn { width: 100%; border: none; }
 body section.content.home_page .short_contacts_wrap { position: relative; }
 body section.content.home_page .short_contacts_wrap .icon { padding: 20px 0; display: block; }
 body section.content.home_page .short_contacts_wrap .icon .svg_img { display: block; margin: 0 auto; }
