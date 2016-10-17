@@ -36,6 +36,9 @@ textarea{
 .hidden{
 	display: none !important;
 }
+.to_animate{
+  opacity: 0;
+}
 .dark_style{
 	background-color: $spacegray;
 	color: $white;
@@ -388,6 +391,9 @@ body{
 		min-height: 100vh;
 		.subsection{
 			padding: 1em 0 2em;
+			.page_wrap{
+				overflow: hidden;
+			}
 		}
 		.page_item{
 			display: block;
@@ -665,6 +671,7 @@ body{
 				}
 				p {
 					text-align: center;
+					font-size: 1.2em;
 				}
 				&:after {
 					content: '';
