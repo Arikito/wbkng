@@ -2,11 +2,12 @@
   "name": "webking",
   "version": "0.1.0",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "concurrently \"grunt\" \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
+    "grunt": "grunt",
     "typings": "typings"
   },
   "license": "ISC",
