@@ -538,6 +538,8 @@ body section.content.home_page .short_contacts_wrap .icon { padding: 20px 0; dis
 body section.content.home_page .short_contacts_wrap .icon .svg_img { display: block; margin: 0 auto; }
 body section.content.home_page .short_contacts_wrap .icon .svg_img * { fill: #fff; }
 body section.content.home_page .short_contacts_wrap p { text-align: center; }
+body section.content.home_page .short_contacts_wrap a { color: #fff; }
+body section.content.home_page .short_contacts_wrap a:hover { color: #acb2bf; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .short_contacts_wrap:after { content: ''; display: block; position: absolute; border: 20px solid transparent; border-top-color: #bf1111; top: 100%; left: calc(50% - 20px); z-index: 10; }
 body section.content.home_page .contacts_wrap { padding: 0; background-color: #fff; }
 body section.content.home_page .contacts_wrap .page_wrap { width: 100%; max-width: none; }

@@ -666,6 +666,13 @@ body{
 				p {
 					text-align: center;
 				}
+				a {
+					color: $white;
+					&:hover {
+						color: lighten($spacegray, 60);
+						@include animate(.4s);
+					}
+				}
 				&:after {
 					content: '';
 					display: block;
