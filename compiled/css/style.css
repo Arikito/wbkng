@@ -523,10 +523,12 @@ body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .s
 body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .svg_img path.accent { fill: #bf1111; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item { padding: .5em; background: transparent; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item img { display: block; margin: 0 auto; }
-body section.content.home_page .about_studio_wrap { background-color: #191b20; }
-body section.content.home_page .about_studio_wrap .page_item { margin: 1em auto; text-align: center; background-color: transparent; }
-body section.content.home_page .about_studio_wrap .page_item p { max-width: 250px; text-align: justify; margin: 1em auto; }
-body section.content.home_page .about_studio_wrap .page_item .title { text-align: center; }
+body section.content.home_page .about_studio_wrap { padding: 0px; background-color: #191b20; position: relative; background-color: rgba(25, 27, 32, 0.9); }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item { margin: 1em auto; text-align: center; background-color: transparent; width: 60%; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item p { max-width: 250px; text-align: justify; margin: 1em auto; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item .title { text-align: center; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item img { width: 100%; height: auto; border-radius: 50%; }
+body section.content.home_page .about_studio_wrap .parallax { /* The image used */ background-image: url("/compiled/img/bg3.jpg"); /* Full height */ top: 0; bottom: 0; width: 100%; position: absolute; z-index: -1; /* Create the parallax scrolling effect */ background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
 body section.content.home_page .contact_us_wrap form { width: 80%; margin: 0 auto; }
 body section.content.home_page .contact_us_wrap form input, body section.content.home_page .contact_us_wrap form textarea { border: 1px solid #d9d9d9; width: 100%; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .contact_us_wrap form input:focus, body section.content.home_page .contact_us_wrap form textarea:focus { border-color: #acb2bf; }
