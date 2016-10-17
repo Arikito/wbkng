@@ -8,6 +8,14 @@
 	-o-transition: all $duration cubic-bezier(.4,0,.2,1);
 	transition: all $duration cubic-bezier(.4,0,.2,1);
 }
+::-moz-selection {
+	color: $white;
+	background: $accent;
+}
+::selection {
+	color: $white;
+	background: $accent;
+}
 *{
 	box-sizing: border-box;
 }
@@ -29,12 +37,16 @@ textarea{
 	display: none !important;
 }
 .dark_style{
-	background: #2e3034;
-	color: #fff;
+	background-color: $spacegray;
+	color: $white;
 }
 .light_style{
 	background-color: $white;
 	color: $spacegray;
+}
+.accent_style{
+	background-color: $accent;
+	color: $white;
 }
 //BUTTONS
 .accent_button{
@@ -375,11 +387,10 @@ body{
 		padding-top: $header_height;
 		min-height: 100vh;
 		.subsection{
-			padding: 5em 0;
+			padding: 1em 0 2em;
 		}
 		.page_item{
 			display: block;
-			background: $white;
 			position: relative;
 			overflow: hidden;
 			img{
@@ -617,36 +628,58 @@ body{
 			}
 			.contact_us_wrap{
 				form {
-					.form_inputs_block {
-						width: 50%;
-						float: left;
-						input, textarea {
-							border: 1px solid #eee;
-							width: calc(100% - 10px);
-							&:focus {
-								border-color: lighten($spacegray, 4);
-							}
-						}
-						input {
-							margin-left: 10px;
-							margin-bottom: 10px;
-						}
-						textarea {
-							margin-right: 10px;
-						}
-						.userphone {
-							width: calc(70% - 25px);
-						}
-						.submit_btn {
-							width: 30%;
-							border: none;
+					width: 80%;
+					margin: 0 auto;
+					input, textarea {
+						border: 1px solid darken($white, 15);
+						width: 100%;
+						@include animate(.4s);
+						&:focus {
+							border-color: lighten($spacegray, 60);
 						}
 					}
+					input, textarea{
+						margin-bottom: 20px;
+					}
+					textarea{
+						height: 227px;
+					}
+					.submit_btn {
+						width: 100%;
+						border: none;
+					}
+				}
+			}
+			.short_contacts_wrap {
+				position: relative;
+				.icon {
+					padding: $gap 0;
+					display: block;
+					.svg_img {
+						display: block;
+						margin: 0 auto;
+						* {
+							fill: $white;
+						}
+					}
+				}
+				p {
+					text-align: center;
+				}
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					border: $gap solid transparent;
+					border-top-color: $accent;
+					top: 100%;
+					left: calc(50% - #{$gap});
+					z-index: 10;
 				}
 			}
 			.contacts_wrap{
 				padding: 0;
-				background-color: #f5f5f5;
+				background-color: $white;
 				.page_wrap{
 					width: 100%;
 					max-width: none;
@@ -658,7 +691,6 @@ body{
 						.page_item{
 							width: 300px;
 							margin: 0 auto;
-							background-color: #f5f5f5;
 							p{
 								margin: $gap/2 0;
 								text-align: left;
@@ -726,7 +758,7 @@ body{
 							display: block;
 							margin: 0 auto;
 							width: 120px;
-							margin-top: 6em;
+							margin-top: 30%;
 							line-height: 30px;
 							text-align: center;
 						}
@@ -960,7 +992,7 @@ body{
 								background: $white;
 								color: $spacegray;
 								border: 1px solid #eee;
-	    						border-radius: 0px;
+								border-radius: 0px;
 								.slide_text{
 									color: $spacegray;
 								}
@@ -1065,8 +1097,8 @@ body{
 						width: 100%;
 						padding: 0px;
 						border: 1px solid #eee;
-					    padding-top: 20%;
-					    padding-bottom: 20%;
+						padding-top: 20%;
+						padding-bottom: 20%;
 						// .svg_img{
 						// 	& path,
 						// 	& polygon,
@@ -1206,7 +1238,7 @@ body{
 					width: 80%;
 					border-radius: 50%;
 					display: block;
-    				margin: 0px auto;
+					margin: 0px auto;
 					margin-bottom: $gap;
 				}
 			}
@@ -1221,14 +1253,15 @@ body{
 			    padding: 0 $gap;
 			    font-size: 18px;
 			    font-weight: bold;
+
 			}
 			.description {
 				font-size: 16px;
 				line-height: $gap;
 				text-align: justify;
 				width: 80%;
-			    margin: 0px auto;
-			    margin-top: $gap;
+				margin: 0px auto;
+				margin-top: $gap;
 			}
 		}
 	}
