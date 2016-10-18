@@ -1,6 +1,10 @@
 $(function(s){
 	header_fix();
-	$(window).scroll(function(){
+	// $(window).scroll(function(){
+	// 	header_fix();
+	// 	console.log('скролим');
+	// });
+	$(document).scroll(function(){
 		header_fix();
 	});
 	// Инициализация owlCarousel
