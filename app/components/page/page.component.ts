@@ -13,6 +13,6 @@ export class PageComponent implements OnInit {
 	){
 	}
 	ngOnInit(): any{
-		this.$.inlineSvg();
+		// this.$.inlineSvg();
 	}
  }

@@ -15,7 +15,7 @@ var PageComponent = (function () {
         this.$ = $;
     }
     PageComponent.prototype.ngOnInit = function () {
-        this.$.inlineSvg();
+        // this.$.inlineSvg();
     };
     PageComponent = __decorate([
         core_1.Component({
