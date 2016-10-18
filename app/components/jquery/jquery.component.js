@@ -77,6 +77,53 @@ var JQ = (function () {
             }, 'xml');
         });
     };
+    JQ.prototype.animated_scroll = function () {
+        // Start
+        var winHeight = window.screen.height, animate_elements_obj = $('.to_animate'), animate_elements_arr = [];
+        for (var i = 0; i < animate_elements_obj.length; i++) {
+            animate_elements_arr[i] = animate_elements_obj[i];
+        }
+        window.onscroll = function () {
+            var topOfWindow = window.pageYOffset;
+            function animated_scrolling(item_that_should_be_animated) {
+                var item = $(item_that_should_be_animated);
+                if (item.closest('.to_animate_wrap')[0].offsetTop < topOfWindow + (winHeight * .6)) {
+                    if (!item.hasClass('animated')) {
+                        item.removeClass('to_animate ').addClass('animated ');
+                    }
+                    if (!item.hasClass(item.attr('data-animation'))) {
+                        item.addClass(" " + item.attr('data-animation'));
+                    }
+                }
+            }
+            $.each(animate_elements_arr, function (index, value) {
+                if ($(value).closest('.to_animate_wrap').hasClass('animation_series_wrap')) {
+                    var timeout = 0, columns = 8, correction = 50, series_obj = $('.series'), series_arr = [], title = $(value).closest('.to_animate_wrap').find('.block_title')[0];
+                    for (var k = 0; k < series_obj.length; k++) {
+                        series_arr[k] = series_obj[k];
+                    }
+                    if (title !== undefined) {
+                        animated_scrolling(title);
+                    }
+                    $.each(series_arr, function (index, value) {
+                        if (i % columns == 0) {
+                            timeout = i / columns * columns * correction;
+                        }
+                        else {
+                            timeout = timeout + columns * correction;
+                        }
+                        setTimeout(function () {
+                            animated_scrolling($(value));
+                        }, timeout);
+                    });
+                }
+                else {
+                    animated_scrolling($(value));
+                }
+            });
+        };
+        // End
+    };
     JQ = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])
