@@ -619,12 +619,11 @@ body section.content.project_page .page_wrap .btn_wrap { display: flex; justify-
 body section.content.project_page .page_wrap .btn_wrap a { line-height: 40px; }
 body section.content.techs_page .page_wrap { /* entire container, keeps perspective */ /* flip the pane when hovered */ /* flip speed goes here */ /* hide back of pane during swap */ /* front pane, placed above back */ /* back, initially hidden pane */ }
 body section.content.techs_page .page_wrap .tech { margin-bottom: 20px; }
-body section.content.techs_page .page_wrap .tech .tech_image { background: #fff; float: none; width: 100%; padding: 0px; border: 1px solid #eee; padding-top: 20%; padding-bottom: 20%; }
+body section.content.techs_page .page_wrap .tech .tech_image { background: #fff; float: none; width: 100%; padding: 0px; border: 1px solid #eee; padding-top: 20%; padding-bottom: 20%; position: static; }
 body section.content.techs_page .page_wrap .tech .tech_title { margin: 0px 0px 5px 0px; text-align: center; font-size: 2em; }
 body section.content.techs_page .page_wrap .tech .tech_description { font-size: 16px; text-align: justify; padding: 10px; width: 100%; }
 body section.content.techs_page .page_wrap .flip-container { perspective: 500px; }
 body section.content.techs_page .page_wrap .flip-container:hover .flipper, body section.content.techs_page .page_wrap .flip-container .flip-container.hover .flipper { transform: rotateY(180deg); }
-body section.content.techs_page .page_wrap .flip-container { height: 38%; }
 body section.content.techs_page .page_wrap .flipper { transition: 0.6s; transform-style: preserve-3d; position: relative; }
 body section.content.techs_page .page_wrap .front, body section.content.techs_page .page_wrap .back { backface-visibility: hidden; position: absolute; top: 0; left: 0; }
 body section.content.techs_page .page_wrap .front { z-index: 2; /* for firefox 31 */ transform: rotateY(0deg); }
