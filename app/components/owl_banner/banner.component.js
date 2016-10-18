@@ -20,6 +20,7 @@ var BannerComponent = (function () {
                 slideSpeed: 300,
                 paginationSpeed: 400,
                 singleItem: true,
+                mouseDrag: false,
                 autoPlay: 5000,
                 stopOnHover: false,
                 autoHeight: false,
