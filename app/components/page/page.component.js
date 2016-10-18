@@ -9,17 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var _jquery_1 = require('@jquery');
 var PageComponent = (function () {
-    function PageComponent() {
+    function PageComponent($) {
+        this.$ = $;
     }
+    PageComponent.prototype.ngOnInit = function () {
+        // this.$.inlineSvg();
+    };
     PageComponent = __decorate([
         core_1.Component({
             selector: 'my-page',
-            templateUrl: 'app/components/page/page.component.html'
+            templateUrl: 'app/components/page/page.component.html',
+            providers: [_jquery_1.JQ]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof _jquery_1.JQ !== 'undefined' && _jquery_1.JQ) === 'function' && _a) || Object])
     ], PageComponent);
     return PageComponent;
+    var _a;
 }());
 exports.PageComponent = PageComponent;
 //# sourceMappingURL=page.component.js.map

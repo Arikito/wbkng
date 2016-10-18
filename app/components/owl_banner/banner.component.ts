@@ -1,30 +1,34 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 
-import { Slide } from './slide';
-import { SlidesService } from './slides.service';
+// import { Slide } from './slide';
+// import { SlidesService } from './slides.service';
 
 declare var jQuery: any;
 
 @Component({
   selector: 'owl-banner',
   templateUrl: 'app/components/owl_banner/banner.component.html',
-  providers: [SlidesService]
+  // providers: [SlidesService]
 })
 
 export class BannerComponent implements OnInit {
 	slides: Array<Object>;
 	errorMessage: string;
-	constructor(private elRef: ElementRef, private slidesService: SlidesService){
+	constructor(
+		private elRef: ElementRef
+		// private slidesService: SlidesService
+	){
 
 	}
 
 	ngOnInit(): any {
-		this.getSlides();
+		// this.getSlides();
 		jQuery(this.elRef.nativeElement).ready(function(){
 			jQuery(this).find("#owl-banner").owlCarousel({
 				slideSpeed: 300,
 				paginationSpeed: 400,
 				singleItem:true,
+				mouseDrag: false,
 				autoPlay: 5000,
 				stopOnHover: false,
 				autoHeight: false,
@@ -33,10 +37,10 @@ export class BannerComponent implements OnInit {
 		});
 	}
 
-	getSlides(){
-		this.slidesService.getSlides()
-			.subscribe(
-				result => this.slides = result,
-				error =>  this.errorMessage = <any>error);
-	}
+	// getSlides(){
+	// 	this.slidesService.getSlides()
+	// 		.subscribe(
+	// 			result => this.slides = result,
+	// 			error =>  this.errorMessage = <any>error);
+	// }
 }
