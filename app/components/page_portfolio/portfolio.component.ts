@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router }            from '@angular/router';
-
-import { ElementRef } from '@angular/core';
-declare var jQuery: any;
+import { JQ } from '@jquery';
 
 @Component({
 	moduleId: module.id,
@@ -10,10 +7,12 @@ declare var jQuery: any;
 	templateUrl: './portfolio.component.html'
 })
 
-export class PortfolioComponent implements OnInit{
-	constructor(private router: Router, private elRef: ElementRef) {
+export class PortfolioComponent implements OnInit {
+	constructor(
+		private $: JQ	
+	){
 	}
 	ngOnInit(): any{
-		jQuery('body').scrollTop(0);
+		this.$.scrollTop();
 	}
 }

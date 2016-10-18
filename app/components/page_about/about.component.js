@@ -9,15 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var core_2 = require('@angular/core');
+var _jquery_1 = require('@jquery');
 var AboutComponent = (function () {
-    function AboutComponent(router, elRef) {
-        this.router = router;
-        this.elRef = elRef;
+    function AboutComponent($) {
+        this.$ = $;
     }
     AboutComponent.prototype.ngOnInit = function () {
-        jQuery('body').scrollTop(0);
+        this.$.scrollTop();
     };
     AboutComponent = __decorate([
         core_1.Component({
@@ -25,9 +23,10 @@ var AboutComponent = (function () {
             selector: 'my-about',
             templateUrl: './about.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router, core_2.ElementRef])
+        __metadata('design:paramtypes', [(typeof (_a = typeof _jquery_1.JQ !== 'undefined' && _jquery_1.JQ) === 'function' && _a) || Object])
     ], AboutComponent);
     return AboutComponent;
+    var _a;
 }());
 exports.AboutComponent = AboutComponent;
 //# sourceMappingURL=about.component.js.map
