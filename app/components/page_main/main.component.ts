@@ -27,7 +27,7 @@ export class MainComponent implements OnInit {
 		}
 		window.onscroll = function(){
 			var topOfWindow = window.pageYOffset;
-			
+
 			function animated_scrolling(item_that_should_be_animated){
 				var item = item_that_should_be_animated;
 				if((item.closest('.to_animate_wrap')).offsetTop < topOfWindow + (winHeight * .8)){

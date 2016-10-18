@@ -1146,6 +1146,7 @@ body{
 						border: 1px solid #eee;
 						padding-top: 20%;
 						padding-bottom: 20%;
+						position: static;
 						// .svg_img{
 						// 	& path,
 						// 	& polygon,
@@ -1242,16 +1243,14 @@ body{
 							transform: rotateY(180deg);
 						}
 					}
-
-				.flip-container {
-					// width: 320px;
-					height: 38%;
-				}
+				// .flip-container {
+				// 	width: 320px;
+				// 	height: 38%;
+				// }
 				/* flip speed goes here */
 				.flipper {
 					transition: 0.6s;
 					transform-style: preserve-3d;
-
 					position: relative;
 				}
 				/* hide back of pane during swap */
