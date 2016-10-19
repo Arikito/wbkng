@@ -611,12 +611,19 @@ body section.content.services_page .magic_sidebar .nav .sidebar_item a .svg_img 
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img { transform: scale(1.2); }
 body section.content.services_page .magic_sidebar .nav .sidebar_item.active .svg_img path.accent { fill: #bf1111; }
-body section.content.project_page .page_wrap { width: 100%; max-width: 100%; padding: 10px; font-size: 1.2em; }
-body section.content.project_page .page_wrap .project_img img { width: 100%; }
+body section.content.project_page .page_wrap .project_img, body section.content.project_page .page_wrap .project_element { position: relative; padding: 10px; clear: both; }
+body section.content.project_page .page_wrap .project_img img, body section.content.project_page .page_wrap .project_element img { width: 100%; margin-bottom: 20px; border-radius: .2em; }
+body section.content.project_page .page_wrap .project_img .main_page, body section.content.project_page .page_wrap .project_element .main_page { box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); }
+body section.content.project_page .page_wrap .project_img .laptop, body section.content.project_page .page_wrap .project_element .laptop { display: block; margin: 0px auto; }
+body section.content.project_page .page_wrap .project_img .tablet, body section.content.project_page .page_wrap .project_img .mobile, body section.content.project_page .page_wrap .project_element .tablet, body section.content.project_page .page_wrap .project_element .mobile { position: absolute; bottom: 0; }
+body section.content.project_page .page_wrap .project_img .tablet, body section.content.project_page .page_wrap .project_element .tablet { width: 30%; right: 0; }
+body section.content.project_page .page_wrap .project_img .mobile, body section.content.project_page .page_wrap .project_element .mobile { width: 15%; left: 0; }
+body section.content.project_page .page_wrap .project_img .feature_descr p, body section.content.project_page .page_wrap .project_element .feature_descr p { font-size: 16px; line-height: 25px; text-align: justify; }
 body section.content.project_page .page_wrap .project_descr { padding: 0 40px; line-height: 30px; }
 body section.content.project_page .page_wrap .projects_task .title { font-size: 1.2em; }
-body section.content.project_page .page_wrap .btn_wrap { display: flex; justify-content: space-between; }
+body section.content.project_page .page_wrap .btn_wrap { display: flex; justify-content: center; }
 body section.content.project_page .page_wrap .btn_wrap a { line-height: 40px; }
+body section.content.project_page .light_style { padding-top: 400px; margin-top: -400px; }
 body section.content.techs_page .page_wrap { /* entire container, keeps perspective */ /* flip the pane when hovered */ /* flip speed goes here */ /* hide back of pane during swap */ /* front pane, placed above back */ /* back, initially hidden pane */ }
 body section.content.techs_page .page_wrap .tech { margin-bottom: 20px; }
 body section.content.techs_page .page_wrap .tech .tech_image { background: #fff; float: none; width: 100%; padding: 0px; border: 1px solid #eee; padding-top: 20%; padding-bottom: 20%; position: static; }

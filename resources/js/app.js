@@ -51,7 +51,7 @@ $(function(s){
 
 	$(document).ready(function(){
 	    $('body').on('click', '.go_to', function(){ // ловим клик по ссылке с классом go_to
-		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+			var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
 	        if ($(scroll_el).length !== 0) { // проверим существоваие элемента чтобы избежать ошибки
 		    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
 	        }

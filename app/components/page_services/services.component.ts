@@ -16,6 +16,13 @@ export class ServicesComponent implements OnInit{
 	ngOnInit(): any{
 		// $('html, body').animate({ scrollTop: '0' }, 500);
 		$('body').scrollTop(0);
+		if(window.location.hash.length > 0){
+			$('html, body').scrollTop($(window.location.hash).offset().top - 120);
+			$(window.location.hash).trigger('click');
+		}
+
+
+
 		$(this.elRef.nativeElement).find('img.svg').each(function(){
 			var $img = $(this);
 			var imgID = $img.attr('id');
@@ -83,13 +90,6 @@ export class ServicesComponent implements OnInit{
 
 		});
 
-		// if(!$(window).hasClass('spy')){
-		// 	$(window).scroll(function(){
-		// 		console.log('services spy');
-		// 		var a = $('body').find('#seo').scrollTop();
-		// 		console.log(a);
-		// 	});
-		// }
 		function ScrollSpy(obj){
 		  this.handlers = obj.find('.spy_handler');
 		  this.scrollTop = $(window).scrollTop();

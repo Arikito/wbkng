@@ -1099,16 +1099,45 @@ body{
 		}
 		&.project_page{
 			.page_wrap {
-				width: 100%;
-				max-width: 100%;
-				padding: $gap / 2;
-				font-size: 1.2em;
-				.project_img{
-					img{
+				.project_img,
+				.project_element{
+					position: relative;
+					padding: 10px;
+					clear: both;
+					img {
 						width: 100%;
+						margin-bottom: $gap;
+						border-radius: .2em;
+					}
+					.main_page {
+						box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+					}
+					.laptop {
+					    display: block;
+					    margin: 0px auto;
+					}
+					.tablet,
+					.mobile {
+						position: absolute;
+						bottom: 0;
+					}
+					.tablet {
+					    width: 30%;
+					    right: 0;
+					}
+					.mobile {
+					    width: 15%;
+					    left: 0;
+					}
+					.feature_descr {
+						p {
+							font-size: 16px;
+							line-height: 25px;
+							text-align: justify;
+						}
 					}
 				}
-				.project_descr{
+				.project_descr {
 					padding: 0 $gap * 2;
 					line-height: 30px;
 				}
@@ -1122,7 +1151,7 @@ body{
 					// 	margin: 2em;
 					// }
 					display: flex;
-					justify-content: space-between;
+					justify-content: center;
 					a{
 						// padding: $gap / 2 $gap;
 						line-height: $gap * 2;
@@ -1131,6 +1160,10 @@ body{
 						// }
 					}
 				}
+			}
+			.light_style {
+				padding-top: 400px;
+				margin-top: -400px;
 			}
 		}
 		&.techs_page{
