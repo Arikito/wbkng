@@ -2,12 +2,12 @@
 	<div class="banner_wrap">
 		<owl-banner></owl-banner>
 	</div>
-	<div class="subsection to_animate_wrap animation_series_wrap projects_wrap light_style">
+	<div class="subsection projects_wrap light_style to_animate animation_group" data-animation="zoomIn">
 		<div class="page_wrap">
-			<h2 class="to_animate block_title" data-animation="fadeInDown">Последние работы</h2>
+			<h2 class="to_animate" data-trigger=".projects_wrap" data-animation="fadeInDown">Последние работы</h2>
 			<div class="container">
 				<div class="row items_wrap">
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -17,7 +17,7 @@
 							<img src="/compiled/img/projects/1962-chevrolet-bel-air.jpg">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -27,7 +27,7 @@
 							<img src="/compiled/img/projects/avto-retro-gory-pustynya.jpg">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -37,7 +37,7 @@
 							<img src="/compiled/img/projects/devushka-volosy-perya-indeec.jpg">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -47,7 +47,7 @@
 							<img src="/compiled/img/projects/dodge-charger-rt-dodzh-power.jpg">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -57,7 +57,7 @@
 							<img src="/compiled/img/projects/flash-dc-flesh-barri.jpg">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -67,7 +67,7 @@
 							<img src="/compiled/img/projects/haski-poroda-sneg-osheynik.jpg">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -77,7 +77,7 @@
 							<img src="/compiled/img/projects/malchik-krutoy-avto-poezdka.jpg">
 						</div>
 					</div>
-					<div class="col-xs-6 col-md-3 col-sm-4 to_animate series" data-animation="zoomIn">
+					<div class="col-xs-6 col-md-3 col-sm-4 series">
 						<div class="page_item">
 							<div class="text_block">
 								<p class="title">Название проекта</p>
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="subsection to_animate_wrap services_wrap">
+	<div class="subsection services_wrap">
 		<div class="page_wrap" routerLink="/services"  routerLinkActive="active">
 			<h2 class="to_animate" data-animation="fadeInDown">Услуги</h2>
 			<div class="container">
@@ -125,7 +125,7 @@
 							<li><a href="#" src="">Этикетка</a></li>
 						</ul> -->
 					</li>
-					<li class="page_item col-xs-12 col-md-4 hidden to_animate" data-animation="fadeInUp">
+					<li class="page_item col-xs-12 col-md-4 to_animate hidden" data-animation="fadeInUp">
 						<div>
 							<div class="service_icon"><img src="compiled/img/seo.svg" class="svg_img svg" alt="seo"></div>
 							<p class="title">Интернет-маркетинг</p>
@@ -156,13 +156,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="subsection to_animate_wrap animation_series_wrap technologies_wrap light_style" id="techs">
+	<div class="subsection technologies_wrap light_style to_animate animation_group" data-animation="zoomIn" id="techs">
 		<div class="page_wrap wide">
-			<h2 class="to_animate block_title" data-animation="fadeInDown">Технологии</h2>
+			<h2 class="to_animate" data-animation="fadeInDown">Технологии</h2>
 			<owl-techs></owl-techs>
 		</div>
 	</div>
-	<div class="subsection to_animate_wrap about_studio_wrap" id="about">
+	<div class="subsection about_studio_wrap" id="about">
 		<div class="parallax"></div>
 		<div class="page_wrap" routerLink="/about"  routerLinkActive="active">
 			<h2 class="to_animate" data-animation="fadeInDown">Наша команда</h2>
@@ -203,8 +203,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="parallax"></div>
 	</div>
-	<div class="subsection to_animate_wrap accent_style short_contacts_wrap">
+	<div class="subsection accent_style short_contacts_wrap">
 		<div class="page_wrap">
 			<h2 class="to_animate" data-animation="fadeInDown">Как с нами связаться?</h2>
 			<div class="container">
@@ -231,11 +232,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="subsection to_animate_wrap contacts_wrap light_style">
+	<div class="subsection contacts_wrap light_style">
 		<div class="page_wrap row">
-			<div class="col-xs-12 col-md-6 contact_us_wrap to_animate" data-animation="fadeInLeft">
-				<h2>Напишите нам</h2>
-				<div class="page_item">
+			<div class="col-xs-12 col-md-6 contact_us_wrap">
+				<h2 class="to_animate" data-animation="fadeInLeft">Напишите нам</h2>
+				<div class="page_item to_animate" data-animation="zoomIn">
 					<form class="row">
 						<!-- <textarea rows="4" cols="50" name="subject" placeholder="Сообщение:" class="message" required></textarea>
 						<input type="text" name="username" placeholder="Ваше имя" class="name" required />
@@ -267,7 +268,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6 grid_mod to_animate" data-animation="fadeInRight">
+			<div class="col-xs-12 col-md-6 grid_mod to_animate" data-animation="zoomIn">
 				<my-map></my-map>
 			</div>
 		</div>

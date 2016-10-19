@@ -36,7 +36,8 @@ textarea{
 .hidden{
 	display: none !important;
 }
-.to_animate{
+.to_animate:not(.animation_group),
+.series:not(.animated){
 	opacity: 0;
 }
 .dark_style{

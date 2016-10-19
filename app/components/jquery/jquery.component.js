@@ -14,6 +14,16 @@ var JQ = (function () {
     }
     JQ.prototype.constuctor = function () {
         this.$ = $;
+        this.defaultOwlCarouselParams = {
+            items: 6,
+            itemsDesktop: [1000, 5],
+            itemsDesktopSmall: [900, 3],
+            itemsTablet: [600, 2],
+            itemsMobile: false,
+            singleItem: false,
+            pagination: false,
+            autoPlay: 1000
+        };
     };
     JQ.prototype.test = function (word) {
         if (word === void 0) { word = 'default value'; }
@@ -22,6 +32,10 @@ var JQ = (function () {
     JQ.prototype.scrollTop = function (position) {
         if (position === void 0) { position = 0; }
         $('body').scrollTop(position);
+    };
+    JQ.prototype.initOwlCarousel = function (selector, params) {
+        if (params === void 0) { params = this.defaultOwlCarouselParams; }
+        $('body').find(selector).owlCarousel(params);
     };
     JQ.prototype.inlineSvg = function () {
         $('html').find('img.svg').each(function () {
@@ -78,51 +92,47 @@ var JQ = (function () {
         });
     };
     JQ.prototype.animated_scroll = function () {
-        // Start
-        var winHeight = window.screen.height, animate_elements_obj = $('.to_animate'), animate_elements_arr = [];
-        for (var i = 0; i < animate_elements_obj.length; i++) {
-            animate_elements_arr[i] = animate_elements_obj[i];
-        }
-        window.onscroll = function () {
-            var topOfWindow = window.pageYOffset;
-            function animated_scrolling(item_that_should_be_animated) {
-                var item = $(item_that_should_be_animated);
-                if (item.closest('.to_animate_wrap')[0].offsetTop < topOfWindow + (winHeight * .6)) {
-                    if (!item.hasClass('animated')) {
-                        item.removeClass('to_animate ').addClass('animated ');
-                    }
-                    if (!item.hasClass(item.attr('data-animation'))) {
-                        item.addClass(" " + item.attr('data-animation'));
-                    }
-                }
-            }
-            $.each(animate_elements_arr, function (index, value) {
-                if ($(value).closest('.to_animate_wrap').hasClass('animation_series_wrap')) {
-                    var timeout = 0, columns = 8, correction = 50, series_obj = $('.series'), series_arr = [], title = $(value).closest('.to_animate_wrap').find('.block_title')[0];
-                    for (var k = 0; k < series_obj.length; k++) {
-                        series_arr[k] = series_obj[k];
-                    }
-                    if (title !== undefined) {
-                        animated_scrolling(title);
-                    }
-                    $.each(series_arr, function (index, value) {
-                        if (i % columns == 0) {
-                            timeout = i / columns * columns * correction;
-                        }
-                        else {
-                            timeout = timeout + columns * correction;
-                        }
+        var animate_elements_obj = $('.to_animate'), trigger, res;
+        function toAnimate(obj, animation, trigger) {
+            if (animation === void 0) { animation = 'fadeIn'; }
+            if (trigger === void 0) { trigger = false; }
+            trigger = $(obj).data('trigger') !== undefined && $(obj).data('trigger') != ''
+                ? $($(obj).data('trigger'))
+                : (trigger === false ? $(obj) : trigger);
+            animation = $(obj).data('animation') !== undefined && $(obj).data('animation') != ''
+                ? $(obj).data('animation')
+                : animation;
+            if (trigger.offset().top < window.pageYOffset + (window.screen.height * .7)) {
+                if ($(obj).hasClass('animation_group')) {
+                    $(obj).removeClass('to_animate');
+                    var timeout = 0, columns = 2, correction = 500;
+                    $(obj).find('.series').each(function (index, value) {
                         setTimeout(function () {
-                            animated_scrolling($(value));
-                        }, timeout);
+                            toAnimate(value, animation, trigger);
+                        }, correction * index / 2);
                     });
                 }
                 else {
-                    animated_scrolling($(value));
+                    if (!$(obj).hasClass('animated')) {
+                        $(obj).removeClass('to_animate').addClass('animated').addClass(animation);
+                    }
                 }
-            });
-        };
-        // End
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        if (animate_elements_obj.length > 0) {
+            window.onscroll = function () {
+                animate_elements_obj.each(function (index, value) {
+                    res = toAnimate(value);
+                    if (res) {
+                        animate_elements_obj.splice(index, 1);
+                    }
+                });
+            };
+        }
     };
     JQ = __decorate([
         core_1.Injectable(), 

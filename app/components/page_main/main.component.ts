@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { JQ } from '@jquery';
 declare var jQuery: any;
 
@@ -8,12 +8,12 @@ declare var jQuery: any;
 	templateUrl: './main.component.html'
 })
 
-export class MainComponent implements OnInit {
+export class MainComponent implements AfterViewInit {
 	constructor(
 		private $: JQ
 	){
 	}
-	ngOnInit(): any{
+	ngAfterViewInit(): any{
 		this.$.scrollTop();
 		this.$.inlineSvg();
 		this.$.animated_scroll();

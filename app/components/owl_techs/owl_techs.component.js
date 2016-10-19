@@ -9,31 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
+var _jquery_1 = require('@jquery');
 var OwlTechsComponent = (function () {
-    function OwlTechsComponent(elRef) {
-        this.elRef = elRef;
+    function OwlTechsComponent($) {
+        this.$ = $;
     }
-    OwlTechsComponent.prototype.ngOnInit = function () {
-        jQuery(this.elRef.nativeElement).find("#owl-techn").owlCarousel({
-            items: 6,
-            itemsDesktop: [1000, 5],
-            itemsDesktopSmall: [900, 3],
-            itemsTablet: [600, 2],
-            itemsMobile: false,
-            singleItem: false,
-            pagination: false,
-            autoPlay: 5000
-        });
+    OwlTechsComponent.prototype.ngAfterViewInit = function () {
+        this.$.initOwlCarousel('#owl-techn');
     };
     OwlTechsComponent = __decorate([
         core_1.Component({
             selector: 'owl-techs',
             templateUrl: 'app/components/owl_techs/owl_techs.component.html'
         }), 
-        __metadata('design:paramtypes', [core_2.ElementRef])
+        __metadata('design:paramtypes', [(typeof (_a = typeof _jquery_1.JQ !== 'undefined' && _jquery_1.JQ) === 'function' && _a) || Object])
     ], OwlTechsComponent);
     return OwlTechsComponent;
+    var _a;
 }());
 exports.OwlTechsComponent = OwlTechsComponent;
 //# sourceMappingURL=owl_techs.component.js.map
