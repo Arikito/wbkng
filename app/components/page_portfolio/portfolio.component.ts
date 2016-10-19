@@ -9,7 +9,7 @@ import { JQ } from '@jquery';
 
 export class PortfolioComponent implements OnInit {
 	constructor(
-		private $: JQ	
+		private $: JQ
 	){
 	}
 	ngOnInit(): any{
