@@ -14,6 +14,16 @@ var JQ = (function () {
     }
     JQ.prototype.constuctor = function () {
         this.$ = $;
+        this.defaultOwlCarouselParams = {
+            items: 6,
+            itemsDesktop: [1000, 5],
+            itemsDesktopSmall: [900, 3],
+            itemsTablet: [600, 2],
+            itemsMobile: false,
+            singleItem: false,
+            pagination: false,
+            autoPlay: 1000
+        };
     };
     JQ.prototype.test = function (word) {
         if (word === void 0) { word = 'default value'; }
@@ -22,6 +32,10 @@ var JQ = (function () {
     JQ.prototype.scrollTop = function (position) {
         if (position === void 0) { position = 0; }
         $('body').scrollTop(position);
+    };
+    JQ.prototype.initOwlCarousel = function (selector, params) {
+        if (params === void 0) { params = this.defaultOwlCarouselParams; }
+        $('body').find(selector).owlCarousel(params);
     };
     JQ.prototype.inlineSvg = function () {
         $('html').find('img.svg').each(function () {
@@ -76,6 +90,49 @@ var JQ = (function () {
                 $img.replaceWith($svg);
             }, 'xml');
         });
+    };
+    JQ.prototype.animated_scroll = function () {
+        var animate_elements_obj = $('.to_animate'), trigger, res;
+        function toAnimate(obj, animation, trigger) {
+            if (animation === void 0) { animation = 'fadeIn'; }
+            if (trigger === void 0) { trigger = false; }
+            trigger = $(obj).data('trigger') !== undefined && $(obj).data('trigger') != ''
+                ? $($(obj).data('trigger'))
+                : (trigger === false ? $(obj) : trigger);
+            animation = $(obj).data('animation') !== undefined && $(obj).data('animation') != ''
+                ? $(obj).data('animation')
+                : animation;
+            if (trigger.offset().top < window.pageYOffset + (window.screen.height * .7)) {
+                if ($(obj).hasClass('animation_group')) {
+                    $(obj).removeClass('to_animate');
+                    var timeout = 0, columns = 2, correction = 500;
+                    $(obj).find('.series').each(function (index, value) {
+                        setTimeout(function () {
+                            toAnimate(value, animation, trigger);
+                        }, correction * index / 2);
+                    });
+                }
+                else {
+                    if (!$(obj).hasClass('animated')) {
+                        $(obj).removeClass('to_animate').addClass('animated').addClass(animation);
+                    }
+                }
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        if (animate_elements_obj.length > 0) {
+            window.onscroll = function () {
+                animate_elements_obj.each(function (index, value) {
+                    res = toAnimate(value);
+                    if (res) {
+                        animate_elements_obj.splice(index, 1);
+                    }
+                });
+            };
+        }
     };
     JQ = __decorate([
         core_1.Injectable(), 
