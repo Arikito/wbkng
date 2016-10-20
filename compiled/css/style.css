@@ -408,6 +408,8 @@ margin-left: auto; */ padding-left: 10px; padding-right: 10px; }
 
 * { box-sizing: border-box; }
 
+h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
+
 a { text-decoration: none; }
 
 input[type=text], input[type=email], input[type=tel], input[type=passwd], textarea { border-radius: .2em; border: 0; outline: 0; line-height: 40px; padding: 0 20px; }
@@ -435,7 +437,7 @@ input[type=text], input[type=email], input[type=tel], input[type=passwd], textar
 .apple_images { display: flex; }
 .apple_images .project_image { max-width: 33%; max-height: 200px; }
 
-body { font-size: 14px; font-family: "Ubuntu", "PT Sans", sans-serif; position: relative; background: #22252b; color: #fff; }
+body { font-size: 14px; font-family: "Ubuntu", sans-serif; position: relative; background: #22252b; color: #fff; }
 body header { position: fixed; top: 0; left: 0; right: 0; background: #fff; z-index: 100; }
 body header .logoSite { display: inline-block; height: 120px; padding: 20px; box-sizing: border-box; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .logoSite svg, body header .logoSite img { position: relative; height: 100%; }
