@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
 })
 
 export class FooterComponent {
-
+	footerLinks: any[]
+	constructor() {
+		this.footerLinks = [
+			{
+				title: 'Портфолио',
+				link: '/portfolio'
+			},
+			{
+				title: 'Услуги',
+				link: '/services'
+			},
+			{
+				title: 'Технологии',
+				link: '/techs'
+			},
+			{
+				title: 'Наша команда',
+				link: '/about'
+			}
+		]
+	}
 }
