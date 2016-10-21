@@ -17,6 +17,7 @@ import { OwlTechsComponent } from './components/owl_techs/owl_techs.component';
 import { MapComponent } from './components/map/map.component';
 import { SubscribeFormComponent } from './components/form_subscribe/subscribe.component';
 import { XtComponent } from './components/projects/xt/xt.component';
+import { WpComponent } from './components/projects/wp/wp.component';
 
 @NgModule({
 	imports: [
@@ -37,7 +38,8 @@ import { XtComponent } from './components/projects/xt/xt.component';
 		OwlTechsComponent,
 		MapComponent,
 		SubscribeFormComponent,
-		XtComponent
+		XtComponent,
+		WpComponent
 	],
 	bootstrap: [
 		PageComponent
