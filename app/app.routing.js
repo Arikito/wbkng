@@ -6,6 +6,7 @@ var services_component_1 = require('./components/page_services/services.componen
 var techs_component_1 = require('./components/page_techs/techs.component');
 var about_component_1 = require('./components/page_about/about.component');
 var xt_component_1 = require('./components/projects/xt/xt.component');
+var wp_component_1 = require('./components/projects/wp/wp.component');
 var appRoutes = [
     {
         path: '',
@@ -30,6 +31,10 @@ var appRoutes = [
     {
         path: 'portfolio/xt',
         component: xt_component_1.XtComponent
+    },
+    {
+        path: 'portfolio/wp',
+        component: wp_component_1.WpComponent
     }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);
