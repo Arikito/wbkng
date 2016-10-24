@@ -15,9 +15,11 @@ var MainComponent = (function () {
         this.$ = $;
     }
     MainComponent.prototype.ngAfterViewInit = function () {
-        this.$.scrollTop();
         this.$.inlineSvg();
         this.$.animated_scroll();
+    };
+    MainComponent.prototype.ngOnInit = function () {
+        this.$.scrollTop();
     };
     MainComponent = __decorate([
         core_1.Component({

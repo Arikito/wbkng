@@ -451,11 +451,14 @@ body{
 				background: $spacegray;
 				color: $white;
 				.owl-carousel{
+					background: url(/compiled/img/bg0.jpg) 100% 100% no-repeat;
+					background-size: cover;
 					.banner_item{
+						background: rgba($spacegray, 0.7);
 						height: calc(100vh - 120px);
 						img{
-							-webkit-filter: brightness(0.30);
-							filter: brightness(0.30);
+							-webkit-filter: brightness(.30);
+							filter: brightness(.30);
 							min-width: 100%;
 							min-height: 100%;
 						}

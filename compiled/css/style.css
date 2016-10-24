@@ -497,7 +497,8 @@ body section.content .page_item .project_title p { opacity: 1; font-size: 16px; 
 body section.content .page_item .project_title p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
 body section.content .page_item:hover .project_title { top: 0; }
 body section.content.home_page .banner_wrap { position: relative; background: #191b20; color: #fff; }
-body section.content.home_page .banner_wrap .owl-carousel .banner_item { height: calc(100vh - 120px); }
+body section.content.home_page .banner_wrap .owl-carousel { background: url(/compiled/img/bg0.jpg) 100% 100% no-repeat; background-size: cover; }
+body section.content.home_page .banner_wrap .owl-carousel .banner_item { background: rgba(25, 27, 32, 0.7); height: calc(100vh - 120px); }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item img { -webkit-filter: brightness(0.3); filter: brightness(0.3); min-width: 100%; min-height: 100%; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { position: absolute; top: 5vh; left: 15vw; text-align: center; width: 70vw; height: 60vh; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text h2 { font-size: 3em; }
