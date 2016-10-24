@@ -592,7 +592,8 @@ body{
 								font-weight: 100;
 							}
 							.description {
-								line-height: 2em;
+								// line-height: 2em;
+								line-height: 1.4em;
 								padding: 0 20%;
 							}
 						}
@@ -1725,9 +1726,6 @@ body{
 				height: 340px;
 			}
 		}
-		section.content{
-			font-size: .9em;
-		}
 	}
 	@media (max-width: 750px) and (orientation:landscape){
 		header{
@@ -1874,14 +1872,11 @@ body{
 	}
 	@media (max-width: 480px){
 		section.content{
-			font-size: .8em;
 			&.home_page{
 				.banner_wrap .owl-carousel .banner_item{
 					.banner_text{
 						height: 60vh;
-						h2{
-							font-size: 2.5em;
-						}
+						font-size: .7em;
 					}
 					.bunner_btn{
 						font-size: 1.3em;
@@ -1889,17 +1884,23 @@ body{
 					}
 				}
 				.contacts_wrap .page_wrap{
-					.page_item{
-						fieldset legend{
-							padding: $gap/2 $gap;
-							margin: 0 auto;
-						}
-						&.contacts_item{
-							height: 350px;
-							flex-direction: column;
-						}
-						&.form_item{
+					.contact_us_wrap{
+						.page_item{
 							padding: 0;
+							form{
+								width: 100%;
+							}
+							fieldset legend{
+								padding: $gap/2 $gap;
+								margin: 0 auto;
+							}
+							&.contacts_item{
+								height: 350px;
+								flex-direction: column;
+							}
+							&.form_item{
+								padding: 0;
+							}
 						}
 					}
 				}
@@ -1911,7 +1912,6 @@ body{
 							}
 						}
 					}
-
 				}
 				.services_wrap,
 				.about_studio_wrap{

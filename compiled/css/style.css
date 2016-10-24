@@ -522,7 +522,7 @@ body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .s
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .service_icon .svg_img { width: 100px; height: 100px; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .service_icon .svg_img path.accent { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .title { font-size: 1.6em; font-weight: 100; }
-body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .description { line-height: 2em; padding: 0 20%; }
+body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .description { line-height: 1.4em; padding: 0 20%; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul { display: none; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li { list-style: none; line-height: 1.6em; font-size: 1.3em; width: 130px; margin: 0 auto; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li a { color: #fff; }
@@ -705,8 +705,7 @@ body footer .subscribe input { margin-left: 20px; }
   body section.content.services_page .service .tabs_block .box .btn_wrap { justify-content: space-between; left: 20px; width: 95vw; position: relative; padding-bottom: 40px; bottom: 0; } }
 @media screen and (max-width: 700px) { body header nav ul { display: flex; flex-direction: column; align-items: center; }
   body header nav ul li { width: 160px; margin-bottom: 10px; text-align: center; line-height: 72px; }
-  body header .header_navigation.active { height: 340px; }
-  body section.content { font-size: .9em; } }
+  body header .header_navigation.active { height: 340px; } }
 @media (max-width: 750px) and (orientation: landscape) { body header nav ul li { margin-bottom: 0; }
   body section.content { font-size: .8em; }
   body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { width: 90vw; left: 5vw; font-size: .8em; }
@@ -737,13 +736,13 @@ body footer .subscribe input { margin-left: 20px; }
   body section.content.services_page .page_wrap .magic_sidebar .nav .sidebar_item a { width: 30px; }
   body section.content.services_page + footer { width: calc(100vw - 60px); }
   body section.content.services_page + footer .page_wrap { width: calc(100vw - 60px); } }
-@media (max-width: 480px) { body section.content { font-size: .8em; }
-  body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { height: 60vh; }
-  body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text h2 { font-size: 2.5em; }
+@media (max-width: 480px) { body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { height: 60vh; font-size: .7em; }
   body section.content.home_page .banner_wrap .owl-carousel .banner_item .bunner_btn { font-size: 1.3em; bottom: 0em !important; }
-  body section.content.home_page .contacts_wrap .page_wrap .page_item fieldset legend { padding: 10px 20px; margin: 0 auto; }
-  body section.content.home_page .contacts_wrap .page_wrap .page_item.contacts_item { height: 350px; flex-direction: column; }
-  body section.content.home_page .contacts_wrap .page_wrap .page_item.form_item { padding: 0; }
+  body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item { padding: 0; }
+  body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item form { width: 100%; }
+  body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item fieldset legend { padding: 10px 20px; margin: 0 auto; }
+  body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item.contacts_item { height: 350px; flex-direction: column; }
+  body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item.form_item { padding: 0; }
   body section.content.home_page .projects_wrap .items_wrap > div .page_item img { height: 200px; }
   body section.content.home_page .services_wrap .container .row > div, body section.content.home_page .about_studio_wrap .container .row > div { width: 100%; }
   body section.content.home_page .services_wrap .page_wrap ul.akkordeon li.page_item { width: 100%; height: auto; }
