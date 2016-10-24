@@ -14,8 +14,10 @@ export class MainComponent implements AfterViewInit {
 	){
 	}
 	ngAfterViewInit(): any{
-		this.$.scrollTop();
 		this.$.inlineSvg();
 		this.$.animated_scroll();
+	}
+	ngOnInit(){
+		this.$.scrollTop();
 	}
 }

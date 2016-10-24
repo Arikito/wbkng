@@ -497,7 +497,8 @@ body section.content .page_item .project_title p { opacity: 1; font-size: 16px; 
 body section.content .page_item .project_title p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
 body section.content .page_item:hover .project_title { top: 0; }
 body section.content.home_page .banner_wrap { position: relative; background: #191b20; color: #fff; }
-body section.content.home_page .banner_wrap .owl-carousel .banner_item { height: calc(100vh - 120px); }
+body section.content.home_page .banner_wrap .owl-carousel { background: url(/compiled/img/bg0.jpg) 100% 100% no-repeat; background-size: cover; }
+body section.content.home_page .banner_wrap .owl-carousel .banner_item { background: rgba(25, 27, 32, 0.7); height: calc(100vh - 120px); }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item img { -webkit-filter: brightness(0.3); filter: brightness(0.3); min-width: 100%; min-height: 100%; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { position: absolute; top: 5vh; left: 15vw; text-align: center; width: 70vw; height: 60vh; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text h2 { font-size: 3em; }
@@ -537,9 +538,11 @@ body section.content.home_page .about_studio_wrap .page_wrap .page_item .title {
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .title, body section.content.home_page .about_studio_wrap .page_wrap .page_item .prof, body section.content.home_page .about_studio_wrap .page_wrap .page_item .social { text-align: center; max-width: 350px; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .prof { color: #4b5461; font-size: 1.2em; font-family: "Consolas"; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .prof span { color: #b3c9e5; }
-body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img { width: 30px; height: 30px; margin-right: 10px; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img { width: 30px; height: 30px; margin-right: 10px; border-radius: 50%; border: 1px solid #b3c9e5; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img path { fill: #b3c9e5; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img:first-child:hover { border-color: #db4437; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img:first-child:hover path { fill: #db4437; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img:hover { border-color: #496194; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img:hover path { fill: #496194; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); width: 100%; height: auto; border-radius: 50%; filter: grayscale(100%); }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item:hover img { filter: grayscale(0%); }

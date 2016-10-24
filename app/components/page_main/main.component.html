@@ -2,9 +2,9 @@
 	<div class="banner_wrap">
 		<owl-banner></owl-banner>
 	</div>
-	<div class="subsection projects_wrap light_style to_animate animation_group" data-animation="zoomIn">
+	<div class="subsection projects_wrap light_style to_animate animation_group" data-animation="fadeInUp">
 		<div class="page_wrap">
-			<h2 class="to_animate" data-trigger=".projects_wrap" data-animation="fadeInDown">Последние работы</h2>
+			<h2>Последние работы</h2>
 			<div class="container">
 				<div class="row items_wrap">
 					<div class="col-xs-6 col-md-3 col-sm-4 series">
@@ -93,7 +93,7 @@
 	</div>
 	<div class="subsection services_wrap">
 		<div class="page_wrap" routerLink="/services"  routerLinkActive="active">
-			<h2 class="to_animate" data-animation="fadeInDown">Услуги</h2>
+			<h2>Услуги</h2>
 			<div class="container">
 				<ul class="row akkordeon">
 					<li class="page_item col-xs-12 col-md-4 to_animate" data-animation="fadeInLeft">
@@ -156,16 +156,16 @@
 			</div>
 		</div>
 	</div>
-	<div class="subsection technologies_wrap light_style to_animate animation_group" data-animation="zoomIn" id="techs">
+	<div class="subsection technologies_wrap light_style" id="techs">
 		<div class="page_wrap wide">
-			<h2 class="to_animate" data-animation="fadeInDown">Технологии</h2>
+			<h2>Технологии</h2>
 			<owl-techs></owl-techs>
 		</div>
 	</div>
 	<div class="subsection about_studio_wrap" id="about">
-		<div class="parallax"></div>
+		<!-- <div class="parallax"></div> -->
 		<div class="page_wrap" routerLink="/about"  routerLinkActive="active">
-			<h2 class="to_animate" data-animation="fadeInDown">Наша команда</h2>
+			<h2>Наша команда</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aliquam distinctio, repudiandae voluptas odio totam voluptate illo dolor expedita tempore. Voluptatum consequatur voluptatibus et, ab atque alias, sequi numquam magni.</p>
 			<div class="container">
 				<div class="row">
@@ -176,8 +176,8 @@
 							<p class="title">Александр Пархоменко</p>
 							<p class="prof">&lt;<span>ceo</span> class="<span>founder</span>"&gt;</p>
 							<p class="social">
-								<img src="compiled/img/icons/google-plus.svg" alt="location" class="svg_img svg">
-								<img src="compiled/img/icons/facebook.svg" alt="location" class="svg_img svg">
+								<a href="/"><img src="compiled/img/icons/google-plus.svg" alt="location" class="svg_img svg"></a>
+								<a href="/"><img src="compiled/img/icons/facebook.svg" alt="location" class="svg_img svg"></a>
 							</p>
 							<!-- <p class="title">Веб дизайнер</p>
 							<p>Мы сделаем Ваш бренд легко узнаваемым</p> -->
@@ -190,8 +190,8 @@
 							<p class="title">Надежда Ковалева</p>
 							<p class="prof">&lt;<span>developer</span> class="<span>front-end</span>"/&gt;</p>
 							<p class="social">
-								<img src="compiled/img/icons/google-plus.svg" alt="location" class="svg_img svg">
-								<img src="compiled/img/icons/facebook.svg" alt="location" class="svg_img svg">
+								<a href="/"><img src="compiled/img/icons/google-plus.svg" alt="location" class="svg_img svg"></a>
+								<a href="/"><img src="compiled/img/icons/facebook.svg" alt="location" class="svg_img svg"></a>
 							</p>
 							<!-- <p>Ваш сайт будет многофункциональным и в то же время быстродейственным</p> -->
 						</div>
@@ -203,8 +203,8 @@
 							<p class="title">Александр Рябуха</p>
 							<p class="prof">&lt;<span>developer</span> class="<span>front-end</span>"/&gt;</p>
 							<p class="social">
-								<img src="compiled/img/icons/google-plus.svg" alt="location" class="svg_img svg">
-								<img src="compiled/img/icons/facebook.svg" alt="location" class="svg_img svg">
+								<a href="/"><img src="compiled/img/icons/google-plus.svg" alt="location" class="svg_img svg"></a>
+								<a href="/"><img src="compiled/img/icons/facebook.svg" alt="location" class="svg_img svg"></a>
 							</p>
 							<!-- <p>Мы знаем как увеличить Ваши продажи и привлечь максимальное количество клиентов</p> -->
 						</div>
@@ -219,11 +219,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="parallax"></div>
 	</div>
 	<div class="subsection accent_style short_contacts_wrap">
 		<div class="page_wrap">
-			<h2 class="to_animate" data-animation="fadeInDown">Как с нами связаться?</h2>
+			<h2>Как с нами связаться?</h2>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-4 to_animate" data-animation="fadeInLeft">
@@ -250,9 +249,9 @@
 	</div>
 	<div class="subsection contacts_wrap light_style">
 		<div class="page_wrap row">
-			<div class="col-xs-12 col-md-6 contact_us_wrap">
-				<h2 class="to_animate" data-animation="fadeInLeft">Напишите нам</h2>
-				<div class="page_item to_animate" data-animation="zoomIn">
+			<div class="col-xs-12 col-md-6 contact_us_wrap to_animate" data-animation="fadeInLeft">
+				<h2>Напишите нам</h2>
+				<div class="page_item">
 					<form class="row">
 						<!-- <textarea rows="4" cols="50" name="subject" placeholder="Сообщение:" class="message" required></textarea>
 						<input type="text" name="username" placeholder="Ваше имя" class="name" required />
@@ -284,7 +283,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6 grid_mod to_animate" data-animation="zoomIn">
+			<div class="col-xs-12 col-md-6 grid_mod to_animate" data-animation="fadeInRight">
 				<my-map></my-map>
 			</div>
 		</div>
