@@ -939,6 +939,13 @@ body{
 			}
 		}
 		&.portfolio_page{
+			.portfolio_page_descr {
+				margin: 50px auto;
+			    font-size: 1.2em;
+			    line-height: 1.4em;
+			    text-align: center;
+			    max-width: 90%;
+			}
 			.items_wrap{
 				.project {
 					padding: 0px;
@@ -946,7 +953,6 @@ body{
 				.page_item{
 					img{
 						max-height: none;
-					    /* height: 400px; */
 					    height: auto;
 					    min-width: 100%;
 					    width: 100%;
