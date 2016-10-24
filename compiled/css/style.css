@@ -529,7 +529,8 @@ body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .s
 body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .svg_img path.accent { fill: #bf1111; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item { padding: .5em; background: transparent; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item img { display: block; margin: 0 auto; }
-body section.content.home_page .about_studio_wrap { background-color: #191b20; position: relative; background-color: rgba(25, 27, 32, 0.9); }
+body section.content.home_page .about_studio_wrap { position: relative; background: transparent; background: url(/compiled/img/bg2.jpg) 50% center no-repeat fixed; background-size: cover; }
+body section.content.home_page .about_studio_wrap:before { content: ""; position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 body section.content.home_page .about_studio_wrap .page_wrap > p { margin: 50px auto; font-size: 1.2em; line-height: 1.4em; text-align: center; max-width: 90%; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item { margin: 1em auto; text-align: center; background-color: transparent; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item p { max-width: 250px; text-align: justify; margin: 1em auto; }
