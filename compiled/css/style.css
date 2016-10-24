@@ -496,6 +496,8 @@ body section.content .page_item .project_title { position: absolute; margin: 0; 
 body section.content .page_item .project_title p { opacity: 1; font-size: 16px; }
 body section.content .page_item .project_title p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
 body section.content .page_item:hover .project_title { top: 0; }
+body section.content .parallax { background: url(/compiled/img/bg6.jpg) 50% center no-repeat fixed; background-size: 120% 120%; top: 0; width: 100%; height: 100%; position: absolute; z-index: -1; }
+body section.content .parallax:before { content: ""; position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); }
 body section.content.home_page .banner_wrap { position: relative; background: #191b20; color: #fff; }
 body section.content.home_page .banner_wrap .owl-carousel { background: url(/compiled/img/bg0.jpg) 100% 100% no-repeat; background-size: cover; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item { background: rgba(25, 27, 32, 0.7); height: calc(100vh - 120px); }
@@ -527,12 +529,12 @@ body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li 
 body section.content.home_page .services_wrap ul.akkordeon li.page_item > ul li:hover a { color: #d61313; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .service_icon { border-color: #fff; }
 body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .svg_img path.accent { fill: #bf1111; }
+body section.content.home_page .services_wrap .parallax { background: url(/compiled/img/bg5.jpg) 50% center no-repeat fixed; background-size: 110% 110%; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item { padding: .5em; background: transparent; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item img { display: block; margin: 0 auto; }
-body section.content.home_page .about_studio_wrap { position: relative; background: transparent; background: url(/compiled/img/bg2.jpg) 50% center no-repeat fixed; background-size: cover; }
-body section.content.home_page .about_studio_wrap:before { content: ""; position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+body section.content.home_page .about_studio_wrap { position: relative; }
 body section.content.home_page .about_studio_wrap .page_wrap > p { margin: 50px auto; font-size: 1.2em; line-height: 1.4em; text-align: center; max-width: 90%; }
-body section.content.home_page .about_studio_wrap .page_wrap .page_item { margin: 1em auto; text-align: center; background-color: transparent; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item { padding: 1em 0; text-align: center; background-color: transparent; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item p { max-width: 250px; text-align: justify; margin: 1em auto; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .img_wrap { width: 60%; margin: 0 auto; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .title { font-size: 1.5em; }
@@ -546,8 +548,7 @@ body section.content.home_page .about_studio_wrap .page_wrap .page_item .social 
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .social a:hover .svg_img { border-color: #496194; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 7px rgba(73, 97, 148, 0.55); background: #496194; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .social a:hover .svg_img path { fill: #fff; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); width: 100%; height: auto; border-radius: 50%; filter: grayscale(100%); }
-body section.content.home_page .about_studio_wrap .page_wrap .page_item:hover img { filter: grayscale(0%); }
-body section.content.home_page .about_studio_wrap .parallax { /* The image used */ background-image: url("/compiled/img/bg3.jpg"); /* Full height */ top: 0; bottom: 0; width: 100%; position: absolute; z-index: -1; /* Create the parallax scrolling effect */ background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item:hover img { filter: grayscale(0%); box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1); }
 body section.content.home_page .contact_us_wrap form { width: 80%; margin: 0 auto; }
 body section.content.home_page .contact_us_wrap form input, body section.content.home_page .contact_us_wrap form textarea { border: 1px solid #d9d9d9; width: 100%; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .contact_us_wrap form input:focus, body section.content.home_page .contact_us_wrap form textarea:focus { border-color: #acb2bf; }
