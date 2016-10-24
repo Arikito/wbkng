@@ -528,19 +528,20 @@ body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .s
 body section.content.home_page .services_wrap ul.akkordeon li.page_item:hover .svg_img path.accent { fill: #bf1111; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item { padding: .5em; background: transparent; }
 body section.content.home_page .technologies_wrap .owl_techn .page_item img { display: block; margin: 0 auto; }
-body section.content.home_page .about_studio_wrap { padding: 0px; background-color: #191b20; position: relative; background-color: rgba(25, 27, 32, 0.9); }
-body section.content.home_page .about_studio_wrap .page_wrap .page_item { margin: 1em auto; text-align: center; background-color: transparent; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body section.content.home_page .about_studio_wrap { background-color: #191b20; position: relative; background-color: rgba(25, 27, 32, 0.9); }
+body section.content.home_page .about_studio_wrap .page_wrap > p { margin: 50px auto; font-size: 1.2em; line-height: 1.4em; text-align: center; max-width: 90%; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item { margin: 1em auto; text-align: center; background-color: transparent; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item p { max-width: 250px; text-align: justify; margin: 1em auto; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .img_wrap { width: 60%; margin: 0 auto; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .title { font-size: 1.5em; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .title, body section.content.home_page .about_studio_wrap .page_wrap .page_item .prof, body section.content.home_page .about_studio_wrap .page_wrap .page_item .social { text-align: center; max-width: 350px; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .prof { color: #4b5461; font-size: 1.2em; font-family: "Consolas"; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .prof span { color: #b3c9e5; }
-body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img { width: 30px; height: 30px; margin-right: 10px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img path { fill: #b3c9e5; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img { width: 30px; height: 30px; margin-right: 10px; }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img path { fill: #b3c9e5; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img:first-child:hover path { fill: #db4437; }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item .social .svg_img:hover path { fill: #496194; }
-body section.content.home_page .about_studio_wrap .page_wrap .page_item img { width: 100%; height: auto; border-radius: 50%; filter: grayscale(100%); }
+body section.content.home_page .about_studio_wrap .page_wrap .page_item img { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); width: 100%; height: auto; border-radius: 50%; filter: grayscale(100%); }
 body section.content.home_page .about_studio_wrap .page_wrap .page_item:hover img { filter: grayscale(0%); }
 body section.content.home_page .about_studio_wrap .parallax { /* The image used */ background-image: url("/compiled/img/bg3.jpg"); /* Full height */ top: 0; bottom: 0; width: 100%; position: absolute; z-index: -1; /* Create the parallax scrolling effect */ background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
 body section.content.home_page .contact_us_wrap form { width: 80%; margin: 0 auto; }
