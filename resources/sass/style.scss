@@ -625,10 +625,21 @@ body{
 				}
 			}
 			.about_studio_wrap{
-				background-color: $spacegray;
 				position: relative;
-				background-color: rgba(25,27,32,0.9);
-				.page_wrap {
+				// background-color: $spacegray;
+				// background-color: rgba(25,27,32,0.9);
+				background: transparent;
+				background: url(/compiled/img/bg2.jpg) 50% center no-repeat fixed;
+				background-size: cover;
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,0.6);
+				}
+				.page_wrap{
 					> p{
 						margin: 50px auto;
 						font-size: 1.2em;
@@ -666,30 +677,36 @@ body{
 						.prof span{
 							color: #b3c9e5;
 						}
-						.social .svg_img{
-							width: 30px;
-							height: 30px;
-							margin-right: 10px;
-							border-radius: 50%;
-							border: 1px solid #b3c9e5;
-							@include animate(.4s);
-							& path {
-								fill: #b3c9e5;
+						.social a{
+							.svg_img{
+								width: 30px;
+								height: 30px;
+								margin: 0 10px;
+								border-radius: 50%;
+								border: 1px solid #b3c9e5;
 								@include animate(.4s);
+								box-shadow: 0 0 0 0 rgba(0, 0, 0, .3), 0 0 0 0 rgba(0, 0, 0, .3);
+								path{
+									fill: #b3c9e5;
+									@include animate(.4s);
+								}
 							}
-							&:first-child:hover{
+							&:first-child:hover .svg_img{
 								border-color: #db4437;
+								box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3), 0 0 0 7px rgba(219, 68, 55, 0.55);
+								background: #db4437;
 								path{
-									fill: #db4437;
+									fill: $white;
 								}
 							}
-							&:hover {
+							&:hover .svg_img{
 								border-color: #496194;
+								box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3), 0 0 0 7px rgba(73, 97, 148, 0.55);
+								background: #496194;
 								path{
-									fill: #496194;
+									fill: $white;
 								}
 							}
-
 						}
 						img {
 							@include animate(.4s);
