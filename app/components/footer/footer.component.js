@@ -11,6 +11,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var FooterComponent = (function () {
     function FooterComponent() {
+        this.footerLinks = [
+            {
+                title: 'Портфолио',
+                link: '/portfolio'
+            },
+            {
+                title: 'Услуги',
+                link: '/services'
+            },
+            {
+                title: 'Технологии',
+                link: '/techs'
+            },
+            {
+                title: 'Наша команда',
+                link: '/about'
+            }
+        ];
     }
     FooterComponent = __decorate([
         core_1.Component({
