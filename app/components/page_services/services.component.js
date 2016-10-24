@@ -17,10 +17,10 @@ var ServicesComponent = (function () {
     ServicesComponent.prototype.ngOnInit = function () {
         // $('html, body').animate({ scrollTop: '0' }, 500);
         // $('body').scrollTop(0);
-        // if(window.location.hash.length > 0){
-        // 	$('html, body').scrollTop($(window.location.hash).offset().top - 120);
-        // 	$(window.location.hash).trigger('click');
-        // }
+        if (window.location.hash.length > 0) {
+            $('html, body').scrollTop($(window.location.hash).offset().top - 120);
+            $(window.location.hash).trigger('click');
+        }
         this.$.inlineSvg();
         function ScrollSpy(obj) {
             this.handlers = obj.find('.spy_handler');

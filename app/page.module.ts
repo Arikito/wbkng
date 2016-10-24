@@ -18,6 +18,7 @@ import { MapComponent } from './components/map/map.component';
 import { SubscribeFormComponent } from './components/form_subscribe/subscribe.component';
 import { XtComponent } from './components/projects/xt/xt.component';
 import { WpComponent } from './components/projects/wp/wp.component';
+import { BarbatorComponent } from './components/projects/barbator/barbator.component';
 
 @NgModule({
 	imports: [
@@ -39,7 +40,8 @@ import { WpComponent } from './components/projects/wp/wp.component';
 		MapComponent,
 		SubscribeFormComponent,
 		XtComponent,
-		WpComponent
+		WpComponent,
+		BarbatorComponent
 	],
 	bootstrap: [
 		PageComponent

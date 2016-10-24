@@ -7,6 +7,7 @@ var techs_component_1 = require('./components/page_techs/techs.component');
 var about_component_1 = require('./components/page_about/about.component');
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var wp_component_1 = require('./components/projects/wp/wp.component');
+var barbator_component_1 = require('./components/projects/barbator/barbator.component');
 var appRoutes = [
     {
         path: '',
@@ -35,6 +36,10 @@ var appRoutes = [
     {
         path: 'portfolio/wp',
         component: wp_component_1.WpComponent
+    },
+    {
+        path: 'portfolio/barbator',
+        component: barbator_component_1.BarbatorComponent
     }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);

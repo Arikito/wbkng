@@ -26,6 +26,7 @@ var map_component_1 = require('./components/map/map.component');
 var subscribe_component_1 = require('./components/form_subscribe/subscribe.component');
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var wp_component_1 = require('./components/projects/wp/wp.component');
+var barbator_component_1 = require('./components/projects/barbator/barbator.component');
 var PageModule = (function () {
     function PageModule() {
     }
@@ -50,7 +51,8 @@ var PageModule = (function () {
                 map_component_1.MapComponent,
                 subscribe_component_1.SubscribeFormComponent,
                 xt_component_1.XtComponent,
-                wp_component_1.WpComponent
+                wp_component_1.WpComponent,
+                barbator_component_1.BarbatorComponent
             ],
             bootstrap: [
                 page_component_1.PageComponent

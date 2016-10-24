@@ -8,6 +8,8 @@ import { TechsComponent } from './components/page_techs/techs.component';
 import { AboutComponent } from './components/page_about/about.component';
 import { XtComponent } from './components/projects/xt/xt.component';
 import { WpComponent } from './components/projects/wp/wp.component';
+import { BarbatorComponent } from './components/projects/barbator/barbator.component';
+
 
 const appRoutes: Routes = [
   {
@@ -37,6 +39,10 @@ const appRoutes: Routes = [
   {
     path: 'portfolio/wp',
     component: WpComponent
+  },
+  {
+    path: 'portfolio/barbator',
+    component: BarbatorComponent
   }
 ];
 
