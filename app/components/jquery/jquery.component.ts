@@ -6,17 +6,17 @@ export class JQ {
 		public $: any;
 		public defaultOwlCarouselParams: Object;
 		constuctor(){
-				this.$ = $;
-				this.defaultOwlCarouselParams = {
-			items: 6,
-			itemsDesktop: [1000,5],
-			itemsDesktopSmall: [900,3],
-			itemsTablet: [600,2],
-			itemsMobile: false,
-			singleItem: false,
-			pagination: false,
-			autoPlay: 1000
-				};
+			this.$ = $;
+			this.defaultOwlCarouselParams = {
+				items: 6,
+				itemsDesktop: [1000,5],
+				itemsDesktopSmall: [900,3],
+				itemsTablet: [600,2],
+				itemsMobile: false,
+				singleItem: false,
+				pagination: false,
+				autoPlay: 1000
+			};
 		}
 		test(word = 'default value'){
 				console.log(word);

@@ -617,6 +617,8 @@ body{
 						&:hover{
 							.service_icon{
 								border-color: $white;
+								background: $white;
+								box-shadow: 0 0 0 10px rgba(255,255,255,.2);
 							}
 							.svg_img{
 								& path.accent{
@@ -633,6 +635,9 @@ body{
 			}
 			.technologies_wrap{
 				.owl_techn{
+					.owl-controls{
+						display: none !important;
+					}
 					.page_item{
 						padding: .5em;
 						background: transparent;
@@ -1571,14 +1576,18 @@ body{
 				.banner_wrap{
 					.owl-carousel{
 						.owl-wrapper-outer,
-						.banner_item img{
+						.banner_item{
 							height: calc(100vh - 72px);
+							img{
+								height: calc(100vh - 72px);
+							}
 						}
 					}
 				}
 				.projects_wrap{
 					.page_wrap{
-						width: 100%;						margin: 0;
+						width: 100%;
+						margin: 0;
 					}
 				}
 				.contacts_wrap .page_wrap .page_item{
@@ -1637,6 +1646,19 @@ body{
 					justify-content: center;
 					a{
 						line-height: 50px;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1024px) and (orientation:landscape){
+		section.content{
+			&.home_page{
+				.projects_wrap .items_wrap .page_item .text_block{
+					opacity: 1 ;
+					visibility: visible;
+					.no_accent_button{
+						background: $accent;
 					}
 				}
 			}
@@ -1812,7 +1834,8 @@ body{
 			&.home_page{
 				.banner_wrap{
 					.owl-carousel .banner_item .banner_text {
-						width: 100%;						left: 0;
+						width: 100%;
+						left: 0;
 						font-size: .7em;
 						.bunner_btn{
 							width: 180px;
@@ -1853,10 +1876,13 @@ body{
 				.banner_wrap .owl-carousel .banner_item{
 					.banner_text{
 						height: 60vh;
+						h2{
+							font-size: 2.5em;
+						}
 					}
 					.bunner_btn{
 						font-size: 1.3em;
-						bottom: 0em;
+						bottom: 0em !important;
 					}
 				}
 				.contacts_wrap .page_wrap{
