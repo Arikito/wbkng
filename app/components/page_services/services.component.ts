@@ -43,9 +43,9 @@ export class ServicesComponent implements OnInit{
 		    });
 		  }
 		}
-		// var spy = new ScrollSpy($('#magic_scroll'));
+		var spy = new ScrollSpy($('#magic_scroll'));
 		$(window).scroll(function(){
-		  // spy.spy();
+		  spy.spy();
 		});
 	}
 	ngOnDestroy() {

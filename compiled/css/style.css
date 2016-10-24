@@ -580,7 +580,7 @@ body section.content .projects_wrap .items_wrap .page_item .text_block, body sec
 body section.content .projects_wrap .items_wrap .page_item .text_block a, body section.content.portfolio_page .items_wrap .page_item .text_block a { display: block; margin: 0 auto; width: 120px; margin-top: 30%; line-height: 30px; text-align: center; }
 body section.content .projects_wrap .items_wrap .page_item:hover .text_block, body section.content.portfolio_page .items_wrap .page_item:hover .text_block { opacity: 1; visibility: visible; }
 body section.content .projects_wrap .items_wrap .page_item:hover img, body section.content.portfolio_page .items_wrap .page_item:hover img { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); }
-body section.content.portfolio_page .items_wrap .page_item img { max-height: none; height: 400px; min-width: 100%; }
+body section.content.portfolio_page .items_wrap .page_item img { max-height: none; /* height: 400px; */ height: auto; min-width: 100%; width: 100%; }
 body section.content.services_page { max-width: 100%; margin: 0px; }
 body section.content.services_page .service { padding-top: 0px; /* ╨▒╨░╨╖╨╛╨▓╤Л╨╣ ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╨▓╨║╨╗╨░╨┤╨╛╨║ */ }
 body section.content.services_page .service .service_title { text-align: center; font-size: 2.5em; }
