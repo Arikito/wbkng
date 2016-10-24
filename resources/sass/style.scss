@@ -940,6 +940,9 @@ body{
 		}
 		&.portfolio_page{
 			.items_wrap{
+				.project {
+					padding: 0px;
+				}
 				.page_item{
 					img{
 						max-height: none;
