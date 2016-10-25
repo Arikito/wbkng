@@ -496,7 +496,7 @@ body section.content .page_item .project_title { position: absolute; margin: 0; 
 body section.content .page_item .project_title p { opacity: 1; font-size: 16px; }
 body section.content .page_item .project_title p:first-child { font-size: 20px; line-height: calc(4em); margin: 0; }
 body section.content .page_item:hover .project_title { top: 0; }
-body section.content .parallax { background: url(/compiled/img/bg6.jpg) 50% center no-repeat fixed; background-size: 120% 120%; top: 0; width: 100%; height: 100%; position: absolute; z-index: -1; }
+body section.content .parallax { background: url(/compiled/img/bg3.jpg) 50% center no-repeat fixed; background-size: 120% 120%; top: 0; width: 100%; height: 100%; position: absolute; z-index: -1; }
 body section.content .parallax:before { content: ""; position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); }
 body section.content.home_page .banner_wrap { position: relative; background: #191b20; color: #fff; }
 body section.content.home_page .banner_wrap .owl-carousel { background: url(/compiled/img/bg0.jpg) 100% 100% no-repeat; background-size: cover; }
@@ -745,6 +745,7 @@ body footer .subscribe input { margin-left: 20px; }
   body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item.contacts_item { height: 350px; flex-direction: column; }
   body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item.form_item { padding: 0; }
   body section.content.home_page .projects_wrap .items_wrap > div .page_item img { height: 200px; }
+  body section.content.home_page .services_wrap .parallax, body section.content.home_page .about_studio_wrap .parallax { background-repeat: repeat-y; background-size: 200% 100%; }
   body section.content.home_page .services_wrap .container .row > div, body section.content.home_page .about_studio_wrap .container .row > div { width: 100%; }
   body section.content.home_page .services_wrap .page_wrap ul.akkordeon li.page_item { width: 100%; height: auto; }
   body section.content.home_page .services_wrap .page_wrap ul.akkordeon li.page_item > div { cursor: pointer; padding: 10px 10px; margin: 0; color: #fff; text-align: center; }
