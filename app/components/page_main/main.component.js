@@ -17,6 +17,10 @@ var MainComponent = (function () {
     MainComponent.prototype.ngAfterViewInit = function () {
         this.$.inlineSvg();
         this.$.animated_scroll();
+        setTimeout(function () {
+            this.$('.about_studio_wrap .parallax').parallax('50%', .2);
+            this.$('.services_wrap .parallax').parallax('50%', .4);
+        }, 1000);
     };
     MainComponent.prototype.ngOnInit = function () {
         this.$.scrollTop();
