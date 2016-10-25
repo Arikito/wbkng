@@ -16,7 +16,7 @@ var ContactsComponent = (function () {
     }
     ContactsComponent.prototype.ngAfterViewInit = function () {
         this.$.inlineSvg();
-        this.$.animated_scroll();
+        this.$.isHomePage();
     };
     ContactsComponent.prototype.ngOnInit = function () {
         this.$.scrollTop();

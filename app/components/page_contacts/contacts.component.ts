@@ -16,7 +16,7 @@ export class ContactsComponent implements OnInit{
 	}
 	ngAfterViewInit(): any{
 		this.$.inlineSvg();
-		this.$.animated_scroll();
+		this.$.isHomePage();
 	}
 	ngOnInit(): any{
 		this.$.scrollTop();

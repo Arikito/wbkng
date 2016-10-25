@@ -138,6 +138,13 @@ var JQ = (function () {
             }
         });
     };
+    JQ.prototype.isHomePage = function () {
+        if (!$($('.contacts_page')[0].parentElement).prev().hasClass('home_page')) {
+            $('.contacts_page').find('.to_animate').each(function (index, item) {
+                $(item).removeClass('to_animate').addClass('animated');
+            });
+        }
+    };
     JQ = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])

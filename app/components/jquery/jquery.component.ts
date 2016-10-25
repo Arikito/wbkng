@@ -141,4 +141,11 @@ export class JQ {
 				}
 			});
 		}
+		isHomePage(){
+			if(!$($('.contacts_page')[0].parentElement).prev().hasClass('home_page')){
+				$('.contacts_page').find('.to_animate').each(function(index, item){
+					$(item).removeClass('to_animate').addClass('animated');
+				});
+			}
+		}
 }
