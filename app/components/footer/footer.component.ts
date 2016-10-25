@@ -22,9 +22,13 @@ export class FooterComponent {
 				link: '/techs'
 			},
 			{
-				title: 'Наша команда',
-				link: '/about'
+				title: 'Контакты',
+				link: '/contacts'
 			}
+			// {
+			// 	title: 'Наша команда',
+			// 	link: '/about'
+			// }
 		]
 	}
 }

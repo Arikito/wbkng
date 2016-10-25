@@ -5,6 +5,7 @@ var portfolio_component_1 = require('./components/page_portfolio/portfolio.compo
 var services_component_1 = require('./components/page_services/services.component');
 var techs_component_1 = require('./components/page_techs/techs.component');
 var about_component_1 = require('./components/page_about/about.component');
+var contacts_component_1 = require('./components/page_contacts/contacts.component');
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var wp_component_1 = require('./components/projects/wp/wp.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
@@ -28,6 +29,10 @@ var appRoutes = [
     {
         path: 'about',
         component: about_component_1.AboutComponent
+    },
+    {
+        path: 'contacts',
+        component: contacts_component_1.ContactsComponent
     },
     {
         path: 'portfolio/xt',
