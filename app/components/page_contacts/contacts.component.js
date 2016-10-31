@@ -10,42 +10,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var _jquery_1 = require('@jquery');
-var MainComponent = (function () {
-    function MainComponent($) {
+var ContactsComponent = (function () {
+    function ContactsComponent($) {
         this.$ = $;
     }
-    MainComponent.prototype.ngAfterViewInit = function () {
+    ContactsComponent.prototype.ngAfterViewInit = function () {
         this.$.inlineSvg();
-        this.$.animated_scroll();
-        jQuery('.parallax-mirror').remove();
-        setTimeout(function () {
-            this.$('.services_wrap').parallax({
-                imageSrc: '/compiled/img/bg5.jpg',
-                overScrollFix: true,
-                androidFix: false,
-                iosFix: false,
-            });
-            this.$('.about_studio_wrap').parallax({
-                imageSrc: '/compiled/img/bg4.jpg',
-                overScrollFix: true,
-                androidFix: false,
-                iosFix: false,
-            });
-        }, 1000);
+        this.$.isHomePage();
     };
-    MainComponent.prototype.ngOnInit = function () {
+    ContactsComponent.prototype.ngOnInit = function () {
         this.$.scrollTop();
     };
-    MainComponent = __decorate([
+    ContactsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-main',
-            templateUrl: './main.component.html'
+            selector: 'my-contacts',
+            templateUrl: './contacts.component.html'
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof _jquery_1.JQ !== 'undefined' && _jquery_1.JQ) === 'function' && _a) || Object])
-    ], MainComponent);
-    return MainComponent;
+    ], ContactsComponent);
+    return ContactsComponent;
     var _a;
 }());
-exports.MainComponent = MainComponent;
-//# sourceMappingURL=main.component.js.map
+exports.ContactsComponent = ContactsComponent;
+//# sourceMappingURL=contacts.component.js.map

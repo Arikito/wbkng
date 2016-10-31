@@ -25,8 +25,8 @@ var FooterComponent = (function () {
                 link: '/techs'
             },
             {
-                title: 'Наша команда',
-                link: '/about'
+                title: 'Контакты',
+                link: '/contacts'
             }
         ];
     }

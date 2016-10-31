@@ -25,8 +25,9 @@ var HeaderComponent = (function () {
                 link: '/techs'
             },
             {
-                title: 'Наша команда',
-                link: '/about'
+                title: 'Контакты',
+                // link: '/about'
+                link: '/contacts'
             }
         ];
     }

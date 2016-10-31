@@ -11,6 +11,7 @@ import { MainComponent } from './components/page_main/main.component';
 import { PortfolioComponent } from './components/page_portfolio/portfolio.component';
 import { TechsComponent } from './components/page_techs/techs.component';
 import { AboutComponent } from './components/page_about/about.component';
+import { ContactsComponent } from './components/page_contacts/contacts.component';
 import { ServicesComponent } from './components/page_services/services.component';
 import { BannerComponent } from './components/owl_banner/banner.component';
 import { OwlTechsComponent } from './components/owl_techs/owl_techs.component';
@@ -36,6 +37,7 @@ import { BarbatorComponent } from './components/projects/barbator/barbator.compo
 		BannerComponent,
 		TechsComponent,
 		AboutComponent,
+		ContactsComponent,
 		OwlTechsComponent,
 		MapComponent,
 		SubscribeFormComponent,

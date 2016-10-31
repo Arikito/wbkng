@@ -17,8 +17,8 @@
 	</div>
 	<div class="copyright">
 		<div class="page_wrap">
-			<nav *ngFor="let item of footerLinks">
-				<a routerLink="{{item.link}}" routerLinkActive="active">{{item.title}}</a>
+			<nav>
+				<a *ngFor="let item of footerLinks" routerLink="{{item.link}}" routerLinkActive="active">{{item.title}}</a>
 				<!-- <a href="http://l5.dev/portfolio">Портфолио</a>
 				<a href="http://l5.dev/services">Услуги</a>
 				<a href="http://l5.dev/techs">Технологии</a>

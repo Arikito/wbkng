@@ -19,6 +19,7 @@ var main_component_1 = require('./components/page_main/main.component');
 var portfolio_component_1 = require('./components/page_portfolio/portfolio.component');
 var techs_component_1 = require('./components/page_techs/techs.component');
 var about_component_1 = require('./components/page_about/about.component');
+var contacts_component_1 = require('./components/page_contacts/contacts.component');
 var services_component_1 = require('./components/page_services/services.component');
 var banner_component_1 = require('./components/owl_banner/banner.component');
 var owl_techs_component_1 = require('./components/owl_techs/owl_techs.component');
@@ -47,6 +48,7 @@ var PageModule = (function () {
                 banner_component_1.BannerComponent,
                 techs_component_1.TechsComponent,
                 about_component_1.AboutComponent,
+                contacts_component_1.ContactsComponent,
                 owl_techs_component_1.OwlTechsComponent,
                 map_component_1.MapComponent,
                 subscribe_component_1.SubscribeFormComponent,
