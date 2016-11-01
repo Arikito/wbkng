@@ -13,17 +13,16 @@ export class HeaderComponent {
 				title: 'Портфолио',
 				link: '/portfolio'
 			},
-			{
-				title: 'Услуги',
-				link: '/services'
-			},
-			{
-				title: 'Технологии',
-				link: '/techs'
-			},
+			// {
+			// 	title: 'Услуги',
+			// 	link: '/services'
+			// },
+			// {
+			// 	title: 'Технологии',
+			// 	link: '/techs'
+			// },
 			{
 				title: 'Контакты',
-				// link: '/about'
 				link: '/contacts'
 			}
 		]

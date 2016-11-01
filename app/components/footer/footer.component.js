@@ -16,14 +16,14 @@ var FooterComponent = (function () {
                 title: 'Портфолио',
                 link: '/portfolio'
             },
-            {
-                title: 'Услуги',
-                link: '/services'
-            },
-            {
-                title: 'Технологии',
-                link: '/techs'
-            },
+            // {
+            // 	title: 'Услуги',
+            // 	link: '/services'
+            // },
+            // {
+            // 	title: 'Технологии',
+            // 	link: '/techs'
+            // },
             {
                 title: 'Контакты',
                 link: '/contacts'
