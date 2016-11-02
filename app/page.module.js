@@ -28,6 +28,8 @@ var subscribe_component_1 = require('./components/form_subscribe/subscribe.compo
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var wp_component_1 = require('./components/projects/wp/wp.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
+var core_2 = require('@angular/core');
+core_2.enableProdMode();
 var PageModule = (function () {
     function PageModule() {
     }
