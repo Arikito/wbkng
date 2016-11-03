@@ -450,7 +450,7 @@ body .load_animation .spinner .spinner__item2 { animation-delay: -0.40s; }
 body .load_animation .spinner .spinner__item3 { animation-delay: -0.20s; }
 @keyframes sk-bouncedelay { 0%, 80%, 100% { transform: scale(0); opacity: 0; }
   40% { transform: scale(1); opacity: 1; } }
-body header { position: fixed; top: 0; left: 0; right: 0; background: #fff; z-index: 100; }
+body header { position: fixed; top: 0; left: 0; right: 0; background: #fff; z-index: 100; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
 body header .logoSite { display: inline-block; height: 120px; padding: 20px; box-sizing: border-box; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .logoSite svg, body header .logoSite img { position: relative; height: 100%; }
 body header .menu { display: none; line-height: 120px; float: right; padding: 0 20px; -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -748,6 +748,7 @@ body footer .copyright img { max-width: 150px; float: left; }
 body footer .copyright .logo { height: 80px; display: inline-block; float: left; }
 body footer .copyright .logo #lion { display: none; }
 body footer .copyright .logo #text_1_ * { fill: #414141 !important; }
+body footer .copyright .logo * { fill: #747474 !important; }
 body footer .copyright .page_wrap { display: flex; justify-content: space-between; flex-wrap: wrap; }
 body footer .copyright .page_wrap .rights { color: #747474; padding-right: 20px; }
 body footer .page_wrap nav a { display: inline-block; padding: 0 20px; }
