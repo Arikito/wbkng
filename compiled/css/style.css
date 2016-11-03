@@ -460,8 +460,8 @@ body header .sandwich .piece { position: relative; width: 100%; height: 2px; bac
 body header .sandwich .piece.top { top: 30%; }
 body header .sandwich .piece.middle { top: 50%; }
 body header .sandwich .piece.bottom { opacity: 1; top: 70%; }
-body header .sandwich.active .piece.top { top: 47%; transform: rotate(135deg); }
-body header .sandwich.active .piece.middle { top: 35%; transform: rotate(-135deg); }
+body header .sandwich.active .piece.top { top: 56%; transform: rotate(135deg); }
+body header .sandwich.active .piece.middle { top: 48%; transform: rotate(-135deg); }
 body header .sandwich.active .piece.bottom { top: 0; opacity: 0; transform: rotate(90deg); }
 body header .sandwich.animate .piece { -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 body header .sandwich.animate .piece.bottom { -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
