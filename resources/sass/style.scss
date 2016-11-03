@@ -152,10 +152,13 @@ body{
 			position: relative;
 			cursor: pointer;
 			float: right;
-			top: 26px;
-			right: 3vw;
-			width: 20px;
-			height: 18px;
+			// top: 26px;
+			// right: 3vw;
+			// width: 20px;
+			// height: 18px;
+			width: 70px;
+		    height: 70px;
+		    padding: 20px;
 			.piece{
 				position: relative;
 				width: 100%;
@@ -2065,7 +2068,8 @@ body{
 				}
 			}
 			.header_navigation.active{
-				height: 340px;
+				// height: 340px;
+				height: 165px;
 			}
 		}
 	}

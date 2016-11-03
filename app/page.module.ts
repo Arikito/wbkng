@@ -20,7 +20,7 @@ import { SubscribeFormComponent } from './components/form_subscribe/subscribe.co
 import { XtComponent } from './components/projects/xt/xt.component';
 import { WpComponent } from './components/projects/wp/wp.component';
 import { BarbatorComponent } from './components/projects/barbator/barbator.component';
-import {enableProdMode} from '@angular/core';
+import { enableProdMode } from '@angular/core';
 enableProdMode();
 
 @NgModule({

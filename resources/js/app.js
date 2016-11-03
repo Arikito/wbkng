@@ -40,7 +40,7 @@ $(function(s){
 		$('.header_navigation_js, .sandwich').toggleClass('active'); // скрыть/расскрыть моб меню
 	});
 
-	$('body').on('click', '.content', function(){
+	$('body').on('click', '.content, .logoSite', function(){
 		if($('.sandwich').hasClass('active')){ // закрытие моб меню по клику на контент
 			$('.header_navigation_js, .sandwich').toggleClass('active');
 		}
