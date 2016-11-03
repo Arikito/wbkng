@@ -678,8 +678,8 @@ body section.content.project_page .page_wrap .project_img .tablet, body section.
 body section.content.project_page .page_wrap .project_img .mobile, body section.content.project_page .page_wrap .project_element .mobile { width: 15%; left: 0; }
 body section.content.project_page .page_wrap .project_img .feature_descr p, body section.content.project_page .page_wrap .project_element .feature_descr p { font-size: 16px; line-height: 25px; text-align: justify; }
 body section.content.project_page .page_wrap .project_descr { padding: 0 40px; line-height: 30px; }
-body section.content.project_page .page_wrap .projects_task .title { font-size: 1.2em; }
-body section.content.project_page .page_wrap .btn_wrap { display: flex; justify-content: center; }
+body section.content.project_page .page_wrap .project_descr .main_task { text-align: center; }
+body section.content.project_page .page_wrap .btn_wrap { display: flex; justify-content: center; clear: both; }
 body section.content.project_page .page_wrap .btn_wrap a { line-height: 40px; }
 body section.content.project_page .light_style { padding-top: 400px; margin-top: -400px; }
 body section.content.techs_page .page_wrap { /* entire container, keeps perspective */ /* flip the pane when hovered */ /* flip speed goes here */ /* hide back of pane during swap */ /* front pane, placed above back */ /* back, initially hidden pane */ }
