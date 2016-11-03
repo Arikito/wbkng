@@ -5,7 +5,7 @@ declare var $: any;
 export class JQ {
 		public $: any;
 		public defaultOwlCarouselParams: Object;
-		constuctor(){
+		constructor(){
 			this.$ = $;
 			this.defaultOwlCarouselParams = {
 				items: 6,

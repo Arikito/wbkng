@@ -11,8 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var JQ = (function () {
     function JQ() {
-    }
-    JQ.prototype.constuctor = function () {
         this.$ = $;
         this.defaultOwlCarouselParams = {
             items: 6,
@@ -24,7 +22,7 @@ var JQ = (function () {
             pagination: false,
             autoPlay: 1000
         };
-    };
+    }
     JQ.prototype.test = function (word) {
         if (word === void 0) { word = 'default value'; }
         console.log(word);
