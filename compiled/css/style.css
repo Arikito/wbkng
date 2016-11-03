@@ -497,7 +497,7 @@ body .page_wrap .tags_block { display: flex; justify-content: center; flex-wrap:
 body .page_wrap .tags_block p, body .page_wrap .tags_block a { padding: 10px; }
 body .page_wrap .tags_block p:hover, body .page_wrap .tags_block a:hover { -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; background: #2f333d; }
 body .page_wrap .tags_block p.active { background: #bf1111; }
-body section.content { padding-top: 120px; min-height: calc(100vh - 160px); }
+body section.content { padding-top: 120px; min-height: calc(100vh - 80px); }
 body section.content .subsection { padding: 1em 0 2em; }
 body section.content .subsection .page_wrap { overflow: hidden; }
 body section.content .page_item { display: block; position: relative; overflow: hidden; }

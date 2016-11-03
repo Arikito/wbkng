@@ -455,7 +455,7 @@ body{
 	}
 	section.content{
 		padding-top: $header_height;
-		min-height: calc(100vh - 160px);
+		min-height: calc(100vh - 80px);
 		.subsection{
 			padding: 1em 0 2em;
 			.page_wrap{
