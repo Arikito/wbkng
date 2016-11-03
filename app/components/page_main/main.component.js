@@ -36,6 +36,9 @@ var MainComponent = (function () {
     MainComponent.prototype.ngOnInit = function () {
         this.$.scrollTop();
     };
+    MainComponent.prototype.ngOnDestroy = function () {
+        jQuery('.parallax-mirror').remove();
+    };
     MainComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

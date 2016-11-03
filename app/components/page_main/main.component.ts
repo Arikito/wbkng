@@ -35,4 +35,7 @@ export class MainComponent implements AfterViewInit {
 	ngOnInit(){
 		this.$.scrollTop();
 	}
+	ngOnDestroy(){
+		jQuery('.parallax-mirror').remove();
+	}
 }
