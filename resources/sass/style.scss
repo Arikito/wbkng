@@ -2191,6 +2191,15 @@ body{
 					}
 				}
 			}
+			&.project_page{
+				.page_wrap {
+					.mob_reverse {
+						display: flex;
+						flex-wrap:wrap;
+						flex-direction: column-reverse;
+					}
+				}
+			}
 		}
 		section.content.services_page + footer{
 			width: calc(100vw - 72px);
@@ -2442,6 +2451,22 @@ body{
 						line-height: 50px;
 						width: 100%;
 						text-align: center;
+					}
+				}
+			}
+		}
+		.project_page{
+			.page_wrap {
+				.project_element {
+					div {
+						width: 100%;
+					}
+				}
+				.mob_reverse {
+					display: flex;
+					flex-wrap:wrap;
+					.feature_descr {
+						order: 3;
 					}
 				}
 			}

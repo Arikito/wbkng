@@ -805,6 +805,7 @@ body footer .subscribe input { margin-left: 20px; }
   body section.content.services_page .page_wrap .magic_sidebar .nav .sidebar_item { height: calc(100% / 4); width: auto; padding-top: 20px; }
   body section.content.services_page .page_wrap .magic_sidebar .nav .sidebar_item a { width: 40px; }
   body section.content.services_page .page_wrap .magic_sidebar .nav .sidebar_item.active .svg_img { transform: scale(1); }
+  body section.content.project_page .page_wrap .mob_reverse { display: flex; flex-wrap: wrap; flex-direction: column-reverse; }
   body section.content.services_page + footer { width: calc(100vw - 72px); }
   body section.content.services_page + footer .page_wrap { width: calc(100vw - 72px); margin: 0; padding: 0 10px; }
   body section.content.services_page + footer .page_wrap form.subscribe { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
@@ -852,7 +853,10 @@ body footer .subscribe input { margin-left: 20px; }
   body footer .page_wrap .subscribe { display: flex; justify-content: center; flex-wrap: wrap; }
   body footer .page_wrap .subscribe input { margin-top: 10px; margin-left: 0px; }
   body footer .page_wrap nav { flex-wrap: wrap; }
-  body footer .page_wrap nav a { line-height: 50px; width: 100%; text-align: center; } }
+  body footer .page_wrap nav a { line-height: 50px; width: 100%; text-align: center; }
+  body .project_page .page_wrap .project_element div { width: 100%; }
+  body .project_page .page_wrap .mob_reverse { display: flex; flex-wrap: wrap; }
+  body .project_page .page_wrap .mob_reverse .feature_descr { order: 3; } }
 @media (max-width: 320px) { body section.content { font-size: .8em; }
   body section.content.home_page .banner_wrap { font-size: .8em; }
   body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { height: 70vh; }
