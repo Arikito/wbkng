@@ -679,6 +679,15 @@ body section.content.project_page .page_wrap .project_img .mobile, body section.
 body section.content.project_page .page_wrap .project_img .feature_descr p, body section.content.project_page .page_wrap .project_element .feature_descr p { font-size: 16px; line-height: 25px; text-align: justify; }
 body section.content.project_page .page_wrap .project_descr { padding: 0 40px; line-height: 30px; }
 body section.content.project_page .page_wrap .project_descr .main_task { text-align: center; }
+body section.content.project_page .page_wrap .project_descr .techs_list li { text-indent: 26px; list-style-type: none; background: url(../img/techs_icons.png) -1px 3px no-repeat; }
+body section.content.project_page .page_wrap .project_descr .techs_list .wp { background-position: 1px -176px; }
+body section.content.project_page .page_wrap .project_descr .techs_list .jquery { background-position: 1px -701px; }
+body section.content.project_page .page_wrap .project_descr .techs_list .bootstrap { background-position: 3px -613px; }
+body section.content.project_page .page_wrap .project_descr .techs_list .html { background-position: 0px 1px; }
+body section.content.project_page .page_wrap .project_descr .techs_list .php { background-position: -1px -740px; }
+body section.content.project_page .page_wrap .project_descr .techs_list .prestashop { background-position: 1px -799px; }
+body section.content.project_page .page_wrap .project_descr .techs_list .mdl { background-position: 1px -773px; }
+body section.content.project_page .page_wrap .project_descr .techs_list .sass { background-position: 1px -801px; }
 body section.content.project_page .page_wrap .btn_wrap { display: flex; justify-content: center; clear: both; }
 body section.content.project_page .page_wrap .btn_wrap a { line-height: 40px; }
 body section.content.project_page .light_style { padding-top: 400px; margin-top: -400px; }

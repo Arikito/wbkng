@@ -1449,6 +1449,46 @@ body{
 					.main_task {
 						text-align: center;
 					}
+					.techs_list {
+						li {
+							// display: inline-block;
+						 //    vertical-align: top;
+						 //    margin: -3px 0 0 5px;
+						 //    width: 17px;
+						 //    height: 22px;
+						    text-indent: 26px;
+						    list-style-type: none;
+						    // overflow: hidden;
+						    // width: 24px;
+						    background: url(../img/techs_icons.png) -1px 3px no-repeat;
+						    // text-overflow: ellipsis;
+						    // white-space: nowrap;
+						}
+						.wp {
+							background-position: 1px -176px;
+						}
+						.jquery {
+							background-position: 1px -701px;
+						}
+						.bootstrap {
+							background-position: 3px -613px;
+						}
+						.html {
+							background-position: 0px 1px;
+						}
+						.php {
+							background-position: -1px -740px;
+						}
+						.prestashop {
+							background-position: 1px -799px;
+						}
+						.mdl {
+							background-position: 1px -773px;
+						}
+						.sass {
+							background-position: 1px -801px;
+						}
+					}
 				}
 				// .projects_task{
 				// 	.title{
