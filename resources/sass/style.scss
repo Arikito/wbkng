@@ -2150,6 +2150,9 @@ body{
 							> div{
 								.service_icon{
 									margin: 0 auto;
+									width: 150px;
+								    height: 150px;
+								    padding: 25px;
 									.svg_img{
 										width: 70px;
 										@include animate(.4s);
@@ -2325,8 +2328,14 @@ body{
 					.items_wrap{
 						> div{
 							.page_item img{
-								height: 200px;
+								// height: 200px;
+								width: 100%;
+    							height: auto;
 							}
+						}
+						.series{
+							width: 100%;
+							padding: 0px;
 						}
 					}
 				}
