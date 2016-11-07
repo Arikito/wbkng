@@ -2484,6 +2484,13 @@ body{
 				}
 			}
 		}
+		.contacts_page {
+			.short_contacts_wrap {
+				.contact_item {
+					width: 100% !important;
+				}
+			}
+		}
 	}
 	@media (max-width: 320px){
 		section.content{
