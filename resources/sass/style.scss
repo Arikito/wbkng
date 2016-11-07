@@ -172,6 +172,7 @@ body{
 		right: 0;
 		background: $white;
 		z-index: 100;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 		.logoSite{
 			display: inline-block;
 			height: $header_height;
@@ -226,11 +227,11 @@ body{
 		.sandwich.active{
 			.piece{
 				&.top{
-				top: 47%;
+				top: 56%;
 				transform: rotate(135deg);
 				}
 				&.middle{
-				top: 35%;
+				top: 48%;
 				transform: rotate(-135deg);
 				}
 				&.bottom{
@@ -454,7 +455,7 @@ body{
 	}
 	section.content{
 		padding-top: $header_height;
-		min-height: calc(100vh - 160px);
+		min-height: calc(100vh - 80px);
 		.subsection{
 			padding: 1em 0 2em;
 			.page_wrap{
@@ -1449,18 +1450,22 @@ body{
 				.project_descr {
 					padding: 0 $gap * 2;
 					line-height: 30px;
-				}
-				.projects_task{
-					.title{
-						font-size: 1.2em;
+					.main_task {
+						text-align: center;
 					}
 				}
+				// .projects_task{
+				// 	.title{
+				// 		font-size: 1.2em;
+				// 	}
+				// }
 				.btn_wrap {
 					// > div{
 					// 	margin: 2em;
 					// }
 					display: flex;
 					justify-content: center;
+					clear: both;
 					a{
 						// padding: $gap / 2 $gap;
 						line-height: $gap * 2;
@@ -1885,6 +1890,9 @@ body{
 				#text_1_ *{
 					fill: darken($lightfont, 50) !important;
 				}
+				* {
+					fill: #747474 !important;
+				}
 			}
 			.page_wrap{
 				display: flex;
@@ -2191,6 +2199,15 @@ body{
 					}
 				}
 			}
+			&.project_page{
+				.page_wrap {
+					.mob_reverse {
+						display: flex;
+						flex-wrap:wrap;
+						flex-direction: column-reverse;
+					}
+				}
+			}
 		}
 		section.content.services_page + footer{
 			width: calc(100vw - 72px);
@@ -2442,6 +2459,22 @@ body{
 						line-height: 50px;
 						width: 100%;
 						text-align: center;
+					}
+				}
+			}
+		}
+		.project_page{
+			.page_wrap {
+				.project_element {
+					div {
+						width: 100%;
+					}
+				}
+				.mob_reverse {
+					display: flex;
+					flex-wrap:wrap;
+					.feature_descr {
+						order: 3;
 					}
 				}
 			}
