@@ -9,6 +9,7 @@ var contacts_component_1 = require('./components/page_contacts/contacts.componen
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var wp_component_1 = require('./components/projects/wp/wp.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
+var redirect_component_1 = require('./components/page_redirect/redirect.component');
 var appRoutes = [
     {
         path: '',
@@ -45,6 +46,10 @@ var appRoutes = [
     {
         path: 'portfolio/barbator',
         component: barbator_component_1.BarbatorComponent
+    },
+    {
+        path: 'redirect',
+        component: redirect_component_1.RedirectComponent
     }
 ];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);

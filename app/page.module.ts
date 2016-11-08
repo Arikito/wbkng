@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import { enableProdMode } from '@angular/core';
 import { routing } from './app.routing';
 
 import { PageComponent } from './components/page/page.component';
@@ -20,7 +21,8 @@ import { SubscribeFormComponent } from './components/form_subscribe/subscribe.co
 import { XtComponent } from './components/projects/xt/xt.component';
 import { WpComponent } from './components/projects/wp/wp.component';
 import { BarbatorComponent } from './components/projects/barbator/barbator.component';
-import { enableProdMode } from '@angular/core';
+import { RedirectComponent } from './components/page_redirect/redirect.component';
+
 enableProdMode();
 
 @NgModule({
@@ -45,7 +47,8 @@ enableProdMode();
 		SubscribeFormComponent,
 		XtComponent,
 		WpComponent,
-		BarbatorComponent
+		BarbatorComponent,
+		RedirectComponent
 	],
 	bootstrap: [
 		PageComponent

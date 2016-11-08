@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
+var core_2 = require('@angular/core');
 var app_routing_1 = require('./app.routing');
 var page_component_1 = require('./components/page/page.component');
 var header_component_1 = require('./components/header/header.component');
@@ -28,7 +29,7 @@ var subscribe_component_1 = require('./components/form_subscribe/subscribe.compo
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var wp_component_1 = require('./components/projects/wp/wp.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
-var core_2 = require('@angular/core');
+var redirect_component_1 = require('./components/page_redirect/redirect.component');
 core_2.enableProdMode();
 var PageModule = (function () {
     function PageModule() {
@@ -56,7 +57,8 @@ var PageModule = (function () {
                 subscribe_component_1.SubscribeFormComponent,
                 xt_component_1.XtComponent,
                 wp_component_1.WpComponent,
-                barbator_component_1.BarbatorComponent
+                barbator_component_1.BarbatorComponent,
+                redirect_component_1.RedirectComponent
             ],
             bootstrap: [
                 page_component_1.PageComponent
