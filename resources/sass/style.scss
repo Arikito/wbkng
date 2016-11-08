@@ -2514,12 +2514,12 @@ body{
 					div {
 						width: 100%;
 					}
-				}
-				.mob_reverse {
-					display: flex;
-					flex-wrap:wrap;
-					.feature_descr {
-						order: 3;
+					&:nth-of-type(even) {
+						display: flex;
+						flex-wrap: wrap;
+						.feature_descr {
+							order: 3;
+						}
 					}
 				}
 			}

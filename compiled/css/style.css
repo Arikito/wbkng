@@ -866,8 +866,8 @@ body footer .subscribe input { margin-left: 20px; }
   body footer .page_wrap nav { flex-wrap: wrap; }
   body footer .page_wrap nav a { line-height: 50px; width: 100%; text-align: center; }
   body .project_page .page_wrap .project_element div { width: 100%; }
-  body .project_page .page_wrap .mob_reverse { display: flex; flex-wrap: wrap; }
-  body .project_page .page_wrap .mob_reverse .feature_descr { order: 3; }
+  body .project_page .page_wrap .project_element:nth-of-type(even) { display: flex; flex-wrap: wrap; }
+  body .project_page .page_wrap .project_element:nth-of-type(even) .feature_descr { order: 3; }
   body .contacts_page .short_contacts_wrap .contact_item { width: 100% !important; } }
 @media (max-width: 320px) { body section.content { font-size: .8em; }
   body section.content.home_page .banner_wrap { font-size: .8em; }
