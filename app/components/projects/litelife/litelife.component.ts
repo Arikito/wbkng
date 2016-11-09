@@ -4,11 +4,11 @@ declare var jQuery: any;
 
 @Component({
 	moduleId: module.id,
-	selector: 'my-wp',
-	templateUrl: './wp.component.html'
+	selector: 'my-litelife',
+	templateUrl: './litelife.component.html'
 })
 
-export class WpComponent implements OnInit{
+export class LitelifeComponent implements OnInit{
 	constructor(private router: Router, private elRef: ElementRef) {
 	}
 	ngOnInit(): any{

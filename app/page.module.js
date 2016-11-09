@@ -27,7 +27,7 @@ var owl_techs_component_1 = require('./components/owl_techs/owl_techs.component'
 var map_component_1 = require('./components/map/map.component');
 var subscribe_component_1 = require('./components/form_subscribe/subscribe.component');
 var xt_component_1 = require('./components/projects/xt/xt.component');
-var wp_component_1 = require('./components/projects/wp/wp.component');
+var litelife_component_1 = require('./components/projects/litelife/litelife.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
 var redirect_component_1 = require('./components/page_redirect/redirect.component');
 core_2.enableProdMode();
@@ -56,7 +56,7 @@ var PageModule = (function () {
                 map_component_1.MapComponent,
                 subscribe_component_1.SubscribeFormComponent,
                 xt_component_1.XtComponent,
-                wp_component_1.WpComponent,
+                litelife_component_1.LitelifeComponent,
                 barbator_component_1.BarbatorComponent,
                 redirect_component_1.RedirectComponent
             ],

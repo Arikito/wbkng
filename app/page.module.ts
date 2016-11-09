@@ -19,7 +19,7 @@ import { OwlTechsComponent } from './components/owl_techs/owl_techs.component';
 import { MapComponent } from './components/map/map.component';
 import { SubscribeFormComponent } from './components/form_subscribe/subscribe.component';
 import { XtComponent } from './components/projects/xt/xt.component';
-import { WpComponent } from './components/projects/wp/wp.component';
+import { LitelifeComponent } from './components/projects/litelife/litelife.component';
 import { BarbatorComponent } from './components/projects/barbator/barbator.component';
 import { RedirectComponent } from './components/page_redirect/redirect.component';
 
@@ -46,7 +46,7 @@ enableProdMode();
 		MapComponent,
 		SubscribeFormComponent,
 		XtComponent,
-		WpComponent,
+		LitelifeComponent,
 		BarbatorComponent,
 		RedirectComponent
 	],

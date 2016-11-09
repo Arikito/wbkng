@@ -7,7 +7,7 @@ var techs_component_1 = require('./components/page_techs/techs.component');
 var about_component_1 = require('./components/page_about/about.component');
 var contacts_component_1 = require('./components/page_contacts/contacts.component');
 var xt_component_1 = require('./components/projects/xt/xt.component');
-var wp_component_1 = require('./components/projects/wp/wp.component');
+var litelife_component_1 = require('./components/projects/litelife/litelife.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
 var redirect_component_1 = require('./components/page_redirect/redirect.component');
 var appRoutes = [
@@ -40,8 +40,8 @@ var appRoutes = [
         component: xt_component_1.XtComponent
     },
     {
-        path: 'portfolio/wp',
-        component: wp_component_1.WpComponent
+        path: 'portfolio/litelife',
+        component: litelife_component_1.LitelifeComponent
     },
     {
         path: 'portfolio/barbator',

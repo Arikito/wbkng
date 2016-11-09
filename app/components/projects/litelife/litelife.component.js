@@ -10,23 +10,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var WpComponent = (function () {
-    function WpComponent(router, elRef) {
+var LitelifeComponent = (function () {
+    function LitelifeComponent(router, elRef) {
         this.router = router;
         this.elRef = elRef;
     }
-    WpComponent.prototype.ngOnInit = function () {
+    LitelifeComponent.prototype.ngOnInit = function () {
         jQuery('body').scrollTop(0);
     };
-    WpComponent = __decorate([
+    LitelifeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-wp',
-            templateUrl: './wp.component.html'
+            selector: 'my-litelife',
+            templateUrl: './litelife.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router, core_1.ElementRef])
-    ], WpComponent);
-    return WpComponent;
+    ], LitelifeComponent);
+    return LitelifeComponent;
 }());
-exports.WpComponent = WpComponent;
-//# sourceMappingURL=wp.component.js.map
+exports.LitelifeComponent = LitelifeComponent;
+//# sourceMappingURL=litelife.component.js.map

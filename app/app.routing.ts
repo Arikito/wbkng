@@ -8,7 +8,7 @@ import { TechsComponent } from './components/page_techs/techs.component';
 import { AboutComponent } from './components/page_about/about.component';
 import { ContactsComponent } from './components/page_contacts/contacts.component';
 import { XtComponent } from './components/projects/xt/xt.component';
-import { WpComponent } from './components/projects/wp/wp.component';
+import { LitelifeComponent } from './components/projects/litelife/litelife.component';
 import { BarbatorComponent } from './components/projects/barbator/barbator.component';
 import { RedirectComponent } from './components/page_redirect/redirect.component';
 
@@ -43,8 +43,8 @@ const appRoutes: Routes = [
     component: XtComponent
   },
   {
-    path: 'portfolio/wp',
-    component: WpComponent
+    path: 'portfolio/litelife',
+    component: LitelifeComponent
   },
   {
     path: 'portfolio/barbator',
