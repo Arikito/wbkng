@@ -539,7 +539,7 @@ body{
 						}
 						.banner_text{
 							position: absolute;
-							top: 5vh;
+							top: 20vh;
 							left: 15vw;
 							text-align: center;
 							width: 70vw;
@@ -2337,6 +2337,7 @@ body{
 					.banner_text{
 						height: 60vh;
 						font-size: .7em;
+						top: 0;
 					}
 					.bunner_btn{
 						font-size: 1.3em;

@@ -514,7 +514,7 @@ body section.content.home_page .banner_wrap { position: relative; background: #1
 body section.content.home_page .banner_wrap .owl-carousel { background: url(/compiled/img/bg0.jpg) center no-repeat; background-size: cover; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item { background: rgba(25, 27, 32, 0.7); height: calc(100vh - 120px); }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item img { -webkit-filter: brightness(0.3); filter: brightness(0.3); min-width: 100%; min-height: 100%; }
-body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { position: absolute; top: 5vh; left: 15vw; text-align: center; width: 70vw; height: 60vh; }
+body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { position: absolute; top: 20vh; left: 15vw; text-align: center; width: 70vw; height: 60vh; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text h2 { font-size: 3em; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text p { max-width: 50vw; margin: 0 auto; text-align: center; font-size: 1.6em; }
 body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text .bunner_btn { width: 200px; margin: 0 auto; border: 1px solid #fff; position: absolute; bottom: 2em; left: calc(50% - 100px); }
@@ -833,7 +833,7 @@ body footer .subscribe input { margin-left: 20px; }
 @media (max-width: 480px) { body .load_animation img { width: 50vw; }
   body .load_animation .spinner { margin: 30px auto 0; }
   body .load_animation .spinner > div { width: 12px; height: 12px; }
-  body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { height: 60vh; font-size: .7em; }
+  body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { height: 60vh; font-size: .7em; top: 0; }
   body section.content.home_page .banner_wrap .owl-carousel .banner_item .bunner_btn { font-size: 1.3em; bottom: 0em !important; }
   body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item { padding: 0; }
   body section.content.home_page .contacts_wrap .page_wrap .contact_us_wrap .page_item form { width: 100%; }
