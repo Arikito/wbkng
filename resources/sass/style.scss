@@ -1907,6 +1907,9 @@ body{
 		a{
 			color: $lightfont;
 			text-decoration: none;
+			.svg_img {
+				fill:#db4437;
+			}
 		}
 		.copyright{
 			line-height: $gap * 4;
@@ -1947,6 +1950,22 @@ body{
 					padding: 0 $gap;
 					&:hover{
 						color: $white;
+					}
+					.svg_img{
+						width: 30px;
+						height: 30px;
+						margin-left: 5px;
+						border-radius: 50%;
+						vertical-align: middle;
+						border-color: #db4437;
+					    background: #db4437;
+						path{
+							fill: $white;
+						}
+					}
+					&:hover .svg_img{
+					    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 7px rgba(219, 68, 55, 0.55);
+					    @include animate(.4s);
 					}
 				}
 			}
