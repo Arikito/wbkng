@@ -801,9 +801,9 @@ body footer .subscribe input { margin-left: 20px; }
   body header .header_navigation.active { height: 165px; } }
 @media (max-width: 750px) and (orientation: landscape) { body header nav ul li { margin-bottom: 0; }
   body section.content { font-size: .8em; }
-  body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { width: 90vw; left: 5vw; font-size: .8em; }
+  body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text { width: 90vw; left: 5vw; font-size: .8em; top: 0; }
   body section.content.home_page .banner_wrap .owl-carousel .banner_item .banner_text .bunner_btn { font-size: 1.6em; bottom: .5em; line-height: 30px; }
-  body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .service_icon { margin: 0 auto; width: 150px; height: 150px; padding: 25px; }
+  body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .service_icon { margin: 0 auto; width: 120px; height: 120px; padding: 10px; }
   body section.content.home_page .services_wrap ul.akkordeon li.page_item > div .service_icon .svg_img { width: 70px; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
   body section.content.services_page { padding-top: 72px; }
   body section.content.services_page .page_wrap { width: calc(100vw - 72px); margin: 0; }

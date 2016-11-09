@@ -2177,6 +2177,7 @@ body{
 						width: 90vw;
 						left: 5vw;
 						font-size: .8em;
+						top: 0;
 						.bunner_btn{
 							font-size: 1.6em;
 							bottom: .5em;
@@ -2189,10 +2190,14 @@ body{
 						li.page_item{
 							> div{
 								.service_icon{
-									margin: 0 auto;
-									width: 150px;
-								    height: 150px;
-								    padding: 25px;
+									// margin: 0 auto;
+									// width: 150px;
+								 //    height: 150px;
+								 //    padding: 25px;
+								 	margin: 0 auto;
+								    width: 120px;
+								    height: 120px;
+								    padding: 10px;
 									.svg_img{
 										width: 70px;
 										@include animate(.4s);
