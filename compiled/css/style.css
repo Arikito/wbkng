@@ -763,9 +763,9 @@ body footer .copyright .page_wrap { display: flex; justify-content: space-betwee
 body footer .copyright .page_wrap .rights { color: #747474; padding-right: 20px; }
 body footer .page_wrap nav a { display: inline-block; padding: 0 20px; }
 body footer .page_wrap nav a:hover { color: #fff; }
-body footer .page_wrap nav a .svg_img { width: 30px; height: 30px; margin-left: 5px; border-radius: 50%; vertical-align: middle; border-color: #db4437; background: #db4437; }
+body footer .page_wrap nav a .svg_img { width: 30px; height: 30px; margin-left: 5px; border-radius: 50%; vertical-align: middle; border-color: #db4437; background: #db4437; -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 body footer .page_wrap nav a .svg_img path { fill: #fff; }
-body footer .page_wrap nav a:hover .svg_img { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 7px rgba(219, 68, 55, 0.55); -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body footer .page_wrap nav a:hover .svg_img { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 7px rgba(219, 68, 55, 0.55); }
 body footer .subscribe { padding: 20px 0; text-align: center; font-size: 1.143em; }
 body footer .subscribe input { margin-left: 20px; }
 @media screen and (max-width: 1280px) { body .page_wrap { width: 100%; }
