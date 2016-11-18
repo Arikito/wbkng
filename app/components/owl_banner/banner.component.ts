@@ -29,7 +29,7 @@ export class BannerComponent implements OnInit {
 				paginationSpeed: 400,
 				singleItem:true,
 				mouseDrag: false,
-				autoPlay: 12500,
+				autoPlay: 12000,
 				stopOnHover: false,
 				autoHeight: false,
 				transitionStyle: "fade"
