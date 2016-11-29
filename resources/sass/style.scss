@@ -539,7 +539,7 @@ body{
 						}
 						.banner_text{
 							position: absolute;
-							top: 20vh;
+							top: 25vh;
 							left: 15vw;
 							text-align: center;
 							width: 70vw;
@@ -1962,10 +1962,10 @@ body{
 						path{
 							fill: $white;
 						}
+						@include animate(.4s);
 					}
 					&:hover .svg_img{
 					    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 7px rgba(219, 68, 55, 0.55);
-					    @include animate(.4s);
 					}
 				}
 			}
