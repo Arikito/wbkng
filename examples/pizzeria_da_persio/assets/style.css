@@ -448,11 +448,12 @@ header::after {
 	padding: 5em 3em;
 }
 .feedback__carousel .owl-controls {
-	margin-left: calc(50% - 80px);
-	position: absolute;
+	position: relative;
 	padding-left: 25px;
 	padding-right: 25px;
-	bottom: 1em;
+	bottom: -1em;
+	display: table;
+	margin: 0 auto;
 }
 .feedback__carousel .owl-nav {
 	position: absolute;
@@ -717,9 +718,6 @@ footer {
 	}
 	.feedback__carousel .owl-item {
 		padding: 1em;
-	}
-	.feedback__carousel .owl-controls {
-		margin-left: calc(50% - 67px);
 	}
 }
 
