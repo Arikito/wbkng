@@ -242,6 +242,7 @@ header::after {
 	margin: 0 15px;
 	display: inline-block;
 	line-height: 40px;
+	height: 40px;
 	width: 40px;
 	text-align: center;
 	border-radius: 20px;
@@ -722,10 +723,6 @@ footer {
 }
 
 @media (max-width: 630px) {
-	.buy-block__buy-button{
-		float: none;
-		margin-top: 1em;
-	}
 	.feedback__client {
 		max-width: 60%;
 	}
@@ -738,6 +735,14 @@ footer {
 		padding: 15px;
 	}
 }
+
+@media (max-width: 611px) {
+	.buy-block__buy-button{
+		float: none;
+		margin-top: 1em;
+	}
+}
+
 @media (max-width: 515px) {
 	.buy-block__quantity {
 		display: block;
@@ -747,6 +752,7 @@ footer {
 		margin-top: 3em;
 	}
 }
+
 @media (max-width: 430px) {
 	.header__menu__icon + span {
 		display: none;
@@ -765,11 +771,13 @@ footer {
 		margin-right: 20px;
 	}
 }
+
 @media (max-width: 360px) {
 	.menu__list__item {
 		padding: 2em 0;
 	}
 }
+
 @media (max-width: 320px) {
 	.section-title {
 		font-size: 40px;
