@@ -305,7 +305,12 @@ header::after {
 	color: #df5d31;
 	font-weight: 500;
 }
-
+@media (max-width: 630px) {
+	.advantages [class^="col-xs-"] {
+		width: 100%;
+		text-align: center;
+	}
+}
 
 
 
