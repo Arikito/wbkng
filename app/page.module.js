@@ -28,6 +28,7 @@ var map_component_1 = require('./components/map/map.component');
 var subscribe_component_1 = require('./components/form_subscribe/subscribe.component');
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var litelife_component_1 = require('./components/projects/litelife/litelife.component');
+var pizzeria_da_persio_component_1 = require('./components/projects/pizzeria_da_persio/pizzeria_da_persio.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
 var redirect_component_1 = require('./components/page_redirect/redirect.component');
 core_2.enableProdMode();
@@ -57,6 +58,7 @@ var PageModule = (function () {
                 subscribe_component_1.SubscribeFormComponent,
                 xt_component_1.XtComponent,
                 litelife_component_1.LitelifeComponent,
+                pizzeria_da_persio_component_1.PizzeriaComponent,
                 barbator_component_1.BarbatorComponent,
                 redirect_component_1.RedirectComponent
             ],

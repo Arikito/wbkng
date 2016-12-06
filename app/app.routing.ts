@@ -9,6 +9,7 @@ import { AboutComponent } from './components/page_about/about.component';
 import { ContactsComponent } from './components/page_contacts/contacts.component';
 import { XtComponent } from './components/projects/xt/xt.component';
 import { LitelifeComponent } from './components/projects/litelife/litelife.component';
+import { PizzeriaComponent } from './components/projects/pizzeria_da_persio/pizzeria_da_persio.component';
 import { BarbatorComponent } from './components/projects/barbator/barbator.component';
 import { RedirectComponent } from './components/page_redirect/redirect.component';
 
@@ -45,6 +46,10 @@ const appRoutes: Routes = [
   {
     path: 'portfolio/litelife',
     component: LitelifeComponent
+  },
+  {
+    path: 'portfolio/pizzeria_da_persio',
+    component: PizzeriaComponent
   },
   {
     path: 'portfolio/barbator',

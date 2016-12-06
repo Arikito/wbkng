@@ -20,6 +20,7 @@ import { MapComponent } from './components/map/map.component';
 import { SubscribeFormComponent } from './components/form_subscribe/subscribe.component';
 import { XtComponent } from './components/projects/xt/xt.component';
 import { LitelifeComponent } from './components/projects/litelife/litelife.component';
+import { PizzeriaComponent } from './components/projects/pizzeria_da_persio/pizzeria_da_persio.component';
 import { BarbatorComponent } from './components/projects/barbator/barbator.component';
 import { RedirectComponent } from './components/page_redirect/redirect.component';
 
@@ -47,6 +48,7 @@ enableProdMode();
 		SubscribeFormComponent,
 		XtComponent,
 		LitelifeComponent,
+		PizzeriaComponent,
 		BarbatorComponent,
 		RedirectComponent
 	],
