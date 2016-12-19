@@ -35,8 +35,7 @@ BannerComponent = __decorate([
         selector: 'owl-banner',
         templateUrl: 'app/components/owl_banner/banner.component.html',
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof core_1.ElementRef !== "undefined" && core_1.ElementRef) === "function" && _a || Object])
+    __metadata("design:paramtypes", [core_1.ElementRef])
 ], BannerComponent);
 exports.BannerComponent = BannerComponent;
-var _a;
 //# sourceMappingURL=banner.component.js.map
