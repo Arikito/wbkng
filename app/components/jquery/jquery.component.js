@@ -20,7 +20,7 @@ var JQ = (function () {
             itemsMobile: false,
             singleItem: false,
             pagination: false,
-            autoPlay: 1000
+            autoPlay: 3000
         };
     }
     JQ.prototype.test = function (word) {

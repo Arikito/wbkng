@@ -15,7 +15,7 @@ export class JQ {
 				itemsMobile: false,
 				singleItem: false,
 				pagination: false,
-				autoPlay: 1000
+				autoPlay: 3000
 			};
 		}
 		test(word = 'default value'){
