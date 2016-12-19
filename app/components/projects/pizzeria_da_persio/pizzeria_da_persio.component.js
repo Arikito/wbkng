@@ -26,7 +26,8 @@ PizzeriaComponent = __decorate([
         selector: 'my-pizzeria',
         templateUrl: './pizzeria_da_persio.component.html'
     }),
-    __metadata("design:paramtypes", [router_1.Router, core_1.ElementRef])
+    __metadata("design:paramtypes", [typeof (_a = typeof router_1.Router !== "undefined" && router_1.Router) === "function" && _a || Object, typeof (_b = typeof core_1.ElementRef !== "undefined" && core_1.ElementRef) === "function" && _b || Object])
 ], PizzeriaComponent);
 exports.PizzeriaComponent = PizzeriaComponent;
+var _a, _b;
 //# sourceMappingURL=pizzeria_da_persio.component.js.map

@@ -40,7 +40,8 @@ var SlidesService = (function () {
 }());
 SlidesService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
+    __metadata("design:paramtypes", [typeof (_a = typeof http_1.Http !== "undefined" && http_1.Http) === "function" && _a || Object])
 ], SlidesService);
 exports.SlidesService = SlidesService;
+var _a;
 //# sourceMappingURL=slides.service.js.map

@@ -27,7 +27,8 @@ MapComponent = __decorate([
         selector: 'my-map',
         template: "<div class=\"location_wrap location_wrap_js\">\n\t\t\t\t\t<div class=\"overlay overlay_js\"></div>\n\t\t\t\t</div>"
     }),
-    __metadata("design:paramtypes", [core_2.ElementRef])
+    __metadata("design:paramtypes", [typeof (_a = typeof core_2.ElementRef !== "undefined" && core_2.ElementRef) === "function" && _a || Object])
 ], MapComponent);
 exports.MapComponent = MapComponent;
+var _a;
 //# sourceMappingURL=map.component.js.map
