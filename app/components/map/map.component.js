@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
+var core_1 = require("@angular/core");
+var core_2 = require("@angular/core");
 var MapComponent = (function () {
     function MapComponent(elRef) {
         this.elRef = elRef;
@@ -20,14 +20,14 @@ var MapComponent = (function () {
             jQuery(this).removeClass('overlay');
         });
     };
-    MapComponent = __decorate([
-        core_1.Component({
-            selector: 'my-map',
-            template: "<div class=\"location_wrap location_wrap_js\">\n\t\t\t\t\t<div class=\"overlay overlay_js\"></div>\n\t\t\t\t</div>"
-        }), 
-        __metadata('design:paramtypes', [core_2.ElementRef])
-    ], MapComponent);
     return MapComponent;
 }());
+MapComponent = __decorate([
+    core_1.Component({
+        selector: 'my-map',
+        template: "<div class=\"location_wrap location_wrap_js\">\n\t\t\t\t\t<div class=\"overlay overlay_js\"></div>\n\t\t\t\t</div>"
+    }),
+    __metadata("design:paramtypes", [core_2.ElementRef])
+], MapComponent);
 exports.MapComponent = MapComponent;
 //# sourceMappingURL=map.component.js.map
