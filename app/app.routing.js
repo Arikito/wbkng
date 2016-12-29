@@ -1,16 +1,16 @@
 "use strict";
-var router_1 = require("@angular/router");
-var main_component_1 = require("./components/page_main/main.component");
-var portfolio_component_1 = require("./components/page_portfolio/portfolio.component");
-var services_component_1 = require("./components/page_services/services.component");
-var techs_component_1 = require("./components/page_techs/techs.component");
-var about_component_1 = require("./components/page_about/about.component");
-var contacts_component_1 = require("./components/page_contacts/contacts.component");
-var xt_component_1 = require("./components/projects/xt/xt.component");
-var litelife_component_1 = require("./components/projects/litelife/litelife.component");
-var pizzeria_da_persio_component_1 = require("./components/projects/pizzeria_da_persio/pizzeria_da_persio.component");
-var barbator_component_1 = require("./components/projects/barbator/barbator.component");
-var redirect_component_1 = require("./components/page_redirect/redirect.component");
+var router_1 = require('@angular/router');
+var main_component_1 = require('./components/page_main/main.component');
+var portfolio_component_1 = require('./components/page_portfolio/portfolio.component');
+var services_component_1 = require('./components/page_services/services.component');
+var techs_component_1 = require('./components/page_techs/techs.component');
+var about_component_1 = require('./components/page_about/about.component');
+var contacts_component_1 = require('./components/page_contacts/contacts.component');
+var xt_component_1 = require('./components/projects/xt/xt.component');
+var litelife_component_1 = require('./components/projects/litelife/litelife.component');
+var pizzeria_da_persio_component_1 = require('./components/projects/pizzeria_da_persio/pizzeria_da_persio.component');
+var barbator_component_1 = require('./components/projects/barbator/barbator.component');
+var redirect_component_1 = require('./components/page_redirect/redirect.component');
 var appRoutes = [
     {
         path: '',
