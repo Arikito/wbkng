@@ -29,6 +29,7 @@ var subscribe_component_1 = require('./components/form_subscribe/subscribe.compo
 var xt_component_1 = require('./components/projects/xt/xt.component');
 var litelife_component_1 = require('./components/projects/litelife/litelife.component');
 var pizzeria_da_persio_component_1 = require('./components/projects/pizzeria_da_persio/pizzeria_da_persio.component');
+var bino_component_1 = require('./components/projects/bino/bino.component');
 var barbator_component_1 = require('./components/projects/barbator/barbator.component');
 var redirect_component_1 = require('./components/page_redirect/redirect.component');
 core_2.enableProdMode();
@@ -60,6 +61,7 @@ var PageModule = (function () {
                 litelife_component_1.LitelifeComponent,
                 pizzeria_da_persio_component_1.PizzeriaComponent,
                 barbator_component_1.BarbatorComponent,
+                bino_component_1.BinoComponent,
                 redirect_component_1.RedirectComponent
             ],
             bootstrap: [

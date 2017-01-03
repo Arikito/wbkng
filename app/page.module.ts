@@ -21,6 +21,7 @@ import { SubscribeFormComponent } from './components/form_subscribe/subscribe.co
 import { XtComponent } from './components/projects/xt/xt.component';
 import { LitelifeComponent } from './components/projects/litelife/litelife.component';
 import { PizzeriaComponent } from './components/projects/pizzeria_da_persio/pizzeria_da_persio.component';
+import { BinoComponent } from './components/projects/bino/bino.component';
 import { BarbatorComponent } from './components/projects/barbator/barbator.component';
 import { RedirectComponent } from './components/page_redirect/redirect.component';
 
@@ -50,6 +51,7 @@ enableProdMode();
 		LitelifeComponent,
 		PizzeriaComponent,
 		BarbatorComponent,
+		BinoComponent,
 		RedirectComponent
 	],
 	bootstrap: [
